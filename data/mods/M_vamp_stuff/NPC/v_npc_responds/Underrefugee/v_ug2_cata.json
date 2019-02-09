@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD2_cata",
+    "type": "talk_topic",
+    "dynamic_line": "Cataclysm? So you humans made those thingies... Well, I can't blame you for that.",
+    "responses": [
+      {
+        "text": "You're right...",
+        "topic": "TALK_VAMP_UNDERGUARD2"
+      }
+    ]
+  }
+]

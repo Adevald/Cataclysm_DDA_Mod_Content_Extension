@@ -1,0 +1,44 @@
+[
+  {
+    "type": "construction",
+    "description": "Create fresh water canal",
+    "category": "DIG",
+    "required_skills": [ [ "survival", 1 ], [ "fabrication", 2 ] ],
+    "time": 30,
+    "qualities": [ [ { "id": "CONTAIN", "level": 1 } ] ],
+    "components": [ [ [ "water", 2000 ], [ "water_clean", 2000 ] ] ],
+    "pre_terrain": "t_pit",
+    "post_terrain": "t_water_sh"
+  },
+  {
+    "type": "construction",
+    "description": "Create salt water canal",
+    "category": "DIG",
+    "required_skills": [ [ "survival", 1 ], [ "fabrication", 2 ] ],
+    "time": 30,
+    "qualities": [ [ { "id": "CONTAIN", "level": 1 } ] ],
+    "components": [ [ [ "salt_water", 2000 ] ] ],
+    "pre_terrain": "t_pit",
+    "post_terrain": "t_swater_sh"
+  },
+  {
+    "type": "construction",
+    "description": "Bury shallow water",
+    "category": "DIG",
+    "required_skills": [ [ "survival", 1 ], [ "fabrication", 2 ] ],
+    "time": 20,
+    "qualities": [ [ { "id": "CONTAIN", "level": 1 } ] ],
+    "pre_terrain": "t_water_sh",
+    "post_terrain": "t_pit_shallow"
+  },
+    {
+    "type": "construction",
+    "description": "Bury deep water",
+    "category": "DIG",
+    "required_skills": [ [ "survival", 2 ], [ "fabrication", 3 ] ],
+    "time": 40,
+    "qualities": [ [ { "id": "CONTAIN", "level": 2 } ] ],
+    "pre_terrain": "t_water_dp",
+    "post_terrain": "t_pit"
+  }
+]

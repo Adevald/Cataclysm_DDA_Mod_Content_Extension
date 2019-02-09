@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_tradegun",
+    "type": "talk_topic",
+    "dynamic_line": "Nope. To trade a gun like this, you better find a gunshop.",
+    "responses": [
+      {
+        "text": "Gunshop?",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_gunshop"
+      }
+    ]
+  }
+]

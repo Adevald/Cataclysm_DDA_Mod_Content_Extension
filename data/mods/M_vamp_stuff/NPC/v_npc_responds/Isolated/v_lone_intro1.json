@@ -1,0 +1,15 @@
+{
+    "id": "TALK_VAMP_LONELY_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "I am a vampire, preserved for centuries, but as you can see, I'm just a coward hiding in the shadows",
+    "responses": [
+      {
+        "text": "Preserved?",
+        "topic": "TALK_VAMP_LONELY_preserved"
+      },
+      {
+        "text": "Okay.",
+        "topic": "TALK_VAMP_LONELY"
+        }
+    ]
+  }

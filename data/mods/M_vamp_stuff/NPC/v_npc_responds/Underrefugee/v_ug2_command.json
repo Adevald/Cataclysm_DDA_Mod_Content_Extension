@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD2_command",
+    "type": "talk_topic",
+    "dynamic_line": "You look concerned, but I'll never let a word come out from my mouth about HIM.",
+    "responses": [
+      {
+        "text": "Never knew you're loyal...",
+        "topic": "TALK_VAMP_UNDERGUARD2"
+      }
+    ]
+  }
+]

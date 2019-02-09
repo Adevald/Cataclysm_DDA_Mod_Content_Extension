@@ -1,0 +1,35 @@
+ [
+  {
+      "id" : "invy_bow",
+      "type" : "GUN",
+      "symbol" : "{",
+      "price": 0,
+      "price_postapoc": 1850000,
+      "color" : "dark_red",
+      "name" : "Invynel's Bow",
+      "description" : "A heavy, steel bow. Its serrated, blade handle makes it available for melee, but unwieldy. Well trained archers find this useful for long to mid range combats greatly.",
+      "material" : ["steel"],
+      "techniques" : [ "BOW_VAMP_SWEEP", "BOW_VAMP_THRUST" ], 
+      "flags" : ["FIRE_TWOHAND", "STR_DRAW", "RELOAD_AND_SHOOT", "PRIMITIVE_RANGED_WEAPON"],
+      "skill" : "archery",
+      "min_strength" : 10,
+      "ammo" : "arrow",
+      "weight" : 1225,
+      "volume" : 12,
+      "bashing" : 7,
+      "cutting" : 15,
+      "armor_data" : {
+         "covers" : ["TORSO"],
+         "coverage" : 15,
+         "material_thickness" : 1,
+         "encumbrance" : 27
+      },
+      "ranged_damage" : 16,
+      "range" : 21,
+      "dispersion" : 185,
+      "durability" : 8,
+      "clip_size" : 1,
+      "reload" : 135,
+      "valid_mod_locations": [[ "sights", 1 ],[ "accessories", 2 ]]
+   }
+]

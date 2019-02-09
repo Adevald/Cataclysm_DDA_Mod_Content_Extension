@@ -1,0 +1,13 @@
+{
+  "type": "MOD_INFO",
+  "mod-type": "SUPPLEMENTAL",
+  "ident": "jack_of_all_trades",
+  "name": "Jack of all trades",
+  "author": "Maddremor",
+  "description": "Makes proffesional traits selecatable for all proffesions on character generation. Clearly a cheat mod.",
+  "path": "",
+  "dependencies": [
+    "dda"
+  ]
+}
+

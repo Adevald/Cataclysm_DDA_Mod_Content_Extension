@@ -1,0 +1,13 @@
+{
+  "type": "MOD_INFO",
+  "mod-type": "SUPPLEMENTAL",
+  "ident": "all_muts",
+  "name": "All mutations at once",
+  "author": "Maddremor",
+  "description": "Makes most mutation (at my discretion) not require threshold nor cancel eachother. Clearly a cheat mod.",
+  "path": "",
+  "dependencies": [
+    "dda"
+  ]
+}
+

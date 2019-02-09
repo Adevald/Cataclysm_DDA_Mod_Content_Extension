@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_WASTEGUARD1_job",
+    "type": "talk_topic",
+    "dynamic_line": "I'm just a guard, I have no problems with my position.",
+    "responses": [
+      {
+        "text": "Okay...",
+        "topic": "TALK_VAMP_WASTEGUARD1_maintalk"
+      }
+    ]
+  }
+]

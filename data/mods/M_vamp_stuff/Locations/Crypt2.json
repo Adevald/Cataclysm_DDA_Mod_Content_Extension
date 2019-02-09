@@ -1,0 +1,129 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "crypt2" ],
+    "weight": 1250,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        ".............,..........",
+        "..........=..=.......,..",
+        "...,!..............!....",
+        "......=..=....=..=......",
+        "............,...........",
+        "....=...=......=...=.,..",
+        ",.......................",
+        "..=....=......,.=....=..",
+        ".........l    l.........",
+        ".=.....=. ##+# .=.....=.",
+        "...,..... #>># ...,.....",
+        ".=.....=. #+## .=.....=.",
+        ".....,...l    l.........",
+        "..=....=........=....=..",
+        "..............,.........",
+        "....=...=......=...=....",
+        "...,....................",
+        "......=..=....=..=....,.",
+        "....!..............!....",
+        "..........=.,=..........",
+        "...,................,...",
+        "........................",
+        ".......,................",
+        ".........,.............."
+        ],
+      "terrain": {
+        ",": [ "t_tree", "t_tree", "t_underbrush", "t_shrub" ],
+        "#": "t_rock",
+        "+": "t_door_c",
+         ".": "t_grass",
+         " ": "t_rock_floor",
+         "l": "t_column",
+         ">": "t_stairs_down"
+      },
+      "furniture": {
+        "&": "f_rubble_rock",
+        "!": "f_statue",
+        "=": [ "f_grave_monument", "f_grave_stone", "f_grave_head" ]
+      },
+      "place_items": [
+        { "item": "forest", "x": [ 2, 22 ], "y": [ 2, 22 ], "chance": 50, "repeat": [ 0, 2 ] },
+              { "item": "grave_memories", "x": [ 8, 18 ], "y": [ 7, 21 ], "chance": 10 }
+      ],
+      "place_monsters": [
+        { "monster": "GROUP_CRYPTIES", "x": [ 3 , 21 ], "y": [ 3 , 21 ], "density": 0.25 }
+      ]
+    }
+    },
+    {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "crypt2_b1" ],
+    "weight": 1250,
+    "object": {
+      "fill_ter": "t_rock_floor",
+      "rows": [
+        "oooooooooooooooooooooooo",
+        "oooooooooooooooooooooooo",
+        "ooooo  i  +    koooooooo",
+        "ooooo+ooooocc ccoooooooo",
+        "oooo) aooook   koooooooo",
+        "oooo)9 oooocc ccoooooooo",
+        "oooo)  +@ook    +  ooooo",
+        "ooooooooooooo+oooo+ooooo",
+        "ooooooooooooo ook1 1kooo",
+        "ooooooooooooo oo     ooo",
+        "ooooooooooo<+ oo1 - 1ooo",
+        "ooooooooooooo+oo*$ $*ooo",
+        "ooooooooooooo oo**1**ooo",
+        "ooooooooooooo+oooooooooo",
+        "oooooooooool  l~oooooooo",
+        "ooooooooooo# l~~oooooooo",
+        "ooooooooooo#l~~~xooooooo",
+        "oooooooooooll~~~xooooooo",
+        "oooooooooooooooxxooooooo",
+        "ooooooooooooLe~~xooooooo",
+        "ooooooooooooeLoooooooooo",
+        "oooooooooooooooooooooooo",
+        "oooooooooooooooooooooooo",
+        "oooooooooooooooooooooooo"
+        ],
+      "terrain": {
+         " ": "t_rock_floor",
+         "+": "t_door_c",
+         "<": "t_stairs_up",
+         "o": "t_rock",
+         "*": "t_pit_corpsed",
+         "~": "t_water_sh",
+         "x": "t_water_dp"
+      },
+      "furniture": {
+        "c": [ "f_coffin_o", "f_coffin_c" ],
+        "&": "f_rubble_rock",
+        ")": "f_shackle",
+        "-": "f_grave_stone_old",
+        "1": "f_statue",
+        "^": "f_slab",
+        "k": "f_counter",
+        "@": "f_crate_c",
+        "#": "f_locker"
+      },
+      "items": {
+        "i": { "item": "medieval", "chance": 10 },
+        "-": { "item": "bloodset", "chance": 5},
+        "#": { "item": "survival_armor", "chance": 10 },
+        "e": { "item": "trash", "chance": 15 },
+        "@": { "item": "camping", "chance": 20 },
+        "a": { "item": "archery", "chance": 10 },
+        "m": { "item": "allclothes", "chance": 25 }
+      },
+        "npcs": {
+      "9":  { "class": "VAMP_LONELY_F" }
+      },
+        "monster": {
+      "l": { "monster": "mon_insect_leech" },
+      "L": { "monster": "mon_insect_bigleech" }
+      }
+    }
+    }
+]

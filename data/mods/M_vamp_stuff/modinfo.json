@@ -1,0 +1,10 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "vamp_stuff",
+    "name": "Compatible Vampiric Stuff",
+    "authors": [ "Axema Vales" ],
+    "description": "Modified by Malkeus: (Made monstergroups compatible with other mods.) Adds a lot of vampiric themed stuff - items, structures, npcs and much more! (WIP) Refer to .txt file for additional information.",
+    "category": "misc_additions"
+  }
+]

@@ -1,0 +1,22 @@
+[
+{
+"id": "TALK_HUMAN_JUNKSHOP_maintalk",
+    "type": "talk_topic",
+    "dynamic_line": "Hey kid!",
+    "responses": [
+      {
+        "text": "What are you doing here?.",
+        "topic": "TALK_HUMAN_JUNKSHOP_here"
+      },
+      {
+        "text": "I want your junk...",
+        "effect": "start_trade",
+        "topic": "TALK_HUMAN_JUNKSHOP_maintalk"
+      },
+      {
+        "text": "Bye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

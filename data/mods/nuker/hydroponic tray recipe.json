@@ -1,0 +1,649 @@
+[
+  {
+  "type" : "recipe",
+  "result": "hydroponic_tray",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "time": 90000,
+  "autolearn": true,
+  "book_learn": [["textbook_fabrication", 2] , ["manual_fabrication", 2]],
+  "qualities":[
+    {"id":"HAMMER","level":3},
+    {"id":"SAW_M","level":1},
+    {"id":"SCREW","level":1},
+    {"id":"WRENCH","level":1}
+  ], "tools": [
+    [
+      [ "welder", 150 ],
+      [ "welder_crude", 225 ],
+      [ "toolset", 225 ],
+      [ "soldering_iron", 225 ],
+      [ "oxy_torch", 30 ]
+    ],
+     [
+       [ "mold_plastic", -1 ]
+     ],
+     [
+       [ "surface_heat", 3, "LIST" ]
+     ]
+	],
+  "components":
+    [
+     [
+       [ "plastic_chunk", 10 ]
+     ],
+     [
+       [ "cu_pipe", 2 ]
+     ],
+     [
+       [ "lightstrip_dead", 2 ]
+     ],
+     [
+       [ "metal_tank_little", 1 ]
+     ],
+     [
+       [ "e_scrap", 20 ]
+     ]
+  ]
+  },
+{
+  "type" : "recipe",
+  "result": "filled_hydroponic_tray",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "water", 3 ], [ "water_clean", 3 ] 
+    ],
+    [
+    [ "fertilizer_liquid", 3 ]
+    ],
+    [
+    [ "battery", 3 ]
+    ],
+    [[ "hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_blueberries",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_blueberries", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_dandelion",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_raw_dandelion", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_wild_herbs",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_wild_herbs", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_mugwort",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_mugwort", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_bee_balm",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_bee_balm", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_pumpkin",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_pumpkin", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_canola",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_canola", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_cucumber",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_cucumber", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_cannabis",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_weed", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_lettuce",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_lettuce", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_potato",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_potato_raw", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_oats",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_oats", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_thyme",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_thyme", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_onion",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_onion", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_cabbage",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_cabbage", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_sugar_beet",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_sugar_beet", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_strawberries",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_strawberries", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_carrot",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_carrot", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_barley",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_barley", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_cotton_boll",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_cotton_boll", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_raspberries",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_raspberries", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_sunflower",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_sunflower", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_broccoli",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_broccoli", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_zucchini",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_zucchini", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_buckwheat",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_buckwheat", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_celery",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_celery", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_blackberries",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_blackberries", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_dogbane",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_dogbane", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_cranberries",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_cranberries", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_wheat",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_wheat", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_corn",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_corn", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_chili_pepper",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_chili_pepper", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_tomato",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_tomato", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_garlic",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_garlic", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_rhubarb",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_rhubarb", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "planted_hydroponic_veggy_wild",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_MATERIALS",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": 1000,
+  "autolearn": true,
+  "components": [
+    [
+    [ "seed_veggy_wild", 3 ]
+    ],
+    [[ "filled_hydroponic_tray", 1 ]]
+  ]
+}
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "rifle_unification_hack",
+    "name": "Rifle Unification Hack",
+    "author": "Maddremor",
+    "description": "Make rifle and smg skill level together. WIP",
+    "dependencies": [ "dda" ]
+  }
+]
+

@@ -1,0 +1,12 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_owner",
+    "type": "talk_topic",
+    "dynamic_line": "No. This is owned and built by our master. Anything else to say?",
+    "responses": [
+      { "text": "I'll say thank you.",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+      }
+    ]
+  }
+]

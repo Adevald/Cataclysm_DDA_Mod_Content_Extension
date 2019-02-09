@@ -1,0 +1,469 @@
+[
+  {
+    "result": "mature_hydroponic_blueberries",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "blueberries", 6 ] ],
+	  [ [ "seed_blueberries", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_dandelion",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "raw_dandelion", 6 ] ],
+	  [ [ "seed_raw_dandelion", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_wild_herbs",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "wild_herbs", 6 ] ],
+	  [ [ "seed_wild_herbs", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_mugwort",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "mugwort", 6 ] ],
+	  [ [ "seed_mugwort", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_bee_balm",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "bee_balm", 6 ] ],
+	  [ [ "seed_bee_balm", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_pumpkin",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "pumpkin", 6 ] ],
+	  [ [ "seed_pumpkin", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_canola",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "canola", 6 ] ],
+	  [ [ "seed_canola", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_cucumber",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "cucumber", 6 ] ],
+	  [ [ "seed_cucumber", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_cannabis",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "cannabis", 6 ] ],
+	  [ [ "seed_weed", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_lettuce",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "lettuce", 6 ] ],
+	  [ [ "seed_lettuce", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_potato",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "potato_raw", 6 ] ],
+	  [ [ "seed_potato_raw", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_oats",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "oats", 6 ] ],
+	  [ [ "seed_oats", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_thyme",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "thyme", 6 ] ],
+	  [ [ "seed_thyme", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_onion",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "onion", 6 ] ],
+	  [ [ "seed_onion", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_cabbage",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "cabbage", 6 ] ],
+	  [ [ "seed_cabbage", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_sugar_beet",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "sugar_beet", 6 ] ],
+	  [ [ "seed_sugar_beet", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_strawberries",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "strawberries", 6 ] ],
+	  [ [ "seed_strawberries", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_carrot",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "carrot", 6 ] ],
+	  [ [ "seed_carrot", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_barley",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "barley", 6 ] ],
+	  [ [ "seed_barley", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_cotton_boll",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "cotton_boll", 6 ] ],
+	  [ [ "seed_cotton_boll", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_raspberries",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "raspberries", 6 ] ],
+	  [ [ "seed_raspberries", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_sunflower",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+	  [ [ "seed_sunflower", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_broccoli",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "broccoli", 6 ] ],
+	  [ [ "seed_broccoli", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_zucchini",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "zucchini", 6 ] ],
+	  [ [ "seed_zucchini", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_buckwheat",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "buckwheat", 6 ] ],
+	  [ [ "seed_buckwheat", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_celery",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "celery", 6 ] ],
+	  [ [ "seed_celery", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_blackberries",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "blackberries", 6 ] ],
+	  [ [ "seed_blackberries", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+  {
+    "result": "mature_hydroponic_dogbane",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "dogbane", 6 ] ],
+	  [ [ "seed_dogbane", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_cranberries",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "cranberries", 6 ] ],
+	  [ [ "seed_cranberries", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_wheat",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "wheat", 6 ] ],
+	  [ [ "seed_wheat", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_corn",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "corn", 6 ] ],
+	  [ [ "seed_corn", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_chili_pepper",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "chili_pepper", 6 ] ],
+	  [ [ "seed_chili_pepper", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_tomato",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "tomato", 6 ] ],
+	  [ [ "seed_tomato", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_garlic",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "garlic", 6 ] ],
+	  [ [ "seed_garlic", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_rhubarb",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "rhubarb", 6 ] ],
+	  [ [ "seed_rhubarb", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  },
+    {
+    "result": "mature_hydroponic_veggy_wild",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 1000,
+    "components": [
+      [ [ "veggy_wild", 6 ] ],
+	  [ [ "seed_veggy_wild", 6 ] ],
+	  [ [ "withered", 6 ] ],
+      [ [ "hydroponic_tray", 1 ] ]
+    ]
+  }
+]

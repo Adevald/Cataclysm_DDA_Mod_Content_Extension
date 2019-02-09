@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_gunshop",
+    "type": "talk_topic",
+    "dynamic_line": "She's at the wasteland outskirts, a place where vampires freely communicate with you all. Sounds wonderful, right?",
+    "responses": [
+      {
+        "text": "Wonderful? I don't even know where it is.",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+      }
+    ]
+  }
+]

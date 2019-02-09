@@ -1,0 +1,57 @@
+[
+  {
+    "type": "construction",
+    "description": "Build Beehive",
+    "//": "Hive lure includes classic of sweet water, or a few other substitutes.  Bee balm tea however is because we don't have lemongrass.",
+    "category": "FURN",
+    "required_skills": [ [ "survival", 2 ] ],
+    "time": 30,
+    "qualities": [ [ { "id": "DIG", "level": 1 } ] ],
+    "components": [
+      [ [ "beehive_empty", 1 ] ],
+      [
+        [ "sweet_water", 1 ],
+        [ "bee_balm_tea", 1 ],
+        [ "honey_bottled", 3 ],
+        [ "honey_glassed", 3 ],
+        [ "syrup", 3 ],
+        [ "beet_syrup", 5 ]
+      ]
+    ],
+    "pre_flags": "DIGGABLE",
+    "post_terrain": "t_hive_young"
+  },
+  {
+    "type": "construction",
+    "description": "Build Charcoal Purifier",
+    "category": "FURN",
+    "required_skills": [ [ "survival", 2 ] ],
+    "time": 25,
+    "qualities": [ [ { "id": "HAMMER", "level": 1 } ], [ { "id": "CUT", "level": 1 } ] ],
+    "components": [
+      [ [ "stick", 6 ], [ "2x4", 6 ] ],
+      [ [ "birchbark", 12 ], [ "withered", 24 ], [ "straw_pile", 24 ], [ "string_36", 2 ] ]
+    ],
+    "pre_note": "Can be deconstructed without tools.",
+    "pre_special": "check_empty",
+    "post_terrain": "f_char_purifier"
+  },
+  {
+    "type": "construction",
+    "description": "Build Leather Door Curtain",
+    "//": "Door frame not required",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "tailor", 1 ] ],
+    "time": 30,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components": [
+      [ [ "nail", 4 ], [ "pointy_stick", 2 ], [ "spike", 2 ] ],
+      [ [ "leather_tarp", 1 ] ],
+      [ [ "stick", 1 ] ],
+      [ [ "withered", 12 ], [ "straw_pile", 12 ], [ "string_36", 1 ] ]
+    ],
+    "pre_note": "Can be deconstructed without tools.",
+    "pre_special": "check_empty",
+    "post_terrain": "t_door_curtain_leather_c"
+  }
+]

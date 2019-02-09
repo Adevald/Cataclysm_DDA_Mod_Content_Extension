@@ -1,0 +1,13 @@
+{
+  "type": "MOD_INFO",
+  "mod-type": "SUPPLEMENTAL",
+  "ident": "gunmod_mod",
+  "name": "Gunmod Mod",
+  "author": "Maddremor",
+  "description": "Mod adding various gunmods. WIP",
+  "path": "",
+  "dependencies": [
+    "dda"
+  ]
+}
+

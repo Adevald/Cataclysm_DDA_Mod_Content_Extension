@@ -1,0 +1,40 @@
+[
+  {
+    "id": "punchie_bitie",
+    "type": "GENERIC",
+    "name": "pair of knuckle biters",
+    "name_plural": "pairs of Knuckle Biters",
+    "description": "A pair of knuckles designed to imitate a jaw with heavily arranged metal teeth. Every successful impacts will cause it to bite quickly, dealing additional cutting damage.",
+    "weight": 500,
+    "volume": 2,
+    "symbol": "f",
+    "price": 0,
+    "price_postapoc": 1025000,
+    "to_hit": 2,
+    "cutting": 13,
+    "bashing": 6,
+     "material": "steel",
+     "color": "dark_red",
+    "techniques": [ "VAMP_WRATH" ],
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+    },
+    {
+    "id": "punchie_bitieplus",
+    "type": "GENERIC",
+    "name": "pair of knuckle biters+",
+    "name_plural": "pairs of knuckle biters+",
+    "description": "Liquidated bloodrune stone infusion modified its power and is even sharper than before.",
+    "weight": 600,
+    "volume": 2,
+    "symbol": "f",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 2,
+    "cutting": 24,
+    "bashing": 11,
+     "material": [ "steel", "compactblood" ],
+     "color": "dark_red",
+    "techniques": [ "VAMP_WRATH" ],
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+    }
+]

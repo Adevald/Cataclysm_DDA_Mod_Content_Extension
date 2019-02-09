@@ -1,0 +1,25 @@
+[
+{
+"id": "TALK_VAMP_WASTEGUARD1_maintalk",
+    "type": "talk_topic",
+    "dynamic_line": "You should be safe here.",
+    "responses": [
+      {
+        "text": "Where am I?.",
+        "topic": "TALK_VAMP_WASTEGUARD1_here"
+      },
+      {
+        "text": "You know a place like this?.",
+        "topic": "TALK_VAMP_WASTEGUARD1_know"
+      },
+      {
+        "text": "You need a volunteer for jobs?",
+        "topic": "TALK_VAMP_WASTEGUARD1_job"
+      },
+      {
+        "text": "Okay. Bye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

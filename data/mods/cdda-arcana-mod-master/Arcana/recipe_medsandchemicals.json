@@ -1,0 +1,66 @@
+[
+  {
+    "result": "numbness_potion",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "//": "Denatured alcohol?  Yep, these recipes would all be nasty to drink if magic wasn't involved.",
+    "skill_used": "magic",
+    "difficulty": 1,
+    "skills_required": [ "cooking", 5 ],
+    "time": 90000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 0 ] ],
+    "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
+    "components": [ [ [ "fat_tainted", 4 ], [ "bone_tainted", 1 ] ] ]
+  },
+  {
+    "result": "strength_potion",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "skills_required": [ "cooking", 5 ],
+    "time": 90000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 1 ] ],
+    "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
+    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ] ] ]
+  },
+  {
+    "result": "speed_potion",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "skills_required": [ "cooking", 5 ],
+    "time": 90000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 2 ] ],
+    "qualities": [ { "id": "CHEM", "level": 1 } ],
+    "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
+    "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_quicklime", 1 ] ], [ [ "lead", 10 ] ] ]
+  },
+  {
+    "result": "healing_potion",
+    "type": "recipe",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
+    "//": "Ethanol and caustic lime, if you had pearl ash you'd get alkahest. Not a universal solvent, but a good glass cleaner.",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "cooking", 5 ],
+    "time": 90000,
+    "batch_time_factors": [ 80, 4 ],
+    "book_learn": [ [ "book_potioncraft", 3 ] ],
+    "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
+    "components": [
+      [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ],
+      [ [ "material_quicklime", 1 ] ],
+      [ [ "gold_small", 10 ] ],
+      [ [ "blood", 1 ], [ "rag_bloody", 3 ] ]
+    ]
+  }
+]

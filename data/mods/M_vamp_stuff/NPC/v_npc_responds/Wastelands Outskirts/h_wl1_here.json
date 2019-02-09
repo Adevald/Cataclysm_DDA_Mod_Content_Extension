@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_HUMAN_WASTELAND1_here",
+    "type": "talk_topic",
+    "dynamic_line": "No great action since I came...",
+    "responses": [
+      {
+        "text": "Bye.",
+        "topic": "TALK_HUMAN_WASTELAND1_maintalk"
+      }
+    ]
+  }
+]

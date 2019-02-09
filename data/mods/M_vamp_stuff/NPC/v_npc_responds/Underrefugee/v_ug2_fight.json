@@ -1,0 +1,17 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD2_fight",
+    "type": "talk_topic",
+    "dynamic_line": "You should be. We never, EVER let any humans come into our beloved home. Until we are commanded to accompany with your kind.",
+    "responses": [
+      {
+        "text": "Who commanded you?",
+        "topic": "TALK_VAMP_UNDERGUARD2_command"
+      },
+      {
+        "text": "Oh... Seems you are forced to talk with me.",
+        "topic": "TALK_VAMP_UNDERGUARD2"
+      }
+    ]
+  }
+]

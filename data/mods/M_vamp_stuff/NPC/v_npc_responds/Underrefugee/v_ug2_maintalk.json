@@ -1,0 +1,27 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "blood_necklace",
+      "yes": "Damn, you managed to wear that.",
+      "no": "Mortal, You look dazzled?"
+    },
+    "responses": [
+      {
+        "text": "Tell me who you are.",
+        "topic": "TALK_VAMP_UNDERGUARD2_introduce"
+      },
+      { "text": "Where am I?",
+        "topic": "TALK_VAMP_UNDERGUARD2_direction"
+      },
+      { "text": "I'm vacant for jobs.",
+        "topic": "TALK_VAMP_UNDERGUARD2_job"
+      },
+      {
+        "text": "Bye...",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

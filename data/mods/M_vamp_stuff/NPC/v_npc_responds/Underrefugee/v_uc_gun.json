@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_gun",
+    "type": "talk_topic",
+    "dynamic_line": "First of all, I have found out how guns kill anything quickly. I know you're thinking this is a human stuff, but in survival, we need to pick the best.",
+    "responses": [
+      {
+        "text": "You are right, sir.",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+      }
+    ]
+  }
+]

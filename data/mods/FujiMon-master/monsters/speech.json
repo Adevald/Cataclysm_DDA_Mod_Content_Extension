@@ -1,0 +1,51 @@
+[
+    {
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker",
+        "sound" : "low, heavy breathing.",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker",
+        "sound" : "heavy breathing.",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker",
+        "sound" : "a deep growl.",
+        "volume" : 20
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker",
+        "sound" : "a low howl.",
+        "volume" : 20
+    },
+	
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker_adv",
+        "sound" : "low, heavy breathing.",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker_adv",
+        "sound" : "heavy breathing.",
+        "volume" : 10
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker_adv",
+        "sound" : "a deep growl.",
+        "volume" : 20
+    },
+	{
+        "type" : "speech",
+        "speaker" : "mon_bloodsucker_adv",
+        "sound" : "a low howl.",
+        "volume" : 20
+    }
+]

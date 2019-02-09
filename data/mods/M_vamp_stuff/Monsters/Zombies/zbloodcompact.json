@@ -1,0 +1,39 @@
+{
+    "id": "mon_zombie_bloodcompact",
+    "type": "MONSTER",
+    "name": "blood compact zombie",
+    "description": "From the old graveyard it arises. This zombie's age cause its blood to solidify into thick, rock-like armor, but somehow maintains natural speed. With that odd-looking teeth lining and stony claws (some sort of mutation), it's sure deadly.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "diff": 15,
+    "volume": "62500 ml", 
+    "weight": "81500",
+    "hp": 185,
+    "speed": 85,
+    "material": [ "flesh" ],
+    "symbol": "B",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_cut": 4,
+    "armor_bash": 10,
+    "armor_cut": 8,
+    "vision_day": 30,
+    "vision_night": 4,
+    "special_attacks": [
+      { "type": "bite",
+        "cooldown": 10
+      },
+      [ "GRAB", 6 ]
+    ],
+    "death_drops": "elderzombie",
+    "death_function": [ "NORMAL" ],
+    "upgrades": {
+      "half_life": 6,
+      "into_group": "GROUP_CRYPTIES_UPGRADE"
+    },
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY" ]
+  }

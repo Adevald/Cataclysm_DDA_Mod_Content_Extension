@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "FujiMon",
+    "name": "Fuji's Monsters",
+    "description": "Adds various creature types.",
+    "category": "creatures",
+    "dependencies": [ "dda" ],
+    "obsolete": false
+  }
+]

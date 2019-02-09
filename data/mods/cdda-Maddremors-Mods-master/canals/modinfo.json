@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "dig-canal",
+    "name": "Diggable Canals",
+    "author": "Maddremor",
+    "description": "Create tiles of shallow water close to other bodies of water.",
+    "dependencies": [ "dda" ]
+  }
+]
+

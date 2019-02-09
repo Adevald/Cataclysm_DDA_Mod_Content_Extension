@@ -1,0 +1,13 @@
+[
+    {
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "MGCPatch",
+    "name": "Monstergroup Combo Patch",
+    "description": "MODIFIED by Malkeus: Consolidates the monstergroups of Add Bandits, PKs_Rebalancing, Cataclysm++, Dinomod, Nechronica, DracoDogMod, Salvaged Robots, Vampire Stuff, Pora's Compilation and Jury Rigged Robots mods, that's it...maybe..  Confirmed functional for use with build 8136, and should be used with the mods downloaded from the forum http://smf.cataclysmdda.com/index.php?board=3.0. Quietly slipped in some overrides for Cata++. :P",
+    "category": "creatures",
+    "dependencies": [ "Cata++", "DinoMod", "DracoDogMod", "GOV_BANDITS", "jury_rigged_robots", "Nechronica_M", "PK_REBALANCE", "porawep", "Salvaged_Robots_M", "vamp_stuff" ],
+    "author": "pisskop and Noctifer and Malkeus",
+    "path": ""
+    }
+]

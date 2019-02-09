@@ -1,0 +1,17 @@
+[
+  {
+    "type" : "recipe",
+    "result": "45_conversion",
+    "id_suffix": "uncraft",
+    "category": "CC_NONCRAFT",
+    "subcategory": "CSC_NONCRAFT",
+    "difficulty": 0,
+    "time": 250,
+    "reversible": false,
+    "autolearn": false,
+    "components": [
+      [ [ "retool_45", 1 ] ],
+      [ [ "45_muzzle_brake", 1 ] ]
+    ]
+  }
+]

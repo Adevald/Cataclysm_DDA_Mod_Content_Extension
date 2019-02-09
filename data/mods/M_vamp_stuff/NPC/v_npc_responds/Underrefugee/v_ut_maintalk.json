@@ -1,0 +1,31 @@
+[
+{
+"id": "TALK_VAMP_UNDERTRADER",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "blood_necklace",
+      "yes": "Do you need something, mortal?.",
+      "no": "Want something?"
+    },
+    "responses": [
+      {
+        "text": "Who are you?",
+        "topic": "TALK_VAMP_UNDERTRADER_introduce"
+      },
+      { "text": "Tell me what happened outside.",
+        "topic": "TALK_VAMP_UNDERTRADER_happened"
+      },
+      { "text": "I'll trade with ya...",
+        "effect": "start_trade",
+        "topic": "TALK_VAMP_UNDERTRADER"
+      },
+      {
+        "text": "You need help? I'm here to do it.",
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "Bye, see you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

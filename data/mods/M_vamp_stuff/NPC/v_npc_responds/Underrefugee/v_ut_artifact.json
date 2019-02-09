@@ -1,0 +1,12 @@
+[
+{
+"id": "TALK_VAMP_UNDERTRADER_artifact",
+    "type": "talk_topic",
+    "dynamic_line": "Our master wants to help the last, surviving humans in our utmost solution... Share our power with you all. But he still wants an official trading, so you need lots of valuables or cash buying our items.",
+    "responses": [
+      { "text": "Oh... Great.",
+        "topic": "TALK_VAMP_UNDERTRADER"
+      }
+    ]
+  }
+]

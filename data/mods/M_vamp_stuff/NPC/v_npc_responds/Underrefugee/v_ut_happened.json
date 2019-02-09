@@ -1,0 +1,12 @@
+[
+{
+"id": "TALK_VAMP_UNDERTRADER_happened",
+    "type": "talk_topic",
+    "dynamic_line": "I have no idea what's happening outside right now. I came here without sunburn after taking orders from my master.",
+    "responses": [
+      { "text": "Well, I expected nothing...",
+        "topic": "TALK_VAMP_UNDERTRADER"
+      }
+    ]
+  }
+]

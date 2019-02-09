@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sword_sip",
+    "type": "GENERIC",
+    "name": "Blood Sipper",
+    "name_plural": "Blood Sippers",
+    "description": "A large, dual-handed, heavily serrated sword. The blade retracts into sharp teeth-like formation everytime you swing it, while vice versa, it becomes flat when not in use. The weight of this sword is problematic, but people who are strong enough to lift it makes them deadly for sure.",
+    "weight": 2200,
+    "volume": 16,
+    "symbol": "!",
+    "price": 0,
+    "price_postapoc": 2250000,
+    "to_hit": 1,
+    "bashing": 11,
+    "cutting": 33,
+     "material": "steel",
+     "color": "dark_red",
+    "techniques": [ "WBLOCK_2", "UPRIGHT_SLASH", "DOWNWARD_SLASH" ],
+    "flags": [ "SHEATH_SWORD", "DURABLE_MELEE" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 17 ] ]
+    },
+    {
+    "id": "sword_sipplus",
+    "type": "GENERIC",
+    "name": "Blood Sipper+",
+    "name_plural": "Blood Sippers+",
+    "description": "Although the color is catchy for the other's eye, this sword has gotten even more sharper after the infusion with liquidated bloodrune.",
+    "weight": 2300,
+    "volume": 16,
+    "symbol": "!",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 1,
+    "bashing": 17,
+    "cutting": 65,
+     "material": [ "steel", "compactblood" ],
+     "color": "dark_red",
+    "techniques": [ "WBLOCK_2", "UPRIGHT_SLASH", "DOWNWARD_SLASH", "HEAD_GRIND" ],
+    "flags": [ "SHEATH_SWORD", "DURABLE_MELEE" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ]
+    }
+]

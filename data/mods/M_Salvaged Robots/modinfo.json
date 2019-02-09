@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "Salvaged_Robots_M",
+    "name": "Compatible Salvaged Robots",
+    "authors": [ "Sunshine" ],
+    "maintainers": [ "Anyone" ],
+    "description": "Modified by Malkeus (Fixed monstergroups, reduce fire station bot spawns.) : Expands the types of robots and allows players to jury-rig broken robots into functioning companions.",
+    "category": "creatures",
+    "dependencies": [ "dda", "modular_turrets" ]
+  }
+]

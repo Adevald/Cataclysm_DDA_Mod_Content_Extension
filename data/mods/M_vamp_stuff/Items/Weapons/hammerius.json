@@ -1,0 +1,40 @@
+[
+  {
+    "id": "hammerius",
+    "type": "GENERIC",
+    "name": "Hammerius",
+    "name_plural": "Hammeriuses",
+    "description": "A huge, fearsome battle hammer. Its flattened surface has symmetric holes, in which spikes are seen, and everytime you bash an opponent, it retracts to puncture their inner flesh. Heavyweight is common to hammers, so weild if you got strenght to show off.",
+    "weight": 2850,
+    "volume": 20,
+    "symbol": "T",
+    "price": 0,
+    "price_postapoc": 2000000,
+    "to_hit": 1,
+    "bashing": 34,
+    "cutting": 12,
+     "material": "steel",
+     "color": "dark_red",
+    "techniques": [ "WBLOCK_1", "UPRIGHT_BASH", "DOWNWARD_BASH" ],
+    "flags": [ "STAB", "DURABLE_MELEE" ]
+    },
+    {
+    "id": "hammeriusplus",
+    "type": "GENERIC",
+    "name": "Hammerius+",
+    "name_plural": "Hammeriuses+",
+    "description": "The hammer has improved much more by compressing liquidated bloodrune stone into its metal, soaking it in as part of the weapon.",
+    "weight": 2950,
+    "volume": 20,
+    "symbol": "T",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 1,
+    "bashing": 56,
+    "cutting": 18,
+     "material": [ "steel", "compactblood" ],
+     "color": "dark_red",
+    "techniques": [ "WBLOCK_1", "UPRIGHT_BASH", "DOWNWARD_BASH", "TRENCH" ],
+    "flags": [ "STAB", "DURABLE_MELEE" ]
+    }
+]

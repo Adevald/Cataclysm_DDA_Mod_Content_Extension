@@ -1,0 +1,16 @@
+[
+{
+"id": "TALK_VAMP_UNDERTRADER_trading",
+    "type": "talk_topic",
+    "dynamic_line": "I don't know. Our master said we have to accept any valuables you got on your trip.",
+    "responses": [
+      {
+        "text": "Master? Could you describe HIM?",
+        "topic": "TALK_VAMP_UNDERTRADER_him"
+      },
+      { "text": "Okay...",
+        "topic": "TALK_VAMP_UNDERTRADER"
+      }
+    ]
+  }
+]
