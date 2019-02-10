@@ -65,8 +65,8 @@
         "O": "f_oven",
         "S": "f_sink",
         "a": "f_table",
-        "b": "f_bench",
-        "&": "f_brazier"
+        "&": "f_brazier",
+        "b": "f_bench"
       },
       "traps": {
         "*": "tr_landmine_buried",

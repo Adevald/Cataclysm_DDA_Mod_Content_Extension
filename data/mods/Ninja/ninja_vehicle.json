@@ -31,8 +31,6 @@
       { "x": 0, "y": 0, "part": "vehicle_alarm" },
       { "x": 0, "y": 0, "part": "engine_inline4" },
       { "x": 0, "y": 0, "part": "generator_7500w" },
-      { "x": 0, "y": 0, "part": "turret_mount" },
-      { "x": 0, "y": 0, "part": "ninja_shuriken_smg" },
       { "x": 0, "y": 0, "part": "plating_superalloy" },
       { "x": 1, "y": 0, "part": "frame_handle" },
       { "x": 1, "y": 0, "part": "headlight_reinforced" },
@@ -48,7 +46,7 @@
   {
     "id": "ninja_vehicle_yakata_car",
     "type": "vehicle",
-    "name": "Army Armored Car (Yakata)",
+    "name": "å±‹å½¢è£…ç”²è»Š",
     "parts": [
       { "x": -5, "y": -1, "part": "hdframe_horizontal" },
       { "x": -5, "y": -1, "part": "hdboard_horizontal" },
@@ -202,8 +200,6 @@
       { "x": 3, "y": 1, "part": "tank_small" },
       { "x": 3, "y": 1, "part": "seat" },
       { "x": 3, "y": 1, "part": "seatbelt_heavyduty" },
-      { "x": 3, "y": 1, "part": "turret_mount" },
-      { "x": 3, "y": 1, "part": "mounted_m134", "ammo": 50 },
       { "x": 3, "y": 2, "part": "hdframe_vertical" },
       { "x": 3, "y": 2, "part": "wheel_armor_steerable" },
       { "x": 3, "y": 2, "part": "plating_military" },

@@ -63,9 +63,6 @@
         "|": "t_wall"
       },
       "furniture": {
-        "&": "f_brazier",
-        "Y": "f_brazier",
-        "y": "f_brazier",
         "#": "f_tatami",
         "$": "f_floor_canvas",
         "@": "f_tatami",
@@ -76,7 +73,10 @@
         "f": "f_fridge",
         "g": "f_oven",
         "h": "f_chair",
-        "k": "f_sink"
+        "k": "f_sink",
+        "&": "f_brazier",
+        "Y": "f_brazier",
+        "y": "f_brazier"
       },
       "traps": {
         "[": "tr_shotgun_2",

@@ -2,10 +2,10 @@
   {
     "type": "MOD_INFO",
     "ident": "Ninja",
-    "name": "Ninja MOD",
+    "name": "Compatible Ninja MOD",
     "authors": [ "hount of \"@\"" ],
     "maintainers": [ "Chezzo", "ZhilkinSerg" ],
-    "description": "Secret mod only for Ninja",
+    "description": "Malkeus: (Fixes to maps and vehicles) Secret mod only for Ninja",
     "category": "misc_additions",
     "dependencies": [ "dda" ]
   }

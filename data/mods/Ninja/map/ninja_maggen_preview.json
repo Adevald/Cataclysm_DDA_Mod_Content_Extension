@@ -44,10 +44,12 @@
         "|": "t_wall"
       },
       "furniture": {
-        "&": "f_brazier",
         "#": "f_tatami",
+        "&": "f_brazier",
         "@": "f_tatami",
         "A": "f_tatami"
+      },
+      "traps": {
       },
       "fields": {
         "&": { "field": "fd_fire", "density": 1, "age": 1 }
