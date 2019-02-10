@@ -6,7 +6,7 @@
     "required_skills": [ [ "survival", 1 ], [ "fabrication", 2 ] ],
     "time": 30,
     "qualities": [ [ { "id": "CONTAIN", "level": 1 } ] ],
-    "components": [ [ [ "water", 2000 ], [ "water_clean", 2000 ] ] ],
+    "components": [ [ [ "water", 2000 ] ] ],
     "pre_terrain": "t_pit",
     "post_terrain": "t_water_sh"
   },
