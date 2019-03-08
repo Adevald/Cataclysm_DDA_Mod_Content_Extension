@@ -13,11 +13,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_thing_head",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_thing_head", "place_randomly": true }
   },
   {
     "id": "bot_thing_spider",
@@ -33,11 +29,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_thing_spider",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_thing_spider", "place_randomly": true }
   },
   {
     "id": "bot_tripod",
@@ -53,11 +45,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_gray",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_tripod",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_tripod", "place_randomly": true }
   },
   {
     "id": "bot_cherub",
@@ -73,11 +61,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_cherub",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_cherub", "place_randomly": true }
   },
   {
     "id": "bot_cherub_fly",
@@ -93,11 +77,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_cherub_fly",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_cherub_fly", "place_randomly": true }
   },
   {
     "id": "bot_imp_revive",
@@ -113,11 +93,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_imp_revive",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_imp_revive", "place_randomly": true }
   },
   {
     "id": "bot_pinky_revive",
@@ -133,11 +109,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_pinky_revive",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_pinky_revive", "place_randomly": true }
   },
   {
     "id": "bot_hell_knight_revive",
@@ -153,11 +125,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_hell_knight_revive",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_hell_knight_revive", "place_randomly": true }
   },
   {
     "id": "bot_cacodemon_revive",
@@ -219,11 +187,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_imp",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_imp", "place_randomly": true }
   },
   {
     "id": "bot_imp_black",
@@ -239,11 +203,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_imp_black",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_imp_black", "place_randomly": true }
   },
   {
     "id": "bot_pinky",
@@ -259,11 +219,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_pinky",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_pinky", "place_randomly": true }
   },
   {
     "id": "bot_lostsoul",
@@ -279,11 +235,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_lostsoul",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_lostsoul", "place_randomly": true }
   },
   {
     "id": "bot_revenant",
@@ -299,11 +251,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_revenant",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_revenant", "place_randomly": true }
   },
   {
     "id": "bot_hell_knight",
@@ -319,11 +267,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_hell_knight",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_hell_knight", "place_randomly": true }
   },
   {
     "id": "bot_hell_baron",
@@ -339,11 +283,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_hell_baron",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_hell_baron", "place_randomly": true }
   },
   {
     "id": "bot_mancubus",
@@ -359,11 +299,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_mancubus",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_mancubus", "place_randomly": true }
   },
   {
     "id": "bot_cacodemon",
@@ -402,11 +338,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_mechaspider",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_mechaspider", "place_randomly": true }
   },
   {
     "id": "bot_cyberdemon",
@@ -422,11 +354,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_cyberdemon",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_cyberdemon", "place_randomly": true }
   },
   {
     "id": "bot_rat",
@@ -601,11 +529,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_zombie_shady",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_zombie_shady", "place_randomly": true }
   },
   {
     "id": "bot_hollow",
@@ -621,11 +545,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_zombie_hollow",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_zombie_hollow", "place_randomly": true }
   },
   {
     "id": "bot_blind",
@@ -641,11 +561,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_zombie_blind_pk",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_zombie_blind_pk", "place_randomly": true }
   },
   {
     "id": "bot_grabber",
@@ -661,11 +577,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_zombie_grabber",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_zombie_grabber", "place_randomly": true }
   },
   {
     "id": "bot_acidic_pk",
@@ -681,11 +593,7 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_zombie_acidic_pk",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_zombie_acidic_pk", "place_randomly": true }
   },
   {
     "id": "bot_ant_acid_ultralisk",
@@ -701,10 +609,6 @@
     "material": [ "aluminum", "plastic" ],
     "symbol": ",",
     "color": "light_green",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_ant_acid_ultralisk",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_ant_acid_ultralisk", "place_randomly": true }
   }
 ]

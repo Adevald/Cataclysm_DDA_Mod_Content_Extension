@@ -1,0 +1,32 @@
+{
+    "id": "mon_insect_venomleech",
+    "type": "MONSTER",
+    "name": "venomous leech",
+    "description": "A larger, darker abominable leech with wider mouth and drips highly concentrated toxin as it sway.",
+    "default_faction": "leech",
+    "species": [ "INSECT" ],
+    "diff": 15,
+    "volume": "30000 ml", 
+    "weight": "40750",
+    "hp": 85,
+    "speed": 100,
+    "material": [ "iflesh" ],
+	"harvest": "zombie",
+    "symbol": "~",
+    "color": "light_green_magenta",
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 8,
+    "dodge": 1,
+    "armor_cut": 3,
+    "armor_bash": 3,
+    "anger_triggers": [ "PLAYER_CLOSE", "FRIEND_DIED", "HURT" ],
+    "fear_triggers": [ "FIRE" ],
+    "death_function": [ "NORMAL" ],
+    "special_attacks": [
+      [ "leechvenomousinject", 10 ]
+    ],
+    "flags": [ "SMELLS", "HEARS", "SWIMS", "BLEED", "VENOM", "PATH_AVOID_DANGER_1" ]
+  }

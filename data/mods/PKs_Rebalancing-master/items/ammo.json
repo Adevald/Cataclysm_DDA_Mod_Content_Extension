@@ -14,7 +14,8 @@
     "quench": 9,
     "ammo_data": { "ammo_type": "smoke_juice" },
     "flags": [ "EATEN_COLD" ]
-  },{
+  },
+  {
     "id": "chime_scrap",
     "type": "AMMO",
     "name": "scrap chimes",
@@ -28,13 +29,8 @@
     "color": "ltgray",
     "count": 1,
     "ammo_type": "thrown",
-    "flags": [  "RECOVER_10", "NO_EMBED", "ACT_ON_RANGED_HIT" ],
-    "use_action": {
-      "target": "chime_scrap_act",
-      "target_charges": 2,
-      "active": true,
-      "type": "transform"
-    }
+    "flags": [ "RECOVER_10", "NO_EMBED", "ACT_ON_RANGED_HIT" ],
+    "use_action": { "target": "chime_scrap_act", "target_charges": 2, "active": true, "type": "transform" }
   },
   {
     "id": "chime_scrap_act",
@@ -58,8 +54,7 @@
       "sound_volume": 24,
       "sound_msg": "CLANG-chingka-ching",
       "no_deactivate_msg": "Its not active; why are you trying to deactivate it?",
-      "explosion": {
-      }
+      "explosion": {  }
     }
   },
   {
@@ -96,11 +91,7 @@
     "pierce": 10,
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": {
-      "power": 12,
-      "distance_factor": 0.1,
-      "shrapnel": 2
-    }
+    "explosion": { "power": 12, "distance_factor": 0.1, "shrapnel": 2 }
   },
   {
     "id": "bomblet_frag",
@@ -120,11 +111,7 @@
     "pierce": 10,
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": {
-      "power": 4,
-      "distance_factor": 0.1,
-      "shrapnel": 12
-    }
+    "explosion": { "power": 4, "distance_factor": 0.1, "shrapnel": 12 }
   },
   {
     "id": "bomblet_fire",
@@ -147,13 +134,7 @@
     "emits": [ "emit_smoke_bomblet", "emit_fire_bomblet", "emit_fire_bomblet_small" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": {
-      "type": "explosion",
-      "explosion": {
-        "power": 4,
-        "distance_factor": 0.1
-      }
-    }
+    "countdown_action": { "type": "explosion", "explosion": { "power": 4, "distance_factor": 0.1 } }
   },
   {
     "id": "bomblet_acid",
@@ -176,13 +157,7 @@
     "emits": [ "emit_tgas_bomblet", "emit_acid_bomblet" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": {
-      "type": "explosion",
-      "explosion": {
-        "power": 4,
-        "distance_factor": 0.1
-      }
-    }
+    "countdown_action": { "type": "explosion", "explosion": { "power": 4, "distance_factor": 0.1 } }
   },
   {
     "id": "bomblet_stun",
@@ -205,12 +180,7 @@
     "emits": [ "emit_dazzle_bomblet", "emit_teargas_bomblet" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": {
-      "target": "bomblet_stun_act",
-      "target_charges": 1,
-      "active": true,
-      "type": "transform"
-    }
+    "countdown_action": { "target": "bomblet_stun_act", "target_charges": 1, "active": true, "type": "transform" }
   },
   {
     "id": "bomblet_stun_act",
@@ -226,15 +196,7 @@
     "initial_charges": 1,
     "max_charges": 1,
     "turns_per_charge": 1,
-    "use_action": {
-      "type": "explosion",
-      "emp_blast_radius": 1,
-      "explosion": {
-        "power": 1,
-        "distance_factor": 0.2,
-        "shrapnel": 1
-      }
-    }
+    "use_action": { "type": "explosion", "emp_blast_radius": 1, "explosion": { "power": 1, "distance_factor": 0.2, "shrapnel": 1 } }
   },
   {
     "id": "acidbomb_large",
@@ -255,11 +217,7 @@
     "emits": [ "emit_acid_large" ],
     "countdown_interval": 8,
     "countdown_destroy": true,
-    "countdown_action": {
-        "type": "explosion",
-        "explosion": {
-        }
-    }
+    "countdown_action": { "type": "explosion", "explosion": {  } }
   },
   {
     "id": "acidbomb_small",
@@ -280,12 +238,7 @@
     "emits": [ "emit_acid_small", "emit_acid_trail_slow" ],
     "countdown_interval": 21,
     "countdown_destroy": true,
-    "countdown_action": {
-        "type": "explosion",
-        "no_deactivate_msg": "The acid bubbles caustically.",
-        "explosion": {
-        }
-    }
+    "countdown_action": { "type": "explosion", "no_deactivate_msg": "The acid bubbles caustically.", "explosion": {  } }
   },
   {
     "id": "molotov_micro",
@@ -449,11 +402,7 @@
     "name": "reloaded 410 shot",
     "name_plural": "reloaded 410 shot",
     "description": "A hand-reloaded small caliber shotgun shell full of damaging iron pellets.  The dimensions of the shell match .45 rounds closely enough to be interchangable, although it is both less accurate and less damaging than its larger cousins.",
-    "proportional": {
-      "price": 0.7,
-      "damage": 0.8,
-      "dispersion": 1.2
-    },
+    "proportional": { "price": 0.7, "damage": 0.8, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -463,11 +412,7 @@
     "name": "reloaded 410 slug",
     "name_plural": "reloaded 410 slug",
     "description": "A hand-reloaded solid-shot small-bore shotgun shell designed to punch through armor.  The dimensions of the shell match .45 rounds closely enough to be interchangable, although it is both less accurate and less damaging than its larger cousins.",
-    "proportional": {
-      "price": 0.7,
-      "damage": 0.8,
-      "dispersion": 1.2
-    },
+    "proportional": { "price": 0.7, "damage": 0.8, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -477,11 +422,7 @@
     "name": "reloaded 410 flechette",
     "name_plural": "reloaded 410 flechette",
     "description": "A hand-reloaded small-bore shotgun shell with exactly 4 pointed slugs and copious amounts of explosive powder.  The dimensions of the shell match .45 rounds closely enough to be interchangable, although it is both less accurate and less damaging than its larger cousins.",
-    "proportional": {
-      "price": 0.7,
-      "damage": 0.8,
-      "dispersion": 1.2
-    },
+    "proportional": { "price": 0.7, "damage": 0.8, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -491,11 +432,7 @@
     "name": "reloaded 410 incendiary",
     "name_plural": "reloaded 410 incendiary",
     "description": "A hand-reloaded small-bore shotgun shell with a reserve of explosive incendiary that violently ingnites upon impact.  The dimensions of the shell match .45 rounds closely enough to be interchangable, although it is both less accurate and less damaging than its larger cousins.",
-    "proportional": {
-      "price": 0.7,
-      "damage": 0.8,
-      "dispersion": 1.2
-    },
+    "proportional": { "price": 0.7, "damage": 0.8, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -515,15 +452,20 @@
     "range": 40,
     "damage": 35,
     "pierce": 20,
-    "effects": [ "RECOVER_9", "NO_EMBED", "BOUNCE", "PLASMA", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "LEAK_ALWAYS", "LEAK_DAM", "RADIOACTIVE" ],
+    "effects": [
+      "RECOVER_9",
+      "NO_EMBED",
+      "BOUNCE",
+      "PLASMA",
+      "ACT_ON_RANGED_HIT",
+      "CUSTOM_EXPLOSION",
+      "LEAK_ALWAYS",
+      "LEAK_DAM",
+      "RADIOACTIVE"
+    ],
     "emits": [ "emit_bfg_rad", "emit_plasma", "emit_fatigue_big", "emit_fatigue" ],
     "countdown_interval": 2,
-    "countdown_action": {
-      "target": "bfg_shell_act",
-      "target_charges": 1,
-      "active": true,
-      "type": "transform"
-    }
+    "countdown_action": { "target": "bfg_shell_act", "target_charges": 1, "active": true, "type": "transform" }
   },
   {
     "id": "bfg_shell_act",

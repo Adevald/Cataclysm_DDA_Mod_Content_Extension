@@ -26,12 +26,7 @@
     "emits": [ "emit_acid_trail_slow" ],
     "countdown_interval": 18,
     "countdown_destroy": true,
-    "countdown_action": {
-        "type": "explosion",
-        "no_deactivate_msg": "The acid bubbles caustically.",
-        "explosion": {
-        }
-    }
+    "countdown_action": { "type": "explosion", "no_deactivate_msg": "The acid bubbles caustically.", "explosion": {  } }
   },
   {
     "type": "recipe",
@@ -43,12 +38,7 @@
     "time": 900,
     "reversible": true,
     "autolearn": true,
-    "components": [
-      [ [ "clay_canister", 1 ], [ "flask_glass", 1 ] ],
-      [ [ "acid", 1 ] ],
-      [ [ "string_6", 1 ] ],
-      [ [ "rag", 1 ] ]
-    ]
+    "components": [ [ [ "clay_canister", 1 ], [ "flask_glass", 1 ] ], [ [ "acid", 1 ] ], [ [ "string_6", 1 ] ], [ [ "rag", 1 ] ] ]
   },
   {
     "id": "acidbomb_medium",
@@ -69,12 +59,7 @@
     "emits": [ "emit_acid_large" ],
     "countdown_interval": 8,
     "countdown_destroy": true,
-    "countdown_action": {
-        "type": "explosion",
-        "no_deactivate_msg": "The acid bubbles caustically.",
-        "explosion": {
-        }
-    }
+    "countdown_action": { "type": "explosion", "no_deactivate_msg": "The acid bubbles caustically.", "explosion": {  } }
   },
   {
     "id": "emit_acid_medium",

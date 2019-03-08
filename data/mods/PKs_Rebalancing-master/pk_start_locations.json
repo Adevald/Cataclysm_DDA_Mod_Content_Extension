@@ -79,6 +79,12 @@
   },
   {
     "type": "start_location",
+    "ident": "Derelict Property",
+    "name": "Derelict Property",
+    "target": "Derelict Property"
+  },
+  {
+    "type": "start_location",
     "ident": "Strange Cabin",
     "name": "strange cabin",
     "target": "cabin_strange_100"

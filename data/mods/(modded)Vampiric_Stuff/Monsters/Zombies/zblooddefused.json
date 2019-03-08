@@ -1,0 +1,40 @@
+{
+    "id": "mon_zombie_blooddefused",
+    "type": "MONSTER",
+    "name": "blood defused zombie",
+    "description": "This hollowed zombie's blood melts away and cause a minor mutation, such as long claws and immensive fangs. Lackness of weight provides swiftness and good reflexes, but in most cases, its fragility makes them easy to take down.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "diff": 20,
+    "volume": "62500 ml", 
+    "weight": "81500",
+    "hp": 85,
+    "speed": 135,
+    "material": [ "flesh" ],
+	"harvest": "zombie",
+    "symbol": "B",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_cut": 6,
+    "armor_bash": 2,
+    "armor_cut": 2,
+    "vision_day": 35,
+    "vision_night": 5,
+    "special_attacks": [
+      { "type": "bite",
+        "cooldown": 6
+      },
+      [ "GRAB", 9 ]
+    ],
+    "death_drops": "elderzombie",
+    "death_function": [ "NORMAL" ],
+    "upgrades": {
+      "half_life": 6,
+      "into_group": "GROUP_CRYPTIES_DEFUSEDUPGRADE"
+    },
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "BLEED", "FILTHY" ]
+  }

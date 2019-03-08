@@ -335,10 +335,7 @@
       "fun_bonus": 2,
       "speed_penalty": 10,
       "description_frequency": 20,
-      "descriptions": [
-        "You produce a happy tune on your harmonica.",
-        "You whistle on your harmonica."
-      ]
+      "descriptions": [ "You produce a happy tune on your harmonica.", "You whistle on your harmonica." ]
     },
     "flags": [ "BELTED" ]
   },
@@ -506,12 +503,7 @@
     "encumbrance": 3,
     "material_thickness": 1,
     "environmental_protection": 1,
-    "use_action": {
-      "type": "firestarter",
-      "moves": 1000,
-      "moves_slow": 25000,
-      "need_sunlight": true
-    },
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
     "flags": [ "SKINTIGHT", "WATER_FRIENDLY", "FIX_FARSIGHT", "FIX_NEARSIGHT" ]
   },
   {
@@ -552,12 +544,7 @@
     "encumbrance": 4,
     "material_thickness": 1,
     "environmental_protection": 1,
-    "use_action": {
-      "type": "firestarter",
-      "moves": 1000,
-      "moves_slow": 25000,
-      "need_sunlight": true
-    },
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
     "flags": [ "OVERSIZE", "SUPER_FANCY", "WATER_FRIENDLY", "VARSIZE", "FIX_NEARSIGHT" ]
   },
   {
@@ -578,12 +565,7 @@
     "encumbrance": 3,
     "material_thickness": 1,
     "environmental_protection": 1,
-    "use_action": {
-      "type": "firestarter",
-      "moves": 1000,
-      "moves_slow": 25000,
-      "need_sunlight": true
-    },
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
     "flags": [ "SKINTIGHT", "WATER_FRIENDLY", "FIX_FARSIGHT" ]
   },
   {

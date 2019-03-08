@@ -1,0 +1,40 @@
+{
+    "id": "mon_zombie_bloodinfused",
+    "type": "MONSTER",
+    "name": "blood infused zombie",
+    "description": "This zombie's blood was once compact, but now it soaks and caused to mutate into a dangerous oversized bone plates and spikes, leaving its fleshy skin saggy. The bone scythes on its hands are symmetrical as a pair while its sharpened teeth potrudes from its jaw, but despite fearsome looks, its weight causes it to stumble... often.",
+    "default_faction": "zombie",
+    "species": [ "ZOMBIE" ],
+    "diff": 25,
+    "volume": "62500 ml", 
+    "weight": "81500",
+    "hp": 265,
+    "speed": 65,
+    "material": [ "flesh" ],
+    "symbol": "B",
+	"harvest": "zombie",
+    "color": "black",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 5,
+    "melee_dice": 6,
+    "melee_dice_sides": 5,
+    "melee_cut": 5,
+    "armor_bash": 14,
+    "armor_cut": 10,
+    "vision_day": 13,
+    "vision_night": 3,
+    "special_attacks": [
+      { "type": "bite",
+        "cooldown": 9
+      },
+      [ "GRAB", 7 ]
+    ],
+    "death_drops": "elderzombie",
+    "death_function": [ "NORMAL" ],
+    "upgrades": {
+      "half_life": 6,
+      "into_group": "GROUP_CRYPTIES_INFUSEDUPGRADE"
+    },
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES", "BLEED", "FILTHY" ]
+  }

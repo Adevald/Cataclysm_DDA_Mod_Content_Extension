@@ -5,7 +5,7 @@
     "ident": "maddremod",
     "name": "MaddreMod",
     "author": "Maddremor",
-    "description": "Test Message Please Ignore",
+    "description": "(LIBRARY?)Test Message Please Ignore",
     "path": "",
     "dependencies": [ "dda" ]
   },

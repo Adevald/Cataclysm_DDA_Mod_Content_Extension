@@ -75,7 +75,15 @@
     "burst": 4,
     "clip_size": 24,
     "reload": 150,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
     "ammo_effects": [ "DRAW_AS_LINE" ],
     "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ]
   },
@@ -132,10 +140,8 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "DRAW_AS_LINE" ],
     "magazine_well": 2,
-    "magazines": [
-      [ "bomblet", [ "brute_shot_mag" ] ]
-    ],
-    "techniques": [ "WIDE", "BRUTAL", "heavy_blow"]
+    "magazines": [ [ "bomblet", [ "brute_shot_mag" ] ] ],
+    "techniques": [ "WIDE", "BRUTAL", "heavy_blow" ]
   },
   {
     "id": "bomblet_undermod",
@@ -190,13 +196,7 @@
     "clip_size": 2400,
     "reload": 1,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 1 ], [ "rail", 1 ] ],
-    "ammo_effects": [
-      "DRAW_AS_LINE",
-      "BEANBAG",
-      "WIDE",
-      "BOUNCE",
-      "LIGHTNING"
-    ],
+    "ammo_effects": [ "DRAW_AS_LINE", "BEANBAG", "WIDE", "BOUNCE", "LIGHTNING" ],
     "flags": [ "NEVER_JAMS", "FIRE_100", "NO_UNLOAD", "RECHARGE" ]
   },
   {
@@ -223,13 +223,7 @@
     "burst": 3,
     "ups_charges": 50,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 1 ], [ "rail", 1 ] ],
-    "ammo_effects": [
-      "DRAW_AS_LINE",
-      "BEANBAG",
-      "WIDE",
-      "BOUNCE",
-      "LIGHTNING"
-    ],
+    "ammo_effects": [ "DRAW_AS_LINE", "BEANBAG", "WIDE", "BOUNCE", "LIGHTNING" ],
     "flags": [ "USE_UPS", "NEVER_JAMS", "NO_UNLOAD", "RECHARGE" ]
   },
   {
@@ -258,13 +252,7 @@
     "clip_size": 12000,
     "reload": 1,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 1 ], [ "rail", 1 ] ],
-    "ammo_effects": [
-      "DRAW_AS_LINE",
-      "BEANBAG",
-      "WIDE",
-      "BOUNCE",
-      "LIGHTNING"
-    ],
+    "ammo_effects": [ "DRAW_AS_LINE", "BEANBAG", "WIDE", "BOUNCE", "LIGHTNING" ],
     "flags": [ "NEVER_JAMS", "FIRE_50", "NO_UNLOAD" ]
   },
   {
@@ -311,7 +299,15 @@
     "durability": 9,
     "clip_size": 6,
     "reload": 80,
-    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
     "flags": [ "NEVER_JAMS", "RELOAD_ONE" ]
   },
   {
@@ -338,8 +334,16 @@
     "clip_size": 12,
     "reload": 120,
     "flags": [ "NEVER_JAMS", "RELOAD_ONE" ],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
-
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ]
+    ]
   },
   {
     "id": "ithaca_doom_dual",
@@ -376,8 +380,8 @@
     "name_plural": "BFG 2041-2",
     "description": "The BFG 2041-2, a prototype anti-everything weapon.  Utilizing sub-light particles, it spreads from target to target, amplifying the ambient energy and triggering a subnuclear explosion within the flesh of its victims.",
     "price": 12500000,
-    "material": [ "spess_plastic", "steel"],
-    "flags": ["DRAW_AS_LINE", "NO_UNLOAD", "NEVER_JAMS", "RELOAD_ONE", "WATERPROOF_GUN"],
+    "material": [ "spess_plastic", "steel" ],
+    "flags": [ "DRAW_AS_LINE", "NO_UNLOAD", "NEVER_JAMS", "RELOAD_ONE", "WATERPROOF_GUN" ],
     "skill": "launcher",
     "ammo": "bfg_plutonium",
     "weight": 9200,

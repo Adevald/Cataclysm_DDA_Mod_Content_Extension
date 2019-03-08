@@ -141,11 +141,7 @@
     "damage": 9,
     "pierce": 15,
     "effects": [ "NEVER_MISFIRES", "RECYCLED", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BEANBAG" ],
-      "explosion": {
-        "power": 2,
-        "distance_factor": 0.3,
-        "shrapnel": 1
-      }
+    "explosion": { "power": 2, "distance_factor": 0.3, "shrapnel": 1 }
   },
   {
     "id": "cyber_rocket",
@@ -207,12 +203,7 @@
     "damage": 2,
     "pierce": 200,
     "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
-    "use_action": {
-      "target": "bomblet_vile_act",
-      "target_charges": 5,
-      "active": true,
-      "type": "transform"
-    }
+    "use_action": { "target": "bomblet_vile_act", "target_charges": 5, "active": true, "type": "transform" }
   },
   {
     "id": "bomblet_vile_act",
@@ -233,10 +224,7 @@
     "countdown_action": {
       "type": "explosion",
       "no_deactivate_msg": "A gout of flames erupts into existence!",
-      "explosion": {
-        "power": 2,
-        "distance_factor": 0.1
-      }
+      "explosion": { "power": 2, "distance_factor": 0.1 }
     }
   },
   {
@@ -255,12 +243,7 @@
     "damage": 4,
     "pierce": 200,
     "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
-    "use_action": {
-      "target": "bomblet_archvile_act",
-      "target_charges": 5,
-      "active": true,
-      "type": "transform"
-    }
+    "use_action": { "target": "bomblet_archvile_act", "target_charges": 5, "active": true, "type": "transform" }
   },
   {
     "id": "bomblet_archvile_act",
@@ -281,10 +264,7 @@
     "countdown_action": {
       "type": "explosion",
       "no_deactivate_msg": "A hellmouth is ripped forth!",
-      "explosion": {
-        "power": 2,
-        "distance_factor": 0.1
-      }
+      "explosion": { "power": 2, "distance_factor": 0.1 }
     }
   },
   {
@@ -334,11 +314,7 @@
     "emits": [ "emit_fire_bomblet_small" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": {
-      "target": "bomblet_chickenbot_act",
-      "active": true,
-      "type": "transform"
-    },
+    "countdown_action": { "target": "bomblet_chickenbot_act", "active": true, "type": "transform" },
     "flags": [ "LIGHT_15", "TRADER_AVOID", "NPC_THROW_NOW" ]
   },
   {
@@ -352,14 +328,7 @@
     "material": [ "steel" ],
     "initial_charges": 2,
     "turns_per_charge": 1,
-    "use_action": {
-      "type": "explosion",
-      "explosion": {
-        "power": 40,
-        "distance_factor": 0.5,
-        "shrapnel": 1
-      }
-    },
+    "use_action": { "type": "explosion", "explosion": { "power": 40, "distance_factor": 0.5, "shrapnel": 1 } },
     "flags": [ "LIGHT_15", "TRADER_AVOID", "NPC_THROW_NOW" ]
   }
 ]

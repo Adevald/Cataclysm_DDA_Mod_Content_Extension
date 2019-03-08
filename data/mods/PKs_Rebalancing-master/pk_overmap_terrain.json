@@ -7,7 +7,7 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "spawns": { "group": "GROUP_FIELD", "population": [0, 1], "chance": 20 },
+    "spawns": { "group": "GROUP_FIELD", "population": [ 0, 1 ], "chance": 20 },
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -18,7 +18,7 @@
     "color": "green",
     "see_cost": 3,
     "extras": "forest",
-    "spawns": { "group": "GROUP_FOREST", "population": [0, 2], "chance": 45 },
+    "spawns": { "group": "GROUP_FOREST", "population": [ 0, 2 ], "chance": 45 },
     "flags": [ "NO_ROTATE" ]
   },
   {
@@ -203,7 +203,6 @@
     "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
-
   {
     "type": "overmap_terrain",
     "id": "hell_castle_NW",
@@ -861,7 +860,7 @@
     "extras": "none",
     "mondensity": 2,
     "flags": [ "NO_ROTATE" ],
-    "spawns": { "group": "GROUP_BOG", "population": [6, 30], "radius":[100,250] }
+    "spawns": { "group": "GROUP_BOG", "population": [ 6, 30 ], "radius": [ 100, 250 ] }
   },
   {
     "type": "overmap_terrain",
@@ -1343,7 +1342,7 @@
     "name": "road",
     "sym": 4194417,
     "color": "i_brown",
-    "see_cost": 2,	
+    "see_cost": 2,
     "flags": [ "NO_ROTATE" ],
     "extras": "road"
   },
