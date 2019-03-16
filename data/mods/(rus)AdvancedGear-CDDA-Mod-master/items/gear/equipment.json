@@ -1,0 +1,282 @@
+[
+  {
+    "abstract": "nanogear",
+    "type": "ARMOR",
+    "name": "наноснаряжение",
+    "description": "Вы не должны это видеть - наноснаряжение",
+    "symbol" : "[",
+    "color": "light_gray",
+    "volume": 1,
+    "weight" : 1713,
+    "storage" : 0,
+    "price" : 500000,
+    "material": "nanite",
+    "flags": [ "ALLOWS_NATURAL_ATTACKS", "TRADER_AVOID", "OVERSIZE" ],
+    "bashing": 0,
+    "cutting": 0,
+    "to_hit": 0,
+    "warmth" : 0,
+    "environmental_protection" : 0,
+    "encumbrance" : 0,
+    "coverage" : 10,
+    "material_thickness" : 1
+  },{
+    "id": "nano_shield",
+    "type": "ARMOR",
+    "name": "Нанощит",
+    "category": "armor",
+    "looks_like": "shield_scutum",
+    "description": "Большой самоструктурируюийся кластер нанитов. Пока что, находится в пассивном состоянии. С помощью него можно блокировать атаки. Пока не используется, собирается и сжимается в виде ручки.",
+    "weight": 569,
+    "volume": 4,
+    "price": 250000,
+    "to_hit": 0,
+    "bashing": 10,
+    "material": "nanite",
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "ARM_EITHER", "HAND_EITHER" ],
+    "coverage": 90,
+    "encumbrance": 28,
+    "material_thickness": 4,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN" ],
+    "use_action": {
+      "type": "transform",
+      "target": "nano_shield_active",
+      "active": false,
+      "msg": "Щит переведён в активный режим."
+    }
+  },{
+    "id": "nano_shield_active",
+    "type": "ARMOR",
+    "name": "Нанощит (активный)",
+    "category": "armor",
+    "looks_like": "shield_scutum",
+    "description": "Большой самоструктурируюийся кластер нанитов. Сейчас находится в активном состоянии. Он автоматически будет блокировать все атаки, направленные в вашу сторону, при этом позволяя использовать обе руки. Пока не используется, собирается и сжимается в виде ручки.",
+    "weight": 569,
+    "volume": 2,
+    "price": 250000,
+    "to_hit": 0,
+    "bashing": 10,
+    "material": "nanite",
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "ARM_EITHER" ],
+    "coverage": 60,
+    "encumbrance": 15,
+    "material_thickness": 4,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN" ],
+    "use_action": {
+      "type": "transform",
+      "target": "nano_shield",
+      "active": false,
+      "msg": "Щит переведён в пассивный режим."
+    }
+  },{
+    "type" : "ARMOR",
+    "id" : "nano_storage",
+    "name" : "нанохранилище метода 'мини-шоггот'.",
+    "copy-from": "nanogear",
+    "looks_like": "slime_scrap",
+    "weight" : 3157,
+    "covers" : ["TORSO"],
+    "storage" : 1000,
+    "description" : "Это огромная каплевидная структура из нанитов, с собственным ИИ. Она активно \"выращивает\" и разделяет ложноножки, опутывая все окружающие предметы, и поддерживая их в общей куче, постоянно оптимизируя свою стукртуру насколько это возможно. Также вытягиваясь вниз формирует \"ноги\", для более оптимального поддержания всего веса, когда это требуется.",
+    "artifact_data" : {
+      "effects_worn": ["AEP_CARRY_MORE"]
+    },
+    "volume" : 8,
+    "extend": { "flags" : [ "BELTED" ] },
+    "coverage" : 30
+  },{
+    "type" : "ARMOR",
+    "id" : "nano_holster",
+    "name" : "нанокобура",
+    "copy-from": "nanogear",
+    "looks_like" : "holster",
+    "covers" : ["LEG_EITHER"],
+    "description" : "Это небольшая каплевидная структура из нанитов, с собственным ИИ. Она активно \"выращивает\" и разделяет ложноножки, опутывая помещёное в неё оружие, и автоматически помещает его в руку пользователю, когда это требуется.",
+    "extend": { "flags" : [ "BELTED" ] },
+    "use_action" : {
+      "type": "holster",
+      "holster_prompt": "Поместить оружие",
+      "holster_msg": "Ты поместил %s в нанокобуру",
+      "max_volume": 18,
+      "min_volume": 0,
+      "multi": 2,
+      "max_weight": 5000,
+      "draw_cost": 0,
+      "skills": ["pistol", "smg", "shotgun", "rifle", "launcher"]
+    }
+  },{
+    "type" : "ARMOR",
+    "id" : "nano_sheath",
+    "name" : "нано-ножны",
+    "copy-from": "nanogear",
+    "looks_like" : "sheath",
+    "covers" : ["LEG_EITHER"],
+    "description" : "Это небольшая каплевидная структура из нанитов, с собственным ИИ. Она активно \"выращивает\" и разделяет ложноножки, опутывая помещённый в неё клинок, и автоматически помещает его в руку пользователю, когда это требуется.",
+    "extend": { "flags" : [ "BELTED" ] },
+    "use_action" : {
+      "type": "holster",
+      "holster_prompt": "Store weapon",
+      "holster_msg": "You store your %s",
+      "max_volume": 18,
+      "min_volume": 0,
+      "multi": 2,
+      "max_weight": 5000,
+      "draw_cost": 0,
+      "flags": [ "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR" ]
+    }
+  },{
+    "type" : "ARMOR",
+    "id" : "nano_mag_holder",
+    "name" : "нанодержатель для магазинов",
+    "copy-from": "nanogear",
+    "looks_like": "slime_scrap",
+    "description" : "Это маленькая каплевидная структура из нанитов, с собственным ИИ. Она сохраняет в себе несколько магазинов, и помогает перезаряжать оружие намного быстрее.A small blob of nanites with an AI, it stores magazines and assists in loading them as needed.",
+    "covers" : ["ARM_EITHER"],
+    "extend": { "flags" : [ "BELTED" ] },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Store ammo",
+      "holster_msg": "You store your %s.",
+      "multi": 4,
+      "max_volume": 6,
+      "min_volume": 0,
+      "draw_cost": 0,
+      "flags": [ "MAG_COMPACT", "MAG_BULKY" ]
+    }
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit",
+    "name" : "нанокостюм",
+    "copy-from": "nanogear",
+    "weight" : 9836,
+    "covers" : ["HEAD", "MOUTH", "EYES", "TORSO", "ARMS", "HANDS", "LEGS", "FEET"],
+    "description" : "Кластер запрограммированых чрезвычайно сложным методом нанитов, которые покрывают всё тело пользователя и защищают от большинства внешних угроз. Может быть активирован для выработки тепла.",
+    "looks_like": "rm13_armor_on",
+    "artifact_data" : {
+      "effects_worn": ["AEP_STR_UP"]
+    },
+    "volume" : 6,
+    "environmental_protection" : 30,
+    "qualities": [ [ "GLARE", 2 ] ],
+    "extend": { "flags" : [ "ALARMCLOCK", "BAROMETER", "CLIMATE_CONTROL", "ELECTRIC_IMMUNE", "FIX_FARSIGHT", "FIX_NEARSIGHT", "GAS_PROOF", "HOOD", "HYGROMETER", "POCKETS", "RAD_PROOF", "RAINPROOF", "REBREATHER", "SKINTIGHT", "STURDY", "SUN_GLASSES", "SUPER_FANCY", "SWIM_GOGGLES", "THERMOMETER", "VARSIZE", "WATCH", "WATER_FRIENDLY", "WATERPROOF" ] },
+    "coverage" : 100,
+    "material_thickness" : 3,
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Включить нагрев",
+      "target": "nanosuit_heated",
+      "active": false,
+      "msg": "Подключение системы нагрева нанокостюма."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated",
+    "name" : "нанокостюм (тепло+)",
+    "copy-from" : "nanosuit",
+    "description" : "Кластер запрограммированых чрезвычайно сложным методом нанитов, которые покрывают всё тело пользователя и защищают от большинства внешних угроз.  В данный момент подогрев включён.",
+    "warmth" : 50,
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_2",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated_2",
+    "copy-from" : "nanosuit_heated",
+    "name" : "нанокостюм (тепло++)",
+    "warmth" : 100,
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_3",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated_3",
+    "copy-from" : "nanosuit_heated",
+    "name" : "нанокостюм (тепло+++)",
+    "warmth" : 150,
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_4",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated_4",
+    "copy-from" : "nanosuit_heated",
+    "name" : "нанокостюм (тепло++++)",
+    "warmth" : 200,
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_5",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated_5",
+    "copy-from" : "nanosuit_heated",
+    "name" : "нанокостюм (тепло+++++)",
+    "warmth" : 250,
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit",
+      "active": false,
+      "msg": "Отключение нагрева костюма."
+      }
+    ]
+  },{
+    "id": "nano_container",
+    "type": "CONTAINER",
+    "symbol": ")",
+    "color": "light_gray",
+    "name": "нанокомпрессор жидкости",
+    "category": "other",
+    "description": "Устройство для сжатия жидкостей до невероятно плотных состояний. он также позволяет сохранять содержимое в свежем виде.",
+    "price": 240000,
+    "weight": 2957,
+    "volume": 16,
+    "bashing": 0,
+    "cutting": 0,
+    "to_hit": 0,
+    "material": "nanite",
+    "armor_data": {
+      "covers": [ "TORSO" ],
+      "coverage": 10,
+      "encumbrance": 4,
+      "material_thickness": 1
+    },
+    "contains": 10000,
+    "flags": ["RIGID", "SEALS", "WATERTIGHT", "NONCONDUCTIVE", "TRADER_AVOID" ],
+    "seals": true,
+    "preserves": true,
+    "watertight": true
+  }
+]
