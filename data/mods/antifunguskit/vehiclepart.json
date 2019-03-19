@@ -3,7 +3,11 @@
     "id": "fungicide_sprayer",
     "copy-from": "turret",
     "type": "vehicle_part",
-    "name": "Навесной противогрибковый распылитель",
+<<<<<<< HEAD
+    "name": "Смонтированый противогрибковый распылитель",
+=======
+    "name": "смонтированый противогрибковый распылитель",
+>>>>>>> d77388bb3c8567bac6cfb7b1a0f13c9d177619c4
     "item": "antifungus_sprayer",
     "default_ammo": "gas_fungicidal",
     "color": "dark_gray",
