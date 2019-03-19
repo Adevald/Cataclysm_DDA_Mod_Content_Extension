@@ -1,0 +1,10 @@
+{
+        "type" : "mutation",
+        "id" : "VAMP",
+        "name" : "Vampire",
+        "points" : 0,
+        "description" : "Your proof of immortality. You invested your whole life on a countless battles with immensive power, and all your experiences has paid off until now. The living nightmare of the old world, is now a scavenger of the Cataclysm.",
+        "valid": false,
+        "purifiable": false,
+        "profession": true
+    }

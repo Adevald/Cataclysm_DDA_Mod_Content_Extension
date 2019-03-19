@@ -2,10 +2,10 @@
   {
     "type": "MOD_INFO",
     "ident": "dried_fruits",
-    "name": "Dried Fruits",
+    "name": "Dried Fruits (RUS)",
     "authors": [ "Wayticus" ],
     "maintainers": [ "Wayticus" ],
-    "description": "Dried fruits, not to be confused with them tatseless dehydrated fruit flakes.",
+    "description": "Сухофрукты, не путать с ними сухие безвкусные фруктовые хлопья.",
     "category": "items",
     "dependencies": [ "dda" ]
   }

@@ -1,0 +1,11 @@
+  {
+    "id": "TALK_VAMP_LONELY_preserved",
+    "type": "talk_topic",
+    "dynamic_line": "Most of my kin lives longer than myself, but after a magic struck the bloodbags like you, they could die in thirst.",
+    "responses": [
+      {
+        "text": "Too bad.",
+        "topic": "TALK_VAMP_LONELY"
+      }
+      ]
+      }

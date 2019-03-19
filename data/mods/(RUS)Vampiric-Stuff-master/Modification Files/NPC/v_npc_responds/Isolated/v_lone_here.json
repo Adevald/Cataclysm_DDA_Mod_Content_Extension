@@ -1,0 +1,15 @@
+{
+    "id": "TALK_VAMP_LONELY_here",
+    "type": "talk_topic",
+    "dynamic_line": "This is my lair, problem with it?",
+    "responses": [
+      {
+        "text": "Sorry for asking that.",
+          "topic": "TALK_VAMP_LONELY"
+        },
+        {
+        "text": "Is there a some sort of place like this?",
+        "topic": "TALK_VAMP_LONELY_there"
+        }
+]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "punchie_bitie",
+    "type": "GENERIC",
+    "name": "pair of knuckle biters",
+    "name_plural": "pairs of Knuckle Biters",
+    "description": "A pair of knuckles designed to imitate a jaw with heavily arranged metal teeth. Every successful impacts will cause it to bite quickly to its prey.",
+    "weight": 850,
+    "volume": 2,
+    "symbol": "f",
+    "price": 58500,
+    "price_postapoc": 166500,
+    "to_hit": 2,
+    "cutting": 8,
+    "bashing": 4,
+     "material": "steel",
+     "color": "dark_red",
+    "techniques": [ "VAMP_WRATH" ],
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+    },
+    {
+    "id": "punchie_bitieplus",
+    "type": "GENERIC",
+    "name": "pair of knuckle biters+",
+    "name_plural": "pairs of knuckle biters+",
+    "description": "A pair of knuckles designed to imitate a jaw with heavily arranged metal teeth, textured in red hue. Every successful impacts will cause it to bite quickly to its prey.",
+    "weight": 1000,
+    "volume": 2,
+    "symbol": "f",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 2,
+    "cutting": 10,
+    "bashing": 5,
+     "material": [ "steel", "compactblood" ],
+     "color": "dark_red",
+    "techniques": [ "VAMP_WRATH" ],
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+    }
+]

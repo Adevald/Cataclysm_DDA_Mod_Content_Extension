@@ -1,0 +1,21 @@
+[
+{
+"id": "TALK_HUMAN_WASTELAND2_maintalk",
+    "type": "talk_topic",
+    "dynamic_line": "About what?",
+    "responses": [
+      {
+        "text": "What are you doing here?",
+        "topic": "TALK_HUMAN_WASTELAND2_here"
+      },
+      {
+        "text": "Got a problem?",
+        "topic": "TALK_HUMAN_WASTELAND2_job"
+      },
+      {
+        "text": "Bye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

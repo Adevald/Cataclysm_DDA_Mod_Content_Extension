@@ -1,0 +1,38 @@
+[
+{
+"id": "TALK_VAMP_LONELY",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "blood_necklace",
+      "yes": "Greetings, human.",
+      "no": "Mortal?."
+    },
+    "responses": [
+      {
+        "text": "Please tell me about yourself.",
+        "topic": "TALK_VAMP_LONELY_introduce"
+      },
+      {
+        "text": "Why are you here?",
+        "topic": "TALK_VAMP_LONELY_here"
+      },
+        {
+        "text": "About that work...",
+        "topic": "TALK_MISSION_INQUIRE",
+        "condition": "has_assigned_mission"
+       },
+       {
+        "text": "Ummm... You want to stick with me?",
+        "topic": "TALK_VAMP_LONELY_wego"
+      },
+      {
+        "text": "I'm vacant for your needs.",
+        "topic": "TALK_MISSION_LIST"
+       },
+      {
+        "text": "Sorry to bother.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]
