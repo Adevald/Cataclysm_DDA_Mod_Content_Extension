@@ -3,7 +3,7 @@
     "id": "fungicide_sprayer",
     "copy-from": "turret",
     "type": "vehicle_part",
-    "name": "mounted fungicide sprayer",
+    "name": "смонтированый противогрибковый распылитель",
     "item": "antifungus_sprayer",
     "default_ammo": "gas_fungicidal",
     "color": "dark_gray",
