@@ -1,0 +1,49 @@
+  {
+	"weight": 100,
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "SecronomSSLab_top" ,
+    "object": {
+      "fill_ter": "t_grass",
+      "rows": [
+        "                        ",
+        " bbbbbbbaaaaaaaabbbbbbb ",
+        " b                    b ",
+        " b                    b ",
+        " b  cccc        cccc  b ",
+        " b  cccccc    cccccc  b ",
+        " b  cccccccffecccccc  b ",
+        " b  cccccccddccccccc  b ",
+        " b   cccccddddccccc   b ",
+        " b   ccccddddddcccc   b ",
+        " b   ccchtddddthccc   b ",
+        " b  cccccddddddccccc  b ",
+        " b  ccccccddddcccccc  b ",
+        " b   cccddddddddccc   b ",
+        " b   ccdgddddddgdcc   b ",
+        " b   cccdddhhdddccc   b ",
+        " b  cccccccccccccccc  b ",
+        " b  cccccccccccccccc  b ",
+        " b  cccccccccccccccc  b ",
+        " b  cccc        cccc  b ",
+        " b                    b ",
+        " b                    b ",
+        " bbbbbbbbbbbbbbbbbbbbbb ",
+        "                        "
+      ],
+	  "monster": {
+        "t": { "monster": "mon_turret" }
+        },
+      "terrain": {
+        "a": "t_chaingate_l",
+        "b": "t_chainfence",
+        "c": "t_strconc_wall",
+        "d": "t_strconc_floor",
+        "e": "t_card_science",
+        "f": "t_door_metal_locked",
+        "g": "t_stairs_down",
+        "h": "t_utility_light",
+        "t": "t_strconc_floor"
+      }
+    }
+}

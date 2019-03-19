@@ -1,0 +1,167 @@
+{
+    "method": "json",
+    "object": {
+        "add": [
+            {
+                "item": "recipe_animal",
+                "repeat": 1,
+                "x": 16,
+                "y": 5
+            },
+            {
+                "item": "corpse",
+                "repeat": 1,
+                "x": 10,
+                "y": 6
+            },
+            {
+                "item": "corpse",
+                "repeat": 1,
+                "x": 12,
+                "y": 12
+            }
+        ],
+		"computers": {
+        "6": {
+          "name": "SS Entity Containment Room",
+          "security": 4,
+          "options": [ { "name": "UNLOCK CONTAINMENT DOOR", "action": "unlock", "security": 4 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+		},
+        "furniture": {
+            "#": "f_desk",
+            "^": "f_indoor_plant_y",
+            "c": "f_chair",
+            "{": "f_locker"
+        },
+        "place_items": [
+            {
+                "chance": 60,
+                "item": "lab_pants",
+                "x": 12,
+                "y": 12
+            },
+			{
+                "chance": 60,
+                "item": "lab_torso",
+                "x": 12,
+                "y": 12
+            },
+			{
+                "chance": 60,
+                "item": "lab_shoes",
+                "x": 12,
+                "y": 12
+            },
+            {
+                "chance": 60,
+                "item": "lab_pants",
+                "x": 10,
+                "y": 6
+            },
+			{
+                "chance": 60,
+                "item": "lab_torso",
+                "x": 10,
+                "y": 6
+            },
+			{
+                "chance": 60,
+                "item": "lab_shoes",
+                "x": 10,
+                "y": 6
+            },
+            {
+                "chance": 25,
+                "item": "guns_rifle_rare",
+                "x": 17,
+                "y": 5
+            }
+        ],
+		"place_monster": [
+            {
+                "monster": "mon_zombie_scientist",
+                "x": 17,
+                "y": 7
+            },
+			{
+                "monster": "mon_zombie_scientist",
+                "x": 14,
+                "y": 8
+            }
+        ],
+		"place_fields": [
+            {
+                "field": "fd_blood",
+				"density": 3,
+                "x": 10,
+                "y": 6
+            },
+			{
+                "field": "fd_blood",
+                "x": 10,
+                "y": 7
+            },
+			{
+                "field": "fd_blood",
+				"density": 3,
+                "x": 12,
+                "y": 12
+            },
+			{
+                "field": "fd_blood",
+                "x": 12,
+                "y": 13
+            },
+			{
+                "field": "fd_blood",
+                "x": 12,
+                "y": 14
+            }
+        ],
+        "rows": [
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||||||||||||||||",
+            "||||||||||----||||||||||",
+            "|||||------__------|||||",
+            "||||--...-....-.##--||||",
+            "||||-_.<.d....d..c_-||||",
+            "||||--...-....-^.{--||||",
+            "|||||------..------|||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "||||||||||-..-||||||||||",
+            "|||||||||--..-||||||||||",
+            "|||||||||-6..-||||||||||",
+            "|||||||||--++-||||||||||",
+            "|||||||||--++--|||||||||",
+            "||||||||--....--||||||||"
+        ],
+        "terrain": {
+            "#": "t_metal_floor",
+            "+": "t_door_metal_locked",
+            "-": "t_wall_metal",
+            ".": "t_metal_floor",
+            "6": "t_console",
+            "<": "t_stairs_up",
+            "^": "t_metal_floor",
+            "_": "t_utility_light",
+            "c": "t_utility_light",
+            "d": "t_door_metal_c",
+            "{": "t_metal_floor",
+            "|": "t_strconc_wall"
+        }
+    },
+    "om_terrain": "SecronomSSLab_b3",
+    "type": "mapgen",
+    "weight": 100
+}

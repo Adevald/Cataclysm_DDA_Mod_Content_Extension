@@ -1,0 +1,181 @@
+{
+    "method": "json",
+    "object": {
+        "add": [
+            {
+                "item": "textbook_robots",
+                "repeat": 1,
+                "x": 4,
+                "y": 14
+            },
+            {
+                "item": "1st_aid",
+                "repeat": 1,
+                "x": 18,
+                "y": 14
+            },
+            {
+                "item": "mag_firstaid",
+                "repeat": 1,
+                "x": 19,
+                "y": 16
+            }
+        ],
+		"place_monsters": [
+        {
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.1,
+          "x": [ 4, 6 ],
+          "y": [ 5, 10 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_ALL",
+          "density":  0.1 ,
+          "x": [ 15, 17 ],
+          "y": [ 5, 10 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.2,
+          "x": [ 8, 13 ],
+          "y": [ 6, 11 ]
+        }
+      ],
+        "furniture": {
+            "#": "f_bed",
+            "^": "f_indoor_plant",
+			"T": "f_toilet",
+            "t": "f_table",
+            "{": "f_locker"
+        },
+        "place_items": [
+            {
+                "chance": 75,
+                "item": "lab_torso",
+                "x": 18,
+                "y": 10
+            },
+            {
+                "chance": 75,
+                "item": "lab_torso",
+                "x": 5,
+                "y": 10
+            },
+            {
+                "chance": 50,
+                "item": "gear_medical",
+                "x": 20,
+                "y": 8
+            },
+            {
+                "chance": 50,
+                "item": "gear_medical",
+                "x": 17,
+                "y": 8
+            },
+            {
+                "chance": 50,
+                "item": "gear_medical",
+                "x": 6,
+                "y": 8
+            },
+            {
+                "chance": 50,
+                "item": "gear_medical",
+                "x": 3,
+                "y": 8
+            },
+            {
+                "chance": 50,
+                "item": "gear_medical",
+                "x": 16,
+                "y": 6
+            },
+            {
+                "chance": 50,
+                "item": "gear_medical",
+                "x": 6,
+                "y": 6
+            },
+            {
+                "chance": 75,
+                "item": "lab_pants",
+                "x": 19,
+                "y": 10
+            },
+            {
+                "chance": 75,
+                "item": "lab_pants",
+                "x": 4,
+                "y": 10
+            },
+            {
+                "chance": 20,
+                "item": "drugs_rare",
+                "x": 4,
+                "y": 15
+            },
+            {
+                "chance": 20,
+                "item": "drugs_rare",
+                "x": 19,
+                "y": 14
+            },
+            {
+                "chance": 75,
+                "item": "lab_shoes",
+                "x": 17,
+                "y": 10
+            },
+            {
+                "chance": 75,
+                "item": "lab_shoes",
+                "x": 6,
+                "y": 10
+            }
+        ],
+        "rows": [
+            "||||||||||||||||||||||||",
+            "|||||||||||__|||||||||||",
+            "|||||||||||>>|||||||||||",
+            "|||||||||||++|||||||||||",
+            "|||||||||||..|||||||||||",
+            "|||||||||||..|||||||||||",
+            "|||##_##|||..|||##_##|||",
+            "|||.....|||..|||.....|||",
+            "|||##.##||_.._||##.##|||",
+            "|||......+....+......|||",
+            "|...{{{..+....+..{{{...|",
+            "|+|||||||||..|||||||||+|",
+            "|T|||_............_|||T|",
+            "||||||+||||++||||+||||||",
+            "||||t..|<......<|.tt||||",
+            "||||t..|||_.._|||...||||",
+            "||||^_.||||++||||^_.||||",
+            "|||||||||||..|||||||||||",
+            "|||||||||||..|||||||||||",
+            "|||||||||||..|||||||||||",
+            "|||||||||||..|||||||||||",
+            "||||||||||_.._||||||||||",
+            "||||||||||dddd||||||||||",
+            "||||||||||dddd||||||||||"
+        ],
+        "terrain": {
+            "#": "t_strconc_floor",
+            "+": "t_door_metal_c",
+            ".": "t_strconc_floor",
+			"T": "t_strconc_floor",
+            "<": "t_stairs_up",
+            ">": "t_stairs_down",
+            "^": "t_strconc_floor",
+            "_": "t_utility_light",
+            "t": "t_strconc_floor",
+            "{": "t_strconc_floor",
+            "|": "t_strconc_wall",
+			"d": "t_reinforced_glass"
+        }
+    },
+    "om_terrain": "SecronomSSLab_b1",
+    "type": "mapgen",
+    "weight": 100
+}

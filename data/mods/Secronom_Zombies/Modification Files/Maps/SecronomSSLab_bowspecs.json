@@ -1,0 +1,138 @@
+[
+  {
+	"//": "Armored BOWs are confined inside the glass.",
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "SecronomSSLab_bowspecs" ],
+    "object": {
+      "fill_ter": "t_strconc_wall",
+      "rows": [
+        "         aaaaaa         ",
+        "        aaaaaaaa        ",
+        "        aaaaaaaa        ",
+        "       aaaaaaaaaa       ",
+        "       aaaaaaaaaa       ",
+        "      kaaaaaaaaaak      ",
+        "     daaaaaaaaaaaad     ",
+        "  EaadaaaaaaaaaaaataDa  ",
+        "  kaalaaaapeeeaaaalaak  ",
+        "  aaataaaa    aaaadaaa  ",
+        "  ddddaaa      aaaddtd  ",
+        "  aCadaa        aadaaa  ",
+        "  kaalaa   bb   aalBak  ",
+        "  aaadaaa  aa  aaataaa  ",
+        "  ddtdaaadhaagdaaaddtd  ",
+        "  aaadaaadhjahdaaadaaa  ",
+        "  kAalaaadsaafdaaalaak  ",
+        "  aaataaaddccddaaadaaa  ",
+        "  ddddaaaaaaaaaaaadddt  ",
+        "  qqqdaaaaaaaaaaaataaa  ",
+        "  qqrlaaaaaaaaaaaalaak  ",
+        "  qqqtaaaaaaaaaaaadaaa  ",
+        "        nmeeeeop        ",
+        "                        "
+      ],
+      "terrain": {
+        "a": "t_strconc_floor",
+        "b": "t_stairs_down",
+        "c": "t_door_metal_c",
+        "g": "t_console",
+        "h": "t_strconc_floor",
+        "i": "t_machinery_electronic",
+        "j": "t_strconc_floor",
+        "k": "t_utility_light",
+        "d": "t_reinforced_glass",
+        "f": "t_strconc_floor",
+        "l": "t_door_metal_locked",
+        "e": "t_strconc_floor",
+        "m": "t_strconc_floor",
+        "n": "t_machinery_heavy",
+        "o": "t_machinery_electronic",
+        "p": "t_console_broken",
+        "q": "t_water_dp",
+        "r": "t_water_sh",
+        "s": "t_strconc_floor",
+        "t": "t_reinforced_glass",
+		"A": "t_strconc_floor",
+		"B": "t_strconc_floor",
+		"C": "t_strconc_floor",
+		"D": "t_strconc_floor",
+		"E": "t_strconc_floor"
+      },
+	  "computers": {
+        "g": {
+          "name": "SS BOW Containment Room",
+          "security": 6,
+          "options": [ { "name": "UNLOCK BOW CONTAINMENT DOORS", "action": "unlock", "security": 6 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+		},
+      "furniture": {
+        "h": "f_desk",
+        "j": "f_chair",
+        "f": "f_indoor_plant",
+        "e": "f_rack",
+        "m": "f_robotic_arm",
+        "s": "f_locker"
+      },
+      "place_loot": [
+        {
+          "group": "ig_vp_sheet_metal",
+          "chance": 100,
+          "repeat": [ 5 ],
+          "x": [ 10, 13 ],
+          "y": [ 22, 22 ]
+        },
+        {
+          "group": "supplies_electronics",
+          "chance": 100,
+          "repeat": [ 3 ],
+          "x": [ 11, 13 ],
+          "y": [ 8, 8 ]
+        },
+        {
+          "group": "dissection",
+          "chance": 100,
+          "repeat": [ 2 ],
+          "x": [ 10, 10 ],
+          "y": [ 14, 15 ]
+        },
+        { "group": "lab_dorm", "chance": 100, "repeat": [ 2 ], "x": [ 10, 10 ], "y": [ 16, 16 ] },
+        { "group": "science", "chance": 100, "repeat": [ 5 ], "x": [ 13, 13 ], "y": [ 15, 15 ] }
+      ],
+	  "monster": {
+        "A": { "monster": "mon_zedbow_kaxix_armed" },
+		"B": { "monster": "mon_zedbow_axxuros_armed" },
+		"C": { "monster": "mon_zedbow_exios_armed" },
+		"D": { "monster": "mon_zedbow_drexx_armed" },
+		"E": { "monster": "mon_zedbow_epixo_armed" }
+        },
+      "place_monsters": [
+        {
+          "monster": "GROUP_SECROLAB_ALL",
+          "density": 0.15,
+          "x": [ 6, 17 ],
+          "y": [ 21, 18 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_BOWSPECIMENS",
+          "density": 0.15,
+          "x": [ 6, 17 ],
+          "y": [ 0, 10 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_BOWSPECIMENS",
+          "density": 0.3,
+          "x": [ 17, 15 ],
+          "y": [ 11, 17 ]
+        },
+        {
+          "monster": "GROUP_SECROLAB_BOWSPECIMENS",
+          "density": 0.3,
+          "x": [ 8, 6 ],
+          "y": [ 11, 17 ]
+        }
+      ]
+    }
+  }
+]
