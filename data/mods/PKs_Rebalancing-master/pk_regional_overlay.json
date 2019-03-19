@@ -109,7 +109,7 @@
       "shop_sigma": 50,
       "park_radius": 20,
       "park_sigma": 80,
-      "shops": { "house": 3 }
+      "shops": { "house": 300 }
     }
   }
 ]
