@@ -7,11 +7,7 @@
     "material": [ "essencemat" ],
     "symbol": ",",
     "color": "cyan",
-    "use_action": {
-      "type": "place_monster",
-      "monster_id": "mon_vortex_summoned",
-      "place_randomly": true
-    }
+    "use_action": { "type": "place_monster", "monster_id": "mon_vortex_summoned", "place_randomly": true }
   },
   {
     "id": "stinger_flute",
@@ -106,18 +102,18 @@
     "category": "weapons",
     "name": "silver athame",
     "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be, and might be used for blood magic.",
-    "weight": 658,
+    "weight": 1302,
     "volume": 3,
     "price": 23500,
-    "to_hit": 2,
-    "bashing": 1,
-    "cutting": 14,
+    "to_hit": 1,
+    "bashing": 3,
+    "cutting": 16,
     "material": "silver",
     "symbol": "/",
     "looks_like": "knife_butcher",
     "color": "red",
-    "techniques": "RAPID",
-    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 3 ] ],
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 15 ] ],
     "use_action": [
       {
         "target": "blood_athame_active",
@@ -136,12 +132,12 @@
     "category": "weapons",
     "name": "silver athame",
     "description": "An ornate silver dagger, seemingly made for ritual purposes.  This seems like a stupid idea...",
-    "weight": 658,
+    "weight": 1302,
     "volume": 3,
     "price": 23500,
-    "to_hit": 2,
-    "bashing": 1,
-    "cutting": 14,
+    "to_hit": 1,
+    "bashing": 3,
+    "cutting": 16,
     "material": "silver",
     "symbol": "/",
     "looks_like": "knife_butcher",
@@ -278,7 +274,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of trickery",
     "name_plural": "glyphs of trickery",
-    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
+    "description": "A strange silver emblem, engraved with depictions of grotesque creatures.  Using it will call forth a kreck, and bind it to your will.  Hopefully.  It is easy to control.",
     "use_action": {
       "target": "summon_kreck_on",
       "msg": "The glyph of trickery gives off a faint green glow.",
@@ -304,11 +300,10 @@
       "monster_id": "mon_kreck_summoned",
       "friendly_msg": "The kreck looks up at you expectantly, as if wondering what sort of shenanigans you're plotting.",
       "hostile_msg": "The kreck mimics your movements erratically, cavorting about to mock you!",
-      "difficulty": 6,
+      "difficulty": 1,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -318,7 +313,7 @@
     "name": "glyph of the root",
     "name_plural": "glyphs of the root",
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to blank bodies being outright useless.",
-    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
+    "description": "A strange silver emblem, engraved with depictions of alien plantlife.  Using it will call forth a triffid, and bind it to your will.  Hopefully.  It is easy to control.",
     "use_action": {
       "target": "summon_blank_on",
       "msg": "The glyph of the root gives off a faint green glow.",
@@ -344,11 +339,10 @@
       "monster_id": "mon_triffid_summoned",
       "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
       "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
-      "difficulty": 6,
+      "difficulty": 2,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -358,7 +352,7 @@
     "name": "glyph of Gehenna",
     "name_plural": "glyphs of Gehenna",
     "//": "ID retained to prevent tileset breakage, monster summoned was changed due to flaming eyes being useless if friendly.",
-    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with a mockery of angelic figures.  Using it will call forth a flesh angel, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
     "use_action": {
       "target": "summon_flaming_eye_on",
       "msg": "The glyph of Gehenna gives off a faint green glow.",
@@ -384,11 +378,10 @@
       "monster_id": "mon_flesh_angel_summoned",
       "friendly_msg": "A twisted mimicry of the divine is called forth, bound to your will.",
       "hostile_msg": "The flesh angel levels a wicked gaze upon you, ignoring your commands.",
-      "difficulty": 7,
+      "difficulty": 3,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -398,7 +391,7 @@
     "name": "glyph of Crawling Chaos",
     "name_plural": "glyphs of Crawling Chaos",
     "//": "Explaination: In Lovecraft's work, The Crawling Chaos is one of Nyarlathotep's names, and hunting horrors are associated with him.  The success and failure messages below spell it out rather plainly.",
-    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "description": "A strange silver emblem, erratically engraved with indecipherable runes.  Using it will call forth a hunting horror, and bind it to your will.  Hopefully.  It is somewhat easy to control.",
     "use_action": {
       "target": "summon_hunting_horror_on",
       "msg": "The glyph of Crawling Chaos gives off a faint green glow.",
@@ -424,11 +417,10 @@
       "monster_id": "mon_hunting_horror_summoned",
       "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
       "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
-      "difficulty": 7,
+      "difficulty": 4,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -438,7 +430,7 @@
     "name": "glyph of the eye",
     "name_plural": "glyphs of the eye",
     "//": "Explaination: Petrified eyes are associated with dark wyrms due to the mine finale that features one.",
-    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with a serpentine motif.  Using it will call forth a dark wyrm, and bind it to your will.  It is somewhat difficult to control.",
     "use_action": {
       "target": "summon_dark_wyrm_on",
       "msg": "The glyph of the eye gives off a faint green glow.",
@@ -464,11 +456,10 @@
       "monster_id": "mon_dark_wyrm_summoned",
       "friendly_msg": "The wyrm springs forth, seeming to regard you passively, or at least ignoring your presence.",
       "hostile_msg": "The wyrm springs forth, reacting to unfamiliar sounds and scent with a malevolent screech!",
-      "difficulty": 8,
+      "difficulty": 5,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -478,7 +469,7 @@
     "name": "glyph of Yuggoth",
     "name_plural": "glyphs of Yuggoth",
     "//": "Explaination: Yuggoth is a fictional planet from Lovecraft's work, stated to have been colonized by the mi-go.",
-    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is difficult to control.",
+    "description": "A strange silver emblem, engraved with depictions of strange chitinous entities.  Using it will call forth a mi-go, and bind it to your will.  Hopefully.  It is somewhat difficult to control.",
     "use_action": {
       "target": "summon_mi_go_on",
       "msg": "The glyph of Yuggoth gives off a faint green glow.",
@@ -504,11 +495,10 @@
       "monster_id": "mon_mi_go_summoned",
       "friendly_msg": "You recite an incantation, and the mi-go's response is a quiet murmur in some unknown language.  It seems to be friendly.",
       "hostile_msg": "You begin to recite an incantation, only for the mi-go to parrot your words, mocking your effort to control it!",
-      "difficulty": 8,
+      "difficulty": 6,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -517,7 +507,7 @@
     "copy-from": "silver_glyph",
     "name": "glyph of the golem",
     "name_plural": "glyphs of the golem",
-    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "description": "A strange silver emblem, engraved with reversed writing in an unknown language.  Using it will call forth a jabberwock, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_jabberwock_on",
       "msg": "The glyph of the golem gives off a faint green glow.",
@@ -543,11 +533,10 @@
       "monster_id": "mon_jabberwock_summoned",
       "friendly_msg": "You hear a strange burbling, the creature bound to your will.",
       "hostile_msg": "Eyes of flame meet your gaze, the creature resists your attempt to control it!",
-      "difficulty": 9,
+      "difficulty": 7,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -557,7 +546,7 @@
     "name": "glyph of Pnakotus",
     "name_plural": "glyphs of Pnakotus",
     "//": "Explanation: In Lovecraft's works, the Pnakotic Manuscripts were associated with the city of this name, which was overrun by flying polyps in their conflict with the species that built the city.",
-    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.  It is very difficult to control.",
+    "description": "A strange silver emblem, engraved with an strange pattern resembling coral.  Using it will call forth a flying polyp, and bind it to your will.  Hopefully.  It is difficult to control.",
     "use_action": {
       "target": "summon_flying_polyp_on",
       "msg": "The glyph of anthozoa gives off a faint green glow.",
@@ -583,11 +572,10 @@
       "monster_id": "mon_flying_polyp_summoned",
       "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
       "hostile_msg": "The flying polyp twitches erratically, reacting to your presence with apparent hostility!",
-      "difficulty": 9,
+      "difficulty": 8,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -623,11 +611,10 @@
       "monster_id": "mon_yugg_summoned",
       "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
       "hostile_msg": "An offering of wealth is not enough to placate a servant of Ubb.  The creature turns hostile!",
-      "difficulty": 10,
+      "difficulty": 9,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -666,8 +653,7 @@
       "difficulty": 10,
       "moves": 60,
       "place_randomly": true,
-      "skill1": "magic",
-      "skill2": "magic"
+      "skill1": "magic"
     }
   },
   {
@@ -970,7 +956,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "ACIDSPRAY" },
+    "use_action": { "type": "mutagen", "mutation_category": "ACIDSPRAY", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -996,7 +982,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "AGILITY" },
+    "use_action": { "type": "mutagen", "mutation_category": "AGILITY", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1022,7 +1008,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "CLAIRVOYANCE" },
+    "use_action": { "type": "mutagen", "mutation_category": "CLAIRVOYANCE", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1048,7 +1034,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "CLARITY" },
+    "use_action": { "type": "mutagen", "mutation_category": "CLARITY", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1074,7 +1060,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "CONFUSE" },
+    "use_action": { "type": "mutagen", "mutation_category": "CONFUSE", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1100,7 +1086,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "FLAMEARMOR" },
+    "use_action": { "type": "mutagen", "mutation_category": "FLAMEARMOR", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1126,7 +1112,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "FREEACTION" },
+    "use_action": { "type": "mutagen", "mutation_category": "FREEACTION", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1152,7 +1138,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "HEAL" },
+    "use_action": { "type": "mutagen", "mutation_category": "HEAL", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1178,7 +1164,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "INSIGHT" },
+    "use_action": { "type": "mutagen", "mutation_category": "INSIGHT", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1206,7 +1192,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "INVIS" },
+    "use_action": { "type": "mutagen", "mutation_category": "INVIS", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1232,7 +1218,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "ELECRESIST" },
+    "use_action": { "type": "mutagen", "mutation_category": "ELECRESIST", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1258,7 +1244,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "MIGHT" },
+    "use_action": { "type": "mutagen", "mutation_category": "MIGHT", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1284,7 +1270,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "OVERGROWTH" },
+    "use_action": { "type": "mutagen", "mutation_category": "OVERGROWTH", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1310,7 +1296,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "LIGHTNING" },
+    "use_action": { "type": "mutagen", "mutation_category": "LIGHTNING", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1336,7 +1322,7 @@
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "use_action": { "type": "mutagen", "mutation_category": "CLERIC" },
+    "use_action": { "type": "mutagen", "mutation_category": "CLERIC", "is_strong": true },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1345,13 +1331,64 @@
     "comestible_type": "MED",
     "category": "tools",
     "name": "flame talisman",
-    "description": "A crude paper talisman marked with strange patterns, and annointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desparate.",
+    "description": "A crude paper talisman marked with strange patterns, and annointed with a meager sacrifice.  It can be used to rapidly spark a fire, if you're desperate.",
     "weight": 150,
     "volume": 1,
     "material": "paper",
     "symbol": ",",
     "color": "cyan",
     "use_action": { "type": "firestarter", "moves": 10 },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "water_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
+    "name": "water talisman",
+    "description": "A crude paper talisman marked with strange patterns, and annointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects.",
+    "weight": 150,
+    "volume": 1,
+    "material": "paper",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "heal",
+      "limb_power": 5,
+      "head_power": 5,
+      "torso_power": 5,
+      "limb_scaling": 1.0,
+      "head_scaling": 1.0,
+      "torso_scaling": 1.0,
+      "bleed": 0.5,
+      "bite": 0.5,
+      "move_cost": 25,
+      "effects": [ { "id": "talisman_warding", "duration": 300 } ]
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "earth_talisman",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
+    "name": "earth talisman",
+    "description": "A crude paper talisman marked with strange patterns, and annointed with a peculiar sacrifice.  Using it will conjure and transmutate a structure of strange earth and stone, to serve as a meager shelter in times of desparation.",
+    "weight": 150,
+    "volume": 1,
+    "material": "paper",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": {
+      "type": "deploy_tent",
+      "radius": 2,
+      "broken_type": "candle_barrier_aftermath",
+      "wall": "f_spires_arcana",
+      "floor": "f_pozdol_arcana",
+      "floor_center": "f_altar_arcana",
+      "door_opened": "f_door_arcana_o",
+      "door_closed": "f_door_arcana_c"
+    },
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -1475,7 +1512,7 @@
         "type": "transform"
       }
     ],
-    "relative": { "weight": -318, "price": 50000 },
+    "relative": { "cutting": -5, "weight": -318, "price": 50000 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] },
     "artifact_data": { "charge_type": "ARTC_PORTAL" }
@@ -1546,6 +1583,7 @@
         "type": "transform"
       }
     ],
+    "relative": { "to_hit": -1, "cutting": -5 },
     "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] }
   },
@@ -1557,6 +1595,7 @@
     "name_plural": "cursed blades (on)",
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with exotic runes.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
+    "ammo": "essence_blood_type",
     "initial_charges": 1200,
     "max_charges": 1200,
     "turns_per_charge": 1,
@@ -1568,7 +1607,7 @@
     "price": 160000,
     "to_hit": 1,
     "bashing": 17,
-    "cutting": 50,
+    "cutting": 40,
     "material": [ "hardsteel", "essencemat" ],
     "symbol": "/",
     "looks_like": "stormbringer",

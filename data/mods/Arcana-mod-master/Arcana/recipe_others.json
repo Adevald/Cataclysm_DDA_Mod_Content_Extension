@@ -77,16 +77,71 @@
     "difficulty": 1,
     "time": 10000,
     "autolearn": true,
-    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_bloodmagic", 0 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "essence_blood", 1 ], [ "veggy_wild", 10 ], [ "cattail_stalk", 30 ], [ "wild_herbs", 100 ] ]
+    ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "water_talisman",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_hexenhammer", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "pine_bough", 1 ] ],
       [
-        [ "essence_blood", 1 ],
-        [ "essence_dull", 5 ],
-        [ "veggy_wild", 10 ],
-        [ "cattail_stalk", 30 ],
-        [ "wild_herbs", 100 ]
+        [ "essence_dull", 10 ],
+        [ "fighter_sting", 1 ],
+        [ "biollante_bud", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "triffid_queen_flower", 1 ],
+        [ "dermatik_sting", 1 ],
+        [ "vortex_shard", 1 ],
+        [ "blob_gem", 1 ],
+        [ "monster_tear", 1 ],
+        [ "shadow_gem", 1 ],
+        [ "bone_twisted", 1 ],
+        [ "gracken_knuckles", 1 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "monster_fang", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "engraved_stone", 1 ]
+      ]
+    ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "earth_talisman",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "autolearn": true,
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
+      [ [ "ash", 25 ], [ "withered", 5 ] ],
+      [
+        [ "essence", 1 ],
+        [ "mycus_fruit", 5 ],
+        [ "slime_scrap", 50 ],
+        [ "bone_tainted", 50 ],
+        [ "veggy_tainted", 50 ],
+        [ "tallow_tainted", 25 ]
       ]
     ],
     "flags": [ "BLIND_HARD" ]
@@ -109,6 +164,7 @@
   {
     "result": "essence_dull",
     "type": "recipe",
+    "id_suffix": "higher tier",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "magic",
@@ -409,10 +465,9 @@
     "components": [
       [ [ "silver_glyph", 1 ] ],
       [
-        [ "seed_mushroom", 6 ],
-        [ "seed_mushroom_magic", 6 ],
-        [ "seed_mushroom_poison", 6 ],
-        [ "seed_mushroom_morel", 6 ],
+        [ "seed_mushroom", 12 ],
+        [ "seed_mushroom_morel", 12 ],
+        [ "yeast", 24 ],
         [ "iridescent_plate", 1 ]
       ]
     ],
@@ -666,6 +721,7 @@
       [ [ "cudgel", 1 ] ],
       [ [ "silver_small", 30 ] ],
       [
+        [ "earth_talisman", 1 ],
         [ "pine_bough", 4 ],
         [ "tanbark", 4 ],
         [ "birchbark", 4 ],
@@ -728,7 +784,7 @@
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_essence_any", 1 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "triffid_queen_flower", 1 ] ], [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ] ]
+    "components": [ [ [ "triffid_queen_flower", 1 ] ] ]
   },
   {
     "result": "totem_confusion",
@@ -925,7 +981,7 @@
     "book_learn": [ [ "book_magicfordummies", 4 ] ],
     "using": [ [ "filament", 5 ], [ "arcana_purification_standard", 1 ], [ "arcana_essence_any", 3 ] ],
     "qualities": [ { "id": "KNIT", "level": 1 } ],
-    "components": [ [ [ "biollante_bud", 1 ] ], [ [ "hops", 4 ], [ "bee_balm", 4 ], [ "raw_dandelion", 4 ], [ "poppy_bud", 4 ] ] ]
+    "components": [ [ [ "biollante_bud", 1 ] ] ]
   },
   {
     "result": "totem_acidspray",
@@ -1177,5 +1233,96 @@
       [ [ "silver_glyph", 1 ] ],
       [ [ "graboid_fang", 1 ], [ "monster_fang", 3 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 3 ] ]
     ]
+  },
+  {
+    "result": "index_potioncraft",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": 30000,
+    "book_learn": [ [ "book_potioncraft", 3 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_scrollcraft",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": 50000,
+    "book_learn": [ [ "book_scrollcraft", 5 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_bloodmagic",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": 60000,
+    "book_learn": [ [ "book_bloodmagic", 6 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_hexenhammer",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": 70000,
+    "book_learn": [ [ "book_hexenhammer", 7 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_sacrifice",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": 80000,
+    "book_learn": [ [ "book_sacrifice", 8 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_syncretism",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 90000,
+    "book_learn": [ [ "book_syncretism", 9 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_syncretism", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "result": "index_summoning",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": 100000,
+    "book_learn": [ [ "book_summoning", 10 ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "tools": [ [ [ "book_summoning", -1 ] ] ],
+    "flags": [ "BLIND_EASY" ]
   }
 ]
