@@ -1,15 +1,15 @@
 {
-    "fontblending" : false,
-    "fontwidth" : 9,
-    "fontheight" : 15,
-    "fontsize" : 14,
-    "typeface" : "Terminus (TTF) Bold",
-    "map_fontwidth" : 14,
-    "map_fontheight" : 14,
-    "map_fontsize" : 14,
-    "map_typeface" : "Square-SmallcapsRM",
-    "overmap_fontwidth" : 9,
-    "overmap_fontheight" : 15,
-    "overmap_fontsize" : 14,
-    "overmap_typeface" : "Terminus (TTF) Bold"
+  "fontblending": false,
+  "fontwidth": 8,
+  "fontheight": 16,
+  "fontsize": 16,
+  "typeface": "TerminusRus",
+  "map_fontwidth": 8,
+  "map_fontheight": 16,
+  "map_fontsize": 16,
+  "map_typeface": "TerminusTTF-Bold-4.39",
+  "overmap_fontwidth": 8,
+  "overmap_fontheight": 16,
+  "overmap_fontsize": 16,
+  "overmap_typeface": "TerminusTTF-Bold-4.39"
 }
