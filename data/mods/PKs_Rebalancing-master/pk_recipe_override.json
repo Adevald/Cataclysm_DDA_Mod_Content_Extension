@@ -355,7 +355,7 @@
     "components": [
       [ [ "mutagen", 1 ] ],
       [ [ "bone", 5 ] ],
-      [ [ "offal", 3 ] ],
+      [ [ "liver", 3 ] ],
       [ [ "raw_fur", 1 ] ],
       [ [ "ammonia", 1 ], [ "lye_powder", 20 ] ]
     ]
@@ -418,7 +418,7 @@
     "book_learn": [ [ "recipe_animal", 2 ] ],
     "qualities": [ { "id": "CHEM", "level": 2, "amount": 1 } ],
     "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
-    "components": [ [ [ "mutagen", 1 ] ], [ [ "offal", 6 ] ], [ [ "ammonia", 1 ], [ "lye_powder", 20 ] ] ]
+    "components": [ [ [ "mutagen", 1 ] ], [ [ "liver", 6 ] ], [ [ "ammonia", 1 ], [ "lye_powder", 20 ] ] ]
   },
   {
     "type": "recipe",
