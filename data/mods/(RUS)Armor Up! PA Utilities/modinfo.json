@@ -2,9 +2,9 @@
   {
     "type": "MOD_INFO",
     "ident": "ArmUpPAUtil",
-    "name": "Armor Up! PA Utilities",
+    "name": "Armor Up! PA Utilities (RUS)",
     "authors": "darktoes",
-    "description": "Sheathes, holsters and scabbards for power armor.",
+    "description": "Ножны и кобуры для силовой брони.",
     "category": "items",
     "dependencies": [ "dda" ]
   }
