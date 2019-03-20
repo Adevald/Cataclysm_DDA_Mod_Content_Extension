@@ -2,8 +2,8 @@
     "type": "MOD_INFO",
     "ident": "antifunguskit",
     "name": "Fungus Fighter Kit (RUS)",
-	  "authors": "Kurchie",
+	"authors": "Kurchie",
     "description": "Ты ненавидишь грибы? Надоело спасать мир? Тогда этот мод для тебя.",
-	  "category": "items",
+	"category": "items",
     "dependencies": [ "dda" ]
 }
