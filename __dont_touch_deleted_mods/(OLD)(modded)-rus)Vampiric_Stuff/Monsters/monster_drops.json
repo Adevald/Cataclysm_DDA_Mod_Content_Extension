@@ -1,0 +1,32 @@
+[
+ {
+    "id": "succumbvampire",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "bloodset", "damage": [ 1, 4 ] },
+      { "group": "underwear", "damage": [ 1, 4 ] },
+      { "item": "corruptbloodrune", "prob": 100 }
+    ]
+  },
+  {
+    "id": "leech",
+    "type": "item_group",
+    "items": [ [ "smallleechtooth", 10 ] ]
+  },
+  {
+    "id": "devourerleech",
+    "type": "item_group",
+    "items": [ [ "bloodsac", 100 ] ]
+  },
+  {
+    "id": "elderzombie",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "clothing_outdoor_set", "damage": [ 1, 2 ] },
+      { "group": "underwear", "damage": [ 1, 2 ] },
+      { "item": "decaybone", "prob": 20 }
+    ]
+    }
+]

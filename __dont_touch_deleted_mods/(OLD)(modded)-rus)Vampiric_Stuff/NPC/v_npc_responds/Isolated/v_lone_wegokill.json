@@ -1,0 +1,12 @@
+{
+    "id": "TALK_VAMP_LONELY_wegokill",
+    "type": "talk_topic",
+    "dynamic_line": "I already said I refuse... NOW, I have to kill you for your ignorance.",
+    "responses": [
+      {
+        "text": "KILL ME IF YOU CAN!!!",
+        "effect": "insult_combat",
+            "topic": "TALK_DONE"
+    }
+   ]
+  }

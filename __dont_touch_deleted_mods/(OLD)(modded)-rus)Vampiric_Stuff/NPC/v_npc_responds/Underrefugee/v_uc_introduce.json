@@ -1,0 +1,19 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "*grins* I hate obvious questions, descendant.",
+    "responses": [
+      {
+        "text": "I mean, are you the owner of this refugee?",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_owner"
+      },
+      { "text": "Shit man, don't show your teeth!",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_teeth"
+      },
+      { "text": "Sorry about it...",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+      }
+    ]
+  }
+]

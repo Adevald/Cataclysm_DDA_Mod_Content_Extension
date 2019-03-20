@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_GUNSHOP_lol",
+    "type": "talk_topic",
+    "dynamic_line": "LOL! Just kill yourself.",
+    "responses": [
+      {
+        "text": "I will... Before I die.",
+        "topic": "TALK_VAMP_GUNSHOP_maintalk"
+      }
+    ]
+  }
+]

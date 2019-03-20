@@ -1,0 +1,19 @@
+[
+{
+"id": "TALK_VAMP_UNDERTRADER_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "I'm assigned as a trader by my master. I sell our artifact materials used in forging vampiric stuff. Or buy an already forged ones for a higher trade value.",
+    "responses": [
+      {
+        "text": "Wait. Why are you selling artifacts?",
+        "topic": "TALK_VAMP_UNDERTRADER_artifact"
+      },
+      { "text": "Why the hell are you accepting human stuff in trading?",
+        "topic": "TALK_VAMP_UNDERTRADER_trading"
+      },
+      { "text": "Okay!.",
+        "topic": "TALK_VAMP_UNDERTRADER"
+      }
+    ]
+  }
+]

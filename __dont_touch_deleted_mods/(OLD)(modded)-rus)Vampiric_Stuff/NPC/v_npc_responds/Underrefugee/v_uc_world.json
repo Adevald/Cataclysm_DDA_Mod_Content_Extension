@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_world",
+    "type": "talk_topic",
+    "dynamic_line": "Rough encounters outside the wastelands, but guns do nice things having it on your sides... And back.",
+    "responses": [
+      {
+        "text": "(now that's what depending is all about).",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+      }
+    ]
+  }
+]

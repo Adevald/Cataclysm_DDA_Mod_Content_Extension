@@ -1,0 +1,40 @@
+[
+  {
+    "type": "faction",
+    "id": "vamps",
+    "name": "Vampires",
+    "likes_u": 15,
+    "respects_u": 10,
+    "known_by_u": false,
+    "size": 45,
+    "power": 225,
+    "combat_ability": 300,
+    "food_supply": 500500,
+    "wealth": 175250000,
+    "good": 0,
+    "strength": 5,
+    "sneak": 0,
+    "crime": -1,
+    "cult": 2,
+    "description": "A malicious group of inhumane entities that thrives to live in peace, and tend to help the last surviving humans. They don't come in sizes, but their dark century experiences are beyond expectations. After the Cataclysm struck, they have made a solution for their needs. They are now capable to eat meat, while forced consuming liquid alternatives just to survive and maintain their immemsive power. Although friendly, their purpose is to hope for humans to survive and eradicate anything threatens them with their utmost capabilities."
+  },
+  {
+    "type": "faction",
+    "id": "wastelander",
+    "name": "Wasteland Dwellers",
+    "likes_u": 30,
+    "respects_u": 20,
+    "known_by_u": false,
+    "size": 75,
+    "power": 95,
+    "combat_ability": 100,
+    "food_supply": 400500,
+    "wealth": 80300000,
+    "good": 3,
+    "strength": 1,
+    "sneak": 0,
+    "crime": -1,
+    "cult": -1,
+    "description": "A community of people who resides at Wasteland Outskirts. They seek refuge from various unnatural death, and has chosen to live with vampires. Unsure about its consequences, but still are trustworthy towards them."
+    }
+]

@@ -1,0 +1,28 @@
+[
+{
+    "id": "blood_necklace",
+    "type": "ARMOR",
+    "name": "Bloodrune Necklace",
+    "description": "An odd necklace with rescaled beautiful bloodrune stone to fit and attach to the center. The thinned layer caused the core to pulsate faster.",
+    "weight": 250,
+    "volume": 1,
+    "material": [ "stone", "silver" ],
+    "symbol": "[",
+    "color": "red",
+    "flags": [ "FANCY" ]
+  },
+  {
+    "id": "blood_talisman",
+    "type": "ARMOR",
+    "name": "Bloodrune Talisman",
+    "description": "An odd necklace with a beautifully etched bloodrune stone in eagle's talon shape. If you prick your fingertip in its sharp point, you feel your blood rushing towards it.",
+    "weight": 80,
+    "volume": 0,
+    "price": 0,
+    "price_postapoc": 2500000,
+    "material": [ "stone" ],
+    "symbol": "(",
+    "color": "red",
+    "flags": [ "FANCY" ]
+  }
+  ]

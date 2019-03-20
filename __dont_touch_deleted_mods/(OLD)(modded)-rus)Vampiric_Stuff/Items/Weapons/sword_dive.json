@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sword_dive",
+    "type": "GENERIC",
+    "name": "Blood Diver",
+    "name_plural": "Blood Divers",
+    "description": "A small, serrated dagger. Its handle is made for quick precise stabs, and the lightweight of this weapon makes it versatile to use. The unique form of its blade is great for skinning, but there's a better purpose than that.",
+    "weight": 475,
+    "volume": 1,
+    "symbol": "f",
+    "price": 0,
+    "price_postapoc": 1925000,
+    "to_hit": 2,
+    "cutting": 15,
+    "bashing": 7,
+     "material": "steel",
+     "color": "dark_red",
+    "techniques": [ "VAMP_WRATH", "WEAK_HITCRIT", "VAMP_TRICK"  ],
+    "flags": [ "SHEATH_KNIFE", "DURABLE_MELEE", "STAB" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 40 ] ]
+    },
+    {
+    "id": "sword_diveplus",
+    "type": "GENERIC",
+    "name": "Blood Diver+",
+    "name_plural": "Blood Divers+",
+    "description": "Frighteningly, the improvements has changed its color into a faintly red glow. Stabbing with its even sharper blade can puncture vitalities easily.",
+    "weight": 575,
+    "volume": 1,
+    "symbol": "f",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 2,
+    "cutting": 31,
+    "bashing": 10,
+     "material": [ "steel", "compactblood" ],
+     "color": "dark_red",
+    "techniques": [ "VAMP_WRATH", "WEAK_HITCRIT", "STRONG_HITCRIT", "VAMP_TRICK"  ],
+    "flags": [ "SHEATH_KNIFE", "DURABLE_MELEE", "STAB" ],
+    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 41 ] ]
+  }
+]

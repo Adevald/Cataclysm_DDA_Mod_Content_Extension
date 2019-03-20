@@ -1,0 +1,21 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD1_introduce",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "blood_necklace",
+      "yes": "Just an assigned guard here, nothing happens 'till you came in.",
+      "no": "Why should I? If you want answers, go ask my partner."
+    },
+    "responses": [
+      {
+        "text": "I like you.",
+        "topic": "TALK_VAMP_UNDERGUARD1_flirt"
+      },
+      {
+        "text": "Okay then...",
+        "topic": "TALK_VAMP_UNDERGUARD1"
+      }
+    ]
+  }
+]

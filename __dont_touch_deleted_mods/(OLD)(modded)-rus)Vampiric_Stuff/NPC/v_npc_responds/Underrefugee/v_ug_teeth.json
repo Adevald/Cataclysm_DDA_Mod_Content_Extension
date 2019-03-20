@@ -1,0 +1,18 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD1_teeth",
+    "type": "talk_topic",
+    "dynamic_line": "If you're here to fuck us up, I really need to slay you immediately!",
+    "responses": [
+      {
+        "text": "I apologize for my mistake.",
+        "topic": "TALK_VAMP_UNDERGUARD1"
+      },
+      {
+        "text": "YEAH GIRL! BRING IT!",
+        "effect": "insult_combat",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

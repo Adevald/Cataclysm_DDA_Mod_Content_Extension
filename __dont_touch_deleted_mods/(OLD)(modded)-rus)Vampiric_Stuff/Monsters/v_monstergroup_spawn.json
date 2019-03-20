@@ -1,0 +1,50 @@
+[
+{
+    "name": "GROUP_MANSION",
+    "type": "monstergroup",
+    "edit_mode": "modify",
+    "default": "mon_zombie",
+    "//": "modified mansion zeds",
+    "monsters": [
+      { "monster": "mon_zombie", "freq": 500, "cost_multiplier": 2, "pack_size": [ 2, 3 ] },
+      { "monster": "mon_zombie_crawler", "freq": 300, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_fat", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_child", "freq": 50, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_shapeshifter", "freq": 30, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "name": "GROUP_SHIFTERS",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_shapeshifter", "freq": 100, "cost_multiplier": 1, "pack_size": [ 1, 3 ] }
+    ]
+  },
+  {
+    "name": "GROUP_CRYPTIES",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_bloodcompact", "freq": 100, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_skeleton", "freq": 150, "cost_multiplier": 1, "pack_size": [ 1, 5 ] }
+    ]
+  },
+  {
+    "name": "GROUP_SWAMP",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_insect_leech", "freq": 10, "cost_multiplier": 0, "pack_size": [ 4, 8 ] },
+      { "monster": "mon_insect_bigleech", "freq": 5, "cost_multiplier": 0, "pack_size": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type":"monstergroup",
+    "name" : "GROUP_FOREST",
+    "default" : "mon_null",
+    "monsters" : [
+      { "monster" : "mon_vampbat", "freq" : 50, "cost_multiplier" : 3, "pack_size" : [3,7], "conditions" : ["DAWN", "DUSK", "SPRING", "SUMMER", "AUTUMN"] }
+      ]
+    }
+]

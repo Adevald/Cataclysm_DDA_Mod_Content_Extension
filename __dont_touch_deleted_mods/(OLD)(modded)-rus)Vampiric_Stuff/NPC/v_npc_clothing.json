@@ -1,0 +1,194 @@
+[
+  {
+    "//": "Shaptap, this whole vampire clothing is messy... Still.",
+    "id": "VAMP_LONELY_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood_gloves" },
+      { "item": "blood_hood" },
+      { "item": "blood_duster" },
+      { "item": "socks" },
+      { "item": "blood_pants" },
+      { "item": "blood_boots" },
+      { "item": "bloodwristsheath" }
+      ]
+  },
+    {
+    "id": "VAMP_LONELY_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 2, 3 ] }
+      ]
+      },
+      {
+    "id": "VAMP_UNDERGUARD_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bloodinfused_survivorgloves" },
+      { "item": "bloodinfused_survivorhood" },
+      { "item": "bloodinfused_survivortrenchcoat" },
+      { "item": "socks" },
+      { "item": "bloodinfused_survivorpants" },
+      { "item": "bloodinfused_survivorboots" },
+      { "item": "bloodpack" },
+      { "item": "bloodbootsheath" }
+      ]
+  },
+    {
+    "id": "VAMP_UNDERGUARD_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 2, 3 ] },
+      { "item": "sword_sip" }
+      ]
+      },
+      {
+    "id": "VAMP_UNDERTRADER_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bloodinfused_survivorgloves" },
+      { "item": "bloodinfused_survivorhood" },
+      { "item": "bloodinfused_survivorduster" },
+      { "item": "socks" },
+      { "item": "bloodinfused_survivorpants" },
+      { "item": "bloodinfused_survivorboots" },
+      { "item": "bigbloodpack" },
+      { "item": "bloodbootsheath" }
+      ]
+  },
+    {
+    "id": "VAMP_UNDERTRADER_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 5, 10 ] }
+      ]
+    },
+    {
+    "id": "VAMP_UNDERTRADER_sell",
+    "type": "item_group",
+    "subtype": "collection",
+    "//": "VAMPIRES SELL ITEMS WHEN YOU GET HIGH FONDNESS, go on missions to avail them.",
+    "entries": [
+      { "item": "blood", "count": [ 5, 10 ] },
+      { "item": "sword_dive" },
+      { "item": "sword_sip" },
+      { "item": "hammerius" },
+      { "item": "invy_bow" },
+      { "item": "blood_talisman" },
+      { "item": "bloodrune", "count": [ 3, 5 ] },
+      { "item": "blood_forge_infuse" },
+      { "item": "bloodcompressor" },
+      { "item": "bloodextractor" }
+      ]
+    },
+    {
+    "id": "VAMP_UNDERCOMMANDO_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bloodinfused_survivorgloves" },
+      { "item": "bloodinfused_survivorhood" },
+      { "item": "bloodinfused_survivortrenchcoat" },
+      { "item": "socks" },
+      { "item": "bloodinfused_survivorpants" },
+      { "item": "bloodinfused_survivorboots" },
+      { "item": "bloodpack" },
+      { "item": "bloodbootsheath" }
+      ]
+  },
+    {
+    "id": "VAMP_UNDERCOMMANDO_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 5, 10 ] },
+      { "item": "b11_striker" },
+      { "item": "bloodshot_00", "count": [ 20, 30] }
+      ]
+    },
+    {
+    "id": "VAMP_GUNSHOP_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bloodinfused_survivorgloves" },
+      { "item": "bloodinfused_survivorhood" },
+      { "item": "bloodinfused_survivortrenchcoat" },
+      { "item": "blood_suit" },
+      { "item": "socks" },
+      { "item": "bloodinfused_survivorpants" },
+      { "item": "bloodinfused_survivorboots" },
+      { "item": "bigbloodpack" },
+      { "item": "bigbloodpack" },
+      { "item": "bloodbootsheath" }
+      ]
+  },
+    {
+    "id": "VAMP_GUNSHOP_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 5, 10 ] }
+      ]
+      },
+      {
+    "id": "VAMP_GUNSHOP_sell",
+    "type": "item_group",
+    "//": "VAMPIRES SELL ITEMS WHEN YOU GET HIGH FONDNESS, go on missions to avail them.",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 15, 30 ] },
+      { "item": "b11_striker" },
+      { "item": "bloodshot_00", "count": [ 20, 50] },
+      { "item": "blood_stinger" },
+      { "item": "blood_sprayer" },
+      { "item": "blood_stream_shooter" }
+      ]
+      },
+      {
+    "id": "VAMP_WASTELAND_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bloodinfused_survivorgloves" },
+      { "item": "bloodinfused_survivorhood" },
+      { "item": "bloodinfused_survivortrenchcoat" },
+      { "item": "socks" },
+      { "item": "bloodinfused_survivorpants" },
+      { "item": "bloodinfused_survivorboots" },
+      { "item": "bloodbootsheath" }
+      ]
+  },
+    {
+    "id": "VAMP_WASTELAND_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 2, 3 ] }
+      ]
+      },
+      {
+    "id": "VAMP_WASTEGUARD1_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 2, 3 ] },
+      { "item": "hammerius" }
+      ]
+      },
+      {
+    "id": "VAMP_WASTEGUARD2_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "blood", "count": [ 2, 3 ] },
+      { "item": "sword_sip" }
+      ]
+      }
+]

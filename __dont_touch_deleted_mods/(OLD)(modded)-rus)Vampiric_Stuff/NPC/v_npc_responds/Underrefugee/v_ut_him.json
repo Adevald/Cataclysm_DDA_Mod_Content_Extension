@@ -1,0 +1,12 @@
+[
+{
+"id": "TALK_VAMP_UNDERTRADER_him",
+    "type": "talk_topic",
+    "dynamic_line": "Nope. HE remains a mystery to all of you.",
+    "responses": [
+      { "text": "Damn... You can't tell even HIS face.",
+        "topic": "TALK_VAMP_UNDERTRADER"
+      }
+    ]
+  }
+]

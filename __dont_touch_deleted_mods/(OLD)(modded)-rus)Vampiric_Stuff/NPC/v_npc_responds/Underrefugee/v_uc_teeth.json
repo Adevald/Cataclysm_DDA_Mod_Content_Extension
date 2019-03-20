@@ -1,0 +1,16 @@
+[
+{
+"id": "TALK_VAMP_UNDERCOMMANDO_teeth",
+    "type": "talk_topic",
+    "dynamic_line": "If that mouth keeps on talking shits, I better put a nice, beautiful hole at your forehead!",
+    "responses": [
+      { "text": "I am sorry about it...",
+        "topic": "TALK_VAMP_UNDERCOMMANDO_maintalk"
+      },
+      { "text": "FUCK YEAH! DO IT SIR!!!",
+        "effect": "insult_combat",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

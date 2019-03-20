@@ -1,0 +1,13 @@
+[
+{
+"id": "TALK_VAMP_UNDERGUARD1_flirt",
+    "type": "talk_topic",
+    "dynamic_line": "Shut up mortal, everyone does like me.",
+    "responses": [
+      {
+        "text": "Oh...",
+        "topic": "TALK_VAMP_UNDERGUARD1"
+      }
+    ]
+  }
+]
