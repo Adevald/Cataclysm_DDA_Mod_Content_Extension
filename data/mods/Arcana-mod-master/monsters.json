@@ -261,6 +261,9 @@
     "id": "mon_vortex",
     "copy-from": "mon_vortex",
     "type": "MONSTER",
+    "//": "FFS why are they harmless",
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
     "death_drops": "mon_vortex_death_drops"
   },
   {
@@ -570,7 +573,7 @@
     "//": "Here, have some chalice-specific loot",
     "death_drops": "mon_archon_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "HARDTOSHOOT" ]
+    "flags": [ "ELECTRIC", "SEES", "HEARS", "SMELLS", "WARM", "HUMAN", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "HARDTOSHOOT", "QUEEN" ]
   },
   {
     "id": "mon_dracolich",
@@ -652,7 +655,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "SEES", "REVIVES" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -664,7 +667,7 @@
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "upgrades": {  }
+    "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
   },
   {
     "id": "mon_jabberwock_summoned",
@@ -694,7 +697,8 @@
     "type": "MONSTER",
     "name": "summoned thing",
     "death_drops": {  },
-    "extend": { "flags": [ "REVIVES" ] },
+    "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
+    "extend": { "flags": [ "SEES", "REVIVES" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -712,9 +716,10 @@
     "type": "MONSTER",
     "name": "summoned skeleton",
     "species": [ "NETHER" ],
+    "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "upgrades": {  }
+    "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
   },
   {
     "id": "mon_vortex_summoned",
@@ -725,7 +730,7 @@
     "death_drops": {  },
     "melee_skill": 4,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-    "extend": { "flags": [ "ELECTRIC", "REVIVES" ] }
+    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10" ] }
   },
   {
     "id": "mon_yugg_summoned",
@@ -742,6 +747,8 @@
     "id": "mon_kreck_summoned",
     "copy-from": "mon_kreck",
     "type": "MONSTER",
+    "vision_day": 50,
+    "vision_night": 50,
     "death_drops": {  },
     "name": "summoned kreck",
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
@@ -776,6 +783,8 @@
     "copy-from": "mon_hunting_horror",
     "type": "MONSTER",
     "name": "summoned hunting horror",
+    "vision_day": 50,
+    "vision_night": 50,
     "death_drops": {  },
     "extend": { "flags": [ "REVIVES" ] },
     "delete": { "flags": [ "SUNDEATH" ] }
@@ -796,9 +805,11 @@
     "copy-from": "mon_flying_polyp",
     "type": "MONSTER",
     "name": "summoned flying polyp",
+    "vision_day": 50,
+    "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "REVIVES" ] },
+    "extend": { "flags": [ "SEES", "REVIVES" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -807,7 +818,6 @@
     "type": "MONSTER",
     "name": "summoned shoggoth",
     "death_drops": {  },
-    "special_attacks": [ [ "TENTACLE", 40 ] ],
     "extend": { "flags": [ "REGENERATES_10" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
   }
