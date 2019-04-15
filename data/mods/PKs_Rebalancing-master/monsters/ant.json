@@ -642,7 +642,7 @@
         "ranges": [ [ 2, 4, "DEFAULT" ] ]
       }
     ],
-    "harvest": "acidant_med"
+    "harvest": "arachnid_acid"
   },
   {
     "type": "MONSTER",

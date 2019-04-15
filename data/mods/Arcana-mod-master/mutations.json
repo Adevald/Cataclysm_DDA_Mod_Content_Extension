@@ -4,7 +4,7 @@
     "id": "hermit_earned_trust_1",
     "name": "Hermit Trust 1",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -14,7 +14,7 @@
     "id": "hermit_earned_trust_2",
     "name": "Hermit Trust 2",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -24,7 +24,7 @@
     "id": "hermit_stage_1",
     "name": "Hermit Quest Stage 1",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -34,7 +34,7 @@
     "id": "hermit_stage_2",
     "name": "Hermit Quest Stage 2",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -44,7 +44,7 @@
     "id": "hermit_stage_3",
     "name": "Hermit Quest Stage 3",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -54,7 +54,7 @@
     "id": "hermit_stage_4",
     "name": "Hermit Quest Stage 4",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk is broken. Remove or depreciate once this is fixed, if ever.",
+    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -225,6 +225,16 @@
     "name": "Dragonblood",
     "points": 1,
     "description": "Power by any means.  The Sanguine Order believed the Dragonblood Sacrament would make them powerful enough to survive the cataclysm, to rule over man and monster alike.  That you have survived this long just might prove them right.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_DRAGONBLOODLESSER",
+    "name": "Lesser Dragonblood",
+    "points": 0,
+    "description": "This exists only because blood effigy is supposed to give Dragonblood mutations without granting spells.  This is a bug if you have it.",
     "valid": false,
     "purifiable": false,
     "threshold": true
@@ -1088,6 +1098,40 @@
   },
   {
     "type": "mutation",
+    "id": "SPELL_SUMMONSHADOWSNAKE",
+    "name": "Arcana: Summon Shadow Snake",
+    "//": "Only zero points because it's a profression-specific spell, fatigue cost is calculated as though it has a cost of 4.",
+    "points": 0,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow snake.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 60,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonshadowsnake",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONSHADOW",
+    "name": "Arcana: Summon Shadow",
+    "//": "Only zero points because it's a profression-specific spell, fatigue cost is calculated as though it has a cost of 5.",
+    "points": 0,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow.  Activate to focus your power, draining fatigue.",
+    "valid": false,
+    "purifiable": false,
+    "active": true,
+    "cost": 75,
+    "fatigue": true,
+    "spawn_item": {
+      "type": "spell_summonshadow",
+      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
+    }
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_SUMMONVORTEX",
     "name": "Blessing: Summon Vortex",
     "points": 6,
@@ -1315,7 +1359,7 @@
     "description": "Part of your torso and arms have become covered in flexible scales, providing limited protection there.",
     "valid": false,
     "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "types": [ "SKIN" ],
     "wet_protection": [ { "part": "ARM_L", "ignored": 4 }, { "part": "ARM_R", "ignored": 4 }, { "part": "TORSO", "ignored": 10 } ],
@@ -1358,7 +1402,7 @@
     "description": "Your body feels abnormally comfortable around heat and flame, letting you tolerate its heat for longer, and reducing damage from fire.",
     "valid": false,
     "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "prereqs": [ "ARCANA_INNERFIRE" ],
     "armor": [ { "parts": "ALL", "heat": 10 } ]
   },
@@ -1374,7 +1418,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "ARCANA_INNERFIRE" ],
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 0.333,
     "thirst_modifier": 0.333,
@@ -1395,7 +1439,7 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERHEAT" ],
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "METABOLISM" ],
     "metabolism_modifier": 0.5,
     "thirst_modifier": 0.5,
@@ -1448,7 +1492,7 @@
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONWINGS" ],
     "encumbrance_always": [ [ "TORSO", 10 ] ],
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "WINGS" ],
     "restricts_gear": [ "TORSO" ],
     "allow_soft_gear": true
@@ -1484,7 +1528,7 @@
     "valid": false,
     "purifiable": false,
     "types": [ "CLAWS" ],
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "encumbrance_covered": [ [ "HAND_L", 10 ], [ "HAND_R", 10 ] ],
     "attacks": [
       {
@@ -1505,7 +1549,7 @@
     "description": "Your teeth have changed into an assortment of pointed mimicries of human teeth, allowing you to make an extra attack when conditions favor it.",
     "valid": false,
     "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "changes_to": [ "ARCANA_DRAGONMUZZLE" ],
     "types": [ "TEETH" ],
     "attacks": {
@@ -1531,7 +1575,7 @@
     "prereqs2": [ "ARCANA_DRAGONTEETH" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
-    "types": [ "TEETH", "MUZZLE" ],
+    "types": [ "TEETH", "MUZZLE", "facial_hair" ],
     "restricts_gear": [ "MOUTH" ],
     "social_modifiers": { "intimidate": 20 },
     "attacks": {
@@ -1610,7 +1654,7 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONTAIL" ],
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "TAIL" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
@@ -1633,7 +1677,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYTAIL" ],
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "TAIL" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
@@ -1656,7 +1700,7 @@
     "description": "You have a pair of relatively short horns, sweeping and pointing backwards.  While they don't make very good weapons, and prevent you from wearing any headwear not made of fabric, they tend to get in the way of attacks aimed at your head.",
     "valid": false,
     "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
     "allow_soft_gear": true,
@@ -1696,16 +1740,13 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [
-      "SPELL_ACIDARMOR",
       "SPELL_CLARITY",
       "SPELL_FIRE",
       "SPELL_FLAMEARMOR",
-      "SPELL_SMOKE",
-      "SPELL_ELECRESIST",
       "SPELL_STRENGTH",
-      "SPELL_POISONARMOR",
-      "SPELL_SUMMONFIEND",
-      "SPELL_DAMPENING"
+      "SPELL_DAMPENING",
+      "SPELL_SHADOWSNAKES",
+      "SPELL_SUMMONFIEND"
     ],
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_FULLESSENCE" ],

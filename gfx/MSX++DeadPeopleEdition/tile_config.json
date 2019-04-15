@@ -9,6 +9,20 @@
     {
       "file": "1_tiles_32x32_0-5199.png",
       "tiles": [
+	          {
+          "id": [
+		  "tear_gas_payload",
+		  "tear_gas_payload_act",
+		  "nectar",
+		  "grass",
+		  "underbrush",
+		  "bio_shotgun_gun",
+		  "toolset_extended"
+		  ],
+          "fg": 0,
+          "bg": 0,
+          "rotates": false
+        },
         {
           "id": "10mm",
           "fg": 1,
@@ -2570,6 +2584,10 @@
         },
 		{
           "id": "bandolier_shotgun",
+          "fg": 348
+        },	
+		{
+          "id": "torso_bandolier_shotgun",
           "fg": 348
         },
 				{
@@ -7730,7 +7748,7 @@
           "rotates": false
         },
         {
-          "id": "bio_drain",
+          "id": ["bio_drain", "bio_shotgun", "bio_soporific", "bio_taste_blocker"],
           "fg": 1016,
           "bg": 957,
           "rotates": false
@@ -19167,7 +19185,12 @@
           "additional_tiles": [
             {
               "id": "center",
-              "fg": 3167,
+              "fg": 5450,
+              "bg": 985
+            },
+			            {
+              "id": "unconnected",
+              "fg": 5450,
               "bg": 985
             }
           ]
@@ -21692,7 +21715,7 @@
           "rotates": false
         },
         {
-          "id": "bio_flashlight",
+          "id": ["bio_flashlight", "bio_tattoo_led"],
           "fg": 1016,
           "rotates": false
         },
@@ -22838,7 +22861,7 @@
           "rotates": false
         },
         {
-          "id": ["milk", "rice_milk", "milkshake", "milkshake_deluxe", "milkshake_fastfood"],
+          "id": ["milk", "rice_milk", "milkshake", "milkshake_deluxe", "milkshake_fastfood", "almond_milk", "soy_milk"],
           "fg": 1153,
           "rotates": false
         },
@@ -25232,7 +25255,7 @@
           "rotates": false
         },
         {
-          "id": "f_fridge",
+          "id": ["f_fridge"],
           "fg": 1516,
           "rotates": false
         },
@@ -25252,7 +25275,7 @@
           "rotates": false
         },
         {
-          "id": ["vp_minifridge", "vp_minifreezer"],
+          "id": ["vp_minifridge", "vp_minifreezer", "f_afs_fridge_vehicle", "f_afs_freezer_vehicle", "vp_afs_freezer", "afs_fridge"],
           "fg": 1516,
           "rotates": false,
           "multitile": true,
@@ -26430,7 +26453,7 @@
           "fg": 1760
         },
         {
-          "id": "vp_wheel_wheelchair",
+          "id": ["vp_wheel_wheelchair", "vp_wheel_tricycle"],
           "fg": 1760,
           "rotates": true
         },
@@ -27656,7 +27679,7 @@
           "bg": 978
         },		
 		{
-          "id": ["spell_lightning", "spell_acidarmor", "spell_acidarmor_on", "spell_acidspray", "spell_acidspray_on", "spell_agile", "spell_agile_on", "spell_clairvoyance", "spell_clairvoyance_on", "spell_confusion", "spell_confusion_on", "spell_light", "spell_light_on", "spell_psyshield", "spell_psyshield_on", "spell_drainlife", "spell_drainlife_on", "spell_elecresist", "spell_elecresist_on", "spell_invis", "spell_invis_on"],
+          "id": ["spell_summonshadow", "spell_summonshadowsnake", "spell_lightning", "spell_acidarmor", "spell_acidarmor_on", "spell_acidspray", "spell_acidspray_on", "spell_agile", "spell_agile_on", "spell_clairvoyance", "spell_clairvoyance_on", "spell_confusion", "spell_confusion_on", "spell_light", "spell_light_on", "spell_psyshield", "spell_psyshield_on", "spell_drainlife", "spell_drainlife_on", "spell_elecresist", "spell_elecresist_on", "spell_invis", "spell_invis_on"],
           "bg": 4306
         },			
 		{
@@ -28548,7 +28571,7 @@
           "rotates": false
         },
 		{
-          "id": "38_speedloader",
+          "id": ["38_speedloader", "40_speedloader6", "44_speedloader6", "454_speedloader5", "460_speedloader6", "500_speedloader5", "223_speedloader5", "9mm_speedloader7"],
           "fg": 4436,
           "rotates": false
         },        
@@ -28688,7 +28711,7 @@
           "rotates": false
         },
 						{
-          "id": "acid_spit",
+          "id": ["acid_spit", "acid_sniper", "acid_spray"],
           "fg": 4449,
           "rotates": false
         },	
@@ -32133,7 +32156,7 @@
           "rotates": false
         },	
 		{
-          "id": "t_dock",
+          "id": ["t_dock", "t_sh_bridge", "t_riverbridge_dp"],
           "fg": 5022,
           "rotates": false
         },
@@ -47175,40 +47198,34 @@
           "id": "corpse_mon_zombie_kevlar_2",
           "fg": 5448,
           "rotates": false
-        },
-		
-        {
-          "id": "!mon_shoggoth",
-          "fg": 5452,
+        },		
+		{
+          "id": "bot_tankbot",
+          "fg": 5449,
           "rotates": false
         },
-        {
-          "id": "!mon_tankbot",
-          "fg": 5453,
+		{
+          "id": "bot_chickenbot",
+          "fg": 5450,
           "rotates": false
-        },
-        {
+        },   
+		{
           "id": "mon_turret_searchlight",
-          "fg": 5456,
+          "fg": 5451,
 		  "bg": 0,
           "rotates": false
         },
         {
           "id": "mon_blob_brain",
-          "fg": 5457,
+          "fg": 5452,
 		  "bg": 0,
           "rotates": false
         },        
         {
           "id": "mon_triffid_heart",
-          "fg": 5461,
+          "fg": 5453,
           "rotates": false
         }, 
-		{
-          "id": "mon_kappabot",
-          "fg": 5442,
-          "rotates": false
-        },
 		{ 
 		 "id": "L dinos", 
 		 "fg": 0, 
@@ -47216,42 +47233,42 @@
 		},
 	    { 
 		 "id": "mon_spinosaurus",			
-		 "fg": 5464, 
+		 "fg": 5456, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_tyrannosaurus",		
-		 "fg": 5465, 
+		 "fg": 5458, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_triceratops",			
-		 "fg": 5466, 
+		 "fg": 5460, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_stegosaurus",			
-		 "fg": 5467, 
+		 "fg": 5462, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_ankylosaurus",			
-		 "fg": 5468, 
+		 "fg": 5464, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_allosaurus",			
-		 "fg": 5469, 
+		 "fg": 5466, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_parasaurolophus",		
-		 "fg": 5470, 
+		 "fg": 5468, 
 		 "rotates": false 
 		},
 	    { 
 		 "id": "mon_utahraptor",			
-		 "fg": 5471, 
+		 "fg": 5470, 
 		 "rotates": false 
 		}
 	    
@@ -47417,15 +47434,15 @@
         { "id": "overlay_mutation_CANINE_EARS","fg": 2813, "rotates": false },
         { "id": "overlay_mutation_LUPINE_EARS", "fg": 2813, "rotates": false },
         { "id": "overlay_mutation_CENOBITE", "fg": 2814, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_CLOAK", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_HS", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_LS", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_MIND_CONTROL", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_NIGHTVISION", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_NODMG", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_NOSCENT", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_NOTEMP", "fg": 2815, "rotates": false },
-        { "id": "overlay_mutation_DEBUG_SILENT", "fg": 2815, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_CLOAK", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_HS", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_LS", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_MIND_CONTROL", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_NIGHTVISION", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_NODMG", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_NOSCENT", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_NOTEMP", "fg": 0, "rotates": false },
+        { "id": "overlay_mutation_DEBUG_SILENT", "fg": 0, "rotates": false },
         { "id": "overlay_mutation_ELFA_EARS", "fg": 2816, "rotates": false },
         { "id": "overlay_mutation_FELINE_EARS",  "fg": 2817, "rotates": false },
         { "id": "overlay_worn_fur_cat_ears",  "fg": 2817,  "rotates": false },
@@ -47660,33 +47677,33 @@
 		{ "id": "overlay_male_mutation_hair7pink", "fg": 9693, "rotates": false },
 		
 		{ "id": "overlay_female_mutation_hair8blond", "fg": 9696, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_blond_medium", "fg": 9696, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_blond_medium", "fg": 9713, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8blond", "fg": 9697, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_blond_long", "fg": 9697, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_blond_long", "fg": 9729, "rotates": false },
 		{ "id": "overlay_female_mutation_hair8red", "fg": 9698, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_red_medium", "fg": 9698, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_red_medium", "fg": 9715, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8red", "fg": 9699, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_red_long", "fg": 9699, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_red_long", "fg": 9731, "rotates": false },
 		{ "id": "overlay_female_mutation_hair8brown", "fg": 9700, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_brown_medium", "fg": 9700, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_brown_medium", "fg": 9717, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8brown", "fg": 9701, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_brown_long", "fg": 9701, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_brown_long", "fg": 9733, "rotates": false },
 		{ "id": "overlay_female_mutation_hair8black", "fg": 9702, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_black_medium", "fg": 9702, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_black_medium", "fg": 9719, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8black", "fg": 9703, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_black_long", "fg": 9703, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_black_long", "fg": 9735, "rotates": false },
 		{ "id": "overlay_female_mutation_hair8white", "fg": 9704, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_white_medium", "fg": 9704, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_white_medium", "fg": 9721, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8white", "fg": 9705, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_white_long", "fg": 9705, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_white_long", "fg": 9737, "rotates": false },
 		{ "id": "overlay_female_mutation_hair8gray", "fg": 9706, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_gray_medium", "fg": 9706, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_gray_medium", "fg": 9723, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8gray", "fg": 9707, "rotates": false },	
-		{ "id": "overlay_male_mutation_hair_gray_long", "fg": 9707, "rotates": false },		
+		{ "id": "overlay_male_mutation_hair_gray_long", "fg": 9739, "rotates": false },		
 		{ "id": "overlay_female_mutation_hair8pink", "fg": 9708, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_blond_medium", "fg": 9708, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_pink_medium", "fg": 9725, "rotates": false },
 		{ "id": "overlay_male_mutation_hair8pink", "fg": 9709, "rotates": false },
-		{ "id": "overlay_male_mutation_hair_pink_long", "fg": 9709, "rotates": false },
+		{ "id": "overlay_male_mutation_hair_pink_long", "fg": 9741, "rotates": false },
 		
 		{ "id": "overlay_female_mutation_hair9blond", "fg": 9712, "rotates": false },
 		{ "id": "overlay_mutation_hair_blond_fro", "fg": 9712, "rotates": false },
@@ -47875,6 +47892,33 @@
 		{ "id": "overlay_female_mutation_forehair10pink", "fg": 9980, "rotates": false },
 		{ "id": "overlay_male_mutation_forehair10pink", "fg": 9981, "rotates": false },
 		
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_NONE", "fg": 0, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_GOATEE", "fg": 9984, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_CIRCLE", "fg": 9985, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_ROYALE", "fg": 9986, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_ANCHOR", "fg": 9987, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_SHORTBOXED", "fg": 9988, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_CHEVRON", "fg": 9989, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_3DAYSTUBBLE", "fg": 9990, "rotates": false },		
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_HORSESHOE", "fg": 9991, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_MUSTACHE", "fg": 9992, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_MUTTONCHOPS", "fg": 9993, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_GUNSLINGER", "fg": 9994, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_CHIN_STRIP", "fg": 9995, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_CHIN_CURTAIN", "fg": 9996, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_CHIN_STRAP", "fg": 9998, "rotates": false },	
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_BEARD", "fg": 9999, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_HANDLEBAR", "fg": 10000, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_NECKBEARD", "fg": 10001, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_PENCIL", "fg": 10002, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_SHENANDOAH", "fg": 10003, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_SIDEBURNS", "fg": 10004, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_SOUL_PATCH", "fg": 10005, "rotates": false },		
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_TOOTHBRUSH", "fg": 10006, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_VANDYKE", "fg": 10007, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_WALRUS", "fg": 10008, "rotates": false },
+		{ "id": "overlay_male_mutation_FACIAL_HAIR_ZAPPA", "fg": 10009, "rotates": false },
+		
 		{ "id": "overlay_female_mutation_LIGHT_FRECKLES", "fg": 10016, "rotates": false },
         { "id": "overlay_male_mutation_LIGHT_FRECKLES", "fg": 10017, "rotates": false },		
 		{ "id": "overlay_female_mutation_DENSE_FRECKLES", "fg": 10018, "rotates": false },
@@ -47889,7 +47933,7 @@
 		{ "id": "overlay_mutation_BEE", "fg": 10024, "rotates": false },
 		{ "id": "overlay_mutation_MUTE", "fg": 10025, "rotates": false },
 		
-		{ "id": ["overlay_mutation_DEBUG_NIGHTVISION", "overlay_DEBUG_CLOAK", "overlay_mutation_DEBUG_LS", "overlay_mutation_DEBUG_NOSCENT", "overlay_mutation_DEBUG_SILENT", "overlay_mutation_DEBUG_NOTEMP", "overlay_mutation_DEBUG_NODMG", "overlay_mutation_DEBUG_HS", "overlay_mutation_DEBUG_CBM_SLOTS", "overlay_mutation_DEBUG_MIND_CONTROL", "overlay_mutation_DEBUG_STORAGE"], "fg": 10026, "rotates": false },
+		{ "id": ["overlay_mutation_DEBUG_NIGHTVISION", "overlay_DEBUG_CLOAK", "overlay_mutation_DEBUG_LS", "overlay_mutation_DEBUG_NOSCENT", "overlay_mutation_DEBUG_SILENT", "overlay_mutation_DEBUG_NOTEMP", "overlay_mutation_DEBUG_NODMG", "overlay_mutation_DEBUG_HS", "overlay_mutation_DEBUG_CBM_SLOTS", "overlay_mutation_DEBUG_MIND_CONTROL", "overlay_mutation_DEBUG_STORAGE"], "fg": 0, "rotates": false },
 		
 		{ "id": "overlay_mutation_NPC_BRANDY", "fg": 10027, "rotates": false },
 		{ "id": "overlay_mutation_NPC_RUM", "fg": 10028, "rotates": false },
@@ -47997,15 +48041,15 @@
 		{ "id": "overlay_female_mutation_VISCOUS", "fg": 10112, "rotates": false },
 		{ "id": "overlay_male_mutation_VISCOUS", "fg": 10113, "rotates": false },
 		
-		{ "id": "overlay_mutation_DEBUG_NODMG", "fg": 10116, "rotates": false },
-		{ "id": "overlay_mutation_DEBUG_NIGHTVISION", "fg": 10117, "rotates": false },
-		{ "id": "overlay_female_mutation_DEBUG_CLOAK", "fg": 10118, "rotates": false },
-		{ "id": "overlay_male_mutation_DEBUG_CLOAK", "fg": 10119, "rotates": false },
-		{ "id": "overlay_female_mutation_DEBUG_LS", "fg": 10120, "rotates": false },
-		{ "id": "overlay_male_mutation_DEBUG_LS", "fg": 10121, "rotates": false },
-		{ "id": "overlay_female_mutation_DEBUG_NOSCENT", "fg": 10122, "rotates": false },
-		{ "id": "overlay_male_mutation_DEBUG_NOSCENT", "fg": 10123, "rotates": false },
-		{ "id": "overlay_mutation_DEBUG_SILENT", "fg": 10124, "rotates": false },
+		{ "id": "overlay_mutation_DEBUG_NODMG", "fg": 0, "rotates": false },
+		{ "id": "overlay_mutation_DEBUG_NIGHTVISION", "fg": 0, "rotates": false },
+		{ "id": "overlay_female_mutation_DEBUG_CLOAK", "fg": 0, "rotates": false },
+		{ "id": "overlay_male_mutation_DEBUG_CLOAK", "fg": 0, "rotates": false },
+		{ "id": "overlay_female_mutation_DEBUG_LS", "fg": 0, "rotates": false },
+		{ "id": "overlay_male_mutation_DEBUG_LS", "fg": 0, "rotates": false },
+		{ "id": "overlay_female_mutation_DEBUG_NOSCENT", "fg": 0, "rotates": false },
+		{ "id": "overlay_male_mutation_DEBUG_NOSCENT", "fg": 0, "rotates": false },
+		{ "id": "overlay_mutation_DEBUG_SILENT", "fg": 0, "rotates": false },
 
 		{ "id": "overlay_female_mutation_PLANTSKIN", "fg": 10038, "rotates": false },
 		
@@ -48174,6 +48218,7 @@
 		{ "id": "mon_cyberdemon", "fg": 11573, "rotates": false },
 		{ "id": "mon_doom_archdemon", "fg": 11574, "rotates": false },
 		{ "id": "arachnotron_guts", "fg": 11575, "rotates": false },
+		{ "id": "mon_dragon_dummy", "fg": 11576, "rotates": false },
 		{ "id": "mon_ant_acid_ultralisk", "fg": 11580, "rotates": false },
 		{ "id": "!broken_tankbot", "fg": 11581, "rotates": false },
 		{ "id": "!mon_albino_penguin", "fg": 11582, "rotates": false },
@@ -48358,6 +48403,26 @@
         {
           "id": "overlay_effect_haslight",
           "fg": 11646
+        },
+		        {
+          "id": ["overlay_effect_deaf"],
+          "fg": 11647
+        },
+		{
+          "id": ["overlay_effect_dazed"],
+          "fg": 11648
+        },
+		{
+          "id": ["overlay_effect_drunk"],
+          "fg": 11649
+        },	
+		{
+          "id": ["overlay_effect_high"],
+          "fg": 11650
+        },
+		{
+          "id": ["overlay_effect_bouldering"],
+          "fg": 11651
         }
     ]
 	},
@@ -48911,7 +48976,7 @@
           "rotates": false
         },
 		{
-          "id": "mon_shadow",
+          "id": ["mon_shadow", "mon_shadow_summoned"],
           "fg": [
             { "weight":1, "sprite":2583},
 			{ "weight":1, "sprite":12100},
@@ -52339,18 +52404,23 @@
 			},
 		{
           "id": "t_trunk",
-          "fg": 17582,
+          "fg": 17572,
 		  "bg": 1012,
 		  "multitile": true,
-          "additional_tiles": [            
+          "additional_tiles": [ 
+			{
+              "id": "center",
+              "fg": 17572,
+			  "bg": 1012
+            },		  
 		  {
               "id": "corner",
-              "fg": [17583, 17584, 17585, 17586],
+              "fg": [17573, 17574, 17575, 17576],
 			  "bg": 1012
             },
 					  {
               "id": "t_connection",
-              "fg": [17584, 17585, 17584, 17585],
+              "fg": [17577, 17578, 17579, 17580],
 			  "bg": 1012
             },
             {
@@ -53876,7 +53946,7 @@
             },
             {
               "id": "t_connection",
-              "fg": [18185, 18186, 18187, 18189],
+              "fg": [18185, 18186, 18187, 18188],
 			  "bg": 985
             },
             {
@@ -53891,7 +53961,7 @@
             },
             {
               "id": "unconnected",
-              "fg": 18196,
+              "fg": 18195,
 			  "bg": 985
             }
 			],
@@ -53929,11 +53999,1435 @@
             },
             {
               "id": "unconnected",
-              "fg": 18196,
+              "fg": 18195,
 			  "bg": 992
             }
 			],
 			"rotates": false
+			},
+			{
+          "id": "t_glass_railing",
+          "fg": 18196,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18196,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18197, 18198, 18199, 18200],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18201, 18202, 18203, 18204],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18205, 18206],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18207, 18208, 18209, 18210],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18211,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_metal_railing",
+          "fg": 18212,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18212,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18213, 18214, 18215, 18216],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18217, 18218, 18219, 18220],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18221, 18222],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18223, 18224, 18225, 18226],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18227,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_guardrail_bg_dp",
+          "fg": 18228,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18228,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18229, 18230, 18231, 18232],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18233, 18234, 18235, 18236],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18237, 18238],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18239, 18240, 18241, 18242],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18243,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_grass_white",
+          "fg": 18244,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18244,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18245, 18246, 18247, 18248],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18249, 18250, 18251, 18252],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18253, 18254],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18255, 18256, 18257, 18258],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18259,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_wall_glass",
+          "fg": 18260,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18260,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18261, 18262, 18263, 18264],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18265, 18266, 18267, 18268],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18269, 18270],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18271, 18272, 18273, 18274],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18275,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_brick_wall",
+          "fg": 18276,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18276,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18277, 18278, 18279, 18280],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18281, 18282, 18283, 18284],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18285, 18286],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18287, 18288, 18289, 18290],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18291,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_wall_wood",
+          "fg": 18292,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18292,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18293, 18294, 18295, 18296],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18297, 18298, 18299, 18300],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18301, 18302],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18303, 18304, 18305, 18306],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18307,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_chainfence",
+          "fg": 18308,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18308,
+			  "bg": 985
+            },
+            {
+              "id": "corner",
+              "fg": [18309, 18310, 18311, 18312],
+			  "bg": 985
+            },
+            {
+              "id": "t_connection",
+              "fg": [18313, 18314, 18317, 18316],
+			  "bg": 985
+            },
+            {
+              "id": "edge",
+              "fg": [18317, 18318],
+			  "bg": 985
+            },
+            {
+              "id": "end_piece",
+              "fg": [18319, 18320, 18321, 18322],
+			  "bg": 985
+            },
+            {
+              "id": "unconnected",
+              "fg": 18323,
+			  "bg": 985
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_slide",
+          "fg": 18324,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18324,
+			  "bg": 1012
+            },
+            {
+              "id": "corner",
+              "fg": [18325, 18326, 18327, 18328],
+			  "bg": 1012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18329, 18330, 18331, 18332],
+			  "bg": 1012
+            },
+            {
+              "id": "edge",
+              "fg": [18333, 18334],
+			  "bg": 1012
+            },
+            {
+              "id": "end_piece",
+              "fg": [18335, 18336, 18337, 18338],
+			  "bg": 1012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18339,
+			  "bg": 1012
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_slide_season_winter",
+          "fg": 18324,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18324,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18325, 18326, 18327, 18328],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18329, 18330, 18331, 18332],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18333, 18334],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18335, 18336, 18337, 18338],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18339,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_wall_log",
+          "fg": 18340,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18340,
+			  "bg": 1012
+            },
+            {
+              "id": "corner",
+              "fg": [18341, 18342, 18343, 18344],
+			  "bg": 1012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18345, 18346, 18347, 18348],
+			  "bg": 1012
+            },
+            {
+              "id": "edge",
+              "fg": [18349, 18350],
+			  "bg": 1012
+            },
+            {
+              "id": "end_piece",
+              "fg": [18351, 18352, 18353, 18354],
+			  "bg": 1012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18355,
+			  "bg": 1012
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_railing",
+          "fg": 18356,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18356,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18357, 18358, 18359, 18360],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18361, 18362, 18363, 18364],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18365, 18366],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18367, 18368, 18369, 18370],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18371,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_strconc_wall",
+          "fg": 18372,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18372,
+			  "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18373, 18374, 18375, 18376],
+			  "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18377, 18378, 18379, 18380],
+			  "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18381, 18382],
+			  "bg": 993
+            },
+            {
+              "id": "end_piece",
+              "fg": [18383, 18384, 18385, 18386],
+			  "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18387,
+			  "bg": 993
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_ponywall",
+          "fg": 18388,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18388,
+			  "bg": 17140
+            },
+            {
+              "id": "corner",
+              "fg": [18389, 18390, 18391, 18392],
+			  "bg": 17140
+            },
+            {
+              "id": "t_connection",
+              "fg": [18393, 18394, 18395, 18396],
+			  "bg": 17140
+            },
+            {
+              "id": "edge",
+              "fg": [18397, 18398],
+			  "bg": 17140
+            },
+            {
+              "id": "end_piece",
+              "fg": [18399, 18400, 18401, 18402],
+			  "bg": 17140
+            },
+            {
+              "id": "unconnected",
+              "fg": 18403,
+			  "bg": 17140
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_water_moving_sh",
+          "fg": 18404,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18404,
+			  "bg": 1012
+            },
+            {
+              "id": "corner",
+              "fg": [18405, 18406, 18407, 18408],
+			  "bg": 1012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18409, 18410, 18411, 18412],
+			  "bg": 1012
+            },
+            {
+              "id": "edge",
+              "fg": [18413, 18414],
+			  "bg": 1012
+            },
+            {
+              "id": "end_piece",
+              "fg": [18415, 18416, 18417, 18418],
+			  "bg": 1012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18419,
+			  "bg": 1012
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_water_moving_dp",
+          "fg": 18420,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18420,
+			  "bg": 1012
+            },
+            {
+              "id": "corner",
+              "fg": [18421, 18422, 18423, 18424],
+			  "bg": 1012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18425, 18426, 18427, 18428],
+			  "bg": 1012
+            },
+            {
+              "id": "edge",
+              "fg": [18429, 18430],
+			  "bg": 1012
+            },
+            {
+              "id": "end_piece",
+              "fg": [18431, 18432, 18433, 18434],
+			  "bg": 1012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18435,
+			  "bg": 1012
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_water_moving_sh_season_winter",
+          "fg": 18404,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18404,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18405, 18406, 18407, 18408],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18409, 18410, 18411, 18412],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18413, 18414],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18415, 18416, 18417, 18418],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18419,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_water_moving_dp_season_winter",
+          "fg": 18420,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18420,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18421, 18422, 18423, 18424],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18425, 18426, 18427, 18428],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18429, 18430],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18431, 18432, 18433, 18434],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18435,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_tar_flat_roof",
+          "fg": 18436,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18436,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18437, 18438, 18439, 18440],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18441, 18442, 18443, 18444],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18445, 18446],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18447, 18448, 18449, 18450],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18451,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_shingle_flat_roof",
+          "fg": 18452,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18452,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18453, 18454, 18455, 18456],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18457, 18458, 18459, 18460],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18461, 18462],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18463, 18464, 18465, 18466],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18467,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_metal_flat_roof",
+          "fg": 18468,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18468,
+			  "bg": 985
+            },
+            {
+              "id": "corner",
+              "fg": [18469, 18470, 18471, 18472],
+			  "bg": 985
+            },
+            {
+              "id": "t_connection",
+              "fg": [18473, 18474, 18475, 18476],
+			  "bg": 985
+            },
+            {
+              "id": "edge",
+              "fg": [18477, 18478],
+			  "bg": 985
+            },
+            {
+              "id": "end_piece",
+              "fg": [18479, 18480, 18481, 18482],
+			  "bg": 985
+            },
+            {
+              "id": "unconnected",
+              "fg": 18483,
+			  "bg": 985
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_tile_flat_roof",
+          "fg": 18484,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18484,
+			  "bg": 985
+            },
+            {
+              "id": "corner",
+              "fg": [18485, 18486, 18487, 18488],
+			  "bg": 985
+            },
+            {
+              "id": "t_connection",
+              "fg": [18489, 18490, 18491, 18492],
+			  "bg": 985
+            },
+            {
+              "id": "edge",
+              "fg": [18493, 18494],
+			  "bg": 985
+            },
+            {
+              "id": "end_piece",
+              "fg": [18495, 18496, 18497, 18498],
+			  "bg": 985
+            },
+            {
+              "id": "unconnected",
+              "fg": 18499,
+			  "bg": 985
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_glass_roof",
+          "fg": 18500,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18500,
+			  "bg": 985
+            },
+            {
+              "id": "corner",
+              "fg": [18501, 18502, 18503, 18504],
+			  "bg": 985
+            },
+            {
+              "id": "t_connection",
+              "fg": [18505, 18506, 18507, 18508],
+			  "bg": 985
+            },
+            {
+              "id": "edge",
+              "fg": [18509, 18510],
+			  "bg": 985
+            },
+            {
+              "id": "end_piece",
+              "fg": [18511, 18512, 18513, 18514],
+			  "bg": 985
+            },
+            {
+              "id": "unconnected",
+              "fg": 18515,
+			  "bg": 985
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "f_lab_bench",
+          "fg": 18516,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18516,
+			  "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18517, 18518, 18519, 18520],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [18521, 18522, 18523, 18524],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [18525, 18526],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [18527, 18528, 18529, 18530],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 18531,
+			  "bg": 0
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "f_lab_bench",
+          "fg": 18516,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18516,
+			  "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18517, 18518, 18519, 18520],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [18521, 18522, 18523, 18524],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [18525, 18526],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [18527, 18528, 18529, 18530],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 18531,
+			  "bg": 0
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "f_arcade_machine",
+          "fg": 18532,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18532,
+			  "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18533, 18534, 18535, 18536],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [18537, 18538, 18539, 18540],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [18541, 18542],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [18543, 18544, 18545, 18546],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 18547,
+			  "bg": 0
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_fungus",
+          "fg": 18548,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18548,
+			  "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18549, 18550, 18551, 18552],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [18553, 18554, 18555, 18556],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [18557, 18558],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [18559, 18560, 18561, 18562],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 18563,
+			  "bg": 0
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_fungus_season_winter",
+          "fg": 18564,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18564,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18565, 18566, 18567, 18568],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18569, 18570, 18571, 18572],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18573, 18574],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18575, 18576, 18577, 18578],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18579,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_water_pool",
+          "fg": 18580,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 18580,
+			  "bg": 992
+            },
+            {
+              "id": "corner",
+              "fg": [18581, 18582, 18583, 18584],
+			  "bg": 992
+            },
+            {
+              "id": "t_connection",
+              "fg": [18585, 18586, 18587, 18588],
+			  "bg": 992
+            },
+            {
+              "id": "edge",
+              "fg": [18589, 18590],
+			  "bg": 992
+            },
+            {
+              "id": "end_piece",
+              "fg": [18591, 18592, 18593, 18594],
+			  "bg": 992
+            },
+            {
+              "id": "unconnected",
+              "fg": 18595,
+			  "bg": 992
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_sewage",
+          "fg": 18596,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": [
+            { "weight":2000, "sprite":18596},
+            { "weight":16, "sprite":27689},
+            { "weight":150, "sprite":27690},
+            { "weight":140, "sprite":27691},
+            { "weight":130, "sprite":27692},     
+			{ "weight":130, "sprite":27693},
+            { "weight":130, "sprite":27694},
+            { "weight":5, "sprite":27695},
+            { "weight":130, "sprite":27696},
+			{ "weight":1, "sprite":27697},
+			{ "weight":1, "sprite":27698}
+            ],
+			  "bg": 1012
+            },
+            {
+              "id": "corner",
+              "fg": [18597, 18598, 18599, 18600],
+			  "bg": 1012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18601, 18602, 18603, 18604],
+			  "bg": 1012
+            },
+            {
+              "id": "edge",
+              "fg": [18605, 18606],
+			  "bg": 1012
+            },
+            {
+              "id": "end_piece",
+              "fg": [18607, 18608, 18609, 18610],
+			  "bg": 1012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18611,
+			  "bg": 1012
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "f_satellite",
+          "fg": 17571,
+		  "multitile": true,
+          "additional_tiles": [
+            {
+			  "id": "center",
+              "fg": 17571,
+			  "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18613, 18614, 18615, 18616],
+			  "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [17571, 17571, 17571, 17571],
+			  "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [17571, 17571],
+			  "bg": 0
+            },
+            {
+              "id": "end_piece",
+              "fg": [17571, 17571, 17571, 17571],
+			  "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 23770,
+			  "bg": 0
+            }
+			],
+			"rotates": false
+			},
+			{
+          "id": "t_wall_metal",
+          "fg": 18628,
+          "bg": 993,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+		    {
+              "id": "center",
+              "fg": 18628,
+              "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18629, 18630, 18631, 18632],
+              "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18633, 18634, 18635, 18636],
+              "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18637, 18638],
+              "bg": 993
+            },	
+			{
+              "id": "end_piece",
+              "fg": [18639, 18640, 18641, 18642],
+              "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18643,
+              "bg": 993
+            }
+          ]
+        },
+			{
+          "id": "t_generator_broken",
+          "fg": 18644,
+          "bg": 993,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+		    {
+              "id": "center",
+              "fg": 18644,
+              "bg": 993
+            },
+            {
+              "id": "corner",
+              "fg": [18645, 18646, 18647, 18648],
+              "bg": 993
+            },
+            {
+              "id": "t_connection",
+              "fg": [18649, 18650, 18651, 18652],
+              "bg": 993
+            },
+            {
+              "id": "edge",
+              "fg": [18653, 18654],
+              "bg": 993
+            },	
+			{
+              "id": "end_piece",
+              "fg": [18655, 18656, 18657, 18658],
+              "bg": 993
+            },
+            {
+              "id": "unconnected",
+              "fg": 18659,
+              "bg": 993
+            }
+							 ]
+			},
+			{
+          "id": "t_sewage_pump",
+          "fg": 18660,
+          "bg": 5012,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+		    {
+              "id": "center",
+              "fg": 18660,
+              "bg": 5012
+            },
+            {
+              "id": "corner",
+              "fg": [18661, 18662, 18663, 18664],
+              "bg": 5012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18665, 18666, 18667, 18668],
+              "bg": 5012
+            },
+            {
+              "id": "edge",
+              "fg": [18669, 18670],
+              "bg": 5012
+            },	
+			{
+              "id": "end_piece",
+              "fg": [18671, 18672, 18673, 18674],
+              "bg": 5012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18675,
+              "bg": 5012
+            }
+							 ]
+			},
+			{
+          "id": "t_sewage_pipe",
+          "fg": 18676,
+          "bg": 5012,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+		    {
+              "id": "center",
+              "fg": 18676,
+              "bg": 5012
+            },
+            {
+              "id": "corner",
+              "fg": [18677, 18678, 18679, 18680],
+              "bg": 5012
+            },
+            {
+              "id": "t_connection",
+              "fg": [18681, 18682, 18683, 18684],
+              "bg": 5012
+            },
+            {
+              "id": "edge",
+              "fg": [18685, 18686],
+              "bg": 5012
+            },	
+			{
+              "id": "end_piece",
+              "fg": [18687, 18688, 18689, 18690],
+              "bg": 5012
+            },
+            {
+              "id": "unconnected",
+              "fg": 18691,
+              "bg": 5012
+            }
+			]
+			},
+			{
+          "id": "f_spires_arcana",
+          "fg": 18692,
+          "bg": 0,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+		    {
+              "id": "center",
+              "fg": 18692,
+              "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18693, 18694, 18695, 18696],
+              "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [18697, 18698, 18699, 18700],
+              "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [18701, 18702],
+              "bg": 0
+            },	
+			{
+              "id": "end_piece",
+              "fg": [18703, 18704, 18705, 18706],
+              "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 18707,
+              "bg": 0
+            }
+			]
+			},
+			{
+          "id": "t_fault",
+          "fg": 18708,
+          "bg": 0,
+          "rotates": false,
+          "multitile": true,
+          "additional_tiles": [
+		    {
+              "id": "center",
+              "fg": 18708,
+              "bg": 0
+            },
+            {
+              "id": "corner",
+              "fg": [18709, 18710, 18711, 18712],
+              "bg": 0
+            },
+            {
+              "id": "t_connection",
+              "fg": [18713, 18714, 18715, 18716],
+              "bg": 0
+            },
+            {
+              "id": "edge",
+              "fg": [18717, 18718],
+              "bg": 0
+            },	
+			{
+              "id": "end_piece",
+              "fg": [18719, 18720, 18721, 18722],
+              "bg": 0
+            },
+            {
+              "id": "unconnected",
+              "fg": 18723,
+              "bg": 0
+            }
+			]
 			}
   ]
   },
@@ -54330,7 +55824,8 @@
 		{ "id": "overlay_wielded_cs_lajatang_on",			"fg": 22347, "rotates": false },
 		{ "id": "overlay_wielded_ecs_lajatang_off",				"fg": 22348, "rotates": false },
 		{ "id": "overlay_wielded_ecs_lajatang_on",				"fg": 22349, "rotates": false },
-		{ "id": "overlay_wielded_bio_sword_weapon",				"fg": 22350, "rotates": false }
+		{ "id": "overlay_wielded_bio_sword_weapon",				"fg": 22350, "rotates": false },
+		{ "id": "overlay_wielded_makeshift_scythe_war",				"fg": 22351, "rotates": false }
 	]
 	},
 	{
@@ -60120,7 +61615,7 @@
           "rotates": false
         },		
 		{
-          "id": "corpse_mon_ant_acid",
+          "id": ["corpse_mon_ant_acid"],
           "fg": 23469,
           "bg": 0,
           "rotates": false
@@ -60871,7 +62366,7 @@
           "rotates": false
         }, 
 		{
-          "id": "corpse_mon_ant_acid",
+          "id": ["corpse_mon_ant_acid", "corpse_mon_ant_acid_terminal"],
           "fg": 23585,
           "bg": 0,
           "rotates": false
@@ -61339,13 +62834,13 @@
           "rotates": false
         },
 				{
-          "id": ["f_hydralic_press"],
+          "id": ["f_hydraulic_press"],
           "fg": 23663,
 		  "bg": 0,
           "rotates": false
         },	
 		{
-          "id": ["f_filling_cabinet"],
+          "id": ["f_filing_cabinet"],
           "fg": 23664,
 		  "bg": 0,
           "rotates": false
@@ -61952,12 +63447,6 @@
           "rotates": false
         },		
 		{
-          "id": "f_solar_unit",
-          "fg": 23774,
-		  "bg": 0,
-          "rotates": false
-        },	
-		{
           "id": "f_TV_antenna",
           "fg": 23775,
 		  "bg": 0,
@@ -61976,10 +63465,1055 @@
           "rotates": false
         },	
 		{
+          "id": "scorecard",
+          "fg": 23778,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "t_column_halfway",
+          "fg": 23779,
+		  "bg": 4844,
+          "rotates": false
+        },			
+		{
+          "id": "f_dishwasher",
+          "fg": 23780,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_eyewash",
+          "fg": 23781,
+		  "bg": 0,
+          "rotates": false
+        },	
+				{
+          "id": "f_fume_hood",
+          "fg": 23782,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_camp_chair",
+          "fg": 23783,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_HPLC",
+          "fg": 23784,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_HPLC",
+          "fg": 23784,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_GC",
+          "fg": 23785,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_shaker",
+          "fg": 23786,
+		  "bg": 0,
+          "rotates": false
+        },		
+		{
+          "id": "f_electron_microscope",
+          "fg": 23787,
+		  "bg": 0,
+          "rotates": false
+        },		
+		{
+          "id": "f_autoclave",
+          "fg": 23788,
+		  "bg": 0,
+          "rotates": false
+        },		
+				{
+          "id": "f_sample_freezer",
+          "fg": 23789,
+		  "bg": 0,
+          "rotates": false
+        },		
+		{
+          "id": "f_MS",
+          "fg": 23790,
+		  "bg": 0,
+          "rotates": false
+        },	
+				{
+          "id": "f_NMR",
+          "fg": 23791,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "camp_chair",
+          "fg": 23792,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "classic_literature",
+          "fg": 23793,
+		  "bg": 0,
+          "rotates": false
+        },		
+		{
+          "id": "collector_book",
+          "fg": 23794,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": ["dry_lentils", "raw_lentils"],
+          "fg": 23795,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "lentils_cooked",
+          "fg": 23796,
+		  "bg": 0,
+          "rotates": false
+        },	
+				{
+          "id": "f_birdbath",
+          "fg": 23797,
+		  "bg": 0,
+          "rotates": false
+        },	
+						{
+          "id": "f_rotary_clothesline",
+          "fg": 23798,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_chimney",
+          "fg": 23799,
+		  "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "f_vent_pipe",
+          "fg": 23800,
+		  "bg": 0,
+          "rotates": false
+        },	
+				{
+          "id": "f_beaded_door",
+          "fg": 23801,
+		  "bg": 0,
+          "rotates": false
+        },	
+						{
+          "id": "f_beaded_door_o",
+          "fg": 23802,
+		  "bg": 0,
+          "rotates": false
+        },			
+		{
+          "id": "f_curtain",
+          "fg": 23803,
+          "rotates": false
+        },	
+						{
+          "id": "f_curtain_open",
+          "fg": 23804,
+          "rotates": false
+        },		
+		{
+          "id": "corpse",
+          "fg": 23805,
+          "rotates": false
+        },	
+				{
+          "id": "wooden_bead",
+          "fg": 23806,
+          "rotates": false
+        },	
+						{
+          "id": "bead_necklace",
+          "fg": 23807,
+          "rotates": false
+        },	
+		{
+          "id": "bead_bracelet",
+          "fg": 23808,
+          "rotates": false
+        },	
+		{
+          "id": "overlay_worn_bead_necklace",
+          "fg": 23809,
+          "rotates": false
+        },	
+		{
+          "id": "overlay_worn_bead_bracelet",
+          "fg": 23810,
+          "rotates": false
+        },	
+				{
+          "id": "overlay_worn_bead_bracelet",
+          "fg": 23810,
+          "rotates": false
+        },
+		{
+          "id": ["bio_ankles", "bio_deformity", "bio_itchy", "bio_jointservo", "bio_leaky", "bio_nostril", "bio_pokedeye", "bio_shakes","bio_sleepy", "bio_spasm", "bio_thumbs", "bio_trip", "bio_voice"],
+          "fg": 23811,
+          "rotates": false
+        },
+		{
+          "id": "blade_scythe",
+          "fg": 23812,
+          "rotates": false
+        },
+				{
+          "id": "lock",
+          "fg": 23813,
+          "rotates": false
+        },
+						{
+          "id": "bottle_suppressor",
+          "fg": 23814,
+          "rotates": false
+        },
+		{
+          "id": "filter_suppressor",
+          "fg": 23815,
+          "rotates": false
+        },	
+		{
+          "id": "makeshift_scythe_war",
+          "fg": 23816,
+          "rotates": false
+        },	
+		{
+          "id": "bot_turret_searchlight",
+          "fg": 23817,
+          "rotates": false
+        },
+		        {
+          "id": "t_fungus_mound_season_winter",
+          "fg": 23818,
+          "bg": 966,
+          "rotates": false
+        },
+				{
+          "id": "bot_broken_cyborg",
+          "fg": 23819,
+          "rotates": false
+        },
+						{
+          "id": "bot_hazmatbot",
+          "fg": 23820,
+          "rotates": false
+        },
+		{
+          "id": "bot_eyebot",
+          "fg": 23821,
+          "rotates": false
+        },		
+		{
+          "id": "bot_molebot",
+          "fg": 23822,
+          "rotates": false
+        },	
+		{
+          "id": "bot_tripod",
+          "fg": 23823,
+          "rotates": false
+        },	
+		{
+          "id": "bot_skitterbot",
+          "fg": 23824,
+          "rotates": false
+        },
+				{
+          "id": "bot_science_bot",
+          "fg": 23825,
+          "rotates": false
+        },
+						{
+          "id": "mut_quills",
+          "fg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "ruger30",
+          "fg": 23826,
+          "rotates": false
+        },
+				{
+          "id": "ruger5",
+          "fg": 23827,
+          "rotates": false
+        },
+				{
+          "id": "vp_mountable_heater",
+          "fg": 23828,
+          "rotates": false
+        },
+						{
+          "id": "mountable_heater",
+          "fg": 23829,
+          "rotates": false
+        },
+		{
+          "id": "xl_wind_turbine",
+          "fg": 23830,
+          "rotates": false
+        },
+		{
+          "id": "vp_xl_wind_turbine",
+          "fg": 23831,
+          "rotates": false
+        },
+		{
+          "id": "water_wheel",
+          "fg": 23832,
+          "rotates": false
+        },
+		{
+          "id": "xl_water_wheel",
+          "fg": 23833,
+          "rotates": false
+        },
+		{
+          "id": "vp_water_wheel",
+          "fg": 23834,
+          "rotates": false
+        },
+		{
+          "id": "vp_xl_water_wheel",
+          "fg": 23835,
+          "rotates": false
+        },	
+		{
+          "id": "beaker",
+          "fg": 23836,
+          "rotates": false
+        },	
+		{
+          "id": "burette",
+          "fg": 23837,
+          "rotates": false
+        },	
+		{
+          "id": "character_sheet",
+          "fg": 23838,
+          "rotates": false
+        },		
+		{
+          "id": ["chem_DMSO", "chem_chloroform", "chem_glycerol"],
+          "fg": 23839,
+          "rotates": false
+        },		
+		{
+          "id": "chem_acrylamide",
+          "fg": 23840,
+          "rotates": false
+        },	
+		{
+          "id": "chem_agar",
+          "fg": 23841,
+          "rotates": false
+        },	
+		{
+          "id": "chem_peptone_broth",
+          "fg": 23842,
+          "rotates": false
+        },	
+		{
+          "id": "chem_phenol",
+          "fg": 23843,
+          "rotates": false
+        },	
+		{
+          "id": "funnel_separation",
+          "fg": 23844,
+          "rotates": false
+        },		
+		{
+          "id": "gelbox",
+          "fg": 23845,
+          "rotates": false
+        },
+				{
+          "id": "gradcylinder",
+          "fg": 23846,
+          "rotates": false
+        },		
+		{
+          "id": ["nitrogen_tank"],
+          "fg": 23847,
+          "rotates": false
+        },	
+		{
+          "id": "material_soil",
+          "fg": 23848,
+          "rotates": false
+        },	
+		{
+          "id": "microcentrifuge",
+          "fg": 23849,
+          "rotates": false
+        },
+				{
+          "id": "graffiti",
+          "fg": [
+            { "weight":3, "sprite":23850}
+            ],
+          "rotates": false
+        },	
+		{
+          "id": "f_server",
+          "fg": 23851,
+          "rotates": false
+        },		
+		{
+          "id": "f_MRI",
+          "fg": 23852,
+          "rotates": false
+        },		
+		{
+          "id": "f_CTscan",
+          "fg": 23853,
+          "rotates": false
+        },	
+		{
+          "id": "f_scan_bed",
+          "fg": 23854,
+          "rotates": false
+        },
+				{
+          "id": "f_anesthetic",
+          "fg": 23855,
+          "rotates": false
+        },
+		{
+          "id": "f_dialysis",
+          "fg": 23856,
+          "rotates": false
+        },
+				{
+          "id": "f_ventilator",
+          "fg": 23857,
+          "rotates": false
+        },	
+		{
+          "id": "microscope",
+          "fg": 23858,
+          "rotates": false
+        },	
+		{
+          "id": "microscope_dissecting",
+          "fg": 23859,
+          "rotates": false
+        },
+				{
+          "id": "rack_test_tube_micro",
+          "fg": 23860,
+          "rotates": false
+        },	
+		{
+          "id": "test_tube_micro",
+          "fg": 23861,
+          "rotates": false
+        },	
+		{
+          "id": "vortex",
+          "fg": 23862,
+          "rotates": false
+        },
+				{
+          "id": "voltmeter",
+          "fg": 23863,
+          "rotates": false
+        },		
+		{
+          "id": "f_shredder",
+          "fg": 23864,
+          "rotates": false
+        },
+		{
+          "id": "f_IV_pole",
+          "fg": 23865,
+          "rotates": false
+        },	
+		{
+          "id": "f_arc_furnace",
+          "fg": 23866,
+          "rotates": false
+        },		
+		{
+          "id": "f_tablesaw",
+          "fg": 23867,
+          "rotates": false
+        },
+				{
+          "id": "f_mitresaw",
+          "fg": 23868,
+          "rotates": false
+        },
+						{
+          "id": "f_bandsaw",
+          "fg": 23869,
+          "rotates": false
+        },	
+		{
+          "id": "f_router",
+          "fg": 23870,
+          "rotates": false
+        },
+				{
+          "id": "f_planer",
+          "fg": 23871,
+          "rotates": false
+        },
+						{
+          "id": "f_jointer",
+          "fg": 23872,
+          "rotates": false
+        },
+								{
+          "id": "f_robotic_assembler",
+          "fg": 23873,
+          "rotates": false
+        },
+										{
+          "id": "f_chemical_mixer",
+          "fg": 23874,
+          "rotates": false
+        },
+												{
+          "id": "f_air_filter",
+          "fg": 23875,
+          "rotates": false
+        },	
+		{
+          "id": "f_water_purifier",
+          "fg": 23876,
+          "rotates": false
+        },
+				{
+          "id": "f_air_compressor",
+          "fg": 23877,
+          "rotates": false
+        },	
+		{
+          "id": "rack_test_tube",
+          "fg": 23878,
+          "rotates": false
+        },	
+		{
+          "id": "rotovap",
+          "fg": 23879,
+          "rotates": false
+        },		
+		{
+          "id": "stand_ring",
+          "fg": 23880,
+          "rotates": false
+        },	
+		{
+          "id": "stand_ring_clamps",
+          "fg": 23881,
+          "rotates": false
+        },		
+		{
+          "id": "still_lab",
+          "fg": 23882,
+          "rotates": false
+        },	
+		{
+          "id": "stopcock",
+          "fg": 23883,
+          "rotates": false
+        },
+				{
+          "id": "t_grave",
+          "fg": 23884,
+          "rotates": false
+        },	
+		{
+          "id": "t_grave_season_winter",
+          "fg": 23885,
+          "rotates": false
+        },	
+		{
+          "id": "t_thatch_roof",
+          "fg": 23886,
+          "rotates": false
+        },
+				{
+          "id": "t_dirtfloor_thatchroof",
+          "fg": 23887,
+          "rotates": false
+        },	
+		{
+          "id": "hydrogen_tank",
+          "fg": 23888,
+          "rotates": false
+        },		
+		{
+          "id": "tofu",
+          "fg": 23889,
+          "rotates": false
+        },
+				{
+          "id": "tofu_fried",
+          "fg": 23890,
+          "rotates": false
+        },		
+		{
+          "id": "dry_tofu",
+          "fg": 23891,
+          "rotates": false
+        },	
+		{
+          "id": "tofu_rice",
+          "fg": 23892,
+          "rotates": false
+        },	
+		{
+          "id": "tofu_stirfry",
+          "fg": 23893,
+          "rotates": false
+        },
+				{
+          "id": "nitrox",
+          "fg": 23894,
+          "rotates": false
+        },	
+		{
+          "id": "raw_edamame",
+          "fg": 23895,
+          "rotates": false
+        },	
+		{
+          "id": "edamame_roasted",
+          "fg": 23896,
+          "rotates": false
+        },
+				{
+          "id": "cooking_oil2",
+          "fg": 23897,
+          "rotates": false
+        },	
+		{
+          "id": "bag_body_bag",
+          "fg": 23898,
+          "rotates": false
+        },
+				{
+          "id": "wind",
+          "fg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "wheel_tricycle",
+          "fg": 23899,
+          "rotates": false
+        },
+						{
+          "id": "scuba_tank",
+          "fg": 23900,
+          "rotates": false
+        },	
+		{
+          "id": "small_scuba_tank",
+          "fg": 23901,
+          "rotates": false
+        },
+								{
+          "id": "scuba_tank_on",
+          "fg": 23902,
+          "rotates": false
+        },	
+		{
+          "id": "small_scuba_tank_on",
+          "fg": 23903,
+          "rotates": false
+        },
+								{
+          "id": "overlay_worn_scuba_tank",
+          "fg": 23904,
+          "rotates": false
+        },	
+		{
+          "id": "overlay_worn_small_scuba_tank",
+          "fg": 23905,
+          "rotates": false
+        },
+								{
+          "id": "overlay_worn_scuba_tank_on",
+          "fg": 23906,
+          "rotates": false
+        },	
+		{
+          "id": "overlay_worn_small_scuba_tank_on",
+          "fg": 23907,
+          "rotates": false
+        },
+				{
+          "id": "seed_beans",
+          "fg": 23908,
+          "rotates": false
+        },	
+		{
+          "id": "seed_lentils",
+          "fg": 23909,
+          "rotates": false
+        },
+						{
+          "id": "soybean",
+          "fg": 23910,
+          "rotates": false
+        },	
+		{
+          "id": "soybean_seed",
+          "fg": 23911,
+          "rotates": false
+        },	
+		{
+          "id": "soy_nuts",
+          "fg": 23912,
+          "rotates": false
+        },
+				{
+          "id": "sponge_cake",
+          "fg": 23913,
+          "rotates": false
+        },	
+		{
+          "id": "space_cake",
+          "fg": 23914,
+          "rotates": false
+        },	
+		{
+          "id": "8x40_speedloader5",
+          "fg": 23915,
+          "rotates": false
+        },
+				{
+          "id": "22_speedloader8",
+          "fg": 23916,
+          "rotates": false
+        },
+						{
+          "id": "38_speedloader5",
+          "fg": 23917,
+          "rotates": false
+        },	
+		{
+          "id": "marlin_tubeloader",
+          "fg": 23918,
+          "rotates": false
+        },
+				{
+          "id": ["overlay_effect_laserlocked"],
+          "fg": 23919
+        },	
+		{
+          "id": ["overlay_effect_boomered"],
+          "fg": 23920
+        },
+				{
+          "id": ["overlay_effect_winded"],
+          "fg": 23921
+        },
+						{
+          "id": ["overlay_effect_glare"],
+          "fg": 23922
+        },	
+		{
+          "id": ["overlay_effect_snow_glare"],
+          "fg": 23923
+        },	
+		{
+          "id": ["craft"],
+          "fg": 23924
+        },
+				{
+          "id": ["linuxtshirt"],
+          "fg": 23925
+        },
+		{
+          "id": ["overlay_male_worn_linuxtshirt"],
+          "fg": 23926
+        },		
+		{
+          "id": ["overlay_female_worn_linuxtshirt"],
+          "fg": 23927
+        },	{
+          "id": ["technician_shirt_gray"],
+          "fg": 23928
+        },
+		{
+          "id": ["overlay_male_worn_technician_shirt_gray"],
+          "fg": 23929
+        },		
+		{
+          "id": ["overlay_female_worn_technician_shirt_gray"],
+          "fg": 23930
+        },
+		{
+          "id": ["tshirt"],
+          "fg": 23931
+        },
+		{
+          "id": ["overlay_male_worn_tshirt"],
+          "fg": 23932
+        },		
+		{
+          "id": ["overlay_female_worn_tshirt"],
+          "fg": 23933
+        },		
+		{
+          "id": ["thermostat"],
+          "fg": 23934
+        },
+		{
+          "id": ["overlay_effect_happy"],
+          "fg": 23935
+        },
+		{
+          "id": ["overlay_effect_sad"],
+          "fg": 23936
+        },	
+				{
+          "id": ["overlay_effect_normal"],
+          "fg": 23937
+        },	
+		{
+          "id": ["string_6"],
+          "fg": 23938
+        },	
+		{
+          "id": ["string_36"],
+          "fg": 23939
+        },
+				{
+          "id": ["sleeveless_duster_leather"],
+          "fg": 23940
+        },		
+		{
+          "id": ["leather_harness_dog"],
+          "fg": 23941
+        },
+				{
+          "id": ["leatherbone_harness_dog"],
+          "fg": 23942
+        },
+		{
+          "id": ["rubber_harness_dog"],
+          "fg": 23943
+        },
+				{
+          "id": ["chitin_harness_dog"],
+          "fg": 23944
+        },
+						{
+          "id": ["acidchitin_harness_dog"],
+          "fg": 23945
+        },
+		{
+          "id": ["chainmail_harness_dog"],
+          "fg": 23946
+        },
+						{
+          "id": ["superalloy_harness_dog"],
+          "fg": 23947
+        },
+		{
+          "id": ["overlay_wielded_toolset_extended"],
+          "fg": 23948
+        },
+				{
+          "id": ["overlay_wielded_bio_shotgun_gun"],
+          "fg": 23949
+        },
+		{
+          "id": ["mon_afs_headless_zombie"],
+          "fg": 23950,
+		   "bg": 967, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["corpse_mon_afs_headless_zombie"],
+          "fg": 23951,
+		   "bg": 0, 
+		   "rotates": false 
+        },		
+		{
+          "id": ["afs_atomic_reading_light"],
+          "fg": 23952,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["afs_atomic_reading_light_on"],
+          "fg": 23953,
+		   "bg": 0, 
+		   "rotates": false 
+        },		
+		{
+          "id": ["afs_atomic_smartphone"],
+          "fg": 23954,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["afs_atomic_smartphone_flashlight"],
+          "fg": 23955,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_zombie_fiend_summoned"],
+          "fg": 23956,
+		   "bg": 0, 
+		   "rotates": false 
+        },		
+		{
+          "id": ["mon_homunculus_summoned"],
+          "fg": 23957,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_dog_skeleton_summoned"],
+          "fg": 23958,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_skeleton_summoned"],
+          "fg": 23959,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_vortex_summoned"],
+          "fg": 23960,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_kreck_summoned"],
+          "fg": 23961,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_triffid_summoned"],
+          "fg": 23962,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_hunting_horror_summoned"],
+          "fg": 23963,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_shadow_snake_summoned"],
+          "fg": 23964,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["dragonblood_mutagen"],
+          "fg": 23965,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["f_door_arcana_c"],
+          "fg": 23966,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["f_door_arcana_o"],
+          "fg": 23967,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["f_altar_arcana"],
+          "fg": 23968,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["f_pozdol_arcana"],
+          "fg": 23969,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["corpse_mon_ant_soldier_pk_weak", "corpse_mon_ant_soldier_pk"],
+          "fg": 23970,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["corpse_mon_ant_acid_kwama"],
+          "fg": 23971,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["mon_skeleton_brute"],
+          "fg": 23972,
+		   "bg": 967, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["corpse_mon_skeleton_brute"],
+          "fg": 23973,
+		   "bg": 967, 
+		   "rotates": false 
+        },
+				{
+          "id": ["mon_gas_zombie"],
+          "fg": 23974,
+		   "bg": 967, 
+		   "rotates": false 
+        },
+						{
+          "id": ["mon_prototype_cyborg"],
+          "fg": 23975,
+		   "bg": 967, 
+		   "rotates": false 
+        },
+								{
+          "id": ["bot_prototype_cyborg"],
+          "fg": 23976,
+		   "bg": 0, 
+		   "rotates": false 
+        },	
+		{
+          "id": ["corpse_mon_prototype_cyborg"],
+          "fg": 23977,
+		   "bg": 0, 
+		   "rotates": false 
+        },
+		{
           "id": "atlatl",
           "fg": 1986,
 		  "bg": 0,
-          "rotates": false 
+"rotates": false 
         }		
 	]
 	},
@@ -63369,6 +65903,197 @@
 		{ "id": "overlay_worn_helmet_szyszak", "fg": 33173, "rotates": false },
 		{ "id": "overlay_worn_wings_ornamental", "fg": 33174, "rotates": false }
 	]
-	}
+	},
+    {
+    "file": "18_big_things_64x80_35757.png",
+    "sprite_width":64,
+    "sprite_height":80,
+    "sprite_offset_x":-16,
+    "sprite_offset_y":-48,
+    "tiles":
+    [   
+        {
+          "id": "t_radio_tower",
+          "fg": 35758,
+          "bg": 35759,
+          "multitile": true,
+          "additional_tiles": [
+            {
+              "fg": 35757,
+			  "bg": 35759,
+              "id": "center"
+            },
+			{
+              "fg": [ 35758, 35758, 35758, 35758 ],
+			  "bg": 35759,
+              "id": "corner"
+            },            
+			{
+              "fg": [ 35758, 35758, 35758, 35758],
+			  "bg": 35759,
+              "id": "t_connection"
+            },
+            {
+              "fg": [ 35758, 35758],
+	          "bg": 35759,		  
+              "id": "edge"
+            },
+            {
+              "fg": [ 35758, 35758, 35758, 35758],
+			  "bg": 35759,
+              "id": "end_piece"
+            },
+            {
+              "fg": 35757,
+			  "bg": 35759,
+              "id": "unconnected"
+            }
+          ]
+        },
+	{
+          "id": "mon_triffid_queen",
+          "fg": 35760,
+          "bg": 0,
+          "rotates": false
+        },
+			{
+          "id": "mon_vinebeast",
+          "fg": 35761,
+          "bg": 0,
+          "rotates": false
+        },
+	{
+          "id": "mon_dispatch_military",
+          "fg": 35762,
+          "bg": 0,
+          "rotates": false
+        },
+			{
+          "id": "mon_dispatch",
+          "fg": 35763,
+          "bg": 0,
+          "rotates": false
+        },
+	{
+          "id": "bot_dispatch_military",
+          "fg": 35764,
+          "bg": 0,
+          "rotates": false
+        },
+			{
+          "id": "bot_dispatch",
+          "fg": 35765,
+          "bg": 0,
+          "rotates": false
+        },
+	{
+          "id": "broken_dispatch_military",
+          "fg": 35766,
+          "bg": 0,
+          "rotates": false
+        },
+			{
+          "id": "broken_dispatch",
+          "fg": 35767,
+          "bg": 0,
+          "rotates": false
+        },		
+		{
+          "id": "overlay_effect_glowing",
+          "fg": 35768
+        },
+		{
+          "id": "mon_afs_headless_horror",
+          "fg": 35769,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "corpse_mon_afs_headless_horror",
+          "fg": 35770,
+          "bg": 0,
+          "rotates": false
+        },
+		{
+          "id": "mon_dark_wyrm",
+          "fg": 35771,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "corpse_mon_dark_wyrm",
+          "fg": 35772,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_dark_wyrm_summoned",
+          "fg": 35773,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_jabberwock_summoned",
+          "fg": 35774,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_thing",
+          "fg": 35775,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_thing_summoned",
+          "fg": 35776,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_yugg_summoned",
+          "fg": 35777,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_flesh_angel_summoned",
+          "fg": 35778,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_mi_go_summoned",
+          "fg": 35779,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_flying_polyp_summoned",
+          "fg": 35780,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_shoggoth_summoned",
+          "fg": 35781,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "mon_ant_acid_ultralisk",
+          "fg": 35782,
+          "bg": 0,
+          "rotates": false
+        },	
+		{
+          "id": "corpse_mon_ant_acid_ultralisk",
+          "fg": 35783,
+          "bg": 0,
+          "rotates": false
+        }
+	    
+    ]
+    }
   ]
 }
