@@ -1,6 +1,6 @@
 # Cataclysm_DDA_Mod_Content_Extension
 
-Большая сборка модификаций для игры Cataclysm: Dark Days Ahead (0.D-1198-gf4c04e7 - Тайловая Версия)
+Большая сборка модификаций для игры Cataclysm: Dark Days Ahead (0.D-1799-g43f1f6e - Тайловая Версия)
 
 Группа VK: https://vk.com/ganta_cdda
 
