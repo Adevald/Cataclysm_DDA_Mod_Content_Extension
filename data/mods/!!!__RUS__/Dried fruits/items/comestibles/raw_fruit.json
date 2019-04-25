@@ -1,0 +1,147 @@
+[    
+  {
+    "type": "COMESTIBLE",
+    "id": "apple_slices",
+	"copy-from" : "apple_slices",
+    "name": "яблочные дольки",
+    "description": "Яблочные дольки, их можно высушить в коптильне."
+  },
+    {
+    "type": "COMESTIBLE",
+    "id": "plum_slices",
+	"copy-from" : "plum_slices",
+    "name": "сливовые дольки",
+    "description": "Сливовые дольки, их можно высушить в коптильне."
+  },
+    {
+    "type": "COMESTIBLE",
+    "id": "apricot_slices",
+	"copy-from" : "apricot_slices",
+    "name": "абрикосовые дольки",
+    "name_plural": "абрикосовых долек",
+    "description": "Сбрикосовые дольки, их можно высушить в коптильне."
+  },
+    {
+    "type": "COMESTIBLE",
+    "id": "peach_slices",
+	"copy-from" : "peach_slices",
+    "name": "персиковые дольки",
+    "name_plural": "персиковых долек",
+    "description": "Персиковые дольки, их можно высушить в коптильне."
+
+  },  
+  {
+    "type": "COMESTIBLE",
+    "id": "banana_slices",
+	"copy-from" : "banana_slices",
+    "name": "банановые дольки",
+    "description": "Банановые дольки, их можно высушить в коптильне."
+  },  
+   {
+    "type": "COMESTIBLE",
+    "id": "pineapple_slices",
+	"copy-from" : "pineapple_slices",
+    "name": "ананасовые дольки",
+    "description": "Ананасовые дольки, их можно высушить в коптильне."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mango_slices",
+	"copy-from" : "mango_slices",
+    "name": "дольки манго",
+    "description": "Дольки манго, их можно высушить в коптильне."
+  },
+    {
+    "type": "COMESTIBLE",
+    "id": "kiwi_slices",
+	"copy-from" : "kiwi_slices",
+    "name": "дольки киви",
+    "description": "Дольки киви, их можно высушить в коптильне."
+  },
+    {
+    "type": "COMESTIBLE",
+    "id": "papaya_slices",
+	"copy-from" : "papaya_slices",
+    "name": "дольки папайи",
+    "description": "Дольки папайи, их можно высушить в коптильне."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "grapes",
+	"copy-from" : "grapes",
+    "name": "горсть винограда",
+    "name_plural": "горстей винограда",
+    "description": "Гроздь сочного винограда."
+  },  
+  {
+    "type": "COMESTIBLE",
+    "id": "blueberries",
+	"copy-from" : "blueberries",
+    "name": "горсть черники",
+    "name_plural": "горстей черники",
+    "description": "Они голубые, но это не значит, что они грустные."
+  },  
+  {
+    "type": "COMESTIBLE",
+    "id": "cranberries",
+	"copy-from" : "cranberries",
+    "name": "горсть клюквы",
+    "name_plural": "горстей клюквы",
+    "description": "Кислые, красные ягодки. Полезны для вашего здоровья."
+  },   {
+    "type": "COMESTIBLE",
+    "id": "strawberries",
+	"copy-from" : "strawberries",
+    "name": "горсть клубники",
+    "name_plural": "горстей клубники",
+    "description": "Вкусная, сочная ягода. Часто встречается в дикой природе, и на полях."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "raspberries",
+	"copy-from" : "raspberries",
+    "name": "горсть малины",
+    "name_plural": "горстей малины",
+    "description": "Сладкая, красная и рассыпчатая ягода."
+  },
+{
+    "type": "COMESTIBLE",
+    "id": "huckleberries",
+	"copy-from" : "huckleberries",
+    "name": "горсть хаклберри",
+    "name_plural": "горстей хаклберри",
+    "description": "Хаклберри часто путается с черникой."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mulberries",
+	"copy-from" : "mulberries",
+    "name": "горсть шелковицы",
+    "name_plural": "горстей шелковицы",
+    "description": "Красная шелковица является эндемиком восточной части Северной Америки, и описывается как имеющая невероятный аромат, который также остаётся от сорта к сорту."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "elderberries",
+	"copy-from" : "elderberries",
+    "name": "горсть бузины",
+    "name_plural": "горстей бузины",
+    "description": "Бузина токсична при употреблении в сыром виде, но отлично при приготовлении."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "rose_hips",
+	"copy-from" : "rose_hips",
+    "name": "горсть шиповника",
+    "name_plural": "горстей шиповника",
+    "description": "Плод опыленного цветка розы."
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "blackberries",
+	"copy-from" : "blackberries",
+    "name": "горсть ежевики",
+    "name_plural": "горстей ежевики",
+    "description": "Более темный вариант малины."
+  }
+]

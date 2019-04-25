@@ -1,0 +1,175 @@
+[
+  {
+    "copy-from": "nano_shield",
+    "id": "nano_shield",
+    "type": "ARMOR",
+    "name": "нанощит",
+    "description": "Большой самоструктурируюийся кластер нанитов. Пока что, находится в пассивном состоянии. С помощью него можно блокировать атаки. Пока не используется, собирается и сжимается в виде ручки.",
+    "use_action": {
+	  "type": "transform",
+	  "target": "nano_shield_active",
+      "active": false,
+      "msg": "Щит переведён в активный режим."
+    }
+  },{
+	"copy-from": "nano_shield_active",
+    "id": "nano_shield_active",
+    "type": "ARMOR",
+    "name": "нанощит (активный)",
+    "description": "Большой самоструктурируюийся кластер нанитов. Сейчас находится в активном состоянии. Он автоматически будет блокировать все атаки, направленные в вашу сторону, при этом позволяя использовать обе руки. Пока не используется, собирается и сжимается в виде ручки.",
+	"use_action": {
+      "type": "transform",
+      "target": "nano_shield",
+      "active": false,
+      "msg": "Щит переведён в пассивный режим."
+    }
+  },{
+    "copy-from": "nano_storage",
+    "type" : "ARMOR",
+    "id" : "nano_storage",
+    "name" : "нанохранилище метода 'мини-шоггот'.",
+    "description" : "Это огромная каплевидная структура из нанитов, с собственным ИИ. Она активно \"выращивает\" и разделяет ложноножки, опутывая все окружающие предметы, и поддерживая их в общей куче, постоянно оптимизируя свою стукртуру насколько это возможно. Также вытягиваясь вниз формирует \"ноги\", для более оптимального поддержания всего веса, когда это требуется."
+  },{
+    "type" : "ARMOR",
+	"copy-from": "nano_holster",
+    "id" : "nano_holster",
+    "name" : "нанокобура",
+    "description" : "Это небольшая каплевидная структура из нанитов, с собственным ИИ. Она активно \"выращивает\" и разделяет ложноножки, опутывая помещёное в неё оружие, и автоматически помещает его в руку пользователю, когда это требуется.",
+    "use_action" : {
+      "type": "holster",
+      "holster_prompt": "Поместить оружие",
+      "holster_msg": "Ты поместил %s в нанокобуру",
+      "max_volume": 18,
+      "min_volume": 0,
+      "multi": 2,
+      "max_weight": 5000,
+      "draw_cost": 0,
+      "skills": ["pistol", "smg", "shotgun", "rifle", "launcher"]
+    }
+  },{
+    "type" : "ARMOR",
+	"copy-from": "nano_sheath",
+    "id" : "nano_sheath",
+    "name" : "нано-ножны",
+    "description" : "Это небольшая каплевидная структура из нанитов, с собственным ИИ. Она активно \"выращивает\" и разделяет ложноножки, опутывая помещённый в неё клинок, и автоматически помещает его в руку пользователю, когда это требуется.",
+    "use_action" : {
+      "type": "holster",
+      "holster_prompt": "Поместить оружие",
+      "holster_msg": "Ты поместил %s в нано-ножны",
+      "max_volume": 18,
+      "min_volume": 0,
+      "multi": 2,
+      "max_weight": 5000,
+      "draw_cost": 0,
+      "flags": [ "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR" ]
+    }
+  },{
+    "type" : "ARMOR",
+    "copy-from": "nano_mag_holder",
+    "id" : "nano_mag_holder",
+    "name" : "нанодержатель для магазинов",
+    "description" : "Это маленькая каплевидная структура из нанитов, с собственным ИИ. Она сохраняет в себе несколько магазинов, и помогает перезаряжать оружие намного быстрее.",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Поместить магазин",
+      "holster_msg": "Ты поместил %s в нанодержатель.",
+      "multi": 4,
+      "max_volume": 6,
+      "min_volume": 0,
+      "draw_cost": 0,
+      "flags": [ "MAG_COMPACT", "MAG_BULKY" ]
+    }
+  },{
+    "type" : "ARMOR",
+    "copy-from": "nanosuit",
+    "id" : "nanosuit",
+    "name" : "нанокостюм",
+    "description" : "Кластер запрограммированых чрезвычайно сложным методом нанитов, которые покрывают всё тело пользователя и защищают от большинства внешних угроз. Может быть активирован для выработки тепла.",
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Включить нагрев",
+      "target": "nanosuit_heated",
+      "active": false,
+      "msg": "Подключение системы нагрева нанокостюма."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "copy-from" : "nanosuit_heated",
+    "id" : "nanosuit_heated",
+    "name" : "нанокостюм (тепло+)",
+    "description" : "Кластер запрограммированых чрезвычайно сложным методом нанитов, которые покрывают всё тело пользователя и защищают от большинства внешних угроз.  В данный момент подогрев включён.",
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_2",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+	"copy-from" : "nanosuit_heated_2",
+    "id" : "nanosuit_heated_2",
+    "name" : "нанокостюм (тепло++)",
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_3",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+	"copy-from" : "nanosuit_heated_3",
+    "id" : "nanosuit_heated_3",
+    "name" : "нанокостюм (тепло+++)",
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_4",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated_4",
+    "copy-from" : "nanosuit_heated_4",
+    "name" : "нанокостюм (тепло++++)",
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit_heated_5",
+      "active": false,
+      "msg": "Увеличение температуры нагрева."
+      }
+    ]
+  },{
+    "type" : "ARMOR",
+    "id" : "nanosuit_heated_5",
+    "copy-from" : "nanosuit_heated_5",
+    "name" : "нанокостюм (тепло+++++)",
+    "use_action": [
+      {
+      "type": "transform",
+      "menu_text": "Увеличить нагрев",
+      "target": "nanosuit",
+      "active": false,
+      "msg": "Отключение нагрева костюма."
+      }
+    ]
+  },{
+    "id": "nano_container",
+	"type": "CONTAINER",
+	"copy-from" : "nano_container",
+    "name": "нанокомпрессор жидкости",
+    "description": "Устройство для сжатия жидкостей до невероятно плотных состояний. он также позволяет сохранять содержимое в свежем виде."
+  }
+]
