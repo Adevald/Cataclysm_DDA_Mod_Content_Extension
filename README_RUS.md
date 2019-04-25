@@ -1,7 +1,5 @@
 # Cataclysm:DDA Mod Content Extension
 
-Русская версия Описания - [README_RUS.md] ()
-
 Большая сборка модификаций для игры Cataclysm: Dark Days Ahead (0.D-1799-g43f1f6e - Тайловая Версия)
 
 Группа VK: https://vk.com/ganta_cdda
