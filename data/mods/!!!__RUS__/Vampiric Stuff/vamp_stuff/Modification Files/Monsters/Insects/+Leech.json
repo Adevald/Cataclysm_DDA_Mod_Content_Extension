@@ -1,0 +1,203 @@
+[
+	{
+		"id": "mon_insect_abominableleech",
+		"copy-from": "mon_insect_abominableleech",
+		"type": "MONSTER",
+		"name": "отвратительная пиявка",
+		"description": "Пиявка, сегмены которой поочерёдно окрашены в зелёный и жёлтый цвета. Она оставляет следы концентрированного токсина на своём пути"
+	},
+	{
+		"id": "mon_insect_acidicleech",
+		"copy-from": "mon_insect_acidicleech",
+		"type": "MONSTER",
+		"name": "кислотная пиявка",
+		"description": "Из её рта не прекращают капать на пол желтоватые химические выделения. Её плоть уже полностью адаптировалась к сдерживанию высокотоксичных веществ, которые постоянно находятся внутри неё. Из за источнённого наружного покрова, его стало довольно легко повредить, но при этом нужно бояться едкой крови, которая выделяется из неё после такого."
+	},
+	{
+		"id": "mon_insect_bigleech",
+		"copy-from": "mon_insect_bigleech",
+		"type": "MONSTER",
+		"name": "большая пиявка",
+		"description": "Большой, сегментированный червь. Размер его челюстей позволяет высасывает литры крови, буквально за минуты."
+	},
+	{
+		"id": "mon_insect_bloatedleech",
+		"copy-from": "mon_insect_bloatedleech",
+		"type": "MONSTER",
+		"name": "раздутая пиявка",
+		"description": "Большой червь, с практически прозрачным, раздутым горбом на спине. Горб заполнен ядовитым газом под давлением. Она двигается довольно шустро, так что не стоит объяснять что произойдёт, если немного зазеваться рядом с ней."
+	},
+	{
+		"id": "mon_insect_devourerleech",
+		"copy-from": "mon_insect_devourerleech",
+		"type": "MONSTER",
+		"name": "пиявка-пожиратель",
+		"description": "Эта здоровая дрянь, непрерывно выделяет из своего тела кровь для скольжения, так как делает сама по себе это очень медленно. Во рту у неё сотни зубов, а покрытие из пластинок эластичной кожи, делают её до ужаса отвратительной."
+	},
+	{
+		"id": "mon_insect_bloodsurgeleech",
+		"copy-from": "mon_insect_bloodsurgeleech",
+		"type": "MONSTER",
+		"name": "кровоточащая пиявка",
+		"description": "Одноглазая пиявка размером с человека, с пузырящейся во рту кровью, и обвисшей, вокруг рта кожей. Если не обращать на неё внимания, она может начать стрелять в тебя спрессованной кровью!",
+		"special_attacks": [
+			{
+				"type": "gun",
+				"cooldown": 3,
+				"move_cost": 255,
+				"gun_type": "bloodsurgeleechmouth",
+				"ammo_type": "leechblood",
+				"fake_skills": [
+					[
+						"gun",
+						3
+					],
+					[
+						"smg",
+						2
+					]
+				],
+				"fake_str": 12,
+				"fake_dex": 8,
+				"fake_per": 10,
+				"max_ammo": 1000,
+				"ranges": [
+					[
+						1,
+						3,
+						"DEFAULT"
+					]
+				],
+				"targeting_cost": 100,
+				"targeting_sound": "bubbling liquid",
+				"targeting_volume": 25,
+				"description": "кровоточащая пиявка разбрызгивает свою кровь!",
+				"no_ammo_sound": "че, исходники ковыряешь? проспойлеришь же."
+			}
+		]
+	},
+	{
+		"id": "mon_insect_dreadfulleech",
+		"copy-from": "mon_insect_dreadfulleech",
+		"type": "MONSTER",
+		"name": "ужасная пиявка",
+		"description": "Пиявка, с дьявольскими лезвиеподобными зубами, вырывающимися изо рта. Жажда крови вампиров заставила мутировать её во что-то ещё более ужасное, и ещё более проблематичное!"
+	},
+	{
+		"id": "mon_insect_eyedleech",
+		"copy-from": "mon_insect_eyedleech",
+		"type": "MONSTER",
+		"name": "глазастая пиявка",
+		"description": "Маленькая пиявка, с характерно большим глазом над её ртом. Имея возможность стрелять своими зубами, она является довольно смертельно опасным противником, если её проигнорировать.",
+		"special_attacks": [
+			{
+				"type": "gun",
+				"cooldown": 3,
+				"move_cost": 125,
+				"gun_type": "eyedleechmouth",
+				"ammo_type": "leechtooth",
+				"fake_skills": [
+					[
+						"gun",
+						1
+					],
+					[
+						"pistol",
+						1
+					]
+				],
+				"fake_dex": 8,
+				"fake_per": 8,
+				"max_ammo": 100,
+				"ranges": [
+					[
+						1,
+						10,
+						"DEFAULT"
+					]
+				],
+				"targeting_cost": 120,
+				"targeting_sound": "snapped tooth",
+				"targeting_volume": 25,
+				"description": "глазастая пиявка плюёт своим зубом!",
+				"no_ammo_sound": "nothing but a joke."
+			}
+		]
+	},
+	{
+		"id": "mon_insect_hugeleech",
+		"copy-from": "mon_insect_hugeleech",
+		"type": "MONSTER",
+		"name": "громадная пиявка",
+		"description": "Пока она существовала, вся скопившаяся за жизнь кровь, которую она высосала за всю жизнь сменила её облик. Теперь просто человеческая кровь уже не интерисует её... Ей требуется человек целиком. Поимио этого, шкура этого существа довольно плотная, и простыми снарядами её уже не пробить."
+	},
+	{
+		"id": "mon_insect_leech",
+		"copy-from": "mon_insect_leech",
+		"type": "MONSTER",
+		"name": "пиявка",
+		"description": "Маленький сегментированный червь, который является вредителем для всех живых существ. При укусе она выделяет изо рта жидкость, которая препятствует свёртыванию крови. Это может быть смртельно, по крайней мере некоторое время."
+	},
+	{
+		"id": "mon_insect_sharpshooterleech",
+		"copy-from": "mon_insect_sharpshooterleech",
+		"type": "MONSTER",
+		"name": "зубометательная пиявка",
+		"description": "Малнькая, но очень опасная! Мутации её радужой оболочки позволили ей увеличить дальность атаки, а также смертельность своих зубов-снарядов. Хотя ей требуется больше времени для прицеливания.",
+		"special_attacks": [
+			{
+				"type": "gun",
+				"cooldown": 5,
+				"move_cost": 175,
+				"gun_type": "sharpshooterleechmouth",
+				"ammo_type": "leechsharptooth",
+				"fake_skills": [
+					[
+						"gun",
+						3
+					],
+					[
+						"rifle",
+						2
+					]
+				],
+				"fake_dex": 9,
+				"fake_per": 9,
+				"max_ammo": 100,
+				"ranges": [
+					[
+						1,
+						13,
+						"DEFAULT"
+					]
+				],
+				"targeting_cost": 175,
+				"targeting_sound": "snapped tooth",
+				"targeting_volume": 25,
+				"description": "зубометательная пиявка плюётся зубом!",
+				"no_ammo_sound": "nothing but a joke."
+			}
+		]
+	},
+	{
+		"id": "mon_insect_spikyleech",
+		"copy-from": "mon_insect_spikyleech",
+		"type": "MONSTER",
+		"name": "колючая пиявка",
+		"description": "Эта пиявка-переросток покрыта костяными шипами по всей площади своей дряблой шкуры. Она медленная, но очень прочная и опасная."
+	},
+	{
+		"id": "mon_insect_vampireleech",
+		"copy-from": "mon_insect_vampireleech",
+		"type": "MONSTER",
+		"name": "пиявка-вампир",
+		"description": "Эта пиявка каким-то образом умудрилась заполучить силу вампирской крови, что удлиннило и заострило её зубы. Если зазеваться, группа таких тварей в состоянии осушить ваши сосуды относительно быстро."
+	},
+	{
+		"id": "mon_insect_venomleech",
+		"copy-from": "mon_insect_venomleech",
+		"type": "MONSTER",
+		"name": "ядовитая пиявка",
+		"description": "Более крупная особь обычной пиявки, рот которой намного шире, а из её рта стекает высококонцентрированный токсин."
+	}
+]

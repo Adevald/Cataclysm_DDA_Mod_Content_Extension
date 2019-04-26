@@ -1,0 +1,191 @@
+[
+	{
+		"description": "Вы - реальное доказательство существования бессмертия. Потратив всю свою жизнь на бесчисленные сражения с ужасной силой, вы обрели столь бесценный опыт жития, который окупается до сих пор. Живой кошмар Старого Мира, теперь стал обычным мусорщиком нового мира.",
+		"id": "VAMP",
+		"copy-from": "VAMP",
+		"name": "Вампир",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "isolatedtestsdone",
+		"copy-from": "isolatedtestsdone",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "isolatedvampmark",
+		"copy-from": "isolatedvampmark",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard1talkedintroduce",
+		"copy-from": "underguard1talkedintroduce",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard1talkedintroduceagain",
+		"copy-from": "underguard1talkedintroduceagain",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard1talkeddirection",
+		"copy-from": "underguard1talkeddirection",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard2talkedcommand",
+		"copy-from": "underguard2talkedcommand",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard2talkedcata",
+		"copy-from": "underguard2talkedcata",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard2talkedjob",
+		"copy-from": "underguard2talkedjob",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underguard3fear",
+		"copy-from": "underguard3fear",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "commandotalkedhim",
+		"copy-from": "commandotalkedhim",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "commandotalkedgun",
+		"copy-from": "commandotalkedgun",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "commandotalkedworld",
+		"copy-from": "commandotalkedworld",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "commandotalkedgunshop",
+		"copy-from": "commandotalkedgunshop",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "commandotestdone",
+		"copy-from": "commandotestdone",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "commandovampmark",
+		"copy-from": "commandovampmark",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "undertradertalkedhim",
+		"copy-from": "undertradertalkedhim",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "undertradertalkedhappened",
+		"copy-from": "undertradertalkedhappened",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "undertradertestsdone",
+		"copy-from": "undertradertestsdone",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "undertradervampmark",
+		"copy-from": "undertradervampmark",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "underseekermeet",
+		"copy-from": "underseekermeet",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "wvgssupp",
+		"copy-from": "wvgssupp",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "wvgsgun",
+		"copy-from": "wvgsgun",
+		"name": "Меченый Вампиром",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "wastehumanjshoptalkedtohere",
+		"copy-from": "wastehumanjshoptalkedtohere",
+		"name": "Меченый Человеком",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "wastehumanjshoptalkedtohereagain",
+		"copy-from": "wastehumanjshoptalkedtohereagain",
+		"name": "Меченый Человеком",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "wastehumanjshoptalkedjoblol",
+		"copy-from": "wastehumanjshoptalkedjoblol",
+		"name": "Меченый Человеком",
+		"type": "mutation"
+	},
+	{
+		"description": "NPC будут проверять ваш прогресс с этой чертой.",
+		"id": "wastehumanassociatemark",
+		"copy-from": "wastehumanassociatemark",
+		"name": "Меченый Человеком",
+		"type": "mutation"
+	}
+]

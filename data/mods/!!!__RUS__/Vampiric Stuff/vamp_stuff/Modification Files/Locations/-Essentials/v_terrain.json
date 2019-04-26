@@ -1,0 +1,12 @@
+[{
+  "type": "terrain",
+  "id": "t_blood_sh",
+  "copy-from": "t_blood_sh",
+  "name": "лужа крови"
+ }, {
+  "type": "terrain",
+  "id": "t_blood_dp",
+  "copy-from": "t_blood_dp",
+  "name": "озерце крови"
+ }
+]
