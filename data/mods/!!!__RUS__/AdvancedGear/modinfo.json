@@ -1,0 +1,9 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "adv_gear_rus",
+    "name": "(RUS) Advanced Gear",
+    "description": "Русский перевод мода Advanced Gear",
+    "dependencies": [ "dda", "adv_gear" ]
+  }
+]

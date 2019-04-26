@@ -1,12 +1,19 @@
-[{
-  "type": "terrain",
-  "id": "t_blood_sh",
-  "copy-from": "t_blood_sh",
-  "name": "лужа крови"
- }, {
-  "type": "terrain",
-  "id": "t_blood_dp",
-  "copy-from": "t_blood_dp",
-  "name": "озерце крови"
+[
+ {	
+	"type": "terrain",
+	"id": "t_blood_sh",
+	"copy-from": "t_blood_sh",
+	"name": "лужа крови",
+	"symbol": "~",
+	"color": "light_red",
+	"flags": ["TRANSPARENT", "LIQUID", "SWIMMABLE"]
+ },{
+	"type": "terrain",
+	"id": "t_blood_dp",
+	"copy-from": "t_blood_dp",
+	"name": "озерце крови",
+	"symbol": "~",
+	"color": "red",
+	"flags": ["TRANSPARENT", "LIQUID", "SWIMMABLE", "DEEP_WATER"]
  }
 ]
