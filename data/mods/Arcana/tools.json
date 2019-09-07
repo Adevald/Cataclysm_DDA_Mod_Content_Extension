@@ -62,6 +62,7 @@
     "symbol": ";",
     "looks_like": "small_relic",
     "color": "yellow",
+    "flags": [ "MAGIC_FOCUS" ],
     "use_action": [
       "MEDITATE",
       {
@@ -150,7 +151,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Upon drawing the blade across your palm, wounds open elsewhere on your body!",
-      "effects": [ { "id": "bleed", "duration": 100, "bp": "TORSO" } ]
+      "effects": [ { "id": "bleed", "duration": 300, "bp": "TORSO" } ]
     },
     "flags": [ "STAB", "SHEATH_KNIFE" ]
   },
@@ -188,7 +189,7 @@
     "name_plural": "incorruptible swords (on)",
     "//": "Weapons normally come with the vorpal flag, not the technique.  But gaining the technique through normal means likely breaks with transforming weapons.",
     "description": "This is some sort of broadsword, decorated with a golden cross motif on the blade.  The blade is giving off an intense white light, and searing heat.",
-    "turns_per_charge": 150,
+    "turns_per_charge": 900,
     "revert_to": "sun_sword",
     "techniques": [ "WBLOCK_2", "VORPAL" ],
     "use_action": [
@@ -267,7 +268,7 @@
     "artifact_data": { "effects_activated": [ "AEA_BUGS" ] },
     "use_action": "ARTIFACT",
     "relative": { "weight": 540, "bashing": 2, "price": 1000 },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
   {
     "id": "summon_kreck",
@@ -713,7 +714,7 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "power": 1000, "distance_factor": 0.3 }
+      "explosion": { "power": 1250, "distance_factor": 0.45 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
@@ -723,7 +724,7 @@
     "type": "TOOL",
     "name": "scroll of light",
     "name_plural": "scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun diety.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
     "use_action": {
       "target": "scroll_sun_on",
       "msg": "\"Let purity guide your hand and your heart.\"  You unroll the scroll of light...",
@@ -737,7 +738,7 @@
     "type": "TOOL",
     "name": "scroll of light",
     "name_plural": "scrolls of light",
-    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun diety.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and brighten your spirits, not to mention brighten the sky.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_FUN", "AEA_ADRENALINE", "AEA_LIGHT" ] },
@@ -749,7 +750,7 @@
     "type": "TOOL",
     "name": "scroll of darkness",
     "name_plural": "scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies.",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will darken the sky temporarily, and confound nearby enemies.",
     "use_action": {
       "target": "scroll_moon_on",
       "msg": "\"Do not fear the unknown.\"  You unroll the scroll of darkness...",
@@ -763,10 +764,24 @@
     "type": "TOOL",
     "name": "scroll of darkness",
     "name_plural": "scrolls of darkness",
-    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar diety.  Using it will darken the sky temporarily, and confound nearby enemies",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will darken the sky temporarily, and confound nearby enemies.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
-    "artifact_data": { "effects_activated": [ "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_CONFUSED", "AEA_DIM" ] },
+    "artifact_data": {
+      "effects_activated": [
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_CONFUSED",
+        "AEA_DIM"
+      ]
+    },
     "use_action": "ARTIFACT"
   },
   {
@@ -775,7 +790,7 @@
     "type": "TOOL",
     "name": "scroll of command",
     "name_plural": "scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly diety of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
     "use_action": {
       "target": "scroll_artiface_on",
       "msg": "\"By order, we ascend beyond that of animals.\"  You unroll the scroll of command...",
@@ -789,7 +804,7 @@
     "type": "TOOL",
     "name": "scroll of command",
     "name_plural": "scrolls of command",
-    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly diety of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind nearby creatures to your will temporarily, at the expense of pain and momentary paralysis.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": { "effects_activated": [ "AEA_ENTRANCE", "AEA_ENTRANCE", "AEA_PARALYZE", "AEA_PAIN" ] },
@@ -801,7 +816,7 @@
     "type": "TOOL",
     "name": "scroll of regrowth",
     "name_plural": "scrolls of regrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and healing you, potentially mutating you as well.",
     "use_action": {
       "target": "scroll_nature_on",
       "msg": "\"Do not deny your instincts.\"  You unroll the scroll of regrowth...",
@@ -815,7 +830,7 @@
     "type": "TOOL",
     "name": "scroll of regrowth",
     "name_plural": "scrolls of regrowth",
-    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly diety of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and massively healing you, but potentially mutating you as well.",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will fill the area with life, causing plants to grow unnaturally and massively healing you, but potentially mutating you as well.",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "artifact_data": {
@@ -940,7 +955,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (acid spray)",
     "name_plural": "spellcraft scrolls (acid spray)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_acidspray_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -954,7 +969,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (acid spray)",
     "name_plural": "spellcrafts scroll (acid spray)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "ACIDSPRAY", "is_strong": true },
@@ -966,7 +981,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (agility)",
     "name_plural": "spellcraft scrolls (agility)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_agile_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -980,7 +995,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (agility)",
     "name_plural": "spellcrafts scroll (agility)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "AGILITY", "is_strong": true },
@@ -992,7 +1007,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (clairvoyance)",
     "name_plural": "spellcraft scrolls (clairvoyance)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_clairvoyance_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1006,7 +1021,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (clairvoyance)",
     "name_plural": "spellcrafts scroll (clairvoyance)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLAIRVOYANCE", "is_strong": true },
@@ -1018,7 +1033,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (clarity of blood)",
     "name_plural": "spellcraft scrolls (clarity of blood)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_clarity_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1032,7 +1047,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (clarity of blood)",
     "name_plural": "spellcrafts scroll (clarity of blood)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLARITY", "is_strong": true },
@@ -1044,7 +1059,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (confuse monsters)",
     "name_plural": "spellcraft scrolls (confuse monster)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_confusion_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1058,7 +1073,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (confuse monsters)",
     "name_plural": "spellcrafts scroll (confuse monsters)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CONFUSE", "is_strong": true },
@@ -1070,7 +1085,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (flame armor)",
     "name_plural": "spellcraft scrolls (flame armor)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_flame_armor_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1084,7 +1099,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (flame armor)",
     "name_plural": "spellcrafts scroll (flame armor)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "FLAMEARMOR", "is_strong": true },
@@ -1096,7 +1111,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (free action)",
     "name_plural": "spellcraft scrolls (free action)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_free_action_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1110,7 +1125,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (free action)",
     "name_plural": "spellcrafts scroll (free action)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "FREEACTION", "is_strong": true },
@@ -1122,7 +1137,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (healing)",
     "name_plural": "spellcraft scrolls (healing)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_heal_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1136,7 +1151,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (healing)",
     "name_plural": "spellcrafts scroll (healing)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "HEAL", "is_strong": true },
@@ -1148,7 +1163,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (insight)",
     "name_plural": "spellcraft scrolls (insight)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_insight_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1162,7 +1177,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (insight)",
     "name_plural": "spellcrafts scroll (insight)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "INSIGHT", "is_strong": true },
@@ -1175,7 +1190,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (serpentine shield)",
     "name_plural": "spellcraft scrolls (serpentine shield)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_invis_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1190,7 +1205,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (serpentine shield)",
     "name_plural": "spellcrafts scroll (serpentine shield)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "INVIS", "is_strong": true },
@@ -1202,7 +1217,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (lightning ward)",
     "name_plural": "spellcraft scrolls (lightning ward)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_elecresist_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1216,7 +1231,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (lightning ward)",
     "name_plural": "spellcrafts scroll (lightning ward)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "ELECRESIST", "is_strong": true },
@@ -1228,7 +1243,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (might)",
     "name_plural": "spellcraft scrolls (might)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_might_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1242,7 +1257,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (might)",
     "name_plural": "spellcrafts scroll (might)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "MIGHT", "is_strong": true },
@@ -1254,7 +1269,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (overgrowth)",
     "name_plural": "spellcraft scrolls (overgrowth)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_plants_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1268,7 +1283,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (overgrowth)",
     "name_plural": "spellcrafts scroll (overgrowth)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "OVERGROWTH", "is_strong": true },
@@ -1280,7 +1295,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (shockstorm)",
     "name_plural": "spellcraft scrolls (shockstorm)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_lightning_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1294,7 +1309,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (shockstorm)",
     "name_plural": "spellcrafts scroll (shockstorm)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "LIGHTNING", "is_strong": true },
@@ -1306,7 +1321,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (ward against evil)",
     "name_plural": "spellcraft scrolls (ward against evil)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "use_action": {
       "target": "scroll_spell_cleric_on",
       "msg": "You unravel the scroll and gaze upon the strange geometries depicted within...",
@@ -1320,7 +1335,7 @@
     "type": "TOOL",
     "name": "spellcraft scroll (ward against evil)",
     "name_plural": "spellcrafts scroll (ward against evil)",
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to focus on the pattern and burn its structure into your mind, in the hope of mastering its secrets.  (( Remember to bind the \"spellcasting\" key! ))",
     "turns_per_charge": 1,
     "revert_to": "scroll_blank",
     "use_action": { "type": "mutagen", "mutation_category": "CLERIC", "is_strong": true },
@@ -1365,7 +1380,7 @@
       "bleed": 0.5,
       "bite": 0.5,
       "move_cost": 25,
-      "effects": [ { "id": "talisman_warding", "duration": 300 } ]
+      "effects": [ { "id": "talisman_warding", "duration": 600 } ]
     },
     "flags": [ "NO_SALVAGE" ]
   },
@@ -1398,13 +1413,14 @@
     "type": "TOOL",
     "name": "candle of warding",
     "name_plural": "candle of warding",
-    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructable, but it is tough.",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructible, but it is tough.",
     "weight": 100,
     "volume": 1,
     "price": 1000,
     "material": "essencemat",
     "symbol": ",",
     "color": "white",
+    "looks_like": "candle",
     "use_action": [
       {
         "target": "candle_warding_active",
@@ -1421,8 +1437,7 @@
     "type": "TOOL",
     "name": "candle of warding (on)",
     "name_plural": "candle of warding (on)",
-    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a magical barrier, one that's tough but not indestructable.",
-    "looks_like": "candle_warding",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a magical barrier, one that's tough but not indestructible.",
     "weight": 100,
     "volume": 1,
     "price": 1000,
@@ -1438,7 +1453,7 @@
       },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
-    "flags": [ "NO_SALVAGE", "LIGHT_8" ]
+    "flags": [ "NO_SALVAGE", "LIGHT_12" ]
   },
   {
     "id": "orb_veil",
@@ -1463,7 +1478,8 @@
       "effects_activated": [ "AEA_MAP", "AEA_PAIN", "AEA_PAIN", "AEA_PAIN", "AEA_ATTENTION" ],
       "effects_wielded": [ "AEP_INT_UP", "AEP_PER_UP", "AEP_ATTENTION", "AEP_SCHIZO" ]
     },
-    "use_action": "ARTIFACT"
+    "use_action": "ARTIFACT",
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "staff_druidic",
@@ -1492,7 +1508,8 @@
         "cost_scaling": 0,
         "move_cost": 1000
       }
-    ]
+    ],
+    "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "moonstone_fang",
@@ -1519,7 +1536,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
-      "effects": [ { "id": "cold_ward", "duration": 1000 } ]
+      "effects": [ { "id": "cold_ward", "duration": 6000 } ]
     },
     "flags": [ "STAB", "SHEATH_KNIFE" ]
   },
@@ -1547,7 +1564,7 @@
       }
     ],
     "relative": { "cutting": -5, "weight": -318, "price": 50000 },
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD" ] },
+    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNLOAD", "MAGIC_FOCUS" ] },
     "delete": { "flags": [ "DURABLE_MELEE" ] },
     "artifact_data": { "charge_type": "ARTC_PORTAL" }
   },
@@ -1574,7 +1591,7 @@
     "revert_to": "veilblade",
     "use_action": { "type": "mutagen_iv", "mutation_category": "VEIL" },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
     "id": "draconic_heart_mutator",
@@ -1630,8 +1647,8 @@
     "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with exotic runes.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "ammo": "essence_blood_type",
-    "initial_charges": 1200,
-    "max_charges": 1200,
+    "initial_charges": 7200,
+    "max_charges": 7200,
     "turns_per_charge": 1,
     "revert_to": "stormbringer",
     "revert_msg": "The malevolent energy fades from the cursed blade, returning it to normal.",

@@ -36,7 +36,7 @@
     "stack_size": 1,
     "ammo_type": "shot",
     "range": 20,
-    "damage": 6,
+    "damage": 5,
     "recoil": 200,
     "effects": [ "FLARE", "TRAIL" ],
     "flags": [ "NOGIB" ]

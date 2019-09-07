@@ -9,6 +9,14 @@
     "extras": "field"
   },
   {
+    "id": "curious_structure_roof",
+    "type": "overmap_terrain",
+    "name": "curious structure roof",
+    "sym": 67,
+    "color": "dark_gray",
+    "see_cost": 5
+  },
+  {
     "id": "curious_structure_b",
     "type": "overmap_terrain",
     "name": "curious underground structure",
@@ -147,6 +155,14 @@
     "extras": "none"
   },
   {
+    "id": "island_temple_roof",
+    "type": "overmap_terrain",
+    "name": "peculiar shrine roof",
+    "sym": 84,
+    "color": "blue",
+    "see_cost": 5
+  },
+  {
     "id": "island_temple_1",
     "type": "overmap_terrain",
     "name": "peculiar shrine",
@@ -256,6 +272,91 @@
     "name": "odd house",
     "sym": 118,
     "color": "i_ltgreen",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_1",
+    "name": "back lot",
+    "sym": "O",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_2",
+    "name": "back lot",
+    "sym": "O",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_3",
+    "name": "dirt lot",
+    "sym": "O",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "id": "cf_church_4",
+    "type": "overmap_terrain",
+    "name": "rural church",
+    "sym": "C",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_1_roof",
+    "name": "open air",
+    "sym": ".",
+    "color": "blue",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_2_roof",
+    "name": "open air",
+    "sym": ".",
+    "color": "blue",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "cf_church_3_roof",
+    "name": "open air",
+    "sym": ".",
+    "color": "blue",
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "id": "cf_church_4_roof",
+    "type": "overmap_terrain",
+    "name": "rural church roof",
+    "sym": "C",
+    "color": "light_red",
+    "see_cost": 5,
+    "flags": [ "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sanguine_holdout_1",
+    "name": "cabin",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sanguine_holdout_b1",
+    "name": "cabin basement",
+    "sym": "C",
+    "color": "i_green",
     "see_cost": 5
   }
 ]

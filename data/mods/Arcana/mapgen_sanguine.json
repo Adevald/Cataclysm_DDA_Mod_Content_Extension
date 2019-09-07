@@ -67,7 +67,7 @@
       [ "rag_bloody", 35 ],
       [ "scrap", 30 ],
       [ "diamond", 5 ],
-      [ "brooch", 5 ]
+      [ "jade_brooch", 5 ]
     ]
   },
   {
@@ -75,12 +75,9 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "underwear", "damage": [ 1, 4 ] },
-      { "group": "shirts", "damage": [ 1, 4 ] },
-      { "group": "pants", "damage": [ 1, 4 ] },
-      { "group": "shoes", "damage": [ 1, 4 ] },
+      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "sanguine_cult_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "item": "corpse" }
+      { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
   {
@@ -88,6 +85,42 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [ { "item": "silver_glyph" }, { "item": "essence_blood" }, { "item": "cleric_ring" } ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "island_temple_roof" ],
+    "weight": 250,
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                      __",
+        "                      __",
+        "                     ___",
+        "                     ___",
+        "                   _____",
+        "                   _____",
+        "                 _______",
+        "               _________",
+        "               _________"
+      ],
+      "terrain": { "_": "t_rock_floor_no_roof" }
+    }
   },
   {
     "type": "mapgen",

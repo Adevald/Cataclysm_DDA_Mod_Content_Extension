@@ -1,6 +1,7 @@
 [{
   "type": "terrain",
   "id": "t_blood_sh",
+  "description": "Shallow Blood",
   "name": "shallow blood",
   "symbol": "~",
   "color": "light_red",
@@ -10,6 +11,7 @@
  }, {
   "type": "terrain",
   "id": "t_blood_dp",
+  "description": "Deep Blood",
   "name": "deep blood",
   "symbol": "~",
   "color": "red",

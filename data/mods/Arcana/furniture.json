@@ -8,6 +8,7 @@
     "looks_like": "sun_sword_on",
     "bgcolor": [ "yellow" ],
     "move_cost_mod": -2,
+    "light_emitted": 240,
     "required_str": -1,
     "flags": [ "NOITEM", "TRANSPARENT" ],
     "deployed_item": "sun_sword",
@@ -22,6 +23,7 @@
     "looks_like": "candle_lit",
     "bgcolor": [ "blue" ],
     "move_cost_mod": -2,
+    "light_emitted": 24,
     "required_str": -1,
     "flags": [ "NOITEM", "TRANSPARENT", "USABLE_FIRE" ],
     "deployed_item": "candle_barrier_aftermath",
@@ -31,11 +33,12 @@
     "id": "f_candle_barrier_playermade",
     "type": "furniture",
     "name": "flickering candle",
-    "description": "A single candle, wick emanating a ghostly flame and projecting a glowing barrier.  Removing the candle should dispel the barrier, but sufficiemnt force may also collapse it.",
+    "description": "A single candle, wick emanating a ghostly flame and projecting a glowing barrier.  Removing the candle should dispel the barrier, but sufficient force may also collapse it.",
     "symbol": ",",
     "looks_like": "candle_lit",
     "bgcolor": [ "magenta" ],
     "move_cost_mod": -2,
+    "light_emitted": 12,
     "required_str": -1,
     "flags": [ "NOITEM", "TRANSPARENT", "USABLE_FIRE" ],
     "deployed_item": "candle",
@@ -129,5 +132,25 @@
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT" ],
     "close": "f_door_arcana_c",
     "bash": { "str_min": 4, "str_max": 40, "sound": "smash!", "sound_fail": "whump!" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_arcane_candlestick",
+    "name": "candle pedestal",
+    "description": "A short stone pedestal with an ornate candle holder firmly mounted atop it.",
+    "looks_like": "t_pedestal_wyrm",
+    "symbol": "&",
+    "color": "dark_gray",
+    "move_cost_mod": -1,
+    "coverage": 50,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "SEALED", "PLACE_ITEM" ],
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "rock", "count": [ 2, 5 ] } ]
+    }
   }
 ]

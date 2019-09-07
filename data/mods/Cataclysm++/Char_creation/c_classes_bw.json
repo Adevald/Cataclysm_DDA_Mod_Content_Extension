@@ -37,7 +37,6 @@
       "bio_trip",
       "bio_stiff",
       "bio_razors",
-      "bio_storage",
       "bio_power_storage_mkII",
       "bio_power_storage_mkII",
       "bio_power_storage_mkII",
@@ -68,7 +67,7 @@
     "type": "profession",
     "ident": "mycus_weapon",
     "name": "Fungus Failed Bio-Weapon",
-    "description": "Assimilation process is complete, incorporation and modification of biology and bionics into our system was successful. Protection of our new domain and brethren is our current objective. Inability to remove previous DNA marker is but a minor setback.",
+    "description": "Assimilation process is complete, incorporation and modification of biology and bionics into our system was successful.  Protection of our new domain and brethren is our current objective.  Inability to remove previous DNA marker is but a minor setback.",
     "points": 4,
     "traits": [
       "PSYCHOPATH",
@@ -95,7 +94,6 @@
       "bio_trip",
       "bio_stiff",
       "bio_razors",
-      "bio_storage",
       "bio_power_storage_mkII",
       "bio_power_storage_mkII",
       "bio_power_storage_mkII",
@@ -174,9 +172,9 @@
       "bio_shock",
       "bio_digestion",
       "bio_water_extractor",
-      "bio_furnace",
       "bio_heat_absorb",
       "bio_metabolics",
+      "bio_ethanol",
       "bio_painkiller",
       "bio_nanobots",
       "bio_recycler",
@@ -234,8 +232,8 @@
       "bio_lighter",
       "bio_evap",
       "bio_climate",
-      "bio_furnace",
-      "bio_ethanol",
+      "bio_metabolics",
+      "bio_torsionratchet",
       "bio_recycler",
       "bio_carbon",
       "bio_watch",
@@ -312,11 +310,9 @@
       "bio_power_storage_mkII",
       "bio_power_storage_mkII",
       "bio_power_armor_interface_mkII",
-      "bio_torsionratchet",
-      "bio_advreactor",
-      "bio_plut_filter"
+      "bio_torsionratchet"
     ],
-    "items": { "both": [ "badge_bio_weapon", "subsuit_xl", "footrags" ], "male": [ "briefs" ], "female": [ "bra", "panties" ] },
+    "items": { "both": [ "badge_bio_weapon", "subsuit_xl", "footrags", "cbm_rtg_inductor" ], "male": [ "briefs" ], "female": [ "bra", "panties" ] },
     "flags": [ "SCEN_ONLY" ]
   },
   {
@@ -362,7 +358,7 @@
     "type": "profession",
     "ident": "bio_infantry",
     "name": "Super Soldier",
-    "description": "The infantry of the Super Soldier project. You are one of many augmented soldiers to be deployed into a battle field to ensure victory. With range and melee capabilities, you engage enemies en masse.",
+    "description": "The infantry of the Super Soldier project.  You are one of many augmented soldiers to be deployed into a battle field to ensure victory.  With range and melee capabilities, you engage enemies en masse.",
     "points": 12,
     "CBMs": [
       "bio_targeting",
@@ -403,24 +399,23 @@
           "socks",
           "boots_combat"
         ],
-        "entries": [ { "item": "arc_laser_rifle", "contents-item": "shoulder_strap" } ]
+        "entries": [ { "item": "arc_laser_rifle_ups", "contents-item": "shoulder_strap" } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boxer_shorts" ]
-    },
-    "flags": [ "SCEN_ONLY" ]
+    }
   },
   {
     "type": "profession",
     "ident": "bio_scout",
     "name": "Super Scout",
-    "description": "The sniper of the Super Soldier project. You are one of a few augmented soldiers to be used for reconnaissance and V.I.P assassinations. With your weapons and skills, you can eliminate key targets after living for weeks in enemy territory.",
+    "description": "The sniper of the Super Soldier project.  You are one of a few augmented soldiers to be used for reconnaissance and V.I.P assassinations.  With your weapons and skills, you can eliminate key targets after living for weeks in enemy territory.",
     "points": 12,
     "CBMs": [
       "bio_eye_enhancer",
       "bio_eye_optic",
       "bio_night_vision",
-      "bio_furnace",
+      "bio_metabolics",
       "bio_recycler",
       "bio_targeting",
       "bio_climate",
@@ -429,7 +424,6 @@
       "bio_ups",
       "bio_power_storage_mkII",
       "bio_power_storage_mkII"
-      
     ],
     "traits": [ "SUPER_SOLDIER_MARKER" ],
     "skills": [
@@ -467,20 +461,19 @@
           "rollmat"
         ],
         "entries": [
-          { "item": "mx_laser_sniper", "contents-item": [ "shoulder_strap" ] },
+          { "item": "mx_laser_sniper_ups", "contents-item": [ "shoulder_strap" ] },
           { "item": "knife_combat", "container-item": "sheath" }
         ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boxer_shorts" ]
-    },
-    "flags": [ "SCEN_ONLY" ]
+    }
   },
   {
     "type": "profession",
     "ident": "bio_tool",
-    "name": "Super B.A.M.R.U",
-    "description": "Biological and mechanical repair unit, the repairs man of the Super Soldier project. You are one of many augmented military 'mechanics to be used as a repair module. With repair, medical and general electronic capabilities, you can maybe fix the world.",
+    "name": "Super Bio-engineer",
+    "description": "Biological and mechanical repair unit, the combat engineer of the Super Soldier project.  You are one of many augmented military 'mechanics to be used as a repair module.  With repair, medical and general electronic capabilities, you can maybe fix the world.",
     "points": 12,
     "CBMs": [
       "bio_int_enhancer",
@@ -524,12 +517,11 @@
           "id_science",
           "chemistry_set"
         ],
-        "entries": [ { "item": "neo_laser_pistol", "container-item": "holster" } ]
+        "entries": [ { "item": "neo_laser_pistol_ups", "container-item": "holster" } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "sports_bra", "boxer_shorts" ]
-    },
-    "flags": [ "SCEN_ONLY" ]
+    }
   },
   {
     "type": "profession",
@@ -551,8 +543,6 @@
       "bio_purifier",
       "bio_nanobots",
       "bio_painkiller",
-      "bio_advreactor",
-      "bio_plut_filter",
       "bio_radscrubber",
       "bio_power_armor_interface_mkII",
       "bio_ups",
@@ -568,11 +558,10 @@
       { "level": 3, "name": "dodge" }
     ],
     "items": {
-      "both": { "items": [ "hmil_armor" ], "entries": [ { "item": "krx_laser_lmg", "contents-item": [ "shoulder_strap" ] } ] },
+      "both": { "items": [ "hmil_armor", "cbm_rtg_inductor" ], "entries": [ { "item": "krx_laser_lmg_ups", "contents-item": [ "shoulder_strap" ] } ] },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "panties" ]
-    },
-    "flags": [ "SCEN_ONLY" ]
+    }
   },
   {
     "type": "profession",
@@ -592,6 +581,7 @@
       "bio_power_storage_mkII",
       "bio_power_storage_mkII"
     ],
+    "traits": [ "PROF_GLADIATOR" ],
     "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "cutting" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": [ "socks", "hat_cotton", "gloves_fingerless", "tshirt", "jeans", "boots" ],
@@ -617,6 +607,7 @@
       "bio_power_storage_mkII",
       "bio_power_storage_mkII"
     ],
+    "traits": [ "PROF_GLADIATOR" ],
     "skills": [
       { "level": 2, "name": "melee" },
       { "level": 2, "name": "unarmed" },
@@ -648,6 +639,7 @@
       "bio_power_storage_mkII",
       "bio_power_storage_mkII"
     ],
+    "traits": [ "PROF_GLADIATOR" ],
     "skills": [ { "level": 2, "name": "gun" }, { "level": 2, "name": "rifle" }, { "level": 2, "name": "dodge" } ],
     "items": {
       "both": [ "socks", "hat_cotton", "gloves_fingerless", "tshirt", "jeans", "boots" ],
@@ -662,7 +654,7 @@
     "name": "Slave Fighter (Weapon Master)",
     "description": "You have been augmented with many 'passive' combat bionics, they merely aid you but are not weapons in and of themselves. You have been trained to use all sorts of different weapons, including your fists. You can pretty much weaponize a sock.",
     "points": 6,
-    "traits": [ "MARTIAL_ARTS_SURV" ],
+    "traits": [ "MARTIAL_ARTS_SURV_COM", "PROF_GLADIATOR" ],
     "CBMs": [
       "bio_razors",
       "bio_magnet",

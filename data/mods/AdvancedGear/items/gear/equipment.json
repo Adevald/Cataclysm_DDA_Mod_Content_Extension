@@ -40,7 +40,7 @@
     "encumbrance": 28,
     "material_thickness": 4,
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "TRADER_AVOID" ],
     "use_action": {
       "type": "transform",
       "target": "nano_shield_active",
@@ -67,7 +67,7 @@
     "encumbrance": 15,
     "material_thickness": 4,
     "techniques": [ "WBLOCK_3" ],
-    "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN" ],
+    "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "TRADER_AVOID" ],
     "use_action": {
       "type": "transform",
       "target": "nano_shield",
@@ -259,7 +259,7 @@
     "color": "light_gray",
     "name": "nanotech liquid compressor",
     "category": "other",
-    "description": "A heavily compressed liquid storage device, it is also capable of keeping its contents fresh.",
+    "description": "A heavily compressed liquid storage device, it is also capable of keeping its contents fresh and maintaining their temperature.",
     "price": 240000,
     "weight": 2957,
     "volume": 16,
@@ -277,6 +277,7 @@
     "flags": ["RIGID", "SEALS", "WATERTIGHT", "NONCONDUCTIVE", "TRADER_AVOID" ],
     "seals": true,
     "preserves": true,
-    "watertight": true
+    "watertight": true,
+    "insulation": 50
   }
 ]

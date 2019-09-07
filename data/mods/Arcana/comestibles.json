@@ -22,7 +22,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a strange numbness spread through your body.",
       "stat_adjustments": { "hunger": 25 },
-      "effects": [ { "id": "potion_numbness", "duration": 150 } ]
+      "effects": [ { "id": "potion_numbness", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
@@ -48,7 +48,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel wicked power spread through your body.",
       "stat_adjustments": { "hunger": 20 },
-      "effects": [ { "id": "potion_strength", "duration": 150 } ]
+      "effects": [ { "id": "potion_strength", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
@@ -74,7 +74,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a sudden tension spread through your body.",
       "stat_adjustments": { "hunger": 15 },
-      "effects": [ { "id": "potion_speed", "duration": 150 } ]
+      "effects": [ { "id": "potion_speed", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NUTRIENT_OVERRIDE" ]
   },
@@ -100,7 +100,7 @@
       "type": "consume_drug",
       "activation_message": "You drink the potion and feel a pleasant warmth spread through your body.",
       "stat_adjustments": { "hunger": 10 },
-      "effects": [ { "id": "potion_healing", "duration": 150 } ]
+      "effects": [ { "id": "potion_healing", "duration": 900 } ]
     },
     "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
   },
@@ -131,7 +131,7 @@
       "bleed": 1.0,
       "bite": 0.95,
       "move_cost": 200,
-      "effects": [ { "id": "potion_vulnerary", "duration": 100 } ]
+      "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]
     },
     "flags": [ "NPC_SAFE" ]
   },
@@ -143,7 +143,7 @@
     "name": "citrine incense",
     "name_plural": "citrine incense",
     "//": "Citrine isn't quite white-yellow either, but jasmine incence would imply the flower rather than the color.  Last piece of advice in the description, while common sense, is only really a concern with sleep deprivation enabled.",
-    "description": "An alchemical mixture permeating a comsustable base of charcoal or resin, resulting in a peculiar sort of incense.  Lighting it will rapidly burn away the strange concoction, invigorating its user with a focused effect similiar to the potions originally used to make it.  It trades much of its effect on strength and speed for instead directly relieving fatigue through unusual means, though long-term use without rest is not reccomended.",
+    "description": "An alchemical mixture permeating a combustable base of charcoal or resin, resulting in a peculiar sort of incense.  Lighting it will rapidly burn away the strange concoction, invigorating its user with a focused effect similiar to the potions originally used to make it.  It trades much of its effect on strength and speed for instead directly relieving fatigue through unusual means, though long-term use without rest is not reccomended.",
     "weight": 550,
     "volume": 1,
     "price": 2900,
@@ -154,7 +154,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "Wisps of smoke rapidly fade away as you light the incense, filling you with energy.",
-      "effects": [ { "id": "potion_incense", "duration": 150 } ],
+      "effects": [ { "id": "potion_incense", "duration": 900 } ],
       "charges_needed": { "fire": 1 },
       "moves": 50
     }

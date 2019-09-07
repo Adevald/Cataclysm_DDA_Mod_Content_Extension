@@ -1,5 +1,59 @@
 [
   {
+    "id": "halo_elecresist",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "amber halo",
+    "description": "A strange radiance permeating your body, protecting you from lightning.",
+    "color": "light_gray",
+    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY" ] }
+  },
+  {
+    "id": "halo_clairvoyance",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "ivory halo",
+    "description": "A strange radiance permeating your body, granting you sight beyond sight.",
+    "color": "magenta",
+    "artifact_data": { "effects_worn": [ "AEP_CLAIRVOYANCE" ] }
+  },
+  {
+    "id": "halo_shadowsnakes",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "obsidian halo",
+    "description": "A strange radiance permeating your body, summoning serpentine shadows when you are harmed.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SNAKES" ] }
+  },
+  {
+    "id": "halo_dampening",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "coral halo",
+    "description": "A strange radiance permeating your body, dulling the effects of flame and radiation.",
+    "color": "light_gray",
+    "artifact_data": { "effects_worn": [ "AEP_PBLUE", "AEP_EXTINGUISH" ] }
+  },
+  {
+    "id": "halo_light",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "crystal halo",
+    "description": "A strange radiance permeating your body, giving off a soft glow.",
+    "color": "white",
+    "artifact_data": { "effects_worn": [ "AEP_GLOW" ] }
+  },
+  {
+    "id": "halo_drainlife",
+    "copy-from": "spell_base",
+    "type": "TOOL_ARMOR",
+    "name": "horned halo",
+    "description": "A strange radiance permeating your body, granting you a life-draining touch.",
+    "color": "dark_gray",
+    "artifact_data": { "effects_worn": [ "AEP_SAP_LIFE" ] }
+  },
+  {
     "id": "gilded_aegis",
     "type": "TOOL_ARMOR",
     "copy-from": "cloak_leather",
@@ -12,8 +66,7 @@
     "ammo": "essence_dull_type",
     "max_charges": 30,
     "charges_per_use": 15,
-    "artifact_data": { "effects_activated": [ "AEA_PAIN", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL", "AEA_HEAL" ] },
-    "use_action": "ARTIFACT",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_gilded_aegis_healing", "no_fail": true, "level": 0 },
     "relative": { "weight": 3020, "price": 7200, "material_thickness": 1, "encumbrance": 2 },
     "extend": { "flags": [ "NO_SALVAGE", "HELMET_COMPAT" ] }
   },
@@ -57,7 +110,7 @@
     "name_plural": "masks of insight (on)",
     "//": "It seems you need around 6 to protect against flashes",
     "description": "A mask faced with iron and decorated with other metal, depicting the face of some unknown divine figure.  The face depicted on the mask seems more menacing than it did previously.",
-    "turns_per_charge": 50,
+    "turns_per_charge": 300,
     "revert_to": "somen_clairvoyance",
     "material_thickness": 2,
     "environmental_protection": 6,
@@ -84,8 +137,7 @@
     "encumbrance": 15,
     "material_thickness": 4,
     "environmental_protection": 10,
-    "artifact_data": { "effects_activated": [ "AEA_ACIDBALL" ] },
-    "use_action": "ARTIFACT",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0 },
     "relative": { "weight": 722, "volume": 6, "price": 80000 },
     "extend": { "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS" ], "covers": [ "FEET" ] },
     "delete": { "flags": [ "VARSIZE" ] }
@@ -148,8 +200,9 @@
     "name": "mantle of shadows (on)",
     "name_plural": "mantles of shadows (on)",
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
-    "turns_per_charge": 50,
+    "turns_per_charge": 300,
     "artifact_data": { "effects_worn": [ "AEP_INVISIBLE", "AEP_STEALTH" ] },
+    "revert_to": "robe_shadow",
     "use_action": {
       "target": "robe_shadow",
       "msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
@@ -162,13 +215,12 @@
     "type": "TOOL_ARMOR",
     "name": "pair of thunder gauntlets",
     "name_plural": "pairs of thunder gauntlets",
-    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give something a shocking surprise, either up close or with unpredictable bolts of lightning.",
+    "description": "A heavy set of plate gauntlets, decorated with silver around the edges of each individual plate.  Touching the bare metal sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt.",
     "material": [ "iron", "leather", "silver" ],
     "ammo": "essence_type",
     "max_charges": 4,
     "charges_per_use": 1,
-    "artifact_data": { "effects_activated": [ "AEA_STORM" ] },
-    "use_action": [ "TAZER", "ARTIFACT" ],
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_thunder_gauntlets_taze", "no_fail": true, "level": 0 },
     "relative": { "weight": 210, "price": 6200 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   },
@@ -198,7 +250,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "The carvings in the stone glow red for a brief moment, and a chill passes through your spine.",
-      "effects": [ { "id": "heat_ward", "duration": 1000 } ]
+      "effects": [ { "id": "heat_ward", "duration": 6000 } ]
     },
     "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ]
   },
@@ -213,7 +265,7 @@
     "price": 12000,
     "material": [ "hardsteel" ],
     "symbol": "[",
-    "looks_like": "brooch",
+    "looks_like": "jade_brooch",
     "color": "light_gray",
     "ammo": "essence_dull_type",
     "max_charges": 20,
@@ -225,7 +277,6 @@
       "need_charges_msg": "The charm against lightning needs purified essence to function.",
       "type": "transform"
     },
-    "artifact_data": { "effects_worn": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_DOWN" ] },
     "flags": [ "FANCY", "NO_SALVAGE" ]
   },
   {
@@ -235,7 +286,7 @@
     "name": "meteoric talisman (active)",
     "name_plural": "meteoric talismans (active)",
     "description": "An ornate necklace with a small charm resembling a round shield, made from a hard iridescent metal.  A strange electric tingle permeates the air around it, hinting at its protective magic.",
-    "turns_per_charge": 25,
+    "turns_per_charge": 150,
     "revert_to": "meteoric_talisman",
     "use_action": {
       "target": "meteoric_talisman",
@@ -247,7 +298,7 @@
   {
     "id": "cleric_ring",
     "type": "TOOL_ARMOR",
-    "copy-from": "ring",
+    "copy-from": "gold_ring",
     "name": "ring of the fallen angel",
     "name_plural": "rings of the fallen angel",
     "description": "A simple silver ring, adorned with a small red gem and a wing motif.  Using it cures several anomalous ailments, and provides protection from such effects for a while.",
@@ -260,7 +311,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
-      "effects": [ { "id": "cleric_warding", "duration": 1000 } ]
+      "effects": [ { "id": "cleric_warding", "duration": 6000 } ]
     },
     "extend": { "flags": [ "NO_SALVAGE" ] }
   }

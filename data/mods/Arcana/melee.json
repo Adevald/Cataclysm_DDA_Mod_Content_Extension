@@ -30,11 +30,12 @@
     "weight": 285,
     "volume": 1,
     "price": 8400,
+    "price_postapoc": 840,
     "to_hit": -3,
     "bashing": 1,
     "material": "silver",
     "symbol": ",",
-    "looks_like": "brooch",
+    "looks_like": "jade_brooch",
     "color": "light_gray"
   },
   {
@@ -265,5 +266,35 @@
     "looks_like": "spiral_stone",
     "weight": 1500,
     "volume": 4
+  },
+  {
+    "id": "candle_warding_special",
+    "type": "GENERIC",
+    "category": "other",
+    "name": "shimmering candle",
+    "description": "A simple candle, burning endlessly with unearthly flame.  It gives off a faintly soothing sensation yet no warmth, casting an brilliant glow throughout the room.  It seems to be firmly fixed in place by some unknown force.",
+    "weight": 100,
+    "volume": 1,
+    "price": 0,
+    "material": "essencemat",
+    "symbol": ",",
+    "looks_like": "candle_warding_active",
+    "color": "white",
+    "flags": [ "NO_SALVAGE", "LIGHT_120" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "CF_golden_scale",
+    "name": "Golden Scale",
+    "description": "This is a small piece of soft gold, shaped like an elongated scale or feather.  Markings have been stamped on it, attesting to its weight and purity.  The only other mark of identity is a symbol resembling a cross, its lower half transitioning into the hammer Mjölnir.  Little more than scrap to most people, albeit scrap of a consistent quality.",
+    "//": "Soft, meant to be dismantled when needed.  Faction attitude toward how its used plus little authority to back the currency up magnify how devalued it is compared to lower-carat Robofac coins.",
+    "price": 120000,
+    "price_postapoc": 2500,
+    "weight": 25,
+    "to_hit": -3,
+    "color": "yellow",
+    "symbol": "$",
+    "material": [ "gold" ],
+    "volume": "2ml"
   }
 ]

@@ -1,60 +1,114 @@
 [
   {
     "type": "mutation",
-    "id": "hermit_earned_trust_1",
-    "name": "Hermit Trust 1",
+    "id": "BGSS_CF_1",
+    "name": "Survivor Story",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BGSS_CF_2",
+    "name": "Survivor Story",
+    "points": 0,
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BGSS_CF_3",
+    "name": "Survivor Story",
+    "points": 0,
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BGSS_CF_4",
+    "name": "Survivor Story",
+    "points": 0,
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BGSS_CF_5",
+    "name": "Survivor Story",
+    "points": 0,
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BGSS_BLOOD_MAGE_1",
+    "name": "Survivor Story",
+    "points": 0,
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "BGSS_BLOOD_MAGE_2",
+    "name": "Survivor Story",
+    "points": 0,
+    "description": "This NPC could tell you about how they survived the cataclysm",
+    "player_display": false,
+    "valid": false,
+    "purifiable": false,
+    "types": [ "BACKGROUND_SURVIVAL_STORY" ],
+    "flags": [ "BG_SURVIVAL_STORY" ]
+  },
+  {
+    "type": "mutation",
+    "id": "CF_DEACON",
+    "name": "Deacon Marker",
+    "points": 0,
+    "description": "This trait marks The Deacon, used for certain dialog checks to keep things working right.  Seeing this is probably a bug.",
     "player_display": false,
     "valid": false,
     "purifiable": false
   },
   {
     "type": "mutation",
-    "id": "hermit_earned_trust_2",
-    "name": "Hermit Trust 2",
+    "id": "BGSS_CF_FILTER",
+    "name": "Background Story Filter",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "description": "This exists so that mage hunter NPCs spawned after Sofia's mission, if they end up recruited in the future and generate certain background stories, will refer to linking up with Johnathan instead of Sofia.",
     "player_display": false,
     "valid": false,
     "purifiable": false
   },
   {
     "type": "mutation",
-    "id": "hermit_stage_1",
-    "name": "Hermit Quest Stage 1",
+    "id": "FIX_CF_GM",
+    "name": "Fix Jonathan",
     "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
-    "player_display": false,
-    "valid": false,
-    "purifiable": false
-  },
-  {
-    "type": "mutation",
-    "id": "hermit_stage_2",
-    "name": "Hermit Quest Stage 2",
-    "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
-    "player_display": false,
-    "valid": false,
-    "purifiable": false
-  },
-  {
-    "type": "mutation",
-    "id": "hermit_stage_3",
-    "name": "Hermit Quest Stage 3",
-    "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
-    "player_display": false,
-    "valid": false,
-    "purifiable": false
-  },
-  {
-    "type": "mutation",
-    "id": "hermit_stage_4",
-    "name": "Hermit Quest Stage 4",
-    "points": 0,
-    "description": "Trait used in place of effect becuase giving permanent effects via NPCtalk was broken.  Will eventually be deleted as it's since been fixed.",
+    "description": "This trait ensures that old versions of this NPC, on being able to access the mission chain, only versions citing the correct starter mission will be able to offer missions.  The old versions cited the wrong initial mission, turning what was supposed to be a clever compatability feature into a terrible mistake.",
     "player_display": false,
     "valid": false,
     "purifiable": false
@@ -217,7 +271,8 @@
     "description": "You have gazed deeper into The Beyond than anyone that still lives.  It has gazed back, and found greater purpose in you.",
     "valid": false,
     "purifiable": false,
-    "threshold": true
+    "threshold": true,
+    "mana_multiplier": 1.25
   },
   {
     "type": "mutation",
@@ -241,6 +296,311 @@
   },
   {
     "type": "mutation",
+    "id": "SPELL_AGILE",
+    "name": "Magic Sign: Agility",
+    "points": 4,
+    "description": "Powers from beyond have granted you power, that can grant a temporary speed and agility-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "AGILITY" ],
+    "spells_learned": [ [ "arcana_magic_agility", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CLAIRVOYANCE",
+    "name": "Magic Sign: Clairvoyance",
+    "points": 6,
+    "description": "Powers from beyond have granted you power, that can grant sight beyond sight temporarily.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CLAIRVOYANCE" ],
+    "spells_learned": [ [ "arcana_magic_clairvoyance", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CLARITY",
+    "name": "Magic Sign: Clarity of Blood",
+    "points": 4,
+    "description": "Powers from beyond have granted you a power that can protect against parasites and the Mycus.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CLARITY" ],
+    "spells_learned": [ [ "arcana_magic_clarity_blood", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CONFUSE",
+    "name": "Magic Sign: Confuse Monster",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can confuse nearby monsters.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CONFUSE" ],
+    "spells_learned": [ [ "arcana_magic_confuse_monster", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_ACID",
+    "name": "Magic Sign: Conjure Acid",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure sprays of acid.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ACIDSPRAY" ],
+    "spells_learned": [ [ "arcana_magic_conjure_acid", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_DAMPENING",
+    "name": "Magic Sign: Dampening",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to stave off radiation, and extinguish flames in your wake.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_dampening", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FIRE",
+    "name": "Magic Sign: Conjure Flame",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to conjure a burst of flame, where you command.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_conjure_flame", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FLAMEARMOR",
+    "name": "Magic Sign: Flame Armor",
+    "points": 5,
+    "description": "Powers from beyond have granted you power, that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "FLAMEARMOR" ],
+    "spells_learned": [ [ "arcana_magic_flame_armor", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_FREEACTION",
+    "name": "Magic Sign: Free Action",
+    "points": 6,
+    "description": "Powers from beyond have granted you power, that can protect against paralytic effects and other hindrances.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "FREEACTION" ],
+    "spells_learned": [ [ "arcana_magic_free_action", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_HEAL",
+    "name": "Magic Sign: Healing",
+    "points": 5,
+    "description": "Powers from beyond have granted you the power to heal the body, though overuse may have consequences.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "HEAL" ],
+    "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_INSIGHT",
+    "name": "Magic Sign: Insight",
+    "points": 3,
+    "description": "Powers from beyond have granted you power, that can grant a temporary boost to perception.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "INSIGHT" ],
+    "spells_learned": [ [ "arcana_magic_insight", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_LIGHT",
+    "name": "Magic Sign: Light",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to conjure a temporary aura of illumination.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_light", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_ELECRESIST",
+    "name": "Magic Sign: Lightning Ward",
+    "points": 3,
+    "description": "Powers from beyond have granted you power, that can grant temporary protection against electricity.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "ELECRESIST" ],
+    "spells_learned": [ [ "arcana_magic_lightning_ward", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_STRENGTH",
+    "name": "Magic Sign: Might",
+    "points": 5,
+    "description": "Powers from beyond have granted you power, that can provide a temporary strength-enhancing effect.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "MIGHT" ],
+    "spells_learned": [ [ "arcana_magic_might", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_LOCKPICK",
+    "name": "Magic Sign: Open Lock",
+    "points": 4,
+    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can be used to open locked doors.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_open_lock", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_PLANTS",
+    "name": "Magic Sign: Overgrowth",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to cause plants to spring up from nothingness.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "OVERGROWTH" ],
+    "spells_learned": [ [ "arcana_magic_overgrowth", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_POISONARMOR",
+    "name": "Magic Sign: Poison Armor",
+    "points": 3,
+    "description": "Powers from beyond have granted you power, that can offer temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_poison_armor", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SHADOWSNAKES",
+    "name": "Magic Sign: Serpentine Shield",
+    "points": 6,
+    "description": "Powers from beyond have granted you power, a defensive effect that will summon shadowy snakes when yolu are injured.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "//": "ID for INVIS retained to not break stuff.",
+    "category": [ "INVIS" ],
+    "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_LIGHTNING",
+    "name": "Magic Sign: Shockstorm",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to create a shockwave of lightning around you.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "LIGHTNING" ],
+    "spells_learned": [ [ "arcana_magic_shockstorm", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_SUMMONDOG",
+    "name": "Magic Sign: Summon Skeletal Dog",
+    "points": 3,
+    "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_DAYLIGHT",
+    "//": "ID retained to avoid load errors.",
+    "name": "Magic Sign: Surge of Adrenaline",
+    "points": 2,
+    "description": "Powers from beyond have granted you the power to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "spells_learned": [ [ "arcana_magic_surge_adrenaline", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "id": "SPELL_CLERIC",
+    "name": "Magic Sign: Ward Against Evil",
+    "points": 5,
+    "description": "Powers from beyond have granted you power, that can offer temporary protection against various anomalous effects.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "CLERIC" ],
+    "spells_learned": [ [ "arcana_magic_ward_against_evil", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "//": "Note: value of Elemental Sign is 5, and value of Suppression is 2.",
+    "id": "SPELL_EMBERS_DRAGONBLOOD",
+    "name": "Mark of Embers",
+    "points": 7,
+    "description": "Inhuman power has granted you the ability to manipulate your elemental nature, including guarding further against heat as well as suppressing your inner fire.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
+    "prereqs2": [ "ARCANA_FIREAFFINITY" ],
+    "category": [ "DRAGONBLOOD" ],
+    "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "//": "Note: value of Might is 5, and value of Revenant Blood is 4.",
+    "id": "SPELL_INSTINCT_DRAGONBLOOD",
+    "name": "Mark of Instinct",
+    "points": 9,
+    "description": "Inhuman power has granted you the abilities pertaining to your inhuman nature, including a strength-enhancing spell, along with the ability to guard against parasites or other hazards.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_HUNT_DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD" ],
+    "spells_learned": [ [ "arcana_mark_might", 1 ], [ "arcana_mark_revenant_blood", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Infernal Flame is 3, and value of Summon Fiend is 4.",
+    "id": "SPELL_SUMMONFIEND",
+    "name": "Mark of Hellfire",
+    "points": 7,
+    "description": "Inhuman power has granted you unnatural abilities, the power to conjure unholy flames and the power to summon ashen undead.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "leads_to": [ "SPELL_SUMMONWYRM" ],
+    "category": [ "DRAGONBLOOD" ],
+    "spells_learned": [ [ "arcana_mark_infernal_flame", 1 ], [ "arcana_mark_summon_fiend", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "//": "ID retained to reduce redundancy and avoid load errors.  Note: value of Summon Dark Wyrm is 5, and value of Summon Jabberwock is 6",
+    "id": "SPELL_SUMMONWYRM",
+    "name": "Mark of The Beyond",
+    "points": 11,
+    "description": "Inhuman power has granted you unnatural abilities, allowing you to summon strange creatures woven from the Beyond.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [ "SPELL_SUMMONFIEND" ],
+    "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 1 ], [ "arcana_mark_summon_jabberwock", 1 ] ]
+  },
+  {
+    "type": "mutation",
+    "//": "Note: Value of Drain Life is 2, and value of Surge of Adrenaline is also 2.",
+    "id": "SPELL_HUNT_DRAGONBLOOD",
+    "name": "Mark of The Hunt",
+    "points": 4,
+    "description": "Inhuman power has granted you abilities to further hone your lethality, in the form of life-draining magic and the ability to spark a surge of adrenaline at will.  (( Remember to bind the \"spellcasting\" key! ))",
+    "valid": false,
+    "purifiable": false,
+    "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
+    "category": [ "DRAGONBLOOD" ],
+    "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "spells_learned": [ [ "arcana_mark_drain_life", 1 ], [ "arcana_mark_surge_adrenaline", 1 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_ACIDARMOR",
     "name": "Blessing: Acid Armor",
     "points": 3,
@@ -258,61 +618,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_ACID",
-    "name": "Arcana: Acid Spray",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "ACIDSPRAY" ],
-    "changes_to" : [ "SPELL_ACID2" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_acidspray",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_ACID2",
-    "name": "Chaos Gift: Acid Spray",
-    "points": 3,
-    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can create sprays of acid.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "CHIMERA" ],
-    "cancels" : [ "SPELL_ACID" ],
-    "threshreq" : ["THRESH_CHIMERA"],
-    "active": true,
-    "cost": 36,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_acidspray",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_AGILE",
-    "name": "Arcana: Agility",
-    "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary speed and agility-enhancing effect.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "AGILITY" ],
-    "changes_to" : [ "SPELL_AGILE2" ],
-    "active": true,
-    "cost": 60,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_agile",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_AGILE2",
     "name": "Blessing: Agility",
     "points": 4,
@@ -320,30 +625,11 @@
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
-    "cancels" : [ "SPELL_AGILE" ],
     "active": true,
     "cost": 40,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_agile",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_CLAIRVOYANCE",
-    "name": "Arcana: Clairvoyance",
-    "points": 6,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary clairvoyance effect.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
-    "category": [ "CLAIRVOYANCE" ],
-    "active": true,
-    "cost": 90,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_clairvoyance",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -357,67 +643,11 @@
     "purifiable": false,
     "leads_to": [ "SPELL_PSYSHIELD" ],
     "category": [ "VEIL" ],
-    "cancels": [ "SPELL_CLAIRVOYANCE" ],
     "active": true,
     "cost": 60,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_clairvoyance",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_CLARITY",
-    "name": "Arcana: Clarity of Blood",
-    "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can protect against parasites and the Mycus.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_CLARITY2" ],
-    "category": [ "CLARITY", "DRAGONBLOOD" ],
-    "active": true,
-    "cost": 60,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_clarity",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_CLARITY2",
-    "name": "Raptor Gift: Clarity of Blood",
-    "points": 4,
-    "description": "Unknown forces have granted you the power to conjure a mote of energy that can protect against parasites and the Mycus.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "RAPTOR" ],
-    "cancels": [ "SPELL_CLARITY" ],
-    "threshreq": [ "THRESH_RAPTOR" ],
-    "active": true,
-    "cost": 48,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_clarity",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_CONFUSE",
-    "name": "Arcana: Confuse Monster",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can confuse nearby monsters.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_CONFUSE2" ],
-    "category": [ "CONFUSE" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_confusion",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -430,7 +660,6 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_PACIFY" ],
-    "cancels": [ "SPELL_CONFUSE" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
@@ -498,26 +727,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_DAYLIGHT",
-    "//": "ID retained to avoid load errors.  This upgrade is highly unlikely to happen, but just in case...",
-    "name": "Arcana: Surge of Adrenaline",
-    "points": 2,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can trigger an uplifting rush through the body.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_DAYLIGHT2" ],
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "active": true,
-    "cost": 30,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_daylight",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_DAYLIGHT2",
     "name": "Blessing: Surge of Adrenaline",
     "points": 2,
@@ -525,7 +734,6 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_PULSE" ],
-    "cancels": [ "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
@@ -555,24 +763,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_FIRE",
-    "name": "Arcana: Fireball",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can conjure a wicked flame.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
-    "changes_to": [ "SPELL_FIRE2" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_fireball",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_FIRE2",
     "name": "Blessing: Fireball",
     "points": 3,
@@ -580,30 +770,11 @@
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
-    "cancels": [ "SPELL_FIRE" ],
     "active": true,
     "cost": 45,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_fireball",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_FLAMEARMOR",
-    "name": "Arcana: Flame Armor",
-    "points": 5,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary resistance to heat and smoke.  Direct contact with flame will still harm you.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_FLAMEARMOR2" ],
-    "category": [ "DRAGONBLOOD", "FLAMEARMOR" ],
-    "active": true,
-    "cost": 75,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_flamearmor",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -617,83 +788,11 @@
     "purifiable": false,
     "leads_to": [ "SPELL_SMOKE" ],
     "category": [ "VEIL" ],
-    "cancels": [ "SPELL_FLAMEARMOR" ],
     "active": true,
     "cost": 50,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_flamearmor",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_FREEACTION",
-    "name": "Arcana: Free Action",
-    "points": 6,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can protect against paralytic effects and other hindrances.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "FREEACTION" ],
-    "active": true,
-    "cost": 90,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_free_action",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_HEAL",
-    "name": "Arcana: Healing",
-    "points": 5,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can heal the body.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "HEAL" ],
-    "changes_to": [ "SPELL_HEAL2" ],
-    "active": true,
-    "cost": 75,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_heal",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_HEAL2",
-    "name": "Prime Gift: Healing",
-    "points": 5,
-    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can heal the body.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "ALPHA" ],
-    "cancels": [ "SPELL_HEAL" ],
-    "threshreq": [ "THRESH_ALPHA" ],
-    "active": true,
-    "cost": 60,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_heal",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_INSIGHT",
-    "name": "Arcana: Insight",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary boost to perception.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "INSIGHT" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_insight",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -717,23 +816,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_LIGHT",
-    "name": "Arcana: Light",
-    "points": 2,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary aura of illumination.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_LIGHT2" ],
-    "active": true,
-    "cost": 30,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_light",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_LIGHT2",
     "name": "Blessing: Light",
     "points": 2,
@@ -741,30 +823,11 @@
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
-    "cancels": [ "SPELL_LIGHT" ],
     "active": true,
     "cost": 20,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_light",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_ELECRESIST",
-    "name": "Arcana: Lightning Ward",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant temporary protection against electricity.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_ELECRESIST2" ],
-    "category": [ "ELECRESIST" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_elecresist",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -777,31 +840,12 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_LIGHTNINGFIELD" ],
-    "cancels": [ "SPELL_ELECRESIST" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_elecresist",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_STRENGTH",
-    "name": "Arcana: Might",
-    "points": 5,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a temporary strength-enhancing effect.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_STRENGTH2" ],
-    "category": [ "DRAGONBLOOD", "MIGHT" ],
-    "active": true,
-    "cost": 75,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_strength",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -814,7 +858,6 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_PULSE" ],
-    "cancels": [ "SPELL_STRENGTH" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 50,
@@ -845,23 +888,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_LOCKPICK",
-    "name": "Arcana: Open Lock",
-    "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can open locked doors.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_LOCKPICK2" ],
-    "active": true,
-    "cost": 60,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_lockpick",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_LOCKPICK2",
     "name": "Blessing: Open Lock",
     "points": 4,
@@ -869,50 +895,12 @@
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
-    "cancels": [ "SPELL_LOCKPICK" ],
     "threshreq": [ "THRESH_VEIL" ],
     "active": true,
     "cost": 40,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_lockpick",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_PLANTS",
-    "name": "Arcana: Overgrowth",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can cause plants to spring up from nothingness.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "OVERGROWTH" ],
-    "changes_to": [ "SPELL_PLANTS2" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_plants",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_PLANTS2",
-    "name": "Fey Gift: Overgrowth",
-    "points": 3,
-    "description": "Unknown forces have granted you the power to conjure a mote of energy, that can cause plants to spring up from nothingness.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "ELFA" ],
-    "cancels": [ "SPELL_PLANTS" ],
-    "threshreq": [ "THRESH_ELFA" ],
-    "active": true,
-    "cost": 36,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_plants",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -937,23 +925,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_POISONARMOR",
-    "name": "Arcana: Poison Armor",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy that can grant temporary protection from toxic gas and other poisons.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_POISONARMOR2" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_poisonarmor",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_POISONARMOR2",
     "name": "Blessing: Poison Armor",
     "points": 3,
@@ -961,31 +932,12 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_CLOUD" ],
-    "cancels": [ "SPELL_POISONARMOR" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
     "fatigue": true,
     "spawn_item": {
       "type": "spell_poisonarmor",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_LIGHTNING",
-    "name": "Arcana: Shockstorm",
-    "points": 2,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can create random bolts of lightning all around.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "LIGHTNING" ],
-    "changes_to": [ "SPELL_LIGHTNING2" ],
-    "active": true,
-    "cost": 30,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_lightning",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -998,7 +950,6 @@
     "valid": false,
     "purifiable": false,
     "category": [ "VEIL" ],
-    "cancels": [ "SPELL_LIGHTNING" ],
     "active": true,
     "cost": 20,
     "fatigue": true,
@@ -1044,23 +995,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_SUMMONDOG",
-    "name": "Arcana: Summon Skeletal Dog",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a skeletal dog.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "SPELL_SUMMONDOG2" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summondog",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_SUMMONDOG2",
     "name": "Blessing: Summon Skeletal Dog",
     "points": 3,
@@ -1068,7 +1002,6 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_SUMMONSKEL" ],
-    "cancels": [ "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "active": true,
     "cost": 30,
@@ -1093,40 +1026,6 @@
     "fatigue": true,
     "spawn_item": {
       "type": "spell_summonskel",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONSHADOWSNAKE",
-    "name": "Arcana: Summon Shadow Snake",
-    "//": "Only zero points because it's a profression-specific spell, fatigue cost is calculated as though it has a cost of 4.",
-    "points": 0,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow snake.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "active": true,
-    "cost": 60,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonshadowsnake",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONSHADOW",
-    "name": "Arcana: Summon Shadow",
-    "//": "Only zero points because it's a profression-specific spell, fatigue cost is calculated as though it has a cost of 5.",
-    "points": 0,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a shadow.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "active": true,
-    "cost": 75,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonshadow",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -1188,23 +1087,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_CLERIC",
-    "name": "Arcana: Ward Against Evil",
-    "points": 5,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant temporary protection against various anomalous effects.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "CLERIC" ],
-    "active": true,
-    "cost": 75,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_cleric",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "SPELL_BUGS",
     "name": "Blessing: Vermin",
     "points": 6,
@@ -1218,23 +1100,6 @@
     "fatigue": true,
     "spawn_item": {
       "type": "spell_bugs",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_DAMPENING",
-    "name": "Arcana: Dampening",
-    "points": 3,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can extinguish fires and drain radiation.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "category": [ "DRAGONBLOOD" ],
-    "active": true,
-    "cost": 45,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_dampening",
       "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
     }
   },
@@ -1258,99 +1123,6 @@
   },
   {
     "type": "mutation",
-    "id": "SPELL_SHADOWSNAKES",
-    "name": "Arcana: Serpentine Shield",
-    "points": 6,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can grant a defensive effect that will summon shadowy snakes.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "//": "ID for INVIS retained to not break stuff.",
-    "category": [ "DRAGONBLOOD", "INVIS" ],
-    "active": true,
-    "cost": 90,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_shadowsnakes",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONWYRM",
-    "name": "Arcana: Summon Dark Wyrm",
-    "points": 5,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a dark wyrm.  Activate to focus your power, draining fatigue.  Using it in sunlight will kill the creature.",
-    "valid": false,
-    "purifiable": false,
-    "leads_to": [ "SPELL_SUMMONYUGG" ],
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "active": true,
-    "cost": 75,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonwyrm",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONFIEND",
-    "name": "Arcana: Summon Fiend",
-    "points": 4,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a fiend.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "leads_to": [ "SPELL_SUMMONJABBERWOCK" ],
-    "category": [ "DRAGONBLOOD" ],
-    "active": true,
-    "cost": 60,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonfiend",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONJABBERWOCK",
-    "name": "Arcana: Summon Jabberwock",
-    "points": 6,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a jabberwock.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "SPELL_SUMMONFIEND" ],
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "active": true,
-    "cost": 90,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonjabberwock",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "SPELL_SUMMONYUGG",
-    "name": "Arcana: Summon Yugg",
-    "points": 7,
-    "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can summon a yugg.  Activate to focus your power, draining fatigue.",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "SPELL_SUMMONWYRM" ],
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "active": true,
-    "cost": 105,
-    "fatigue": true,
-    "spawn_item": {
-      "type": "spell_summonyugg",
-      "message": "You focus a fragment of your mind into a magical sign.  Use it from your inventory."
-    }
-  },
-  {
-    "type": "mutation",
     "id": "ARCANA_SCALYPATCHES",
     "name": "Scaly Patches",
     "points": 1,
@@ -1362,6 +1134,7 @@
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "changes_to": [ "ARCANA_DRAGONSCALES" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -5,
     "wet_protection": [ { "part": "ARM_L", "ignored": 4 }, { "part": "ARM_R", "ignored": 4 }, { "part": "TORSO", "ignored": 10 } ],
     "armor": [ { "parts": [ "ARM_L", "ARM_R", "TORSO" ], "bash": 1, "cut": 2 } ]
   },
@@ -1379,6 +1152,7 @@
     "prereqs": [ "ARCANA_SCALYPATCHES" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "SKIN" ],
+    "stealth_modifier": -20,
     "wet_protection": [
       { "part": "HEAD", "ignored": 3 },
       { "part": "LEG_L", "ignored": 10 },
@@ -1414,16 +1188,16 @@
     "mixed_effect": true,
     "bodytemp_modifiers": [ 250, 500 ],
     "bodytemp_sleep": 100,
-    "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion.",
+    "description": "A strange heat permeates your body, warming you up in exchange for a more active metabolism.  While you need to eat and drink more, you also find it easier to recover from physical exertion and mend wounds.",
     "valid": false,
     "purifiable": false,
     "changes_to": [ "ARCANA_INNERFIRE" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "METABOLISM" ],
-    "metabolism_modifier": 0.333,
-    "thirst_modifier": 0.333,
-    "fatigue_modifier": -0.5,
-    "fatigue_regen_modifier": 0.5,
+    "metabolism_modifier": 0.5,
+    "thirst_modifier": 0.5,
+    "healing_awake": 1.0,
+    "healing_resting": 0.5,
     "stamina_regen_modifier": 0.5
   },
   {
@@ -1434,17 +1208,17 @@
     "mixed_effect": true,
     "bodytemp_modifiers": [ 500, 750 ],
     "bodytemp_sleep": 250,
-    "description": "That strange warmth deep within your body has grown more intense, and its effects have become more pronounced.  While you still need to eat and drink more, your body has adapted to it somewhat.  A strange glow can also be faintly seen in the back of your throat, lending an unnatural aura of menace to your every word.",
+    "description": "That strange warmth deep within your body has grown more intense, and its effects have become more pronounced.  While you still need to eat and drink more, your stamina and healing have adapted in turn.  A strange glow can also be faintly seen in the back of your throat, lending an unnatural aura of menace to your every word.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERHEAT" ],
     "changes_to": [ "ARCANA_DRAGONFIRE" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "METABOLISM" ],
-    "metabolism_modifier": 0.5,
-    "thirst_modifier": 0.5,
-    "fatigue_modifier": -0.666,
-    "fatigue_regen_modifier": 0.666,
+    "metabolism_modifier": 1.0,
+    "thirst_modifier": 1.0,
+    "healing_awake": 2.0,
+    "healing_resting": 1.0,
     "stamina_regen_modifier": 0.666,
     "social_modifiers": { "persuade": -25, "intimidate": 25 }
   },
@@ -1456,28 +1230,24 @@
     "mixed_effect": true,
     "bodytemp_modifiers": [ 0, 1000 ],
     "bodytemp_sleep": 500,
-    "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced.  In addition, you can conjure bursts of flame in close combat, if your mouth is uncovered.",
+    "description": "Your body has adapted further, exploiting the strange power that fuels your body.  You still need more food and water than normal, but the benefits are more pronounced relative to the drawbacks.  Activate to breathe short-ranged bursts of flame.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_FIREAFFINITY" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "prereqs2": [ "CARNIVORE" ],
     "category": [ "DRAGONBLOOD" ],
     "types": [ "METABOLISM" ],
-    "metabolism_modifier": 0.5,
-    "thirst_modifier": 0.5,
-    "healing_awake": 0.2,
-    "healing_resting": 0.5,
-    "fatigue_modifier": -0.75,
-    "fatigue_regen_modifier": 0.75,
+    "metabolism_modifier": 1.25,
+    "thirst_modifier": 1.25,
+    "healing_awake": 3.0,
+    "healing_resting": 1.5,
     "stamina_regen_modifier": 0.75,
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
-    "attacks": {
-      "attack_text_u": "You bathe %s in flames",
-      "attack_text_npc": "%1$s bathes %2$s in flames",
-      "body_part": "MOUTH",
-      "chance": 20,
-      "strength_damage": [ { "damage_type": "heat", "amount": 2 } ]
-    }
+    "active": true,
+    "cost": 30,
+    "hunger": true,
+    "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." }
   },
   {
     "type": "mutation",
@@ -1512,7 +1282,7 @@
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "types": [ "WINGS" ],
-    "stamina_regen_modifier": 0.25,
+    "max_stamina_modifier": 1.1,
     "restricts_gear": [ "TORSO" ],
     "allow_soft_gear": true,
     "passive_mods": { "str_mod": 3 }
@@ -1594,7 +1364,7 @@
     "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk.  On the plus side, you can kick with them rather effectively.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk, especially on rough terrain.  On the plus side, you can kick with them rather effectively.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -1605,6 +1375,8 @@
     "encumbrance_always": [ [ "LEG_L", 10 ], [ "LEG_R", 10 ], [ "FOOT_L", 10 ], [ "FOOT_R", 10 ] ],
     "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
+    "movecost_obstacle_modifier": 1.2,
+    "noise_modifier": 2.0,
     "attacks": [
       {
         "attack_text_u": "You rake %s with your toe claws",
@@ -1622,7 +1394,7 @@
     "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a slight hindrance, but you can move a bit faster on level ground.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -1633,6 +1405,9 @@
     "passive_mods": { "dex_mod": 1 },
     "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
+    "movecost_obstacle_modifier": 1.1,
+    "movecost_flatground_modifier": 0.9,
+    "noise_modifier": 1.5,
     "attacks": [
       {
         "attack_text_u": "You rake %s with your toe claws",
@@ -1649,7 +1424,7 @@
     "points": 2,
     "visibility": 8,
     "ugliness": 2,
-    "description": "You have a long, thin, lizardlike tail.  It doesn't do a whole lot, but does make a serviceable whip.  Prevents wearing non-fabric pants.",
+    "description": "You have a long, thin, lizardlike tail.  It's flexible enough to help with balance a bit, and makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
@@ -1664,7 +1439,8 @@
       "attack_text_npc": "%1$s whips %2$s with their tail",
       "chance": 20,
       "strength_damage": { "damage_type": "bash", "amount": 1 }
-    }
+    },
+    "dodge_modifier": 2
   },
   {
     "type": "mutation",
@@ -1673,7 +1449,7 @@
     "points": 3,
     "visibility": 8,
     "ugliness": 3,
-    "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't do a whole lot, but does make a serviceable whip.  Prevents wearing non-fabric pants.",
+    "description": "You have a long, thin, lizardlike tail, with a few nasty-looking spikes on the end of it.  It doesn't help as much with balance anymore, but still makes a serviceable whip.  Prevents wearing non-fabric pants.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_SCALYTAIL" ],
@@ -1687,7 +1463,9 @@
       "attack_text_npc": "%1$s lashes %2$s with their tail",
       "chance": 15,
       "strength_damage": [ { "damage_type": "stab", "amount": 2 }, { "damage_type": "bash", "amount": 1 } ]
-    }
+    },
+    "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
+    "dodge_modifier": 1
   },
   {
     "type": "mutation",
@@ -1740,14 +1518,11 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [
-      "SPELL_CLARITY",
-      "SPELL_FIRE",
-      "SPELL_FLAMEARMOR",
-      "SPELL_STRENGTH",
-      "SPELL_DAMPENING",
-      "SPELL_SHADOWSNAKES",
-      "SPELL_SUMMONFIEND"
+      "SPELL_EMBERS_DRAGONBLOOD",
+      "SPELL_SUMMONFIEND",
+      "SPELL_INSTINCT_DRAGONBLOOD"
     ],
+    "prereqs2": [ "ANIMALDISCORD" ],
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_FULLESSENCE" ],
     "active": true,
@@ -1755,7 +1530,8 @@
     "fatigue": true,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "essence_blood", "message": "You channel your life force into forming a mote of sanguine essence." }
+    "spawn_item": { "type": "essence_blood", "message": "You channel your life force into forming a mote of sanguine essence." },
+    "mana_regen_multiplier": 1.25
   },
   {
     "type": "mutation",
@@ -1766,7 +1542,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_BLOODESSENCE" ],
-    "prereqs2": [ "ARCANA_DRAGONFIRE" ],
+    "prereqs2": [ "CANNIBAL" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "active": true,
@@ -1774,7 +1550,8 @@
     "fatigue": true,
     "hunger": true,
     "thirst": true,
-    "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." }
+    "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." },
+    "mana_regen_multiplier": 1.5
   },
   {
     "type": "mutation",
@@ -1785,6 +1562,18 @@
     "valid": false,
     "purifiable": false,
     "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_CLEANSINGFLAME2",
+    "name": "Cleansing Flame",
+    "points": 0,
+    "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true,
+    "//": "Internal math note: treat value of Capacitance as 5.",
+    "spells_learned": [ [ "arcana_magic_capacitance", 1 ] ]
   },
   {
     "type": "mutation",
@@ -1815,5 +1604,17 @@
     "valid": false,
     "purifiable": false,
     "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_ARCANIST2",
+    "name": "Arcanist",
+    "points": 0,
+    "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholar.  Still, your familiarity with the arcane may prove useful someday.",
+    "valid": false,
+    "purifiable": false,
+    "profession": true,
+    "//": "Internal math note: treat value of Summon Shadow as 5, and Summon Shadow Snake as 4.",
+    "spells_learned": [ [ "arcana_magic_summon_shadow", 1 ], [ "arcana_magic_summon_shadow_snake", 1 ] ]
   }
 ]

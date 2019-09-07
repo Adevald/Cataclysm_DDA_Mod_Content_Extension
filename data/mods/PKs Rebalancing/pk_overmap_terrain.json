@@ -2,64 +2,31 @@
   {
     "type": "overmap_terrain",
     "id": "field",
-    "name": "field",
-    "sym": 46,
-    "color": "brown",
-    "see_cost": 2,
-    "extras": "field",
-    "spawns": { "group": "GROUP_FIELD", "population": [ 0, 1 ], "chance": 20 },
-    "flags": [ "NO_ROTATE" ]
+    "copy-from": "field",
+    "spawns": { "group": "GROUP_FIELD", "population": [ 0, 1 ], "chance": 20 }
   },
   {
     "type": "overmap_terrain",
     "id": "forest",
-    "name": "forest",
-    "sym": 70,
-    "color": "green",
-    "see_cost": 3,
-    "extras": "forest",
-    "spawns": { "group": "GROUP_FOREST", "population": [ 0, 2 ], "chance": 45 },
-    "flags": [ "NO_ROTATE" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "sewer",
-    "name": "sewer",
-    "line_drawing": true,
-    "color": "green",
-    "see_cost": 5,
-    "extras": "subway",
-    "flags": [ "LINEAR" ],
-    "allow_road": true
+    "copy-from": "forest",
+    "spawns": { "group": "GROUP_FOREST", "population": [ 0, 2 ], "chance": 45 }
   },
   {
     "type": "overmap_terrain",
     "id": "crater",
-    "name": "crater",
-    "sym": 79,
-    "color": "red",
-    "see_cost": 3,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "copy-from": "crater",
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
     "id": "ants",
-    "name": "ant tunnel",
-    "line_drawing": true,
-    "color": "brown",
-    "see_cost": 5,
-    "flags": [ "LINEAR" ],
+    "copy-from": "ants",
     "extras": "subway"
   },
   {
     "type": "overmap_terrain",
     "id": "ants_food",
-    "name": "ant food storage",
-    "sym": 79,
-    "color": "green",
-    "see_cost": 5,
-    "flags": [ "NO_ROTATE" ],
+    "copy-from": "ants_food",
     "extras": "subway"
   },
   {
@@ -69,8 +36,7 @@
     "sym": 67,
     "color": "brown",
     "see_cost": 2,
-    "extras": "subway",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "subway"
   },
   {
     "type": "overmap_terrain",
@@ -79,8 +45,7 @@
     "sym": 67,
     "color": "brown",
     "see_cost": 2,
-    "extras": "subway",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "subway"
   },
   {
     "type": "overmap_terrain",
@@ -90,7 +55,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -101,7 +65,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -112,7 +75,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -123,7 +85,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -134,7 +95,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -145,7 +105,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -156,7 +115,6 @@
     "color": "i_magenta",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -167,7 +125,6 @@
     "color": "i_magenta",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -178,7 +135,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -189,7 +145,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -200,7 +155,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -211,7 +165,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -222,7 +175,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -233,7 +185,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -244,7 +195,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -255,7 +205,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -266,7 +215,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -277,7 +225,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -288,7 +235,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -299,7 +245,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -310,7 +255,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -321,7 +265,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -332,7 +275,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -343,7 +285,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -354,7 +295,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -365,7 +305,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -376,7 +315,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -387,7 +325,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -398,7 +335,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -409,7 +345,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -420,7 +355,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -431,7 +365,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -442,7 +375,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -453,7 +385,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -464,7 +395,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -475,7 +405,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -486,7 +415,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -497,7 +425,6 @@
     "color": "i_red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -507,7 +434,6 @@
     "sym": 46,
     "color": "brown",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 5
   },
   {
@@ -517,7 +443,6 @@
     "sym": 79,
     "color": "light_gray",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -528,7 +453,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -539,7 +463,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -550,7 +473,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -561,7 +483,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -572,7 +493,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -583,7 +503,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -594,7 +513,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -605,7 +523,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -616,7 +533,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -627,7 +543,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -638,7 +553,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -649,7 +563,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -660,7 +573,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -671,7 +583,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -682,7 +593,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -693,7 +603,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -704,7 +613,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -715,7 +623,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -726,7 +633,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -737,7 +643,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -748,7 +653,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -759,7 +663,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -770,7 +673,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -781,7 +683,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -792,7 +693,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -803,7 +703,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -814,7 +713,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -825,7 +723,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -836,7 +733,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -847,7 +743,6 @@
     "color": "light_gray",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -859,7 +754,6 @@
     "see_cost": 5,
     "extras": "none",
     "mondensity": 2,
-    "flags": [ "NO_ROTATE" ],
     "spawns": { "group": "GROUP_BOG", "population": [ 6, 30 ], "radius": [ 100, 250 ] }
   },
   {
@@ -870,7 +764,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -881,7 +774,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -892,7 +784,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -903,7 +794,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -914,7 +804,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -925,7 +814,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -936,7 +824,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -947,7 +834,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -958,7 +844,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -969,7 +854,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -980,8 +864,7 @@
     "color": "light_green",
     "see_cost": 5,
     "extras": "field",
-    "mondensity": 3,
-    "flags": [ "NO_ROTATE" ]
+    "mondensity": 3
   },
   {
     "type": "overmap_terrain",
@@ -991,8 +874,7 @@
     "color": "i_light_green",
     "see_cost": 5,
     "extras": "field",
-    "mondensity": 3,
-    "flags": [ "NO_ROTATE" ]
+    "mondensity": 3
   },
   {
     "type": "overmap_terrain",
@@ -1002,8 +884,7 @@
     "color": "i_light_green",
     "see_cost": 5,
     "extras": "field",
-    "mondensity": 3,
-    "flags": [ "NO_ROTATE" ]
+    "mondensity": 3
   },
   {
     "type": "overmap_terrain",
@@ -1013,7 +894,6 @@
     "color": "white",
     "see_cost": 5,
     "extras": "none",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1024,7 +904,6 @@
     "color": "yellow",
     "see_cost": 5,
     "extras": "none",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 4
   },
   {
@@ -1035,7 +914,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1046,7 +924,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "none",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1057,7 +934,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "none",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1068,7 +944,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1079,7 +954,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1090,7 +964,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "none",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1101,7 +974,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1112,7 +984,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1123,7 +994,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1134,7 +1004,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1145,7 +1014,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1156,7 +1024,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1167,7 +1034,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1178,7 +1044,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1189,7 +1054,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1200,7 +1064,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1211,7 +1074,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1222,7 +1084,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1233,7 +1094,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1244,7 +1104,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1255,7 +1114,6 @@
     "color": "brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1264,7 +1122,6 @@
     "name": "plantation",
     "sym": 4194413,
     "color": "brown",
-    "flags": [ "NO_ROTATE" ],
     "see_cost": 2
   },
   {
@@ -1273,7 +1130,6 @@
     "name": "plantation",
     "sym": 4194421,
     "color": "brown",
-    "flags": [ "NO_ROTATE" ],
     "see_cost": 2
   },
   {
@@ -1281,7 +1137,6 @@
     "id": "farm_drive",
     "name": "plantation",
     "sym": 4194424,
-    "flags": [ "NO_ROTATE" ],
     "color": "brown",
     "see_cost": 2
   },
@@ -1293,7 +1148,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1302,7 +1156,6 @@
     "name": "plantation",
     "sym": 4194424,
     "color": "brown",
-    "flags": [ "NO_ROTATE" ],
     "see_cost": 2
   },
   {
@@ -1311,7 +1164,6 @@
     "name": "plantation",
     "sym": 35,
     "color": "i_brown",
-    "flags": [ "NO_ROTATE" ],
     "see_cost": 2
   },
   {
@@ -1322,7 +1174,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1333,7 +1184,6 @@
     "color": "i_brown",
     "see_cost": 2,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1343,7 +1193,6 @@
     "sym": 4194417,
     "color": "i_brown",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ],
     "extras": "road"
   },
   {
@@ -1353,7 +1202,6 @@
     "sym": 4194417,
     "color": "i_brown",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ],
     "extras": "road"
   },
   {
@@ -1363,7 +1211,6 @@
     "sym": 4194417,
     "color": "i_brown",
     "see_cost": 2,
-    "flags": [ "NO_ROTATE" ],
     "extras": "road"
   },
   {
@@ -1374,7 +1221,6 @@
     "color": "blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1385,7 +1231,6 @@
     "color": "light_blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1396,7 +1241,6 @@
     "color": "light_blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1407,7 +1251,6 @@
     "color": "blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1418,7 +1261,6 @@
     "color": "blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1429,7 +1271,6 @@
     "color": "blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1440,7 +1281,6 @@
     "color": "blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1451,7 +1291,6 @@
     "color": "cyan",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1462,7 +1301,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1473,7 +1311,6 @@
     "color": "red",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1484,7 +1321,6 @@
     "color": "light_blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1495,7 +1331,6 @@
     "color": "light_blue",
     "see_cost": 5,
     "extras": "doom",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 2
   },
   {
@@ -1505,8 +1340,7 @@
     "sym": 35,
     "color": "light_blue",
     "see_cost": 2,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -1515,7 +1349,6 @@
     "sym": 84,
     "color": "light_red",
     "see_cost": 5,
-    "flags": [ "NO_ROTATE" ],
     "known_down": true
   },
   {
@@ -1525,7 +1358,6 @@
     "sym": 126,
     "color": "light_gray",
     "see_cost": 5,
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1535,7 +1367,6 @@
     "sym": 126,
     "color": "light_gray",
     "see_cost": 5,
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1544,8 +1375,7 @@
     "name": "unempty air",
     "sym": 46,
     "color": "blue",
-    "mondensity": 3,
-    "flags": [ "NO_ROTATE" ]
+    "mondensity": 3
   },
   {
     "type": "overmap_terrain",
@@ -1554,8 +1384,7 @@
     "sym": 46,
     "color": "brown",
     "see_cost": 3,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -1565,7 +1394,6 @@
     "color": "i_brown",
     "see_cost": 5,
     "extras": "field",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1576,7 +1404,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1587,7 +1414,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1598,7 +1424,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1609,7 +1434,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1620,7 +1444,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1631,7 +1454,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1642,7 +1464,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1653,7 +1474,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1664,7 +1484,6 @@
     "color": "h_yellow",
     "see_cost": 5,
     "extras": "build",
-    "flags": [ "NO_ROTATE" ],
     "mondensity": 3
   },
   {
@@ -1674,8 +1493,7 @@
     "sym": 70,
     "color": "green",
     "see_cost": 5,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -1684,8 +1502,7 @@
     "sym": 70,
     "color": "green",
     "see_cost": 5,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -1694,8 +1511,7 @@
     "sym": 70,
     "color": "green",
     "see_cost": 5,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -1704,8 +1520,7 @@
     "sym": 70,
     "color": "green",
     "see_cost": 5,
-    "extras": "field",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "field"
   },
   {
     "type": "overmap_terrain",
@@ -1714,8 +1529,7 @@
     "sym": 67,
     "color": "i_green",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   },
   {
     "type": "overmap_terrain",
@@ -1724,8 +1538,7 @@
     "sym": 67,
     "color": "i_green",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   },
   {
     "type": "overmap_terrain",
@@ -1734,8 +1547,7 @@
     "sym": 67,
     "color": "i_green",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   },
   {
     "type": "overmap_terrain",
@@ -1744,8 +1556,7 @@
     "sym": 67,
     "color": "i_green",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   },
   {
     "type": "overmap_terrain",
@@ -1754,7 +1565,6 @@
     "sym": 67,
     "color": "i_red",
     "see_cost": 5,
-    "extras": "build",
-    "flags": [ "NO_ROTATE" ]
+    "extras": "build"
   }
 ]

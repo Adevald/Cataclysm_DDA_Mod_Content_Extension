@@ -17,11 +17,11 @@
       "arcanist_summoner"
     ],
     "traits": [
+      "SPELL_DAMPENING",
       "SPELL_FIRE",
       "SPELL_CONFUSE",
       "SPELL_AGILE",
       "SPELL_HEAL",
-      "SPELL_DAMPENING",
       "SPELL_LIGHT",
       "SPELL_SUMMONDOG",
       "ARCANA_SCALYPATCHES",
@@ -67,7 +67,7 @@
       "SPELL_POISONARMOR",
       "SPELL_LOCKPICK"
     ],
-    "flags": [ "CITY_START" ]
+    "flags": [ "CITY_START", "LONE_START" ]
   },
   {
     "type": "scenario",
