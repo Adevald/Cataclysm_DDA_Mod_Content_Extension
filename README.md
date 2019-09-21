@@ -4,7 +4,7 @@ Please, if you find a bugs, errors or other problem, leave an issue.
 
 Русская версия Описания - [README_RUS.md](https://github.com/Adevald/Cataclysm_DDA_Mod_Content_Extension/blob/master/README_RUS.md)
 
-This is a modpack for Cataclysm: Dark Days Ahead (0.D-2218-g31fa3b6 - tiles)
+This is a modpack for Cataclysm: Dark Days Ahead (0.D-7611-g21453a9 - tiles)
 
 VK Group: https://vk.com/ganta_cdda
 
