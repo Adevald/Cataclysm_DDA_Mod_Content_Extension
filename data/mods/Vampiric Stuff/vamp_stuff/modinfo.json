@@ -6,6 +6,7 @@
    "Axema Vales"
   ],
   "description": "Implements vampire NPCs, new items and locations into your world.",
-  "category": "misc_additions"
+  "category": "misc_additions",
+  "dependencies": [ "dda" ]
  }
 ]

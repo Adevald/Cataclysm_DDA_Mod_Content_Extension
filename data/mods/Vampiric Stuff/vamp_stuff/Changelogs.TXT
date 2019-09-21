@@ -4,10 +4,9 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
-  ~ THE MOD ADDS VAMPIRES TO YOUR WORLD, ALONG WITH NEW LOCATIONS TO EXPLORE, QUESTS TO COMPLETE, ITEMS TO DISCOVER AND MONSTERS TO ERADICATE!
+  ~ THE MOD ADDS VAMPIRE NPCS TO YOUR WORLD, ALONG WITH NEW LOCATIONS TO EXPLORE, QUESTS TO COMPLETE, ITEMS TO DISCOVER AND MONSTERS TO ERADICATE!
 
   * After several additions on contents like the Arcana trading mechanics and various fixes to mapgen errors, the v1.3 ended well to improve the mod further more. The v1.4 remains unplanned.
-  * Despite its structural density, ghost towns seem to blend in the forest pretty well...
 
 
 
@@ -16,8 +15,11 @@ https://discourse.cataclysmdda.org - CDDA official website
 #  TILESETS (frequent)
 
 +  ADDED A NEW MELEE WEAPON (fanged falchion)
-+  EXPANDED CONDITIONAL DIALOGUES (even more talky stuff and some avoidance of dialogue line loops)
++  EXPANDED CONDITIONAL DIALOGUES (even more talky stuff, avoidance of repetitive dialogue lines)
 
+~  ARMOR DATA TWEAKS (massive decrease in damage resistance)
+
+-  MAJOR MISSION FIXES (fixed most mission-related bugs, and are now up-to-dated)
 -  MISSION IMPROVEMENTS (an even better flow of progression with some missions)
 -  FIXED MAJOR MISSION BUG (accepting the first quest ends into the final rewards)
 -  LOCATION SPAWN TWEAKS (major reduction of overmap generation)
@@ -61,7 +63,7 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> V1.1: <--
+--> V1.1 <--
 
 +  NEW ARMOR SETS (blood and blood infused, recipes also included)
 +  A NEW MELEE WEAPON (knuckle biters)

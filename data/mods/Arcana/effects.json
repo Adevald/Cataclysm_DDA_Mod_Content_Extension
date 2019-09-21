@@ -120,7 +120,14 @@
     "rating": "good",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "base_mods": { "str_mod": [ 1 ], "dex_mod": [ 1 ], "int_mod": [ -1, 0 ], "per_mod": [ -1, 0 ], "fatigue_min": [ -1 ], "fatigue_tick": [ 6 ] }
+    "base_mods": {
+      "str_mod": [ 1 ],
+      "dex_mod": [ 1 ],
+      "int_mod": [ -1, 0 ],
+      "per_mod": [ -1, 0 ],
+      "fatigue_min": [ -1 ],
+      "fatigue_tick": [ 6 ]
+    }
   },
   {
     "type": "effect_type",
@@ -187,6 +194,19 @@
   },
   {
     "type": "effect_type",
+    "id": "heat_ward_true",
+    "name": [ "Ward Against Flame" ],
+    "desc": [ "Complete immunity to fire, and to related side effects." ],
+    "remove_message": "You feel a strange tingling sensation, as the ward against flame fades.",
+    "removes_effects": [ "onfire", "smoke", "hot", "blisters" ],
+    "decay_messages": [ [ "The ward against flame is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_HEAT_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
@@ -201,13 +221,26 @@
     "type": "effect_type",
     "id": "acid_ward",
     "name": [ "Ward Against Corrosion" ],
-    "desc": [ "Protection against lingering acid effects." ],
+    "desc": [ "Protection against lingering acid effects.  Direct contact will still harm you." ],
     "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
     "removes_effects": [ "corroding" ],
-    "decay_messages": [ [ "Your ward against corrosion  is waning.", "bad" ] ],
+    "decay_messages": [ [ "Your ward against corrosion is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
     "int_dur_factor": "1 m"
+  },
+  {
+    "type": "effect_type",
+    "id": "acid_ward_true",
+    "name": [ "Ward Against Acid" ],
+    "desc": [ "Complete immunity to acid damage, in addition to its aftereffects." ],
+    "remove_message": "You feel a tingling sensation over your skin, as the protective magic fades.",
+    "removes_effects": [ "corroding" ],
+    "decay_messages": [ [ "Your ward against acid is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "flags": [ "EFFECT_ACID_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -233,6 +266,20 @@
   },
   {
     "type": "effect_type",
+    "id": "cleric_warding_true",
+    "name": [ "Holy Ward" ],
+    "desc": [ "Heavy resistance to bladed weapons, protection from anomalous effects." ],
+    "remove_message": "The magical protection enveloping your body flickers and fades.",
+    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara", "archon_gaze_effect", "chalice_offering_side_effects", "blood_athame_side_effects" ],
+    "decay_messages": [ [ "Your holy ward is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 30,
+    "int_dur_factor": "1 m",
+    "//": "Replace with resistances when implemented, physical immunities are way more OP than elemental immunities.",
+    "flags": [ "EFFECT_CUT_IMMUNE", "EFFECT_STAB_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "spell_might",
     "name": [ "Might" ],
     "desc": [ "The fabric of The Veil is woven into your frame  Your strength is augmented by magic." ],
@@ -240,8 +287,9 @@
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
+    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "base_mods": { "str_mod": [ 8 ] }
+    "scaling_mods": { "str_mod": [ 1 ] }
   },
   {
     "type": "effect_type",
@@ -252,8 +300,9 @@
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
+    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "base_mods": { "dex_mod": [ 8 ], "speed_mod": [ 30 ] }
+    "scaling_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ] }
   },
   {
     "type": "effect_type",
@@ -264,15 +313,16 @@
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
+    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "base_mods": { "per_mod": [ 8 ] }
+    "scaling_mods": { "per_mod": [ 1 ] }
   },
   {
     "type": "effect_type",
     "id": "talisman_warding",
     "name": [ "Alchemical Ward" ],
     "desc": [ "Temporary resistance to the side effects of certain potion effects." ],
-    "remove_message": "The taliman's effect fades.",
+    "remove_message": "The talisman's effect fades.",
     "decay_messages": [ [ "The water talisman's blessing is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
@@ -285,12 +335,30 @@
     "desc": [ "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain." ],
     "resist_effect": "talisman_warding",
     "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
-    "blocks_effects": [ "nausea", "poison", "badpoison", "foodpoison", "bloodworms", "paincysts", "brainworms", "tapeworm", "spores", "fungus" ],
+    "blocks_effects": [
+      "nausea",
+      "poison",
+      "badpoison",
+      "foodpoison",
+      "bloodworms",
+      "paincysts",
+      "brainworms",
+      "tapeworm",
+      "spores",
+      "fungus"
+    ],
     "decay_messages": [ [ "The protective magic flowing through your blood is starting to wane.", "bad" ] ],
     "rating": "good",
     "max_intensity": 20,
     "int_dur_factor": "1 m",
-    "base_mods": { "hunger_min": [ 1 ], "hunger_chance": [ 18, 36 ], "fatigue_min": [ 1 ], "fatigue_chance": [ 36, 12 ], "health_min": [ 1 ], "health_chance": [ 6 ] }
+    "base_mods": {
+      "hunger_min": [ 1 ],
+      "hunger_chance": [ 18, 36 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_chance": [ 36, 12 ],
+      "health_min": [ -1 ],
+      "health_chance": [ 6 ]
+    }
   },
   {
     "type": "effect_type",
@@ -313,18 +381,228 @@
     "desc": [ "Reduces hunger and thirst gain, hinders stamina regen." ],
     "resist_effect": "talisman_warding",
     "remove_message": "The warmth within your body flares up as the suppression effect fades.",
-    "blocks_effects": [ "nausea", "poison", "badpoison", "foodpoison", "bloodworms", "paincysts", "brainworms", "tapeworm", "spores", "fungus" ],
+    "blocks_effects": [
+      "nausea",
+      "poison",
+      "badpoison",
+      "foodpoison",
+      "bloodworms",
+      "paincysts",
+      "brainworms",
+      "tapeworm",
+      "spores",
+      "fungus"
+    ],
     "decay_messages": [ [ "The magic suppressing your inner fire is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
-    "base_mods": { "hunger_min": [ -1 ], "hunger_tick": [ 300 ], "thirst_min": [ -1 ], "thirst_tick": [ 300 ], "health_min": [ -1 ], "health_tick": [ 600 ], "stamina_min": [ -1 ], "stamina_tick": [ 10 ] }
+    "base_mods": {
+      "hunger_min": [ -1 ],
+      "hunger_tick": [ 300 ],
+      "thirst_min": [ -1 ],
+      "thirst_tick": [ 300 ],
+      "health_min": [ -1 ],
+      "health_tick": [ 600 ],
+      "stamina_min": [ -1 ],
+      "stamina_tick": [ 10 ]
+    }
   },
   {
     "type": "effect_type",
     "id": "arcana_aegis_mending",
     "blocks_effects": [ "bleed" ],
     "rating": "good"
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_invis",
+    "name": [ "Illusion Cloak" ],
+    "desc": [
+      "Light seems to warp around you in an unnatural manner, rendering you invisible and protecting against various perception-related hazards."
+    ],
+    "remove_message": "The shroud of illusion magic around you fades.",
+    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole.  Does NOT protect against Glimpse of The Beyond, just because the host can't see you doesn't mean the archon can't...",
+    "removes_effects": [
+      "glowy_led",
+      "laserlocked",
+      "was_laserlocked",
+      "glowing",
+      "attention",
+      "haslight",
+      "glare",
+      "snow_glare",
+      "blind",
+      "darkness",
+      "no_sight",
+      "visuals",
+      "hallu"
+    ],
+    "decay_messages": [ [ "The illusions enveloping you are starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 18,
+    "int_dur_factor": "1 m",
+    "base_mods": { "per_mod": [ -2 ] },
+    "flags": [ "EFFECT_INVISIBLE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "lightning_ward_true",
+    "name": [ "Ward Against Lightning" ],
+    "desc": [ "Complete immunity to lightning." ],
+    "remove_message": "You feel an electric tingle as your protective magic fades.",
+    "removes_effects": [ "zapped" ],
+    "decay_messages": [ [ "The ward against lightning is waning.", "bad" ] ],
+    "rating": "good",
+    "max_intensity": 100,
+    "int_dur_factor": "1 m",
+    "flags": [ "ELECTRIC_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "archon_gaze_effect",
+    "//": "Regular Ward Against Evil will only protect you a bit, you need Holy Ward to actually stop the effect.  This will be relevant once I add an encounter you can access after restoring the ritual blade.",
+    "resist_effect": "cleric_warding",
+    "name": [ "Glimpse of The Beyond" ],
+    "desc": [ "You caught the attention of something that doesn't belong in this world..." ],
+    "apply_message": "You feel cold inside...",
+    "remove_message": "You feel a faint sense of relief wash over you.",
+    "miss_messages": [ [ "Afterimages on the edge of your vision distract you.", 10 ] ],
+    "rating": "bad",
+    "max_intensity": 48,
+    "max_effective_intensity": 6,
+    "int_dur_factor": "30 m",
+    "base_mods": {
+      "int_mod": [ -1.5 ],
+      "per_mod": [ -1.5 ],
+      "sleep_min": [ 5, 4 ],
+      "sleep_max": [ 25, 20 ],
+      "sleep_chance": [ 1380 ],
+      "vomit_chance": [ 920 ],
+      "health_min": [ -6, -5 ],
+      "health_chance": [ 440 ],
+      "rad_min": [ -10, -8 ],
+      "rad_chance": [ 1100 ]
+    },
+    "scaling_mods": {
+      "int_mod": [ -0.75, -0.6 ],
+      "per_mod": [ -0.75, -0.6 ],
+      "speed_mod": [ -5, -4 ],
+      "sleep_chance": [ -180, -175 ],
+      "vomit_chance": [ -120, -115 ],
+      "health_chance": [ -40, -35 ],
+      "rad_chance": [ -100, -95 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "chalice_offering_side_effects",
+    "resist_effect": "talisman_warding",
+    "name": [
+      "",
+      "Otherworldly Weakness",
+      "Otherworldly Weakness",
+      "Otherworldly Weakness",
+      "Otherworldly Sickness",
+      "Otherworldly Sickness",
+      "Otherworldly Sickness",
+      "Otherworldly Offering",
+      "Otherworldly Offering",
+      "Otherworldly Offering",
+      "Otherworldly Offering",
+      "Otherworldly Offering",
+      "Otherworldly Offering",
+      "Otherworldly Offering"
+    ],
+    "desc": [
+      "",
+      "You've been feeling more weary lately, and it's getting hard to think straight.  Overuse of the chalice seems to have an effect on you.",
+      "It's starting to get harder to focus on your surroundings.  Maybe using your own life force to fuel the chalice is a bad idea....",
+      "Even when you aren't exhausted, you find it hard to stay awake.  This is going to be the death of you if you keep overusing that damn chalice!",
+      "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
+      "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
+      "You feel an odd sensation in the back of your head, an ethereal ache you can't quite explain.  It's like your very existence is crumbling away.",
+      "Your very essence is nothing more than fuel for the pyre..."
+    ],
+    "rating": "bad",
+    "max_intensity": 14,
+    "max_effective_intensity": 7,
+    "int_dur_factor": "7 d",
+    "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
+    "base_mods": {
+      "fatigue_min": [ 1 ],
+      "fatigue_tick": [ 1000 ],
+      "int_mod": [ 0.5 ],
+      "per_mod": [ -0.75 ],
+      "sleep_min": [ 10 ],
+      "sleep_max": [ 30 ],
+      "sleep_chance": [ -15 ],
+      "sleep_chance_bot": [ 100 ],
+      "sleep_tick": [ 1800 ],
+      "hurt_min": [ 1 ],
+      "hurt_chance": [ -60 ],
+      "hurt_chance_bot": [ 100 ],
+      "hurt_tick": [ 3600 ]
+    },
+    "scaling_mods": {
+      "fatigue_tick": [ -100, -80 ],
+      "int_mod": [ -0.75, -0.6 ],
+      "per_mod": [ -0.75, -0.6 ],
+      "sleep_chance": [ 5, 4 ],
+      "hurt_chance": [ 15, 10 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "blood_athame_side_effects",
+    "resist_effect": "talisman_warding",
+    "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
+    "name": [
+      "",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia",
+      "Strange Anemia"
+    ],
+    "desc": [
+      "",
+      "your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you...",
+      "The weakness in your body has worsened, and you've been having hunger pangs.  It seems blood magic has consequences if overused.",
+      "Your body feels sluggish and drained, and it seems to be getting worse the more you rely on blood magic.  Relying on it less might help ease your suffering.",
+      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while..."
+    ],
+    "rating": "bad",
+    "max_intensity": 12,
+    "max_effective_intensity": 6,
+    "int_dur_factor": "5 d",
+    "base_mods": {
+      "health_min": [ 1 ],
+      "health_tick": [ 3960 ],
+      "str_mod": [ 0.5 ],
+      "hunger_min": [ 1 ],
+      "hunger_chance": [ -40 ],
+      "hunger_chance_bot": [ 100 ],
+      "hunger_tick": [ 300 ],
+      "dex_mod": [ -0.75 ],
+      "thirst_min": [ 1 ],
+      "thirst_chance": [ -160 ],
+      "thirst_chance_bot": [ 100 ],
+      "thirst_tick": [ 300 ]
+    },
+    "scaling_mods": {
+      "fatigue_tick": [ -360, -300 ],
+      "str_mod": [ -0.75, -0.6 ],
+      "hunger_chance": [ 20, 15 ],
+      "dex_mod": [ -0.75, -0.6 ],
+      "thirst_chance": [ 40, 35 ]
+    }
   },
   {
     "type": "effect_type",
@@ -363,25 +641,19 @@
     "type": "effect_type",
     "id": "hermit_has_sanguine_codex",
     "name": [ "Has Sanguine Codex" ],
-    "desc": [
-      "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it."
-    ]
+    "desc": [ "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it." ]
   },
   {
     "type": "effect_type",
     "id": "hermit_has_blood_essence",
     "name": [ "Has Blood Essence" ],
-    "desc": [
-      "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it."
-    ]
+    "desc": [ "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it." ]
   },
   {
     "type": "effect_type",
     "id": "hermit_has_salt",
     "name": [ "Has Salt" ],
-    "desc": [
-      "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it."
-    ]
+    "desc": [ "AI tag marking The Hermit's progress through the ritual.  Intended to be permanent.  This is a bug if you have it." ]
   },
   {
     "type": "effect_type",
@@ -415,7 +687,7 @@
   {
     "type": "effect_type",
     "id": "already_asked_deacon",
-    "//": "Effect for players, filters out dialouge in The Deacon's talk topic, once the player has already been directed to the rural church.  Intended to be permanent."
+    "//": "Effect for players, filters out dialogue in The Deacon's talk topic, once the player has already been directed to the rural church.  Intended to be permanent."
   },
   {
     "type": "effect_type",

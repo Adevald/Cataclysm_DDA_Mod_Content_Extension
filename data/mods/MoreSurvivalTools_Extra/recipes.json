@@ -720,7 +720,7 @@
     "autolearn": true,
     "batch_time_factors": [ 83, 5 ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
     "components": [ [ [ "raw_leather", 10 ], [ "raw_tainted_leather", 10 ], [ "raw_hleather", 10 ] ] ]
   },
   {
@@ -736,7 +736,7 @@
     "autolearn": true,
     "batch_time_factors": [ 83, 5 ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
     "components": [ [ [ "raw_fur", 10 ], [ "raw_tainted_fur", 10 ] ] ]
   },
   {
@@ -765,5 +765,164 @@
     "autolearn": true,
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "components": [ [ [ "pointy_stick", 3 ] ], [ [ "cordage_short", 3, "LIST" ] ], [ [ "leather_tarp", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "tanning_hide_small",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 2 ],
+    "difficulty": 3,
+    "time": "10 m",
+    "batch_time_factors": [ 20, 10 ],
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "COOK", "level": 2 },
+      { "id": "BOIL", "level": 1 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "water_clean", 1 ], [ "water", 1 ] ],
+      [ [ "pine_bough", 1 ] ],
+      [ [ "saline", 2 ], [ "salt", 2 ] ],
+      [ [ "cooking_oil2", 2 ], [ "lamp_oil", 25 ] ],
+      [ [ "cured_hide_small", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "tanning_pelt_small",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 2 ],
+    "difficulty": 3,
+    "time": "10 m",
+    "batch_time_factors": [ 20, 10 ],
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "COOK", "level": 2 },
+      { "id": "BOIL", "level": 1 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "water_clean", 1 ], [ "water", 1 ] ],
+      [ [ "pine_bough", 1 ] ],
+      [ [ "saline", 2 ], [ "salt", 2 ] ],
+      [ [ "cooking_oil2", 2 ], [ "lamp_oil", 25 ] ],
+      [ [ "cured_pelt_small", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "tanning_hide_small",
+    "id_suffix": "modern",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 3 ],
+    "difficulty": 4,
+    "time": "5 m",
+    "batch_time_factors": [ 50, 5 ],
+    "book_learn": [ [ "textbook_survival", 6 ], [ "textbook_chemistry", 5 ], [ "modern_tanner", 4 ] ],
+    "qualities": [
+      { "id": "CHEM", "level": 1 },
+      { "id": "COOK", "level": 3 },
+      { "id": "BOIL", "level": 2 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ [ [ "water_clean", 1 ], [ "water", 1 ] ], [ [ "lye_powder", 2 ], [ "aspirin", 2 ] ], [ [ "cured_hide_small", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "tanning_pelt_small",
+    "id_suffix": "modern",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "cooking",
+    "skills_required": [ "survival", 3 ],
+    "difficulty": 4,
+    "time": "5 m",
+    "batch_time_factors": [ 50, 5 ],
+    "book_learn": [ [ "textbook_survival", 6 ], [ "textbook_chemistry", 5 ], [ "modern_tanner", 4 ] ],
+    "qualities": [
+      { "id": "CHEM", "level": 1 },
+      { "id": "COOK", "level": 3 },
+      { "id": "BOIL", "level": 2 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 3, "LIST" ] ] ],
+    "components": [ [ [ "water_clean", 1 ], [ "water", 1 ] ], [ [ "lye_powder", 2 ], [ "aspirin", 2 ] ], [ [ "cured_pelt_small", 1 ] ] ]
+  },
+  {
+    "result": "side_drum_makeshift",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "survival",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "90 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 25 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SAW_W", "level": 1 }, { "id": "SEW", "level": 1 } ],
+    "components": [
+      [ [ "water_clean", 1 ], [ "water", 1 ] ], 
+      [ [ "cured_hide", 1 ], [ "tanned_hide", 1 ] ],
+      [ [ "cordage_short", 6, "LIST" ], [ "filament", 120, "LIST" ] ],
+      [ [ "log", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "pot_canning_clay",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 2 ],
+    "difficulty": 4,
+    "time": "60 m",
+    "autolearn": true,
+    "using": [ [ "cordage_short", 2 ], [ "glazing", 2 ], [ "earthenware_firing", 140 ] ],
+    "components": [ [ [ "water", 2 ], [ "water_clean", 2 ] ], [ [ "clay_lump", 15 ] ] ]
+  },
+  {
+    "result": "posca",
+    "type": "recipe",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRINKS",
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": "1 m",
+    "batch_time_factors": [ 80, 4 ],
+    "autolearn": true,
+    "result_mult": 5,
+    "qualities": [ { "id": "BOIL", "level": 1 } ],
+    "tools": [ [ [ "water_boiling_heat", 3, "LIST" ] ] ],
+    "components": [
+      [ [ "water", 4 ], [ "water_clean", 4 ] ],
+      [ [ "bum_wine", 6 ], [ "fruit_wine", 3 ], [ "dandelion_wine", 3 ], [ "pine_wine", 3 ] ],
+      [ [ "honey_bottled", 3 ], [ "honey_glassed", 1 ], [ "sugar", 10 ] ],
+      [ [ "wild_herbs", 10 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bucket_log",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "survival", 2 ],
+    "time": "45 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SAW_W", "level": 1 } ],
+    "components": [ [ [ "log", 1 ] ], [ [ "cordage", 3, "LIST" ] ] ]
   }
 ]

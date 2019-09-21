@@ -1,6 +1,5 @@
 [
 	{
-		"//": "With these conditions, we will no longer fear the item quests from revealing hateful bugs.",
 		"id": "TALK_MISSION_INQUIRE",
 		"type": "talk_topic",
 		"responses": [
@@ -10,7 +9,7 @@
 				"effect": [
 					"mission_success",
 					{
-						"u_sell_item": "blood",
+						"u_consume_item": "blood",
 						"count": 15
 					}
 				],
@@ -32,7 +31,7 @@
 				"effect": [
 					"mission_success",
 					{
-						"u_sell_item": "bloodrune"
+						"u_consume_item": "bloodrune"
 					}
 				],
 				"condition": {
@@ -45,24 +44,6 @@
 						}
 					]
 				}
-			},
-			{
-				"text": "Here's your bloodrune stone.",
-				"topic": "TALK_MISSION_SUCCESS",
-				"effect": [
-					"mission_success",
-					{
-						"npc_add_trait": "isolatedtestsdone"
-					}
-				],
-				"condition": {
-					"and": [
-						"mission_complete",
-						{
-							"u_has_mission": "VAMP_LONELY_quest5"
-						}
-					]
-				}
 			}
 		]
 	},
@@ -72,16 +53,52 @@
 		"dynamic_line": {
 			"u_is_wearing": "blood_necklace",
 			"yes": "Greetings, human.",
-			"no": "Mortal?."
+			"no": [ "What is it, mortal?", "Speak up, mortal.", "What led you to this place, mortal?" ]
 		},
 		"responses": [
 			{
-				"text": "Please tell me about yourself.",
-				"topic": "TALK_VAMP_LONELY_introduce"
+				"text": "Tell me about yourself.",
+				"topic": "TALK_VAMP_LONELY_introduce",
+				"effect": {
+					"u_add_trait": "isolatedintro"
+				},
+				"condition": {
+					"not": {
+						"u_has_trait": "isolatedintro"
+					}
+				}
 			},
 			{
 				"text": "Why are you here?",
-				"topic": "TALK_VAMP_LONELY_here"
+				"topic": "TALK_VAMP_LONELY_here",
+				"effect": {
+					"u_add_trait": "isolatedhere"
+				},
+				"condition": {
+					"not": {
+						"u_has_trait": "isolatedhere"
+					}
+				}
+			},
+			{
+				"text": "Greetings, my brethren.",
+				"topic": "TALK_VAMP_LONELY_fakevamp",
+				"//": "A hidden joke response.",
+				"effect": {
+					"u_add_trait": "isolatedurfake"
+				},
+				"condition": {
+					"and": [
+						{
+							"u_has_trait": "THRESH_VAMP"
+						},
+						{
+							"not": {
+								"u_has_trait": "isolatedurfake"
+							}
+						}
+					]
+				}
 			},
 			{
 				"text": "About that quest...",
@@ -111,12 +128,7 @@
 			{
 				"text": "I'm vacant for your needs.",
 				"topic": "TALK_MISSION_LIST",
-				"//": "Prevent repetition of missions.",
-				"condition": {
-					"not": {
-						"u_has_trait": "isolatedvampmark"
-					}
-				}
+				"condition": "has_available_mission"
 			},
 			{
 				"text": "Sorry to bother.",
@@ -132,7 +144,7 @@
 			{
 				"text": "Preserved?",
 				"topic": "TALK_VAMP_LONELY_preserved"
-			},
+	        },
 			{
 				"text": "Okay.",
 				"topic": "TALK_VAMP_LONELY"
@@ -142,15 +154,15 @@
 	{
 		"id": "TALK_VAMP_LONELY_here",
 		"type": "talk_topic",
-		"dynamic_line": "I live here as my peaceful sanctuary. Problem?",
+		"dynamic_line": "I live here as my peaceful sanctuary for a very long time. Though the world is in chaos, I am not bothered nor assaulted by those things.",
 		"responses": [
-			{
-				"text": "Sorry for asking that.",
-				"topic": "TALK_VAMP_LONELY"
-			},
 			{
 				"text": "Is there a some sort of place like this?",
 				"topic": "TALK_VAMP_LONELY_there"
+			},
+			{
+				"text": "Okay then...",
+				"topic": "TALK_VAMP_LONELY"
 			}
 		]
 	},
@@ -173,7 +185,7 @@
 				}
 			},
 			{
-				"text": "I want you to go on a journey with me..",
+				"text": "I want you to go on a journey with me.",
 				"topic": "TALK_VAMP_LONELY_joinparty",
 				"condition": {
 					"u_has_trait": "isolatedvampmark"
@@ -225,10 +237,10 @@
 	{
 		"id": "TALK_VAMP_LONELY_there",
 		"type": "talk_topic",
-		"dynamic_line": "Yes. Its a small community, and I think they will let your kind go in there.",
+		"dynamic_line": "Yes it is. Its a small community of night creatures tending to theirselves to live in peace.",
 		"responses": [
 			{
-				"text": "Where do I find this place?.",
+				"text": "So, where do I find this place?",
 				"topic": "TALK_VAMP_LONELY_farthere"
 			},
 			{
@@ -267,7 +279,7 @@
 		"responses": [
 			{
 				"text": "KILL ME IF YOU CAN!!!",
-				"//": "Oof! don't be greedy persuading a vampire to join you.",
+				"//": "Oof! don't be greedy persuading a vampire to join you so early.",
 				"effect": "insult_combat",
 				"topic": "TALK_DONE"
 			}
@@ -292,7 +304,7 @@
 		"id": "TALK_VAMP_LONELY_joinparty",
 		"type": "talk_topic",
 		"//": "You can immediately put any isolated vampires you meet into your roster if you've done all the quest by one of them.",
-		"dynamic_line": "You sure about that?.",
+		"dynamic_line": "You sure about that?",
 		"responses": [
 			{
 				"text": "Yes, I do.",
@@ -325,6 +337,19 @@
 						"u_add_trait": "isolatedvampmark"
 					}
 				]
+			}
+		]
+	},
+	{
+		"//": "Vampire rants about your non-traditional way of transformation.",
+		"//": "Yes, they're talking about C.R.I.T mod's vampire mutation branch.",
+		"id": "TALK_VAMP_LONELY_fakevamp",
+		"type": "talk_topic",
+		"dynamic_line": "You think I'm foolish to believe you as my kind? Trust me, mortal, us vampires are not born by drinking artificial drugs.",
+		"responses": [
+			{
+				"text": "Well, atleast I'm alot stronger than you.",
+				"topic": "TALK_VAMP_LONELY"
 			}
 		]
 	}

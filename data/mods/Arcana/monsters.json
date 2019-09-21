@@ -419,12 +419,20 @@
     "death_drops": "mon_zombie_nullfield_death_drops"
   },
   {
+    "id": "mon_hound_tindalos",
+    "copy-from": "mon_hound_tindalos",
+    "//": "Only the real ones will drop essence, not afterimages.",
+    "type": "MONSTER",
+    "death_drops": "mon_hound_tindalos_death_drops"
+  },
+  {
     "id": "mon_spirit_of_fire",
     "type": "MONSTER",
     "name": "spirit of fire",
     "name_plural": "spirits of fire",
     "description": "A massive animated conflagration, crackling like burning logs as it moves.",
     "default_faction": "nether",
+    "categories": [ "CLASSIC" ],
     "species": [ "HORROR" ],
     "//": "Intentionally much lighter than expected.",
     "volume": "483750 ml",
@@ -438,10 +446,10 @@
     "morale": 500,
     "melee_skill": 6,
     "melee_dice": 3,
-    "melee_dice_sides": 8,
-    "melee_cut": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 6,
     "dodge": 3,
-    "armor_bash": 0,
+    "armor_bash": 8,
     "armor_cut": 6,
     "vision_day": 50,
     "luminance": 200,
@@ -466,6 +474,7 @@
     "death_drops": "mon_spirit_of_fire_death_drops",
     "death_function": [ "MELT" ],
     "flags": [
+      "REGENERATES_1",
       "NOHEAD",
       "HARDTOSHOOT",
       "WEBWALK",
@@ -484,8 +493,8 @@
     "name": "moruboru",
     "description": "A large plantlike creature with a gaping, toothy maw and numerous vines.  A hideous smell permeates the air around it.",
     "default_faction": "moruboru",
+    "categories": [ "CLASSIC" ],
     "species": [ "ABERRATION" ],
-    "diff": 28,
     "volume": "92500 ml",
     "weight": 120000,
     "hp": 680,
@@ -526,8 +535,8 @@
     "name": "host of the archon",
     "description": "A tall, robed figure twisted into a mockery of the human form, brandishing a strange golden talisman.  You feel an otherworldly presence about it.",
     "default_faction": "archon",
+    "categories": [ "CLASSIC" ],
     "species": [ "HORROR" ],
-    "diff": 30,
     "volume": "77500 ml",
     "weight": 81500,
     "hp": 400,
@@ -565,8 +574,14 @@
         "max_ammo": 1000,
         "ranges": [ [ 2, 12, "DEFAULT" ] ],
         "require_targeting_player": false,
-        "description": "A beam of lightning arcs from the host of the archon's symbol of judgement!",
+        "description": "A beam of lightning arcs from the host of the archon's symbol of judgment!",
         "no_ammo_sound": "a horrific screech!"
+      },
+      {
+        "type": "spell",
+        "spell_id": "arcana_monster_archon_gaze",
+        "cooldown": 10,
+        "monster_message": "You briefly sense the otherworldly presence controlling the host, as it glares at %3$s."
       }
     ],
     "//": "Here, have some chalice-specific loot",
@@ -581,7 +596,7 @@
     "description": "A massive, reptilian creature with batlike wings.  Its decaying body looks like it was halfway through being dissected, and the membranes of its wings are in tatters.  You wonder how such a large beast could fly in the first place, let alone in that condition.",
     "default_faction": "nether",
     "species": [ "ABERRATION" ],
-    "diff": 60,
+    "categories": [ "CLASSIC" ],
     "//": "Also has less mass than expected due to being in very poor shape.",
     "volume": "483750 ml",
     "weight": 120000,
@@ -644,7 +659,9 @@
     "copy-from": "mon_dark_wyrm",
     "type": "MONSTER",
     "name": "summoned dark wyrm",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "special_attacks": [
       {
         "type": "bite",
@@ -654,7 +671,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -662,11 +679,13 @@
     "copy-from": "mon_zombie_fiend",
     "type": "MONSTER",
     "name": "summoned fiend",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
     "melee_damage": [ { "damage_type": "heat", "amount": 2 } ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "upgrades": { "half_life": 8, "into": "mon_zombie_brute" } }
   },
   {
@@ -674,10 +693,12 @@
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
     "name": "summoned jabberwock",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -685,11 +706,13 @@
     "copy-from": "mon_homunculus",
     "type": "MONSTER",
     "name": "summoned homunculus",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "SMASH", 25 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -697,9 +720,11 @@
     "copy-from": "mon_thing",
     "type": "MONSTER",
     "name": "summoned thing",
+    "categories": [ "CLASSIC" ],
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -707,21 +732,27 @@
     "copy-from": "mon_dog_skeleton",
     "type": "MONSTER",
     "name": "summoned skeletal dog",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] }
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_skeleton_summoned",
     "copy-from": "mon_skeleton",
     "type": "MONSTER",
     "name": "summoned skeleton",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "hp": 50,
+    "speed": 80,
+    "path_settings": { "max_dist": 10 },
     "attack_effs": [ { "id": "stunned", "duration": 5, "chance": 30 } ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "upgrades": { "half_life": 15, "into": "mon_skeleton_hulk" } }
   },
   {
@@ -729,33 +760,38 @@
     "copy-from": "mon_vortex",
     "type": "MONSTER",
     "name": "summoned vortex",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "melee_skill": 4,
     "melee_damage": [ { "damage_type": "cold", "amount": 10 } ],
-    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10" ] }
+    "extend": { "flags": [ "SEES", "ELECTRIC", "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_yugg_summoned",
     "copy-from": "mon_yugg",
     "type": "MONSTER",
     "name": "summoned yugg",
+    "categories": [ "CLASSIC" ],
+    "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "PARA_STING", 20 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
   {
     "id": "mon_kreck_summoned",
     "copy-from": "mon_kreck",
     "type": "MONSTER",
+    "name": "summoned kreck",
+    "categories": [ "CLASSIC" ],
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
-    "name": "summoned kreck",
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -763,11 +799,13 @@
     "copy-from": "mon_triffid",
     "type": "MONSTER",
     "name": "summoned triffid",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 10 } ],
-    "extend": { "flags": [ "REGENERATES_1", "VENOM" ] },
+    "extend": { "flags": [ "REGENERATES_1", "VENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
   },
   {
@@ -775,11 +813,13 @@
     "copy-from": "mon_flesh_angel",
     "type": "MONSTER",
     "name": "summoned flesh angel",
+    "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ATTACKMON" ] }
   },
   {
@@ -787,10 +827,12 @@
     "copy-from": "mon_hunting_horror",
     "type": "MONSTER",
     "name": "summoned hunting horror",
+    "categories": [ "CLASSIC" ],
+    "path_settings": { "max_dist": 10 },
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH" ] }
   },
   {
@@ -798,6 +840,8 @@
     "copy-from": "mon_mi_go",
     "type": "MONSTER",
     "name": "summoned mi-go",
+    "categories": [ "CLASSIC" ],
+    "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "special_attacks": [ { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] } ],
     "death_drops": {  },
@@ -809,11 +853,13 @@
     "copy-from": "mon_flying_polyp",
     "type": "MONSTER",
     "name": "summoned flying polyp",
+    "categories": [ "CLASSIC" ],
+    "path_settings": { "max_dist": 10 },
     "vision_day": 50,
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
   },
   {
@@ -821,8 +867,10 @@
     "copy-from": "mon_shoggoth",
     "type": "MONSTER",
     "name": "summoned shoggoth",
+    "categories": [ "CLASSIC" ],
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_10" ] },
+    "extend": { "flags": [ "REGENERATES_10", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "ABSORBS_SPLITS", "REGENERATES_50" ] }
   },
   {
@@ -830,14 +878,16 @@
     "copy-from": "mon_shadow",
     "type": "MONSTER",
     "name": "summoned shadow",
+    "categories": [ "CLASSIC" ],
     "melee_dice_sides": 4,
     "melee_cut": 2,
     "vision_day": 2,
     "vision_night": 50,
+    "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "death_function": [ "MELT" ],
-    "special_attacks": [ [ "PARROT", 0 ] ],
-    "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
+    "special_attacks": [ [ "PARROT", 900 ] ],
+    "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS" ] }
   },
   {
@@ -845,12 +895,24 @@
     "copy-from": "mon_shadow_snake",
     "type": "MONSTER",
     "name": "summoned shadow snake",
+    "categories": [ "CLASSIC" ],
     "death_drops": {  },
     "death_function": [ "MELT" ],
     "vision_day": 2,
     "vision_night": 50,
-    "special_attacks": [ [ "PARROT", 0 ] ],
-    "extend": { "flags": [ "REGENERATES_IN_DARK" ] },
+    "path_settings": { "max_dist": 10 },
+    "special_attacks": [ [ "PARROT", 900 ] ],
+    "extend": { "flags": [ "REGENERATES_IN_DARK", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
+  },
+  {
+    "id": "mon_centipede_giant_summoned",
+    "copy-from": "mon_centipede_giant",
+    "type": "MONSTER",
+    "name": "summoned giant centipede",
+    "path_settings": { "max_dist": 10 },
+    "death_drops": {  },
+    "death_function": [ "MELT" ],
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
   }
 ]

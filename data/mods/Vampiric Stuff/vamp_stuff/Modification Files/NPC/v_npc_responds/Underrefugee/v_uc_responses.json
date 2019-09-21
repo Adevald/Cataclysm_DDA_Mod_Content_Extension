@@ -17,8 +17,8 @@
 				"effect": [
 					"mission_success",
 					{
-						"count": 30,
-						"u_sell_item": "blood"
+						"u_consume_item": "blood",
+						"count": 30
 					}
 				],
 				"text": "Here's your blood.",
@@ -39,8 +39,8 @@
 				"effect": [
 					"mission_success",
 					{
-						"count": 15,
-						"u_sell_item": "smallleechteeth"
+						"u_consume_item": "smallleechteeth",
+						"count": 15
 					}
 				],
 				"text": "Here's your small leech teeth.",
@@ -60,28 +60,10 @@
 				"effect": [
 					"mission_success",
 					{
-						"u_sell_item": "bloodsac"
+						"u_consume_item": "bloodsac"
 					}
 				],
 				"text": "Here's your blood sac.",
-				"topic": "TALK_MISSION_SUCCESS"
-			},
-			{
-				"condition": {
-					"and": [
-						"mission_complete",
-						{
-							"u_has_mission": "VAMP_UNDERCOMMANDO_quest4"
-						}
-					]
-				},
-				"effect": [
-					{
-						"npc_add_trait": "commandotestdone"
-					},
-					"mission_success"
-				],
-				"text": "Spitter-spatter, I mowed them all!",
 				"topic": "TALK_MISSION_SUCCESS"
 			}
 		],

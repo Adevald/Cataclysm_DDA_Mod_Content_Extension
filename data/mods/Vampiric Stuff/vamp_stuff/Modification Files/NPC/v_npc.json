@@ -118,12 +118,13 @@
 		"type": "npc",
 		"id": "VAMP_WASTEGUARD2",
 		"name_suffix": "Wasteguard",
-		"gender": "female",
+		"gender": "male",
 		"class": "V_WASTEGUARD2",
 		"attitude": 0,
 		"mission": 7,
 		"chat": "TALK_VAMP_WASTEGUARD2_justcome",
-		"faction": "vamps"
+		"faction": "vamps",
+		"mission_offered": "VAMP_WS2_quest1"
 	},
 	
 	
@@ -165,11 +166,21 @@
 		"type": "npc",
 		"id": "HUMAN_WASTEREFUGEE",
 		"name_suffix": "Refugee",
-		"//": "These are npcs populating the wasteland outskirts... No missions nor lore. They're just 'lucky' survivors.",
 		"class": "H_WASTELAND",
 		"attitude": 0,
 		"mission": 7,
 		"chat": "TALK_DONE",
 		"faction": "wastelander"
-	}
+	},
+	{
+		"type": "npc",
+		"id": "HUMAN_RADIOSPEC",
+		"name_suffix": "Radio Specialist",
+		"class": "NC_SCAVENGER",
+		"attitude": 1,
+		"mission": 3,
+		"chat": "TALK_HUMAN_RS_talk",
+		"faction": "no_faction",
+		"mission_offered": "HUMAN_RADIOSPEC_quest"
+}
 ]

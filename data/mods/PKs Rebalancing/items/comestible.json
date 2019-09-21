@@ -235,7 +235,7 @@
     "comestible_type": "MED",
     "use_action": {
       "type": "consume_drug",
-      "tools_needed": "syringe",
+      "tools_needed": { "syringe": 1 },
       "effects": [ { "id": "triffid_cure", "duration": 1 }, { "id": "doom_unhealth", "duration": 5 } ]
     },
     "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
@@ -254,7 +254,7 @@
     "symbol": ",",
     "color": "ltgreen",
     "comestible_type": "MED",
-    "use_action": { "type": "consume_drug", "tools_needed": "syringe", "effects": [ { "id": "triffid_neutralization", "duration": 1 } ] },
+    "use_action": { "type": "consume_drug", "tools_needed": { "syringe": 1 }, "effects": [ { "id": "triffid_neutralization", "duration": 1 } ] },
     "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
   },
   {
@@ -415,7 +415,7 @@
     "comestible_type": "MED",
     "use_action": {
       "type": "consume_drug",
-      "tools_needed": "syringe",
+      "tools_needed": { "syringe": 1 },
       "effects": [ { "id": "stemcell_treatment", "duration": 30 }, { "id": "slashed", "duration": 30 } ]
     },
     "flags": [ "USE_ON_NPC", "NPC_SAFE" ]

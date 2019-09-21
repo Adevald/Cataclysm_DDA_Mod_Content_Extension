@@ -1,10 +1,9 @@
 [{
-  "//": "Clothing purely made out of blood sheets.",
   "id": "blood_suit",
   "type": "ARMOR",
   "category": "armor",
   "name": "blood suit",
-  "description": "A lightweight, blood red suit made completely of blood compact sheets and designed to be worn under your clothes. Protects vital extremeties.",
+  "description": "A lightweight, blood red suit made completely of flexible blood compact sheets and designed to be worn under your clothes. Protects vital extremeties.",
   "weight": 685,
   "volume": 3,
   "price": 0,
@@ -17,8 +16,8 @@
   "coverage": 100,
   "encumbrance": 5,
   "warmth": 10,
-  "material_thickness": 2,
-  "environmental_protection": 4,
+  "material_thickness": 1,
+  "environmental_protection": 1,
   "flags": ["WATERPROOF", "STURDY", "SKINTIGHT"]
  }, {
   "id": "blood_hood",
@@ -38,8 +37,8 @@
   "coverage": 100,
   "encumbrance": 15,
   "warmth": 20,
-  "material_thickness": 4,
-  "environmental_protection": 4,
+  "material_thickness": 1,
+  "environmental_protection": 1,
   "flags": ["VARSIZE", "WATERPROOF", "STURDY", "OUTER", "HOOD"]
  }, {
   "id": "blood_duster",
@@ -59,8 +58,8 @@
   "encumbrance": 10,
   "storage": 32,
   "warmth": 20,
-  "material_thickness": 4,
-  "environmental_protection": 5,
+  "material_thickness": 1,
+  "environmental_protection": 1,
   "flags": ["VARSIZE", "POCKETS", "HOOD", "COLLAR", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER"]
  }, {
   "id": "blood_gloves",
@@ -79,8 +78,8 @@
   "coverage": 100,
   "encumbrance": 10,
   "warmth": 15,
-  "material_thickness": 3,
-  "environmental_protection": 4,
+  "material_thickness": 1,
+  "environmental_protection": 1,
   "flags": ["VARSIZE", "WATERPROOF", "STURDY"]
  }, {
   "id": "blood_pants",
@@ -98,8 +97,8 @@
   "coverage": 100,
   "encumbrance": 10,
   "warmth": 15,
-  "material_thickness": 4,
-  "environmental_protection": 4,
+  "material_thickness": 1,
+  "environmental_protection": 1,
   "flags": ["VARSIZE", "STURDY", "WATERPROOF"]
  }, {
   "id": "blood_boots",
@@ -119,8 +118,8 @@
   "coverage": 100,
   "encumbrance": 15,
   "warmth": 20,
-  "material_thickness": 3,
-  "environmental_protection": 3,
+  "material_thickness": 1,
+  "environmental_protection": 1,
   "flags": ["VARSIZE", "WATERPROOF", "STURDY"]
  }
 ]

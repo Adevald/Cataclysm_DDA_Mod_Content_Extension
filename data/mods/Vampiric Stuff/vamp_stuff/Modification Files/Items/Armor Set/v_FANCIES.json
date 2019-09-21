@@ -8,6 +8,7 @@
   "material": ["stone", "silver"],
   "symbol": "[",
   "color": "red",
+  "looks_like": "silver_necklace",
   "flags": ["FANCY"]
  }, {
   "id": "blood_talisman",
@@ -21,6 +22,7 @@
   "material": ["stone"],
   "symbol": "(",
   "color": "red",
+  "looks_like": "silver_necklace",
   "flags": ["FANCY"]
  }, {
   "id": "blood_cring",
@@ -33,6 +35,7 @@
   "material": ["stone"],
   "symbol": "(",
   "color": "red",
+  "looks_like": "silver_ring",
   "flags": ["FANCY"]
  }
 ]
