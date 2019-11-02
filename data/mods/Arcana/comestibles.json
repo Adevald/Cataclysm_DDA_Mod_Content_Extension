@@ -13,10 +13,8 @@
     "container": "bottle_glass",
     "symbol": "~",
     "color": "dark_gray",
-    "quench": -25,
-    "healthy": -5,
-    "stim": -4,
-    "fun": -5,
+    "healthy": -4,
+    "fun": -4,
     "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
@@ -40,9 +38,8 @@
     "container": "bottle_glass",
     "symbol": "~",
     "color": "dark_gray",
-    "quench": -20,
-    "healthy": -3,
-    "stim": -2,
+    "healthy": -2,
+    "fun": -2,
     "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
@@ -66,9 +63,8 @@
     "container": "bottle_glass",
     "symbol": "~",
     "color": "dark_gray",
-    "quench": -15,
-    "healthy": -1,
-    "stim": 2,
+    "healthy": 2,
+    "fun": 2,
     "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
@@ -92,9 +88,8 @@
     "container": "bottle_glass",
     "symbol": "~",
     "color": "light_red",
-    "quench": -10,
-    "stim": 4,
-    "fun": 5,
+    "healthy": 4,
+    "fun": 4,
     "freezing_point": -150,
     "use_action": {
       "type": "consume_drug",
@@ -142,8 +137,8 @@
     "category": "drugs",
     "name": "citrine incense",
     "name_plural": "citrine incense",
-    "//": "Citrine isn't quite white-yellow either, but jasmine incence would imply the flower rather than the color.  Last piece of advice in the description, while common sense, is only really a concern with sleep deprivation enabled.",
-    "description": "An alchemical mixture permeating a combustable base of charcoal or resin, resulting in a peculiar sort of incense.  Lighting it will rapidly burn away the strange concoction, invigorating its user with a focused effect similiar to the potions originally used to make it.  It trades much of its effect on strength and speed for instead directly relieving fatigue through unusual means, though long-term use without rest is not reccomended.",
+    "//": "Citrine isn't quite white-yellow either, but jasmine incense would imply the flower rather than the color.  Last piece of advice in the description, while common sense, is only really a concern with sleep deprivation enabled.",
+    "description": "An alchemical mixture permeating a combustible base of charcoal or resin, resulting in a peculiar sort of incense.  Lighting it will rapidly burn away the strange concoction, invigorating its user with a focused effect similar to the potions originally used to make it.  It trades much of its effect on strength and speed for instead directly relieving fatigue through unusual means, though long-term use without rest is not recommended.",
     "weight": 550,
     "volume": 1,
     "price": 2900,
@@ -166,7 +161,7 @@
     "category": "drugs",
     "name": "blood effigy",
     "looks_like": "blood",
-    "description": "A congealed liquid vaguely resembling blood, seemingly pulsing and stirring with a life of its own.  The work of incomplete research into exploiting an otherworldly creature, it can permanantly change the body and mind.  Without the original source of this power however, it can only go so far.",
+    "description": "A congealed liquid vaguely resembling blood, seemingly pulsing and stirring with a life of its own.  The work of incomplete research into exploiting an otherworldly creature, it can permanently change the body and mind.  Without the original source of this power however, it can only go so far.",
     "weight": 250,
     "volume": 1,
     "price": 100,
@@ -180,5 +175,84 @@
     "freezing_point": -10,
     "use_action": { "type": "mutagen", "mutation_category": "DRAGONBLOODLESSER" },
     "flags": [ "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "id": "scroll_sun",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of light",
+    "name_plural": "divine scrolls of light",
+    "description": "This is a scroll, with odd writing and illustrations of a solar motif on it, representing an otherworldly sun deity.  Using it will grant a surge of adrenaline and slow time momentarily, along with conjuring brilliant light.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_sun", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_moon",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of darkness",
+    "name_plural": "divine scrolls of darkness",
+    "description": "This is a scroll, with odd writing and depictions of the lunar cycles on it, representing an otherworldly lunar deity.  Using it will shroud the area in darkness, striking enemies blind temporarily.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_moon", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_artiface",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of command",
+    "name_plural": "divine scrolls of command",
+    "description": "This is a scroll, with odd writing and images of solders in formation on it, representing an otherworldly deity of order.  Using it will attempt to bind creatures to your will temporarily.  The sudden impact of projecting your mind outwards will painfully stun you, however.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_artifice", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_nature",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of regrowth",
+    "name_plural": "divine scrolls of regrowth",
+    "description": "This is a scroll, with odd writing and exotic natural scenery depicted on it, representing an otherworldly deity of chaos.  Using it will conjure a powerful healing spell, along with causing life to grow wild over the area.  However, using it risks mutating in abnormal ways.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_nature", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_destruction",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of sundering",
+    "name_plural": "divine scrolls of sundering",
+    "description": "This is a scroll, with odd writing and scenes of endless battle on it, representing an otherworldly war god.  Using it will call forth a thunderous boom, toppling structures and harming creatures all around.  This will not only risk burning the area to the ground, but also attract otherworldly attention.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_destruction", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "scroll_subversion",
+    "copy-from": "scroll_magic_base",
+    "type": "COMESTIBLE",
+    "name": "divine scroll of discord",
+    "name_plural": "divine scrolls of discord",
+    "description": "This is a scroll, with odd writing and peculiar swirling symbols on it, representing an otherworldly trickster god.  Using it will teleport you away, leaving unearthly hazards where you once were.  While you will always arrive at your destination safely, you might suffer other consequences.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_scroll_subversion", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "spell_lockpick_lesser",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "category": "tools",
+    "name": "mote of artifice",
+    "name_plural": "motes of artifice",
+    "description": "A small, ethereal pinprick of energy barely the size of a marble.  It seems to waver in and out of existence with a perfectly regular pattern.  Using it can manipulate any mundane lock, to silently open the way.",
+    "material": [ "essencemat" ],
+    "symbol": ",",
+    "color": "light_gray",
+    "stack_size": 1,
+    "flags": [ "NO_SALVAGE", "TRADER_AVOID", "UNBREAKABLE_MELEE", "NO_INGEST" ],
+    "use_action": { "type": "picklock", "pick_quality": 5 },
+    "drop_action": { "type": "emit_actor" }
+  },
+  {
+    "id": "spell_lockpick",
+    "//": "ID retained since it's still useful.",
+    "copy-from": "spell_lockpick_lesser",
+    "type": "COMESTIBLE",
+    "name": "mote of greater artifice",
+    "name_plural": "motes of greater artifice",
+    "use_action": { "type": "picklock", "pick_quality": 99 }
   }
 ]

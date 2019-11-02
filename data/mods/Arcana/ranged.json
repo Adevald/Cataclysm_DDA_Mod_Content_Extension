@@ -26,7 +26,16 @@
     "loudness": 150,
     "clip_size": 5,
     "reload": 400,
-    "ammo_effects": [ "LIGHTNING", "BOUNCE", "EMP" ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "arcana_react_symbol_judgment_wonder" } ]
+        }
+      ]
+    },
+    "ammo_effects": [ "LIGHTNING", "EMP" ],
     "artifact_data": { "effects_wielded": [ "AEP_BAD_WEATHER" ] },
     "flags": [ "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
@@ -60,7 +69,7 @@
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0 },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
     "flags": [ "NEVER_JAMS", "DURABLE_MELEE", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS", "USE_PLAYER_ENERGY" ]
   },
   {
@@ -119,7 +128,7 @@
     "loudness": 500,
     "clip_size": 1,
     "reload": 200,
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0 },
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
     "ammo_effects": [ "NAPALM" ],
     "artifact_data": { "effects_wielded": [ "AEP_SAP_LIFE", "AEP_EVIL", "AEP_GLOW" ] },
     "techniques": [ "WBLOCK_1" ],
@@ -152,6 +161,15 @@
     "loudness": 75,
     "clip_size": 4,
     "reload": 200,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "arcana_react_bane_staff_venom" } ]
+        }
+      ]
+    },
     "ammo_effects": [ "ACIDBOMB", "TOXICGAS" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
     "flags": [ "UNBREAKABLE_MELEE", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NONCONDUCTIVE", "NO_SALVAGE", "MAGIC_FOCUS" ]

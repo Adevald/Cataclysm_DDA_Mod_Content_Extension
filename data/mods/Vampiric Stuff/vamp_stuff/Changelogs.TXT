@@ -6,35 +6,40 @@ https://discourse.cataclysmdda.org - CDDA official website
 
   ~ THE MOD ADDS VAMPIRE NPCS TO YOUR WORLD, ALONG WITH NEW LOCATIONS TO EXPLORE, QUESTS TO COMPLETE, ITEMS TO DISCOVER AND MONSTERS TO ERADICATE!
 
-  * After several additions on contents like the Arcana trading mechanics and various fixes to mapgen errors, the v1.3 ended well to improve the mod further more. The v1.4 remains unplanned.
+  * After several additions on contents like the Arcana trading mechanics and various fixes to mapgen errors, the v1.3 ended well to improve the mod further more. The v1.4 is planned to deal with the last pieces of quests, ending the player's journey to live in the wasteland outskirts... If they wanted to.
 
 
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
 	
-#  TILESETS (frequent)
+--> V1.4 - Currently, I focus on expanding the mod with new contents. Also, with KorGgenT being awesome, mod's gonna get crazy with spells! <-- 
+	
+#  TILESETS (frequent, or whenever I can)
 
++  ADDED NEW MONSTERS (infected vampires expanded, with much more lethal counterparts)
 +  ADDED A NEW MELEE WEAPON (fanged falchion)
-+  EXPANDED CONDITIONAL DIALOGUES (even more talky stuff, avoidance of repetitive dialogue lines)
++  EXPANDED CONDITIONAL DIALOGUES (even more talky stuff, some avoidance to repetitive dialogue lines of NPCs)
++  ADDED MORE MISSIONS (missions to expand, defend and fortify the outskirts)
++  ADDED NEW NPCS (quest related NPCs for the wasteland outskirts)
++  ADDED A MAIN LOCATION (vampirus, home for the infected vampires)
 
 ~  ARMOR DATA TWEAKS (massive decrease in damage resistance)
 
--  MAJOR MISSION FIXES (fixed most mission-related bugs, and are now up-to-dated)
 -  MISSION IMPROVEMENTS (an even better flow of progression with some missions)
 -  FIXED MAJOR MISSION BUG (accepting the first quest ends into the final rewards)
--  LOCATION SPAWN TWEAKS (major reduction of overmap generation)
+-  LOCATION SPAWN TWEAKS (major reduction of overmap generation, quest structures now spawn super rare)
 
 
 
 	=>PAST UPDATES<=
 
---> V1.3: ARCANA EXTENSION <--
+--> V1.3 - With tons of new JSONable NPC dialogue features, an idea came up and has eventually gave birth to the Vampiric Stuff + Arcana Mod Extension. Simple, but it ate most of my time (worth it!) <-- 
 
 +  ADDED A NEW VAMPIRIC GUN (very cheap pistol)
-+  ADDED GHOST TOWNS (hidden in the forest, lies the villages from the past. An outline for bigger projects)
++  ADDED GHOST TOWNS (aesthetic hidden villages)
 +  ADDED NEW MAPGENS (reworked old crypts with a new layout)
-+? ADDED NEW NPC (arcane seeker, a vampire NPC that collects item from the Arcana mod)
-+? ADDED NEW MAPGEN (for the wasteland outskirts as its basement)
++? ADDED A NEW NPC (arcane seeker, a vampire NPC that collects item from the Arcana mod)
++? ADDED A NEW MAPGEN (for the wasteland outskirts as its basement)
 +? NOW FEATURES A TRADING MECHANICS (gather tokens as currency in exchange of exclusive items)
 +? TRADEABLE ITEMS EXPANDED (essences, monster trophies and almost all non-generated artifacts)
 
@@ -42,10 +47,10 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> V1.2: MAJOR FIXES <--
+--> V1.2 - Focused on fixing loadsome of bugs, some rebalances, removing nonsensical contents, and reworks to NPCs. <--
 
-+  ADDED NEW NPC (underground seeker, the scout of the cove)
-+  ADDED SOME MISSIONS
++  ADDED A NEW NPC (underground seeker, the scout of the cove)
++  ADDED SOME MISSIONS (regards to the undervamps of the vampire cove)
 
 ~  ITEM DATA REWORKS (various item price fixes, weight and volume tweaks in certain items)
 ~  ARMOR DATA FIXES (blood hoods will now protect vampires from sunlight, encumbrance changes)
@@ -57,13 +62,13 @@ https://discourse.cataclysmdda.org - CDDA official website
 -  REWORKS ON NPC MISSIONS (large fixes and some changes for most quests)
 -  NPC DIALOGUE FIXES (statement recorrections and some removal/changes)
 -  UNUSED CREATURES REMOVAL (trashed non-loric entities)
--  ISOLATED SPAWNRATE FIXED (only the leeches spawn at the swamps)
+-  ISOLATED SPAWNRATE FIXED (only the leeches spawn in the swamps)
 -  FIXED STRUCTURAL ISSUES (static overmaps fixed)
 -  LOCATION SPAWN FIXES (structures spawn as independent, in which it has no affixed city name)
 
 
 
---> V1.1 <--
+--> V1.1 - After returning to the project, I focused on major rebalances along with a bunch of new contents. <--
 
 +  NEW ARMOR SETS (blood and blood infused, recipes also included)
 +  A NEW MELEE WEAPON (knuckle biters)
@@ -84,6 +89,8 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> V1.0: <--
+--> V1.0 - Introduced the idea to the forums... But it didn't end so well, so I left the project for "few" months. <--
 
-+  INTRODUCED VAMPIRIC STUFF
++  INTRODUCED VAMPIRIC STUFF (built the major structure from a jumbled idea, which served as the main outline for the upcoming updates)
+
+?? FORGOTTEN LOGS

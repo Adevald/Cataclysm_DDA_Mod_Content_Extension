@@ -2,16 +2,18 @@
 
 Its [mod thread](https://discourse.cataclysmdda.org/t/vampiric-stuffs-mod-thread/16001/1) is at the official CDDA forums
 
-This is the mod I've made a long time ago when I was a mobile CDDA player. It provides the RPG feeling to the players by partaking a bunch of questlines for simple rewards.
+This is the mod I've made a long time ago when I was a mobile CDDA player. It provides mild RPG feeling to the players by partaking a bunch of questlines for simple rewards.
 
-- Never forget to turn on static NPC, or you won't encounter any NPCs with this mod.
-- This mod is WIP, means there will always be a change in it...
+- This mod will only work with the latest experimental of CDDA. Update your client before using this.
+- This mod is WIP and fatal crashes may occur... In very rare occasions.
+- For balancing purposes, do not activate *Stats Through Kills* mod. (if you did, have !!FUN!! getting OP)
+- Turning *Static NPC* on before world creation is recommended.
 
 ## Items
 Certain items are obtainable by exploring the world, while some are crafted only. Listed below are the items that *could* be obtained in many areas.
 
 ##### Books
-These are the books or pages that could be found in certain locations. Most of them requires you to have a skill level of 8 to read and learn their crafting recipes.
+These are the books or pages that could be found in certain locations. All of them requires you to have a skill level of 8 to read and learn their crafting recipes.
 * *Red Velvets - The Dark Fashion*, the book that holds recipes of blood armors and clothings.
 * *Glorious Gunnery*, holds renewable ammunition recipes for the vampiric guns.
 * *The Vampiric Infusion*, a book that allows you to perform bloodcrafts.
@@ -38,10 +40,10 @@ Ammunition that are fed to the vampiric guns.
 _Other items remain a secret, giving you the chance to look for them by yourself :)_
 
 ## Monsters
-When wandering around, you'll always encounter various monsters that are often deadly or lethal. They sometimes drop quest related items or could also be collected for something else.
+When wandering around, you'll always encounter various monsters that are often deadly and lethal. They sometimes drop quest related items or could also be collected for something else.
 
 ##### Leeches
-* *Leeches* are monsters seen mostly in moist areas like swamps.
+* *Leeches* are monsters seen mostly in moist areas like the swamps. They gradually mutate to gain more ability.
 * It is the largest faction of the mod.
 
 ##### Elder Zombies
@@ -51,8 +53,12 @@ When wandering around, you'll always encounter various monsters that are often d
 * *Vampire bats* are vermins of the night, skimming their vicinity for available prey
 * They are agile and are always grouped in packs.
 
+##### Infected Vampires
+* *Infected Vampires* retain their destructive nature after they succumb.
+* It is the most dangerous faction of the mod.
+
 ## Locations
-To prevent further spoilers, the informations in this section are briefly explained.
+To prevent further spoilers, the informations in this section were briefly explained.
 
 ##### Crypt
 * The crypts are found rarely in the forest, away from crowded cities.
@@ -72,7 +78,7 @@ To prevent further spoilers, the informations in this section are briefly explai
 
 ##### Misc
 * Odd structures like random pedestals and forgotten graves.
-* They usually blend in your map as normal terrains (forest, field, etc.) 
+* They usually blend in the overmap as normal terrains (forest, field, etc.) 
 
 ## NPCs
 These are the friendly NPCs that interacts with you.
@@ -80,15 +86,31 @@ These are the friendly NPCs that interacts with you.
 Vampire NPCs are beneficial for their eternal experience in combat, survival and communication skills. With wrong doings, these "skills" may test out onto you.
 
 ### Missions
-Every mission is simple and self-explanatory, intended to provide players with RPG-ish feeling. Completing missions will provide fearures furthermore, such as unlocking new areas.
+Every mission is simple and self-explanatory, intended to provide players with RPG-ish feeling. Completing missions will provide features furthermore, such as unlocking new areas and obtaining useful items.
 
 ## Scenarios
 Scenarios that spices up your taste in starting to venture the world. Currently a stub.
 
 ##### Vampire Wannabe
-This scenario will put yourself on a test as you start being surrounded by a mob of ravenous zeds outside your LMOE. Below are the listed professions for this.
-* costs: 1 points - *Vampire Freak* starts with a map to locate certain locations that will help you for earlier progress.
-* costs: 6 points - *So-called Vampire* is rather an overpowered profession in this scenario. It starts with high combat skills (mainly melee) and survivor armor.
+This scenario will put yourself on a test as you start being surrounded by a mob of ravenous zeds outside your LMOE shelter. Below are the listed professions for this.
+* costs: 1 point - *Vampire Freak* starts with low level communication and survival skills, while the rest is similar to the evacuee profession.
+* costs: 12 points - *So-called Vampire* is rather an overpowered profession in this scenario. It starts with high combat skills (mainly melee) and light survivor armor.
+
+Starting your journey with this scenario gives you a point of direction...
+
+## Magic Spells
+Vampiric spells have mixed variety, and most of them are not suitable for the demise of a critter. There are spells that affect the target's mobility, there are spells that curses, however, few are deadly with just a simple gesture of an arm. With humans taking steps into the depths of magic, these spells were eventually discovered.
+
+With spells being part of **Vampiric Stuff** mod, the built-in mod - **Magiclysm** - is suggested to be activated along with it. (though it wasn't listed as a dependency)
+
+There are 3 spellcaster classes, listed descending as how aggresive the class is:
+* **Warlock** - Caster that conjure spells for as long as it can. All of its spell uses mana, limited to status, but more on dealing damage. Unique prowess of a warlock is to call forth ancient idols.
+* **Profane Conjurer** - Caster that conjure profane elements. Similar to warlock, it consumes large amount of mana. Most of its spell inflicts status ailments that deals damage. Unique prowess of a profane conjurer is the ability to manipulate spectacular bursts of unholy elements. It's like kelvinist, but edgy.
+* **Hemomancer** - Caster that revolves on life force manipulation; more on a give-and-take type caster. Uses most of its spell with life force in inflicting both status ailments and damage, while few consumes mana. Unique prowess of a hemomancer is the ability to obtain forms.
+
+These spellcaster types conflict with each other, i.e: learning _**Clot**_ locks you out of *Profane Conjurer* and *Warlock*, because that spell belongs to the **Hemomancer**.
+
+Spells have tier levels. A tier level tells you how strong, efficient or rare the spell is.
 
 # Arcane Seeker
 The arcane seeker is a vampire NPC that only shows up in a certain location when you activate the *Vampiric Stuff + Arcana Mod Extension* before world creation. She will trade with you in very different manner.

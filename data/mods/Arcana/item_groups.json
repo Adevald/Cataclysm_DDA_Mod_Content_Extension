@@ -64,7 +64,6 @@
     "type": "item_group",
     "items": [
       [ "offering_chalice", 25 ],
-      [ "offering_chalice_used", 30 ],
       [ "blood_athame", 20 ],
       [ "hexenhammer", 10 ],
       [ "silver_glyph", 5 ],
@@ -142,12 +141,12 @@
   {
     "id": "cop_evidence",
     "type": "item_group",
-    "items": [ [ "offering_chalice_used", 1 ], [ "blood_athame", 1 ] ]
+    "items": [ [ "offering_chalice", 1 ], [ "blood_athame", 1 ] ]
   },
   {
     "id": "creepy",
     "type": "item_group",
-    "items": [ [ "offering_chalice_used", 5 ], [ "blood_athame", 5 ], [ "dragonblood_mutagen", 1 ] ]
+    "items": [ [ "offering_chalice", 5 ], [ "blood_athame", 5 ], [ "dragonblood_mutagen", 1 ] ]
   },
   {
     "id": "vault",
@@ -296,6 +295,27 @@
     "subtype": "collection",
     "items": [
       { "item": "CF_golden_scale", "count-min": 10, "count-max": 20, "prob": 20 }
+    ]
+  },
+  {
+    "id": "arcana_hunt_random",
+    "type": "item_group",
+    "items": [
+      [ "fighter_sting", 5 ],
+      [ "biollante_bud", 5 ],
+      [ "graboid_fang", 5 ],
+      [ "triffid_queen_flower", 5 ],
+      [ "dermatik_sting", 10 ],
+      [ "vortex_shard", 5 ],
+      [ "blob_gem", 15 ],
+      [ "monster_tear", 10 ],
+      [ "shadow_gem", 5 ],
+      [ "bone_twisted", 10 ],
+      [ "gracken_knuckles", 5 ],
+      [ "wyrmskin_piece", 5 ],
+      [ "monster_fang", 15 ],
+      [ "iridescent_plate", 15 ],
+      [ "engraved_stone", 10 ]
     ]
   }
 ]

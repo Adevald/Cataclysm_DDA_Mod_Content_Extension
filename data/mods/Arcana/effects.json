@@ -31,30 +31,34 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 40 ], "pkill_min": [ 25 ], "pkill_max_val": [ 50 ], "speed_mod": [ -15, -10 ] }
+    "base_mods": { "pain_tick": [ 25 ], "pain_min": [ -15 ], "speed_mod": [ -25, -15 ] }
   },
   {
     "type": "effect_type",
     "id": "potion_strength",
-    "name": [ "Strengthed" ],
+    "name": [ "Strengthened" ],
     "resist_effect": "talisman_warding",
     "desc": [ "You feel mighty, like you could take on the world." ],
     "remove_message": "The unnatural strength leaves your body.",
-    "decay_messages": [ [ "The strengening effect of your potion is starting to fade.", "bad" ] ],
+    "decay_messages": [ [ "The strengthening effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
     "base_mods": {
       "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
-      "pain_max_val": [ 10, 5 ],
-      "str_mod": [ 3 ],
+      "pain_tick": [ 25 ],
+      "pain_max_val": [ 20, 10 ],
+      "str_mod": [ 5 ],
       "dex_mod": [ -1 ],
       "int_mod": [ -1 ],
       "per_mod": [ -1 ],
       "speed_mod": [ 5 ],
-      "stamina_min": [ 40 ],
-      "stamina_chance": [ 6, 12 ]
+      "stamina_min": [ 50 ],
+      "stamina_chance": [ 6 ],
+      "fatigue_min": [ 1 ],
+      "fatigue_tick": [ 300 ],
+      "fatigue_chance": [ 6, 12 ]
     }
   },
   {
@@ -73,12 +77,18 @@
     "base_mods": {
       "pain_chance": [ 12, 24 ],
       "pain_min": [ 1 ],
-      "pain_max_val": [ 10, 5 ],
+      "pain_tick": [ 25 ],
+      "pain_max_val": [ 15, 10 ],
       "str_mod": [ -2 ],
       "dex_mod": [ 2 ],
       "int_mod": [ -2 ],
       "per_mod": [ 2 ],
-      "speed_mod": [ 25 ]
+      "speed_mod": [ 50 ],
+      "stamina_min": [ -25 ],
+      "stamina_tick": [ 30 ],
+      "stamina_chance": [ 6, 12 ],
+      "fatigue_min": [ -1 ],
+      "fatigue_chance": [ 12 ]
     }
   },
   {
@@ -93,7 +103,7 @@
     "rating": "good",
     "max_intensity": 15,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 18 ], "pkill_min": [ 5 ], "pkill_max_val": [ 25 ], "speed_mod": [ -10, -5 ] }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 5 ], "pain_tick": [ 25 ], "pain_min": [ -5 ], "speed_mod": [ -10, -5 ] }
   },
   {
     "type": "effect_type",
@@ -107,7 +117,7 @@
     "rating": "good",
     "max_intensity": 10,
     "int_dur_factor": "1 m",
-    "base_mods": { "pkill_tick": [ 30 ], "pkill_min": [ 5 ], "pkill_max_val": [ 30 ], "speed_mod": [ -12, -6 ] }
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 15 ], "pain_tick": [ 50 ], "pain_min": [ -10 ], "speed_mod": [ -15, -10 ] }
   },
   {
     "type": "effect_type",
@@ -270,7 +280,17 @@
     "name": [ "Holy Ward" ],
     "desc": [ "Heavy resistance to bladed weapons, protection from anomalous effects." ],
     "remove_message": "The magical protection enveloping your body flickers and fades.",
-    "removes_effects": [ "darkness", "rat", "evil", "attention", "teleglow", "amigara", "archon_gaze_effect", "chalice_offering_side_effects", "blood_athame_side_effects" ],
+    "removes_effects": [
+      "darkness",
+      "rat",
+      "evil",
+      "attention",
+      "teleglow",
+      "amigara",
+      "archon_gaze_effect",
+      "chalice_offering_side_effects",
+      "blood_athame_side_effects"
+    ],
     "decay_messages": [ [ "Your holy ward is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 30,
@@ -282,40 +302,40 @@
     "type": "effect_type",
     "id": "spell_might",
     "name": [ "Might" ],
-    "desc": [ "The fabric of The Veil is woven into your frame  Your strength is augmented by magic." ],
+    "desc": [ "The fabric of The Veil is woven into your frame.  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "str_mod": [ 1 ] }
+    "base_mods": { "str_mod": [ 8 ] }
   },
   {
     "type": "effect_type",
     "id": "spell_agility",
-    "name": [ "Agility" ],
+    "name": [ "Agility", "Agility", "Agility", "Agility", "Agility", "Agility", "Agility", "Agility" ],
     "desc": [ "The winds of distant realms are at your back.  Your dexterity and speed are augmented by magic." ],
     "remove_message": "You feel sluggish as your magically-induced agility leaves you.",
     "decay_messages": [ [ "Your spell of agility is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ] }
+    "base_mods": { "dex_mod": [ 8 ], "speed_mod": [ 40 ] }
   },
   {
     "type": "effect_type",
     "id": "spell_insight",
     "name": [ "Insight" ],
-    "desc": [ "The eyes of The Beyond shall guide you.  Your perception is augmented by magic." ],
+    "desc": [
+      "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
+    ],
     "remove_message": "You feel deadened as your magically-induced perception leaves you.",
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
     "rating": "good",
     "max_intensity": 100,
-    "max_effective_intensity": 8,
     "int_dur_factor": "1 m",
-    "scaling_mods": { "per_mod": [ 1 ] }
+    "scaling_mods": { "per_mod": [ 8 ] },
+    "flags": [ "EFFECT_NIGHT_VISION" ]
   },
   {
     "type": "effect_type",
@@ -416,6 +436,23 @@
   },
   {
     "type": "effect_type",
+    "id": "sword_mending",
+    "blocks_effects": [ "bleed", "winded" ],
+    "rating": "good",
+    "max_duration": "15 s",
+    "base_mods": { "pain_min": [ -5 ], "stamina_min": [ 500 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "mantle_escape_effect",
+    "rating": "good",
+    "max_intensity": 5,
+    "int_dur_factor": "1 s",
+    "base_mods": { "speed_mod": [ 5 ] },
+    "scaling_mods": { "speed_mod": [ 5 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_invis",
     "name": [ "Illusion Cloak" ],
     "desc": [
@@ -469,20 +506,19 @@
     "remove_message": "You feel a faint sense of relief wash over you.",
     "miss_messages": [ [ "Afterimages on the edge of your vision distract you.", 10 ] ],
     "rating": "bad",
-    "max_intensity": 48,
-    "max_effective_intensity": 6,
-    "int_dur_factor": "30 m",
+    "max_intensity": 10,
+    "int_dur_factor": "25 m",
     "base_mods": {
       "int_mod": [ -1.5 ],
       "per_mod": [ -1.5 ],
       "sleep_min": [ 5, 4 ],
       "sleep_max": [ 25, 20 ],
-      "sleep_chance": [ 1380 ],
-      "vomit_chance": [ 920 ],
+      "sleep_chance": [ 1300 ],
+      "vomit_chance": [ 800 ],
       "health_min": [ -6, -5 ],
-      "health_chance": [ 440 ],
+      "health_chance": [ 400 ],
       "rad_min": [ -10, -8 ],
-      "rad_chance": [ 1100 ]
+      "rad_chance": [ 1000 ]
     },
     "scaling_mods": {
       "int_mod": [ -0.75, -0.6 ],
@@ -525,22 +561,20 @@
       "Your very essence is nothing more than fuel for the pyre..."
     ],
     "rating": "bad",
-    "max_intensity": 14,
-    "max_effective_intensity": 7,
+    "max_intensity": 7,
     "int_dur_factor": "7 d",
     "//": "This will EVENTUALLY kill you if you max out the effects, unless you're abusing magical healing.",
     "base_mods": {
       "fatigue_min": [ 1 ],
       "fatigue_tick": [ 1000 ],
-      "int_mod": [ 0.5 ],
-      "per_mod": [ -0.75 ],
+      "int_mod": [ -0.25 ],
       "sleep_min": [ 10 ],
       "sleep_max": [ 30 ],
-      "sleep_chance": [ -15 ],
+      "sleep_chance": [ -10 ],
       "sleep_chance_bot": [ 100 ],
       "sleep_tick": [ 1800 ],
       "hurt_min": [ 1 ],
-      "hurt_chance": [ -60 ],
+      "hurt_chance": [ -45 ],
       "hurt_chance_bot": [ 100 ],
       "hurt_tick": [ 3600 ]
     },
@@ -557,51 +591,52 @@
     "id": "blood_athame_side_effects",
     "resist_effect": "talisman_warding",
     "//": "This won't kill you, but the health and stat penalties will make you wish it did later on down the line.",
-    "name": [
-      "",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia",
-      "Strange Anemia"
-    ],
+    "name": [ "", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia", "Strange Anemia" ],
     "desc": [
       "",
-      "your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you...",
+      "Your muscles have been feeling more fatigued lately, and you feel faintly queasy on the inside.  Maybe overusing that athame did something to you...",
       "The weakness in your body has worsened, and you've been having hunger pangs.  It seems blood magic has consequences if overused.",
       "Your body feels sluggish and drained, and it seems to be getting worse the more you rely on blood magic.  Relying on it less might help ease your suffering.",
+      "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while...",
       "It feels like your body is struggling to sustain itself, as your overuse of the athame's magic has taken its toll on you.  It might be a good idea to stop using that damn thing for a while..."
     ],
     "rating": "bad",
-    "max_intensity": 12,
-    "max_effective_intensity": 6,
+    "max_intensity": 6,
     "int_dur_factor": "5 d",
     "base_mods": {
       "health_min": [ 1 ],
-      "health_tick": [ 3960 ],
-      "str_mod": [ 0.5 ],
+      "health_tick": [ 3600 ],
       "hunger_min": [ 1 ],
-      "hunger_chance": [ -40 ],
+      "hunger_chance": [ -20 ],
       "hunger_chance_bot": [ 100 ],
       "hunger_tick": [ 300 ],
-      "dex_mod": [ -0.75 ],
+      "dex_mod": [ 0.75 ],
       "thirst_min": [ 1 ],
-      "thirst_chance": [ -160 ],
+      "thirst_chance": [ -120 ],
       "thirst_chance_bot": [ 100 ],
       "thirst_tick": [ 300 ]
     },
     "scaling_mods": {
-      "fatigue_tick": [ -360, -300 ],
+      "health_tick": [ -360, -300 ],
       "str_mod": [ -0.75, -0.6 ],
       "hunger_chance": [ 20, 15 ],
       "dex_mod": [ -0.75, -0.6 ],
       "thirst_chance": [ 40, 35 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_scroll_nature_effect",
+    "//": "Explicitly punish Mycus players who will be immune to mutation, that's what you get for channeling a rival interloper's nature magic.",
+    "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
+    "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
+    "rating": "good",
+    "base_mods": {
+      "rad_min": [ -25, 25 ],
+      "fatigue_min": [ 0, 50 ],
+      "health_min": [ 0, -10 ],
+      "pain_min": [ 0, 10 ],
+      "hunger_min": [ 0, 25 ]
     }
   },
   {
@@ -670,6 +705,19 @@
     "desc": [
       "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_failure",
+    "name": [ "Quest Stage Failure" ],
+    "desc": [
+      "AI tag marking The Hermit's quest progression, changing dialogue.  Intended to be permanent.  This is a bug if you have it."
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "hermit_stage_3_backdoor",
+    "//": "Effect for players, confirms that the hermit has given this specific player the restored ritual blade, beginning the backdoor quest.  Intended to be permanent."
   },
   {
     "type": "effect_type",

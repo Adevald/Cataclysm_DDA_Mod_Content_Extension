@@ -5,10 +5,10 @@
                 "text": "Here's your corrupted bloodrune stones.",
                 "topic": "TALK_MISSION_SUCCESS",
                 "effect": [
-                    "mission_success",{
-						"u_consume_item": "corruptbloodrune",
-						"count": 2
-					}
+                    "mission_success", {
+                        "u_consume_item": "corruptbloodrune",
+                        "count": 2
+                    }
                 ],
                 "condition": {
                     "and": [{

@@ -8,6 +8,6 @@
     "to_hit": -3,
     "color": "gray",
     "symbol": "$",
-    "material": [ "steel" ],
+    "material": ["steel"],
     "volume": "2ml"
-  }
+}

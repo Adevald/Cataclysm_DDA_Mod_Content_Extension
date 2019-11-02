@@ -1,0 +1,17 @@
+[{
+        "type": "speech",
+        "speaker": "mon_fleshweaver",
+        "sound": "claws grinding!",
+        "volume": 20
+    }, {
+        "type": "speech",
+        "speaker": "mon_fleshweaver",
+        "sound": "screeches of claws!",
+        "volume": 20
+    }, {
+        "type": "speech",
+        "speaker": "mon_fleshweaver",
+        "sound": "a harsh, screeching voice!",
+        "volume": 30
+    }
+]

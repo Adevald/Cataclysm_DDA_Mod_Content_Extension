@@ -1,53 +1,62 @@
-Secronom V1.5 - Axema Vales (author)
+Secronom V1.6 - Axema Vales (author)
 
-https://discourse.cataclysmdda.org - CDDA official website
+https://discourse.cataclysmdda.org - CDDA official forums
 
-
-
-  ~ THE VERY MAIN FOCUS OF THIS MOD IS TO MAKE YOUR WORLD MORE CHALLENGING AND INTENSE BY ADDING WHOLESOME DREADFUL CREATURES. IT ALSO ADDS FEW ASSORTED STUFF SUCH AS MAPS AND ITEMS.
-  ~ MOST OF THE CREATURES CAME FROM VARIOUS REFERENCES, NOTABLY "DEAD FRONTIER". While others are miscellaneous and made-up addition, just to widen the bestiary(and interest).
-
-  *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress. Along with the progress of vampiric stuff mod, this mod's progress has to stop for now :(
-  *AND LASTLY... PLEASE, notify me of any bugs you encountered while playing along with this mod. I'd like to hear petitions from every players who supports ^_^
-  
-  NOTE: Since LUA was removed in 0.D, ALL of the main features included in this mod are erased (just to comprehend with the latest builds)
-  NOTE AGAIN: LUA still functions in 0.C.
-
-	=>TO-DO LIST<=
-
-?? REAL LIFE GUNS (cancelled or not, they're in)
-?? SCI-FI GUNS (for both science and gun maniacs)
+  *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress.
 
 
 
-	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes...)
+	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
+	
+--> V1.6 - Currently, the plan is to add more miscellaneous zombies to complete both early and mid-game zed bestiary. I may provide a subtle lore later on... <--
 
-#  REWORKS ON TILESET (frequent)
-#  REMOVED LUA DEPENDENT STUFF (chaos zeds, special attacks and some places were removed)
+#  REWORKS ON TILESET (frequent, or whenever I can)
+#  REMOVED LUA VERSION (we have spells and it's meant to replace the LUA attacks)
 
-+  7 NEW GUNS (see v1.5.txt, they are rare)
+#+ CHAOS ZEDS REWORKED (jolt, fake zombie, uruxis, fleshmonger. Known as zed mutants now)
 
++  VECTOR IMPROVEMENTS (infection of organic terrains, haze infects the creatures)
++  ZED MUTANTS (dissonant screamer, clinger, nocturne)
 
 
 	=>PAST UPDATES<=
 
---> V1.4: STRUCTURAL REFORMS <--
+--> v1.5 - Focused on expanding the monster bestiary, especially the wandering monsters. Magic spells were composed to suit every monster's prowess, and thanks to KorGgenT, it served as an alternative to LUA attacks. <--
 
-+  NEW FAILED SPECIMEN (squirtler)
-+  ADDED BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
-+  ADDED FLESH CAVERN (disgusting patch of earthen filth. Home for the baneful flesh)
-+  ADDED FLESH CREATURES (nearly finite gorey walls and a bunch of cloned creatures)
+#  REMOVED LUA DEPENDENT STUFF (chaos zeds, special attacks and some places were removed)
+
+#+ MAGIC OVERHAUL (unique spells for monsters to cast)
+
++  GUNS (7 rare, milspec guns)
++  UNIFIER, LYING BODY (final upgrade path)
++  WANDERING ABERRATIONS (flesh weaver, maneater)
++  ZED MUTANTS (nautilus, stray - nature, corrosive)
++  UNKNOWN MONSTER (looms in the wilderness, a secret, wandering passage of the galactic horrors)
++  UNKNOWN RACES (carrions, vectors)
+
++~ LICKER (final upgrade path, stats tweaked)
+
+-  FIXED MONSTER SPAWNGROUPS (used to be the full list of monstergroups from CDDA)
+
+
+
+--> v1.4 - Focused on recreating the main location of the mod, making it bigger, loot-worthy and more alive with unique dwellers inside. Also introduced the flesh cavern - a hive for crimson horrors <--
+
++  FAILED SPECIMEN (squirtler)
++  BOW CREATURES (kaxix, axxuros, exios, drexx and epixo)
++  FLESH CAVERN (disgusting patch of earthen filth. Home for the baneful flesh)
++  FLESH CREATURES (nearly finite gorey walls and a bunch of cloned creatures)
 
 +~ MAJOR IMPROVEMENTS ON SECRONOM LAB (new mapgens, reworks and fixes on the structure)
 
--  FIXES ON FAILED SPECIMENS (name based on appearance, instead of numbers)
+-  FAILED SPECIMENS (name based on appearance, instead of incoherent numbers)
 
 
 
---> V1.3: CITY ZEDS COMPILATION <--
+--> v1.3 - Focused on expanding the city zed bestiary by adding the final upgrade counterparts and the last 3 LUA-based monsters. <--
 
-+  LAST 3 CHAOS ZEDS (fleshmonger, faux, uruxis)
-+  NEW INSECTOID MUTANT (worm)
++  CHAOS ZEDS (fleshmonger, faux, uruxis)
++  INSECTOID MUTANT (worm)
 
 +~ LICKER (new upgrade path, stats tweaked)
 +~ MOUTH, SCOURGE (new and final upgrade paths, stats tweaked)
@@ -57,23 +66,24 @@ https://discourse.cataclysmdda.org - CDDA official website
 
 
 
---> v1.2 <--
+--> v1.2 - Focused on formulating and creating the LUA-based monsters that cycles throughout the update, with mild introduction of the main location. Also removed some zeds, for they are too nonsensical. <--
 
 #  LUA SPECIAL ATTACKS (LUA dependent attack mechanics)
 
-+  ADDED CITY ZED MUTANT (lying body, scourge)
-+  ADDED 5 CHAOS TYPE ZEDS (zoid, vex, jinx, fake zombie and jolt)
-+  ADDED A WANDERING MUTANT (ayenel)
-+  ADDED SECRONOM DRAGON (confined boss)
-+  ADDED SECRONOM LAB (aesthetic building, outline for an even larger lab)
++  CITY ZED MUTANTS (lying body, scourge)
++  CHAOS ZEDS (zoid, vex, jinx, fake zombie and jolt)
++  A WANDERING ABERRATION (ayenel)
++  SECRONOM DRAGON (confined boss)
++  SECRONOM LAB (aesthetic building, outline for an even larger lab)
 
 ~  TITAN (stats and abilities reworked)
 ~  SWARMERS (removed and separated some specials)
+~  TRANSLUCENT (removed an upgrade path)
 
 
 
---> v1.1 and below <--
+--> v1.1 and below - Main idea posted on the forums. <--
 
-+ INTRODUCED SECRONOM CREATURES (city zed and lab mutants)
++ INTRODUCED SECRONOM CREATURES (earlier versions of city zeds, lab mutants used to spawn in science labs)
 
 

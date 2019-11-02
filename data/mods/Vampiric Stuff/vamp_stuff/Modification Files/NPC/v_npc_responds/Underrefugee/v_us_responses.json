@@ -99,6 +99,10 @@
                             "not": {
                                 "u_has_trait": "underseekerwehelp"
                             }
+                        }, {
+                            "not": {
+                                "u_has_trait": "underseekerhelpvampirus"
+                            }
                         }
                     ]
                 }
@@ -130,6 +134,10 @@
                         }, {
                             "not": {
                                 "u_has_trait": "underseekerhelpvampirusdone"
+                            }
+                        }, {
+                            "not": {
+                                "npc_has_effect": "underseeker_unsealing"
                             }
                         }
                     ]
@@ -231,7 +239,7 @@
         "dynamic_line": "Descendant, are you sure about this?",
         "responses": [{
                 "text": "Yes.",
-                "topic": "TALK_MISSION_ACCEPTED"
+                "topic": "TALK_MISSION_OFFER"
             }
         ]
     }, {
@@ -259,30 +267,46 @@
     }, {
         "id": "TALK_VAMP_UNDERSEEKER_vampirus_hints_enter",
         "type": "talk_topic",
-        "dynamic_line": "Hmm, these bastards has sealed the entrance. I didn't expect for them to use magical forces, even tho they're heavily influenced by the parasite...",
+        "dynamic_line": {
+            "u_has_trait": "underseekerhelpvampirusunseal",
+            "yes": "Doing this job takes time...",
+            "no": "Hmm, these bastards has sealed the entrance. I didn't expect for them to use a spell, even tho they're heavily influenced by the magic..."
+        },
         "responses": [{
                 "text": "So, can you unseal the entrance?",
                 "trial": {
                     "type": "CONDITION",
                     "condition": {
                         "and": [{
-                                "u_at_om_location": "vampirus"
-                            }, "is_outside"
+                                "npc_at_om_location": "vampirus"
+                            }, {
+                                "not": {
+                                    "u_has_trait": "underseekerhelpvampirusunseal"
+                                }
+                            }, {
+                                "not": "is_day"
+                            }
                         ]
                     }
                 },
                 "success": {
-                    "topic": "TALK_MISSION_ACCEPTED"
+                    "topic": "TALK_MISSION_OFFER"
                 },
                 "failure": {
                     "topic": "TALK_VAMP_UNDERSEEKER_vampirus_hints_enter_not"
+                }
+            }, {
+                "text": "Okay.",
+                "topic": "TALK_VAMP_UNDERSEEKER",
+                "condition": {
+                    "u_has_trait": "underseekerhelpvampirusunseal"
                 }
             }
         ]
     }, {
         "id": "TALK_VAMP_UNDERSEEKER_vampirus_hints_enter_not",
         "type": "talk_topic",
-        "dynamic_line": "I must perform this at the entrance.",
+        "dynamic_line": "I must perform this at night by the entrance.",
         "responses": [{
                 "text": "Okay then...",
                 "topic": "TALK_VAMP_UNDERSEEKER"

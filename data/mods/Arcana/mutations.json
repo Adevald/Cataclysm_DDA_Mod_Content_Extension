@@ -268,11 +268,14 @@
     "id": "THRESH_VEIL",
     "name": "Paragon of The Veil",
     "points": 1,
-    "description": "You have gazed deeper into The Beyond than anyone that still lives.  It has gazed back, and found greater purpose in you.",
+    "description": "You have gazed deeper into The Beyond than anyone that still lives.  It has gazed back, and found greater purpose in you.  The living wind it calls its herald, and you its knight under oath.  You will unable to mutate beyond your current state by mundane means, as this would tie you to intruders that must be cast out...",
     "valid": false,
     "purifiable": false,
     "threshold": true,
-    "mana_multiplier": 1.25
+    "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependant on the blob (or worse, the Mycus) than you already are.",
+    "mana_regen_multiplier": 1.25,
+    "ignored_by": [ "UNKNOWN" ],
+    "allowed_category": [ "VEIL", "ACIDSPRAY", "AGILITY", "CLAIRVOYANCE", "CLARITY", "CONFUSE", "FLAMEARMOR", "FREEACTION", "HEAL", "INSIGHT", "INVIS", "ELECRESIST", "MIGHT", "OVERGROWTH", "LIGHTNING", "CLERIC" ]
   },
   {
     "type": "mutation",
@@ -303,6 +306,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "AGILITY" ],
+    "changes_to": [ "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_agility", 1 ] ]
   },
   {
@@ -314,6 +318,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CLAIRVOYANCE" ],
+    "changes_to": [ "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_clairvoyance", 1 ] ]
   },
   {
@@ -336,6 +341,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CONFUSE" ],
+    "changes_to": [ "SPELL_CONFUSE2", "SPELL_CLOUD", "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_confuse_monster", 1 ] ]
   },
   {
@@ -367,6 +373,7 @@
     "description": "Powers from beyond have granted you the power to conjure a burst of flame, where you command.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_conjure_flame", 1 ] ]
   },
   {
@@ -378,6 +385,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "FLAMEARMOR" ],
+    "changes_to": [ "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_flame_armor", 1 ] ]
   },
   {
@@ -400,6 +408,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "HEAL" ],
+    "changes_to": [ "PROF_SANGUINE" ],
     "spells_learned": [ [ "arcana_magic_healing", 1 ] ]
   },
   {
@@ -421,6 +430,7 @@
     "description": "Powers from beyond have granted you the power to conjure a temporary aura of illumination.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "SPELL_LIGHT2", "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_magic_light", 1 ] ]
   },
   {
@@ -432,6 +442,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "ELECRESIST" ],
+    "changes_to": [ "SPELL_ELECRESIST2", "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_lightning_ward", 1 ] ]
   },
   {
@@ -443,6 +454,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "MIGHT" ],
+    "changes_to": [ "SPELL_STRENGTH2", "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_might", 1 ] ]
   },
   {
@@ -453,6 +465,7 @@
     "description": "Powers from beyond have granted you the power to conjure a mote of energy, that can be used to open locked doors.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_magic_open_lock", 1 ] ]
   },
   {
@@ -474,6 +487,7 @@
     "description": "Powers from beyond have granted you power, that can offer temporary protection from toxic gas and other poisons.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "SPELL_POISONARMOR2", "SPELL_ELECRESIST2", "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_poison_armor", 1 ] ]
   },
   {
@@ -481,11 +495,12 @@
     "id": "SPELL_SHADOWSNAKES",
     "name": "Magic Sign: Serpentine Shield",
     "points": 6,
-    "description": "Powers from beyond have granted you power, a defensive effect that will summon shadowy snakes when yolu are injured.  (( Remember to bind the \"spellcasting\" key! ))",
+    "description": "Powers from beyond have granted you power, a defensive effect that will summon shadowy snakes when you are injured.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
     "//": "ID for INVIS retained to not break stuff.",
     "category": [ "INVIS" ],
+    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
     "spells_learned": [ [ "arcana_magic_serpentine_shield", 1 ] ]
   },
   {
@@ -497,6 +512,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "LIGHTNING" ],
+    "changes_to": [ "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "spells_learned": [ [ "arcana_magic_shockstorm", 1 ] ]
   },
   {
@@ -507,6 +523,7 @@
     "description": "Powers from beyond have granted you the power to summon a skeletal dog.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2", "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_magic_summon_skeletal_dog", 1 ] ]
   },
   {
@@ -518,6 +535,7 @@
     "description": "Powers from beyond have granted you the power to provoke an uplifting rush through the body.  (( Remember to bind the \"spellcasting\" key! ))",
     "valid": false,
     "purifiable": false,
+    "changes_to": [ "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "spells_learned": [ [ "arcana_magic_surge_adrenaline", 1 ] ]
   },
   {
@@ -529,6 +547,7 @@
     "valid": false,
     "purifiable": false,
     "category": [ "CLERIC" ],
+    "changes_to": [ "SPELL_PSYSHIELD" ],
     "spells_learned": [ [ "arcana_magic_ward_against_evil", 1 ] ]
   },
   {
@@ -542,6 +561,7 @@
     "purifiable": false,
     "prereqs": [ "ARCANA_INNERFIRE", "ARCANA_DRAGONFIRE" ],
     "prereqs2": [ "ARCANA_FIREAFFINITY" ],
+    "changes_to": [ "SPELL_ACIDARMOR", "SPELL_POISONARMOR2", "SPELL_ELECRESIST2", "SPELL_FLAMEARMOR2", "SPELL_FROSTARMOR", "SPELL_PSYSHIELD" ],
     "category": [ "DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_elemental_sign", 1 ], [ "arcana_mark_suppression", 1 ] ]
   },
@@ -555,6 +575,7 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_HUNT_DRAGONBLOOD" ],
+    "changes_to": [ "SPELL_STRENGTH2", "SPELL_CLAIRVOYANCE2", "SPELL_AGILE2", "SPELL_DAYLIGHT2", "SPELL_DRAINLIFE", "SPELL_INVIS" ],
     "category": [ "DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_might", 1 ], [ "arcana_mark_revenant_blood", 1 ] ]
   },
@@ -568,6 +589,7 @@
     "valid": false,
     "purifiable": false,
     "leads_to": [ "SPELL_SUMMONWYRM" ],
+    "changes_to": [ "SPELL_CONFUSE2", "SPELL_CLOUD", "SPELL_LIGHTNING2", "SPELL_FIRE2", "SPELL_LIGHTNINGFIELD", "SPELL_PULSE" ],
     "category": [ "DRAGONBLOOD" ],
     "spells_learned": [ [ "arcana_mark_infernal_flame", 1 ], [ "arcana_mark_summon_fiend", 1 ] ]
   },
@@ -583,6 +605,7 @@
     "prereqs": [ "SPELL_SUMMONFIEND" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "changes_to": [ "SPELL_SUMMONDOG2", "SPELL_SUMMONSKEL", "SPELL_SUMMONCULUS", "SPELL_SUMMONTHING", "SPELL_BUGS", "SPELL_SUMMONVORTEX" ],
     "spells_learned": [ [ "arcana_mark_summon_dark_wyrm", 1 ], [ "arcana_mark_summon_jabberwock", 1 ] ]
   },
   {
@@ -597,6 +620,7 @@
     "prereqs": [ "SPELL_INSTINCT_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
+    "changes_to": [ "SPELL_SMOKE", "SPELL_LIGHT2", "SPELL_LOCKPICK2", "SPELL_TELEPORT", "SPELL_PACIFY", "SPELL_CONSECRATE" ],
     "spells_learned": [ [ "arcana_mark_drain_life", 1 ], [ "arcana_mark_surge_adrenaline", 1 ] ]
   },
   {
@@ -609,6 +633,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_LIGHT2" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_conjure_shadow_field", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -623,6 +648,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SMOKE" ],
     "changes_to": [ "SPELL_LOCKPICK2" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_conjure_lightburst", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -637,6 +663,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHT2" ],
     "changes_to": [ "SPELL_TELEPORT" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_open_lock", 1 ] ],
@@ -653,6 +680,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LOCKPICK2" ],
     "changes_to": [ "SPELL_PACIFY" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_wall_force", 1 ] ],
@@ -668,6 +696,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_TELEPORT" ],
     "changes_to": [ "SPELL_CONSECRATE" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_pacify_monsters", 1 ] ],
@@ -682,6 +711,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_PACIFY" ],
+    "cancels": [ "SPELL_HUNT_DRAGONBLOOD", "SPELL_LIGHT", "SPELL_LOCKPICK" ],
     "threshreq": [ "THRESH_VEIL" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_consecrate", 1 ] ],
@@ -696,6 +726,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_CLAIRVOYANCE2" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_might", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -710,6 +741,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_STRENGTH2" ],
     "changes_to": [ "SPELL_AGILE2" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_clairvoyance", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -724,6 +756,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CLAIRVOYANCE2" ],
     "changes_to": [ "SPELL_DAYLIGHT2" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_agility", 1 ] ],
@@ -739,6 +772,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_AGILE2" ],
     "changes_to": [ "SPELL_DRAINLIFE" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_surge_adrenaline", 1 ] ],
@@ -754,6 +788,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_DAYLIGHT2" ],
     "changes_to": [ "SPELL_INVIS" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_drain_life", 1 ] ],
@@ -768,6 +803,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_DRAINLIFE" ],
+    "cancels": [ "SPELL_INSTINCT_DRAGONBLOOD", "SPELL_STRENGTH", "SPELL_CLAIRVOYANCE", "SPELL_AGILE", "SPELL_DAYLIGHT" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_illusion_cloak", 1 ] ],
@@ -782,6 +818,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_CLOUD" ],
+    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_confuse_monster", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -796,6 +833,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CONFUSE2" ],
     "changes_to": [ "SPELL_LIGHTNING2" ],
+    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_conjure_miasma", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -810,6 +848,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_CLOUD" ],
     "changes_to": [ "SPELL_FIRE2" ],
+    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_divine_storm", 1 ] ],
@@ -825,6 +864,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_LIGHTNING2" ],
     "changes_to": [ "SPELL_LIGHTNINGFIELD" ],
+    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_holy_flare", 1 ] ],
@@ -840,6 +880,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FIRE2" ],
     "changes_to": [ "SPELL_PULSE" ],
+    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_radiant_burst", 1 ] ],
@@ -855,6 +896,7 @@
     "purifiable": false,
     "category": [ "VEIL" ],
     "prereqs": [ "SPELL_LIGHTNINGFIELD" ],
+    "cancels": [ "SPELL_SUMMONFIEND", "SPELL_CONFUSE", "SPELL_LIGHTNING", "SPELL_FIRE" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_wave_destruction", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -868,6 +910,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_POISONARMOR2" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_acid", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -882,6 +925,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_ACIDARMOR" ],
     "changes_to": [ "SPELL_ELECRESIST2" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_poison", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -896,6 +940,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_POISONARMOR2" ],
     "changes_to": [ "SPELL_FLAMEARMOR2" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_lightning", 1 ] ],
@@ -911,6 +956,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_ELECRESIST2" ],
     "changes_to": [ "SPELL_FROSTARMOR" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_flame", 1 ] ],
@@ -926,6 +972,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_FLAMEARMOR2" ],
     "changes_to": [ "SPELL_PSYSHIELD" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_ward_cold", 1 ] ],
@@ -940,6 +987,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_FROSTARMOR" ],
+    "cancels": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_POISONARMOR", "SPELL_ELECRESIST", "SPELL_FLAMEARMOR", "SPELL_CLERIC" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_holy_ward", 1 ] ],
@@ -954,6 +1002,7 @@
     "valid": false,
     "purifiable": false,
     "changes_to": [ "SPELL_SUMMONSKEL" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_skeletal_dog", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -968,6 +1017,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONDOG2" ],
     "changes_to": [ "SPELL_SUMMONCULUS" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_skeleton", 1 ] ],
     "flags": [ "explorer_of_the_veil" ]
@@ -982,6 +1032,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONSKEL" ],
     "changes_to": [ "SPELL_SUMMONTHING" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_homunculus", 1 ] ],
@@ -997,6 +1048,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONCULUS" ],
     "changes_to": [ "SPELL_BUGS" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_thing", 1 ] ],
@@ -1012,6 +1064,7 @@
     "purifiable": false,
     "prereqs": [ "SPELL_SUMMONTHING" ],
     "changes_to": [ "SPELL_SUMMONVORTEX" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_giant_centipedes", 1 ] ],
@@ -1026,6 +1079,7 @@
     "valid": false,
     "purifiable": false,
     "prereqs": [ "SPELL_BUGS" ],
+    "cancels": [ "SPELL_SUMMONWYRM", "SPELL_SUMMONDOG" ],
     "category": [ "VEIL" ],
     "threshreq": [ "THRESH_VEIL" ],
     "spells_learned": [ [ "arcana_blessing_summon_vortices", 1 ] ],
@@ -1088,7 +1142,7 @@
     "purifiable": false,
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "prereqs": [ "ARCANA_INNERFIRE" ],
-    "armor": [ { "parts": "ALL", "heat": 10 } ]
+    "armor": [ { "parts": "ALL", "heat": 6 } ]
   },
   {
     "type": "mutation",
@@ -1172,6 +1226,7 @@
     "prereqs": [ "ARCANA_SCALYPATCHES", "ARCANA_DRAGONSCALES" ],
     "changes_to": [ "ARCANA_DRAGONWINGS" ],
     "encumbrance_always": [ [ "TORSO", 10 ] ],
+    "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
     "types": [ "WINGS" ],
     "restricts_gear": [ "TORSO" ],
@@ -1190,6 +1245,7 @@
     "prereqs": [ "ARCANA_SCALYWINGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
+    "encumbrance_always": [ [ "TORSO", 5 ] ],
     "encumbrance_covered": [ [ "TORSO", 5 ] ],
     "types": [ "WINGS" ],
     "max_stamina_modifier": 1.1,
@@ -1204,12 +1260,13 @@
     "points": 2,
     "visibility": 3,
     "ugliness": 2,
-    "description": "You have sharply curved claws on the ends of your fingers, allowing you to make an extra attack when conditions favor it.  However, they do get in the way a bit if you are wearing gloves.",
+    "description": "You have sharply curved claws on the ends of your fingers, allowing you to make an extra attack when conditions favor it.  However, they do get in the way a bit, especially if you are wearing gloves.",
     "valid": false,
     "purifiable": false,
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD", "DRAGONBLOODLESSER" ],
-    "encumbrance_covered": [ [ "HAND_L", 10 ], [ "HAND_R", 10 ] ],
+    "encumbrance_always": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
+    "encumbrance_covered": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
     "attacks": [
       {
         "attack_text_u": "You slash %s with your claws",
@@ -1274,7 +1331,7 @@
     "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk, especially on rough terrain.  On the plus side, you can kick with them rather effectively.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons, preventing you from wearing footwear and making it hard to walk, especially on rough terrain.  It's even worse if you try to wear anything over them.  On the plus side, you can kick with them rather effectively.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
@@ -1283,9 +1340,11 @@
     "changes_to": [ "ARCANA_DRAGONLEGS" ],
     "types": [ "LEGS" ],
     "encumbrance_always": [ [ "LEG_L", 10 ], [ "LEG_R", 10 ], [ "FOOT_L", 10 ], [ "FOOT_R", 10 ] ],
+    "encumbrance_covered": [ [ "LEG_L", 10 ], [ "LEG_R", 10 ], [ "FOOT_L", 10 ], [ "FOOT_R", 10 ] ],
     "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
-    "movecost_obstacle_modifier": 1.2,
+    "movecost_obstacle_modifier": 1.3,
+    "movecost_flatground_modifier": 0.9,
     "noise_modifier": 2.0,
     "attacks": [
       {
@@ -1304,19 +1363,19 @@
     "visibility": 5,
     "ugliness": 2,
     "mixed_effect": true,
-    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a slight hindrance, but you can move a bit faster on level ground.",
+    "description": "Your legs have been altered into a digitigrade structure ending in wickedly sharp talons.  While you still can't wear footwear, your new legs have adapted to a bipedal structure, making them much less awkward.  Rough terrain is still a hindrance and they're better left uncovered, but you can move a bit faster on level ground.",
     "valid": false,
     "purifiable": false,
     "category": [ "DRAGONBLOOD" ],
     "prereqs": [ "ARCANA_SCALYLEGS" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "types": [ "LEGS" ],
-    "encumbrance_covered": [ [ "LEG_L", 5 ], [ "LEG_R", 5 ] ],
-    "passive_mods": { "dex_mod": 1 },
+    "encumbrance_always": [ [ "LEG_L", 5 ], [ "LEG_R", 5 ], [ "FOOT_L", 5 ], [ "FOOT_R", 5 ] ],
+    "encumbrance_covered": [ [ "LEG_L", 5 ], [ "LEG_R", 5 ], [ "FOOT_L", 5 ], [ "FOOT_R", 5 ] ],
     "restricts_gear": [ "FOOT_L", "FOOT_R" ],
     "destroys_gear": true,
-    "movecost_obstacle_modifier": 1.1,
-    "movecost_flatground_modifier": 0.9,
+    "movecost_obstacle_modifier": 1.2,
+    "movecost_flatground_modifier": 0.8,
     "noise_modifier": 1.5,
     "attacks": [
       {
@@ -1343,7 +1402,6 @@
     "types": [ "TAIL" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
-    "passive_mods": { "dex_mod": 2 },
     "attacks": {
       "attack_text_u": "You whip %s with your tail",
       "attack_text_npc": "%1$s whips %2$s with their tail",
@@ -1367,7 +1425,6 @@
     "types": [ "TAIL" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
     "allow_soft_gear": true,
-    "passive_mods": { "dex_mod": 2 },
     "attacks": {
       "attack_text_u": "You lash %s with your tail",
       "attack_text_npc": "%1$s lashes %2$s with their tail",
@@ -1392,7 +1449,7 @@
     "types": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
     "allow_soft_gear": true,
-    "armor": [ { "parts": "HEAD", "bash": 10, "cut": 15 } ],
+    "armor": [ { "parts": "HEAD", "bash": 5, "cut": 10 } ],
     "attacks": {
       "attack_text_u": "You headbutt %s",
       "attack_text_npc": "%1$s headbutts %2$s",
@@ -1416,48 +1473,9 @@
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "wet_protection": [ { "part": "TORSO", "ignored": 15 } ],
-    "encumbrance_always": [ [ "TORSO", 10 ] ],
-    "armor": [ { "parts": "TORSO", "bash": 10, "cut": 25 } ]
-  },
-  {
-    "type": "mutation",
-    "id": "ARCANA_BLOODESSENCE",
-    "name": "Rite of Blood",
-    "points": 4,
-    "description": "You have been altered into something increasingly inhuman, and unnatural power resonates through your body.  Channeling this power could be used to directly fuel magical items, via forming blood essence directly from your own life force.  Doing so may be costly, however.",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "SPELL_EMBERS_DRAGONBLOOD", "SPELL_SUMMONFIEND", "SPELL_INSTINCT_DRAGONBLOOD" ],
-    "prereqs2": [ "ANIMALDISCORD" ],
-    "category": [ "DRAGONBLOOD" ],
-    "changes_to": [ "ARCANA_FULLESSENCE" ],
-    "active": true,
-    "cost": 50,
-    "fatigue": true,
-    "hunger": true,
-    "thirst": true,
-    "spawn_item": { "type": "essence_blood", "message": "You channel your life force into forming a mote of sanguine essence." },
-    "mana_regen_multiplier": 1.25
-  },
-  {
-    "type": "mutation",
-    "id": "ARCANA_FULLESSENCE",
-    "name": "Rite of The Beyond",
-    "points": 6,
-    "description": "The power resonating through your very being is not merely unnatural, but otherworldly.  Channeling this power could be used to directly fuel magical items, creating arcane energy at the expense of your own life force.",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "ARCANA_BLOODESSENCE" ],
-    "prereqs2": [ "CANNIBAL" ],
-    "category": [ "DRAGONBLOOD" ],
-    "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "active": true,
-    "cost": 50,
-    "fatigue": true,
-    "hunger": true,
-    "thirst": true,
-    "spawn_item": { "type": "essence", "message": "You channel your life force into forming a mote of otherworldly essence." },
-    "mana_regen_multiplier": 1.5
+    "encumbrance_always": [ [ "TORSO", 5 ] ],
+    "encumbrance_covered": [ [ "TORSO", 5 ] ],
+    "armor": [ { "parts": "TORSO", "bash": 5, "cut": 15 } ]
   },
   {
     "type": "mutation",
@@ -1467,7 +1485,9 @@
     "description": "You were sworn into an order known as the Cleansing Flame.  Whether a dutiful hunter or a renagade, wherever your loyalties now lie, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true
+    "profession": true,
+    "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
+    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_CLARITY" ]
   },
   {
     "type": "mutation",
@@ -1478,8 +1498,8 @@
     "valid": false,
     "purifiable": false,
     "profession": true,
-    "//": "Internal math note: treat value of Capacitance as 5.",
-    "spells_learned": [ [ "arcana_magic_capacitance", 1 ] ]
+    "//": "This prevents mage hunters from picking forbidden summoning spells, along with blood magic.",
+    "cancels": [ "SPELL_SHADOWSNAKES", "SPELL_SUMMONDOG", "SPELL_CLARITY" ]
   },
   {
     "type": "mutation",
@@ -1489,7 +1509,9 @@
     "description": "You were sworn into an order known as the Sanguine Order.  Infamous and feared as you were among those who studied in secret, your past may still be useful in the future.",
     "valid": false,
     "purifiable": false,
-    "profession": true
+    "profession": true,
+    "//": "This prevents blood mages from picking a spell considered potentially too altruistic in nature.",
+    "cancels": [ "SPELL_HEAL" ]
   },
   {
     "type": "mutation",
@@ -1519,8 +1541,6 @@
     "description": "Though you studied the Beyond, you weren't directly associated with the major groups to gain infamy among your fellow scholars.  Still, your familiarity with the arcane may prove useful someday.",
     "valid": false,
     "purifiable": false,
-    "profession": true,
-    "//": "Internal math note: treat value of Summon Shadow as 5, and Summon Shadow Snake as 4.",
-    "spells_learned": [ [ "arcana_magic_summon_shadow", 1 ], [ "arcana_magic_summon_shadow_snake", 1 ] ]
+    "profession": true
   }
 ]
