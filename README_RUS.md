@@ -13,7 +13,7 @@
 
 ## УСТАНОВКА:
 
-Папки "Config", "Data" и "gfx" забросить в корень папки игры.
+Папки "Config" b "Data" забросить в корень папки игры.
 
 В случае если вам не нравятся какие-либо русифицированные моды, которые вы хотите отключить, но русификатор не позволяет, вот гайд, как удалять из русификатора моды [RUS_MOD_DISABLE.md](https://github.com/Adevald/Cataclysm_DDA_Mod_Content_Extension/blob/master/data/mods/!!!__RUS__/RUS_MOD_DISABLE.md) 
 

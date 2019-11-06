@@ -17,7 +17,7 @@ This modpack supports MSX++DeadPeopleEdition.
 
 ## INSTALLITION:
 
-Folders "Config", "Data" and "gfx" pull in root of the game.
+Folders "Config" and "Data" pull in root of the game.
 
 
 
