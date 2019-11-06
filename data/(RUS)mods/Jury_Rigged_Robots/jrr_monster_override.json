@@ -1,0 +1,27 @@
+[
+{
+    "type" : "MONSTER",
+    "id" : "mon_secubot",
+    "name" : "secubot",
+    "default_faction":"rigged_bot",
+    "symbol":"s",
+    "edit-mode" : "modify",
+    "death_function":"BROKEN"
+},{
+    "type" : "MONSTER",
+    "id" : "mon_hazmatbot",
+    "name" : "hazmatbot",
+    "symbol":"h",
+    "default_faction":"rigged_bot",
+    "edit-mode" : "modify",
+    "death_function":"BROKEN"
+},{
+    "type" : "MONSTER",
+    "id" : "mon_chickenbot",
+    "name" : "chickenbot",
+    "symbol":"c",
+    "default_faction":"rigged_bot",
+    "edit-mode" : "modify",
+    "death_function":"BROKEN"
+ }
+ ]

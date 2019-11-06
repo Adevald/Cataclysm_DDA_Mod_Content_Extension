@@ -1,0 +1,31 @@
+[{
+    "id": "fd_puddleb",
+    "type": "field_type",
+    "intensity_levels": [ 
+{ "name": "viscous blood", "sym": "~", "color": "dark_red", "effect_id": "v_spell_bloodpuddle", "effect_min_duration": "1 seconds", "effect_max_duration": "1 seconds" },
+{ "effect_min_duration": "1 seconds", "effect_max_duration": "2 seconds" },
+{ "effect_min_duration": "1 seconds", "effect_max_duration": "3 seconds" } ],
+    "priority": 3,
+    "underwater_age_speedup": "2 minutes",
+    "decay_amount_factor": 3,
+    "is_splattering": true,
+    "immunity_data": { "traits": [ "VAMP_BLOOD_spellcaster", "VAMP" ] },
+    "half_life": "20 minutes",
+    "phase": "liquid",
+    "accelerated_decay": true,
+    "display_field": true
+  },
+  {
+    "id": "fd_desolate",
+    "type": "field_type",
+    "intensity_levels": [ 
+{ "name": "withering gloom", "sym": "8", "color": "dark_gray", "effect_id": "v_spell_desolation", "effect_min_duration": "1 seconds", "effect_max_duration": "1 seconds" } ],
+    "priority": 1,
+    "decay_amount_factor": 25,
+    "immunity_data": { "traits": [ "VAMP_BLOOD_spellcaster", "VAMP" ] },
+    "half_life": "2 seconds",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": false
+  }
+  ]

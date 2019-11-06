@@ -1,0 +1,45 @@
+[
+  {
+    "id": "nanite_core_1",
+	"copy-from": "nanite_core_1",
+    "type": "TOOL",
+    "name": "Ядро Нанитов МК-I",
+    "description": "Содержит в себе данные о том, как работать с нанитами."
+  },{
+    "id": "nanite_guide",
+	"copy-from": "nanite_guide",
+    "type": "TOOL",
+    "name": "Гайд по нанитам.",
+    "description": "Содержит данные, о том как производить стандартные предметы, используя нанофабрику."
+  },{
+    "id": "nanite_core_2",
+	"copy-from": "nanite_core_2",
+    "type": "TOOL",
+    "name": "Ядро Нанитов MK-II",
+    "description": "Содержит в себе данные о том, как работать с нанитами."
+  },{
+    "id": "nanite_core_3",
+	"copy-from": "nanite_core_3",
+    "type": "TOOL",
+    "name": "Ядро Нанитов MK III",
+    "description": "Содержит в себе данные о том, как работать с нанитами."
+  },{
+    "id": "nanite_core_4",
+	"copy-from": "nanite_core_4",
+    "type": "TOOL",
+    "name": "Ядро Нанитов MK IV",
+    "description": "Содержит в себе данные о том, как работать с нанитами."
+  },{
+    "id": "ai_core",
+	"copy-from": "ai_core",
+    "type": "TOOL",
+    "name": "Ядро ИИ(экспериментальное)",
+    "description": "Экспериментальное ядро ИИ, которое однажды было использовано для чрезвычайно сложных исследовательских проектов."
+  },{
+    "id": "ai_core_blank",
+	"copy-from": "ai_core_blank",
+    "type": "TOOL",
+    "name": "Ядро ИИ(пустое)",
+    "description": "На данный момент - пустое."
+  }
+]

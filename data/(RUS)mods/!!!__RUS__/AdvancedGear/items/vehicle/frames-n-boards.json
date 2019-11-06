@@ -1,0 +1,284 @@
+[
+  {
+    "type":"GENERIC",
+    "id" : "nano_frame",
+	"copy-from": "nano_frame",
+    "name" : "наногибридная рама",
+    "description" : "Большая стальная рама из стали, которая был укреплена с помощью нанитов. Полезна как материал.",
+    "looks_like": "frame"
+  },{
+    "id": "nanotech_frame_cover",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame_cover",
+    "looks_like": "hdframe_cover",
+    "symbol": "^",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_cross",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame_cross",
+    "looks_like": "hdframe_cross",
+    "symbol": "c",
+    "extend": { "flags": [ "INITIAL_PART" ] },
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_horizontal",
+    "copy-from": "nanotech_frame_horizontal",
+    "looks_like": "hdframe_horizontal",
+    "type": "vehicle_part",
+    "symbol": "h",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_horizontal_2",
+    "copy-from": "nanotech_frame_horizontal_2",
+    "looks_like": "hdframe_horizontal_2",
+    "type": "vehicle_part",
+    "symbol": "=",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_ne",
+    "copy-from": "nanotech_frame_ne",
+    "looks_like": "hdframe_ne",
+    "type": "vehicle_part",
+    "symbol": "u",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_nw",
+    "copy-from": "nanotech_frame_nw",
+    "looks_like": "hdframe_nw",
+    "type": "vehicle_part",
+    "symbol": "y",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_se",
+    "copy-from": "nanotech_frame_se",
+    "looks_like": "hdframe_se",
+    "type": "vehicle_part",
+    "symbol": "n",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_sw",
+    "copy-from": "nanotech_frame_sw",
+    "looks_like": "hdframe_sw",
+    "type": "vehicle_part",
+    "symbol": "b",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_vertical",
+    "copy-from": "nanotech_frame_vertical",
+    "looks_like": "hdframe_vertical",
+    "type": "vehicle_part",
+    "symbol": "j",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame_vertical_2",
+    "copy-from": "nanotech_frame_vertical_2",
+    "looks_like": "hdframe_vertical_2",
+    "type": "vehicle_part",
+    "symbol": "H",
+    "name": "наногибридная рама",
+    "description": "Тяжёлая металлическая рама, которая была укреплена нанитами, с целью усилить жёсткость и прочность конструкции. На неё можно устанавливать другие детали, и её можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_cover",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame2_cover",
+    "looks_like": "hdframe_cover",
+    "symbol": "^",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_cross",
+    "type": "vehicle_part",
+    "copy-from": "nanotech_frame2_cross",
+    "looks_like": "hdframe_cross",
+    "symbol": "c",
+    "extend": { "flags": [ "INITIAL_PART" ] },
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_horizontal",
+    "copy-from": "nanotech_frame2_horizontal",
+    "looks_like": "hdframe_horizontal",
+    "type": "vehicle_part",
+    "symbol": "h",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_horizontal_2",
+    "copy-from": "nanotech_frame2_horizontal_2",
+    "looks_like": "hdframe_horizontal_2",
+    "type": "vehicle_part",
+    "symbol": "=",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_ne",
+    "copy-from": "nanotech_frame2_ne",
+    "looks_like": "hdframe_ne",
+    "type": "vehicle_part",
+    "symbol": "u",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_nw",
+    "copy-from": "nanotech_frame2_nw",
+    "looks_like": "hdframe_nw",
+    "type": "vehicle_part",
+    "symbol": "y",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_se",
+    "copy-from": "nanotech_frame2_se",
+    "looks_like": "hdframe_se",
+    "type": "vehicle_part",
+    "symbol": "n",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_sw",
+    "copy-from": "nanotech_frame2_sw",
+    "looks_like": "hdframe_sw",
+    "type": "vehicle_part",
+    "symbol": "b",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_vertical",
+    "copy-from": "nanotech_frame2_vertical",
+    "looks_like": "hdframe_vertical",
+    "type": "vehicle_part",
+    "symbol": "j",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanotech_frame2_vertical_2",
+    "copy-from": "nanotech_frame2_vertical_2",
+    "looks_like": "hdframe_vertical_2",
+    "type": "vehicle_part",
+    "symbol": "H",
+	"name": "нанотехнологичная рама",
+    "description": "Большой кластер нанитов, активно поддерживающих связь с соседними структурами, соединяя всё вместе. На него можно устанавливать другие детали, и его можно соединять с другими рамами для увеличения размера транспортного средства."
+  },{
+    "id": "nanoboard_horizontal",
+    "copy-from": "nanoboard_horizontal",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_horizontal",
+    "symbol": "h",
+    "name": "нанотехнологичный борт",
+    "description": "Мощная металлическая стена. Удерживает зомби снаружи транспорта и не позволяет смотреть сквозь неё."
+  },{
+    "id": "nanohalfboard_horizontal",
+    "copy-from": "nanohalfboard_horizontal",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_horizontal",
+    "symbol": "h",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanohalfboard_horizontal_2",
+    "copy-from": "nanohalfboard_horizontal_2",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_horizontal_2",
+    "symbol": "=",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanoboard_ne",
+    "copy-from": "nanoboard_ne",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_ne",
+    "symbol": "u",
+    "name": "нанотехнологичный борт",
+    "description": "Мощная металлическая стена. Удерживает зомби снаружи транспорта и не позволяет смотреть сквозь неё."
+  },{
+    "id": "nanohalfboard_ne",
+    "copy-from": "nanohalfboard_ne",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_ne",
+    "symbol": "u",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanoboard_nw",
+    "copy-from": "nanoboard_nw",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_nw",
+    "symbol": "y",
+    "name": "нанотехнологичный борт",
+    "description": "Мощная металлическая стена. Удерживает зомби снаружи транспорта и не позволяет смотреть сквозь неё."
+  },{
+    "id": "nanohalfboard_nw",
+    "copy-from": "nanohalfboard_nw",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_nw",
+    "symbol": "y",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanoboard_se",
+    "copy-from": "nanoboard_se",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_se",
+    "symbol": "n",
+    "name": "нанотехнологичный борт",
+    "description": "Мощная металлическая стена. Удерживает зомби снаружи транспорта и не позволяет смотреть сквозь неё."
+  },{
+    "id": "nanohalfboard_se",
+    "copy-from": "nanohalfboard_se",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_se",
+    "symbol": "n",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanoboard_sw",
+    "copy-from": "nanoboard_sw",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_sw",
+    "symbol": "b",
+    "name": "нанотехнологичный борт",
+    "description": "Мощная металлическая стена. Удерживает зомби снаружи транспорта и не позволяет смотреть сквозь неё."
+  },{
+    "id": "nanohalfboard_sw",
+    "copy-from": "nanohalfboard_sw",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_sw",
+    "symbol": "b",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanoboard_vertical",
+    "copy-from": "nanoboard_vertical",
+    "type": "vehicle_part",
+    "looks_like": "hdboard_vertical",
+    "symbol": "j",
+    "name": "нанотехнологичный борт",
+    "description": "Мощная металлическая стена. Удерживает зомби снаружи транспорта и не позволяет смотреть сквозь неё."
+  },{
+    "id": "nanohalfboard_vertical",
+    "copy-from": "nanohalfboard_vertical",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_vertical",
+    "symbol": "j",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  },{
+    "id": "nanohalfboard_vertical_2",
+    "copy-from": "nanohalfboard_vertical_2",
+    "type": "vehicle_part",
+    "looks_like": "hdhalfboard_vertical_2",
+    "symbol": "H",
+    "name": "нанотехнологичная боковина",
+    "description": "Мощная металлическая стена, половинной высоты.  Не даёт зомби проникнуть внутрь транспорта, но позволяет смотреть через неё."
+  }
+]

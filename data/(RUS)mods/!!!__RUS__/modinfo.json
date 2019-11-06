@@ -1,0 +1,9 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "modpack_rus",
+    "name": "++ (RUS) Русификатор модов (RUS) ++",
+    "description": "Этот мод содержит русификацию других модов, и подключается исколючительно вместе с ними. Список русифицированных модов: Advanced Gear , Armor Up! (PA Utilities & Survivor Expansion), Dried Fruits, Fungus Fighter Kit, Nechronica, Vampiric Stuff (+Arcana),", 
+    "dependencies": [ "dda", "adv_gear", "antifunguskit", "ArmUpPAUtil", "ArmUpSurvEx", "dried_fruits", "Nechronica_M", "vamp_stuff", "vamp_stuff+arcana"  ]
+  }
+]

@@ -1,0 +1,16 @@
+[{
+  "type": "effect_type",
+  "id": "leechpoison",
+  "copy-from": "leechpoison",
+  "name": [
+   "отвратительный яд пиявки"
+  ]
+ }, {
+  "type": "effect_type",
+  "id": "leechvenom",
+  "copy-from": "leechpoison",
+  "name": [
+   "сильный яд пиявки"
+  ]
+ }
+]

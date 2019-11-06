@@ -1,0 +1,189 @@
+[
+	{
+		"id": "crypt1",
+		"copy-from": "crypt1",
+		"type": "overmap_terrain",
+		"name": "Мемориальный склеп"
+	},
+	{
+		"id": "crypt1_b1",
+		"copy-from": "crypt1_b1",
+		"type": "overmap_terrain",
+		"name": "Подвал Мемориального Склепа"
+	},
+	{
+		"id": "crypt2",
+		"copy-from": "crypt2",
+		"type": "overmap_terrain",
+		"name": "Склеп Глаза"
+	},
+	{
+		"id": "crypt2_b1",
+		"copy-from": "crypt2_b1",
+		"type": "overmap_terrain",
+		"name": "Подвал Склепа Глаза"
+	},
+	{
+		"id": "vampcave_entrance",
+		"copy-from": "vampcave_entrance",
+		"type": "overmap_terrain",
+		"name": "Вампирская Бухта - Вход"
+	},
+	{
+		"id": "vampcave_corridor1",
+		"copy-from": "vampcave_corridor1",
+		"type": "overmap_terrain",
+		"name": "Вампирская Бухта - Корридор"
+	},
+	{
+		"id": "vampcave_corridor2",
+		"copy-from": "vampcave_corridor2",
+		"type": "overmap_terrain",
+		"name": "Вампирская Бухта - Корридор"
+	},
+	{
+		"id": "vampcave_basement",
+		"copy-from": "vampcave_basement",
+		"type": "overmap_terrain",
+		"name": "Вампирская Бухта - Подвал"
+
+	},
+	{
+		"id": "gravesite1",
+		"copy-from": "gravesite1",
+		"type": "overmap_terrain",
+		"name": "кладбище"
+	},
+	{
+		"id": "bloodrune_pedestal",
+		"copy-from": "bloodrune_pedestal",
+		"type": "overmap_terrain",
+		"name": "поле"
+	},
+	{
+		"id": "bloodhole",
+		"copy-from": "bloodhole",
+		"type": "overmap_terrain",
+		"name": "поле"
+	},
+	{
+		"id": "bloodhole_bottom",
+		"copy-from": "bloodhole_bottom",
+		"type": "overmap_terrain",
+		"name": "осадок крови"
+	},
+	{
+		"id": "bloodhole_lair",
+		"copy-from": "bloodhole_lair",
+		"type": "overmap_terrain",
+		"name": "логово пиявок"
+	},
+	{
+		"id": "wo3",
+		"copy-from": "wo3",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo2",
+		"copy-from": "wo2",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo1",
+		"copy-from": "wo1",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo6",
+		"copy-from": "wo6",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"	
+	},
+	{
+		"id": "wo5",
+		"copy-from": "wo5",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo4",
+		"copy-from": "wo4",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo9",
+		"copy-from": "wo9",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo8",
+		"copy-from": "wo8",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+		"id": "wo7",
+		"copy-from": "crypt1",
+		"type": "overmap_terrain",
+		"name": "окраина пустошей"
+	},
+	{
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townhousenorth",
+    "id": "ghost_townhousenorth",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townhousesouth",
+    "id": "ghost_townhousesouth",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townhousewest",
+    "id": "ghost_townhousewest",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townhouseeast",
+    "id": "ghost_townhouseeast",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townchurch",
+    "id": "ghost_townchurch",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townroadhor",
+    "id": "ghost_townroadhor",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townroadver",
+    "id": "ghost_townroadver",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_towngardenroad",
+    "id": "ghost_towngardenroad",
+    "name": "лес"
+  },
+  {
+    "type": "overmap_terrain",
+	"copy-from": "ghost_townservice",
+    "id": "ghost_townservice",
+    "name": "лес"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bio_nanite_spawning",
+	"copy-from": "bio_nanite_spawning",
+    "type": "TOOL",
+    "name": "капсула выращивания нанитов(активна)",
+    "description": "Наполненый материалом, и небольшим кластером био-совместимых нанитов контейнер, наниты переведены в режим репликации, и как только процесс будет закончен, они войдут в ждущний режим. После этого, их может будет извлечь.",
+    "use_action": {
+      "target": "bio_nanite_spawned",
+      "msg": "Био-совместимые наниты собираются в кластер, для более удобного извлечения.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 43200,
+      "not_ready_msg": "Выращивание ещё не закончено."
+    },
+    "flags": [ "TRADER_AVOID", "NO_SALVAGE" ]
+  },{
+    "id": "bio_nanite_spawned",
+	"copy-from": "bio_nanite_spawned",
+    "type": "TOOL",
+    "name": "капсула выращивания нанитов(готово)",
+    "description": "Наполненый био-совместимыми нанитами контейнтер, которые вошли в ждущий режим, и ожидают извлечения. (Следует разобрать контейнер.)"
+  },{
+    "id": "nanite_cluster",
+	"copy-from": "nanite_cluster",
+    "type": "AMMO",
+    "name": "наниты",
+    "name_plural": "наниты",
+    "description": "Блок неактивных нанитов.",
+    "looks_like": "slime_scrap"
+  },{
+    "id": "bio_nanites",
+	"copy-from": "bio_nanites",
+    "type": "AMMO",
+    "symbol": ";",
+    "color": "green",
+    "name": "био-совместимые наниты",
+    "name_plural": "bio-compatible био-совместимые наниты",
+    "description": "Блок неактивных био-совместимых нанитов."
+  }
+]

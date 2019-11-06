@@ -1,0 +1,317 @@
+[{
+        "type": "effect_type",
+        "id": "unify_bloodslow",
+        "max_intensity": 5,
+        "int_add_val": 1,
+        "max_duration": 120,
+        "int_decay_step": -1,
+        "int_decay_tick": 15,
+        "rating": "bad",
+        "name": [
+            "Bloodcoated"
+        ],
+        "desc": [
+            "Blood splattered.",
+            "Drastically slowed.",
+            "Moderately slowed.",
+            "Severely slowed.",
+            "Extremely slowed."
+        ],
+        "reduced_desc": ["Your blood coat dries a bit."],
+        "apply_message": "You've been blood coated!",
+        "remove_message": "Bloodcoat leaves your body!",
+        "scaling_mods": {
+            "speed_mod": [-2.2],
+            "dex_mod": [-0.3]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "unity_bloodslow",
+        "max_intensity": 20,
+        "int_add_val": 1,
+        "max_duration": 240,
+        "int_decay_step": -1,
+        "int_decay_tick": 15,
+        "rating": "bad",
+        "name": [
+            "Bloodbathed"
+        ],
+        "desc": [
+            "Blood splattered.",
+            "Slightly slowed.",
+            "Slightly slowed.",
+            "Slightly slowed.",
+            "Drastically slowed.",
+            "Drastically slowed.",
+            "Drastically slowed.",
+            "Drastically slowed.",
+            "Moderately slowed.",
+            "Moderately slowed.",
+            "Moderately slowed.",
+            "Moderately slowed.",
+            "Severely slowed.",
+            "Severely slowed.",
+            "Severely slowed.",
+            "Severely slowed.",
+            "Extremely slowed.",
+            "Extremely slowed.",
+            "Extremely slowed.",
+            "Extremely slowed."
+        ],
+        "reduced_desc": ["Your thick blood coat dries a bit."],
+        "apply_message": "You've been blood coated!",
+        "remove_message": "Thick bloodcoat leaves your body!",
+        "scaling_mods": {
+            "speed_mod": [-2.2],
+            "dex_mod": [-0.3]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "parasiteworm_pain",
+        "name": ["Parasitic Influence"],
+        "apply_message": "You feel your veins itch!",
+        "desc": ["parasites are causing you pain!"],
+        "miss_messages": [["You feel bad inside.", 2]],
+        "decay_messages": [["The parasites were weakened!", "good"]],
+        "remove_message": "Your natural defenses neutralized the parasites!",
+        "int_add_val": 1,
+        "max_intensity": 3,
+        "int_decay_step": -1,
+        "int_decay_tick": 300,
+        "max_duration": 600,
+        "rating": "bad",
+        "resist_traits": ["POISRESIST"],
+        "pain_sizing": true,
+        "main_parts_only": true,
+        "base_mods": {
+            "pain_min": [1],
+            "pain_chance": [50]
+        },
+        "scaling_mods": {
+            "pain_min": [1.30]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "parasiteworm_move",
+        "name": ["Parasitic Influence"],
+        "apply_message": "You feel your veins itch!",
+        "desc": ["parasites are affecting your motor reflexes!"],
+        "miss_messages": [["You feel bad inside.", 2]],
+        "decay_messages": [["The parasites were weakened!", "good"]],
+        "remove_message": "Your natural defenses neutralized the parasites!",
+        "int_add_val": 1,
+        "max_intensity": 3,
+        "int_decay_step": -1,
+        "int_decay_tick": 300,
+        "max_duration": 600,
+        "rating": "bad",
+        "resist_traits": ["POISRESIST"],
+        "scaling_mods": {
+            "dex_mod": [-1.55],
+            "speed_mod": [-1.15]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "parasiteworm_int",
+        "name": ["Parasitic Influence"],
+        "apply_message": "You feel your veins itch!",
+        "desc": ["parasites are affecting your thinking capabilities!"],
+        "miss_messages": [["You feel bad inside.", 2]],
+        "decay_messages": [["The parasites were weakened!", "good"]],
+        "remove_message": "Your natural defenses neutralized the parasites!",
+        "int_add_val": 1,
+        "max_intensity": 3,
+        "int_decay_step": -1,
+        "int_decay_tick": 300,
+        "max_duration": 600,
+        "rating": "bad",
+        "resist_traits": ["POISRESIST"],
+        "scaling_mods": {
+            "int_mod": [-2, -1.25]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "parasiteworm_stomach",
+        "name": ["Parasitic Influence"],
+        "apply_message": "You feel your veins itch!",
+        "desc": ["parasites hasten both hunger and thirst!"],
+        "miss_messages": [["You feel bad inside.", 2]],
+        "decay_messages": [["The parasites were weakened!", "good"]],
+        "remove_message": "Your natural defenses neutralized the parasites!",
+        "int_add_val": 1,
+        "max_intensity": 3,
+        "int_decay_step": -1,
+        "int_decay_tick": 150,
+        "max_duration": 300,
+        "rating": "bad",
+        "resist_traits": ["POISRESIST"],
+        "base_mods": {
+            "hunger_min": [2, 1],
+            "hunger_chance": [300, 275, 200],
+            "thirst_min": [3, 1],
+            "thirst_chance": [325, 300, 225]
+        },
+        "scaling_mods": {
+            "hunger_chance": [1],
+            "thirst_chance": [2]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "titan_charge",
+        "name": ["Charging"],
+        "show_in_info": true,
+        "base_mods": {
+            "material_thickness": [6],
+            "speed_mod": [30]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "omi_curse",
+        "name": ["Ominous Curse"],
+        "apply_message": "You've been cursed!",
+        "desc": ["A terrifying curse reduces your insanity!"],
+        "decay_messages": [["You withdraw from the curse!", "good"]],
+        "remove_message": "The curse lifts away!",
+        "int_add_val": 1,
+        "max_intensity": 5,
+        "int_decay_step": -3,
+        "int_decay_tick": 60,
+        "max_duration": 300,
+        "rating": "bad",
+        "scaling_mods": {
+            "int_mod": [-2]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "pedo_restraint",
+        "name": ["Nautilus Restraint"],
+        "apply_message": "A nautilus torpedo latches onto you!",
+        "desc": ["You are being held in place by nautilus torpedo(s)"],
+        "miss_messages": [["You feel your limbs stiff.", 2]],
+        "decay_messages": [["You're feeling free again!", "good"]],
+        "remove_message": "You are free from nautilus restraint!",
+        "int_add_val": 1,
+        "max_intensity": 10,
+        "int_decay_step": -2,
+        "int_decay_tick": 30,
+        "max_duration": 300,
+        "rating": "bad",
+        "show_in_info": true,
+        "scaling_mods": {
+            "dex_mod": [-1.25],
+            "speed_mod": [-0.90]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "rooty_grasp",
+        "name": ["Nature's Grasp"],
+        "desc": ["Thick strands of roots and vines take hold of you!"],
+        "apply_message": "Roots and vines entangle your limbs!",
+        "remove_message": "The roots and vines wither up and die.",
+        "show_in_info": true,
+        "base_mods": {
+            "speed_mod": [-75]
+        }
+    }, {
+        "//": "Unlike fungal infection, this will deal damage you instead of instant death if left alone...",
+        "type": "effect_type",
+        "show_in_info": true,
+        "id": "vector_infect",
+        "apply_memorial_log": "Contracted a vector infection.",
+        "remove_memorial_log": "Stopped a vector infection.",
+        "miss_messages": [["You feel something sinks deep inside.", 1]],
+        "name": ["Vector Infection", "Vector Infection", "Vector Infection"],
+        "desc": ["You are suffering from a vector infection!\nPharmaceutical drugs doesn't seem to take effect and may require something... juicy."],
+        "//": "Subtle hint for anxious ppl.",
+        "rating": "bad",
+        "max_intensity": 3,
+        "max_duration": 9600,
+        "resist_traits": ["POISRESIST"],
+        "base_mods": {
+            "hurt_min": [1],
+            "hurt_max": [2],
+            "hurt_chance": [21],
+            "hurt_tick": [6]
+        },
+        "scaling_mods": {
+            "str_mod": [-0.90],
+            "per_mod": [-0.82],
+            "dex_mod": [-1.30],
+            "int_mod": [-1.65]
+        }
+    }, {
+        "//": "And royal jelly is the only available cure (at the moment).",
+        "type": "effect_type",
+        "id": "cureall",
+        "removes_effects": [
+            "vector_infect"
+        ]
+    }, {
+        "type": "effect_type",
+        "id": "secro_magic_target",
+        "name": ["Target"],
+        "desc": ["An ally or foe locks its line of sight onto you!"]
+    }, {
+        "//": "Screamer uses invisible fields to apply this to players with no head protection. As it is a field, it can't go through closed windows and such.",
+        "type": "effect_type",
+        "id": "secro_dissed",
+        "name": ["Dazzled"],
+        "apply_message": "The resonating voice dazes you!",
+        "desc": ["You're anxious to your surroundings!"],
+        "miss_messages": [["You can't focus on your actions!", 3]],
+        "remove_message": "You are no longer dazed.",
+        "int_add_val": 2,
+        "int_dur_factor": "3 seconds",
+        "max_intensity": 100,
+        "int_decay_step": -5,
+        "int_decay_tick": 10,
+        "max_duration": 300,
+        "rating": "bad",
+        "base_mods": {
+            "pain_min": [1],
+            "pain_max": [2],
+            "pain_chance": [30]
+        },
+        "scaling_mods": {
+            "per_mod": [-0.04],
+            "dex_mod": [-0.08],
+            "speed_mod": [-0.16]
+        }
+    }, {
+        "type": "effect_type",
+        "id": "deaf",
+        "//": "Make players unaffected if they're deaf.",
+        "blocks_effects": ["secro_dissed"]
+    }, {
+        "type": "effect_type",
+        "id": "secro_uruxis_shroud",
+        "name": ["Shadow Mend"],
+        "desc": ["Shadow enshrouds you that heals and protects, but burdens."],
+        "show_in_info": true,
+        "base_mods": {
+            "material_thickness": [8],
+            "environmental_protection": [4],
+            "speed_mod": [-30]
+        }
+    },
+    {
+    "type": "effect_type",
+    "id": "secro_nix_fear",
+    "name": [ "Afraid", "Scared", "Frightened", "Terrified", "Horrified" ],
+    "desc": [ "The dreadful pressence of the nix leaves your body shaking." ],
+    "apply_message": "The nix eats away your mental stability!",
+    "remove_message": "You withdraw from fear.",
+    "int_add_val": 1,
+    "int_dur_factor": "12 seconds",
+    "max_intensity": 5,
+    "int_decay_step": -1,
+    "int_decay_tick": 24,
+    "max_duration": 120,
+    "rating": "bad",
+    "scaling_mods": {
+            "per_mod": [-0.54],
+            "dex_mod": [-0.22],
+            "speed_mod": [-1.40]
+        }
+  }
+]
