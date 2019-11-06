@@ -17,12 +17,12 @@ This modpack supports MSX++DeadPeopleEdition.
 
 ## INSTALLITION:
 
-Folders "Config" and "Data" pull in root of the game.
+Folders "Config", "gfx" "Data" pull in root of the game.
+
+There is also has current playable build, just in case...
 
 
-
-
-## Modlist:
+## Modlist (OUTDATED):
 
   Cataclysm++
   
