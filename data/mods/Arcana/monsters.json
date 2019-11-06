@@ -84,6 +84,18 @@
     "death_drops": "mon_zombie_hollow_death_drops"
   },
   {
+    "id": "mon_fleshy_shambler",
+    "copy-from": "mon_fleshy_shambler",
+    "type": "MONSTER",
+    "death_drops": "mon_fleshy_shambler_death_drops"
+  },
+  {
+    "id": "mon_flesh_golem",
+    "copy-from": "mon_flesh_golem",
+    "type": "MONSTER",
+    "death_drops": "mon_flesh_golem_death_drops"
+  },
+  {
     "id": "mon_jabberwock",
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
@@ -426,6 +438,24 @@
     "death_drops": "mon_hound_tindalos_death_drops"
   },
   {
+    "id": "mon_devourer",
+    "copy-from": "mon_devourer",
+    "type": "MONSTER",
+    "death_drops": "mon_devourer_death_drops"
+  },
+  {
+    "id": "mon_skeleton_electric",
+    "copy-from": "mon_skeleton_electric",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_electric_death_drops"
+  },
+  {
+    "id": "mon_skeleton_brute",
+    "copy-from": "mon_skeleton_brute",
+    "type": "MONSTER",
+    "death_drops": "mon_skeleton_brute_death_drops"
+  },
+  {
     "id": "mon_spirit_of_fire",
     "type": "MONSTER",
     "name": "spirit of fire",
@@ -661,6 +691,8 @@
     "name": "summoned dark wyrm",
     "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
+    "weight": 675000,
+    "speed": 180,
     "path_settings": { "max_dist": 10 },
     "special_attacks": [
       {
@@ -671,7 +703,7 @@
     ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "ACIDTRAIL", "SUNDEATH", "BASHES", "BORES" ] }
   },
   {
@@ -693,12 +725,14 @@
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
     "name": "summoned jabberwock",
+    "weight": 1125000,
+    "speed": 175,
     "categories": [ "CLASSIC" ],
     "species": [ "NETHER" ],
     "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
@@ -720,11 +754,13 @@
     "copy-from": "mon_thing",
     "type": "MONSTER",
     "name": "summoned thing",
+    "weight": 675000,
+    "speed": 200,
     "categories": [ "CLASSIC" ],
     "path_settings": { "max_dist": 10 },
     "death_drops": {  },
     "special_attacks": [ [ "RANGED_PULL", 20 ], [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "SEES", "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
   },
   {
@@ -737,7 +773,7 @@
     "path_settings": { "max_dist": 10 },
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] }
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -779,11 +815,13 @@
     "type": "MONSTER",
     "name": "summoned yugg",
     "categories": [ "CLASSIC" ],
+    "weight": 900000,
+    "speed": 150,
     "path_settings": { "max_dist": 10 },
     "special_attacks": [ [ "PARA_STING", 20 ] ],
     "death_function": [ "MELT" ],
     "death_drops": {  },
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
     "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
   },
   {
@@ -796,7 +834,7 @@
     "vision_night": 50,
     "death_drops": {  },
     "special_attacks": [ { "type": "bite", "cooldown": 15 } ],
-    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ] },
+    "extend": { "flags": [ "REGENERATES_1", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
