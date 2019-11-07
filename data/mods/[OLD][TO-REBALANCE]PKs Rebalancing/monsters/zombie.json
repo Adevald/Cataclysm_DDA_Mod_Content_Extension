@@ -213,7 +213,6 @@
         ]
       }
     ],
-    "upgrades": { "half_life": 10, "into_group": "GROUP_ZOMBIE_DECAY" },
     "attack_effs": [ { "id": "rad_tenths", "duration": 10 }, { "id": "rad_tenths", "duration": 15 } ]
   },
   {

@@ -51,7 +51,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_seeker_bot",
@@ -98,7 +97,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_hunter_bot",
@@ -144,7 +142,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_chaser_bot",
@@ -190,7 +187,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
             "type": "place_monster",
             "monster_id": "mon_venomhack",
@@ -238,7 +234,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
             "type": "place_monster",
             "monster_id": "mon_distractron",
@@ -286,7 +281,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
             "type": "place_monster",
             "monster_id": "mon_smokehack",
@@ -351,7 +345,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_orb_bot",
@@ -414,7 +407,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_skaterbot",
@@ -479,7 +471,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_shockbot",
@@ -545,7 +536,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_solar_bot",
@@ -611,7 +601,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_killbot",
@@ -677,7 +666,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_murder_bot",
@@ -743,7 +731,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_droidnaught",
@@ -809,7 +796,6 @@
         "charges_per_use": 0,
         "turns_per_charge": 0,
         "ammo": "NULL",
-        "revert_to": "null",
         "use_action": {
            "type": "place_monster",
            "monster_id": "mon_cleaner_bot",
