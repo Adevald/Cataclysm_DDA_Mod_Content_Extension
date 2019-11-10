@@ -1,12 +1,12 @@
 [{
         "type": "ammunition_type",
         "id": "bloodshot",
-        "name": "bloodshot",
+        "name": "кроводробь",
         "default": "bloodshot_00"
     }, {
         "type": "ammunition_type",
         "id": "ammoblood",
-        "name": "blood",
+        "name": "кровь",
         "default": "bloodypressure"
     }
 ]

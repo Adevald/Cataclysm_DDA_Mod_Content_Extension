@@ -5,8 +5,8 @@
         "price": 0,
         "price_postapoc": 0,
         "color": "dark_red",
-        "name": "Invynel's bow",
-        "description": "A heavy, steel bow. Its serrated, blade handle makes it available for melee, but unwieldy. Well trained archers find this useful for long to mid range combats greatly.",
+        "name": "Лук Инвинэль",
+        "description": "Тяжёлый, стальной лук. Его рукоять имеет зазубрины, давая возможность использовать его в билжнем бою, несмотря на него вес. Опытные лучники поймут, насколько это оружие полезно на средних и дальних дистанциях.",
         "material": [
             "steel"
         ],
@@ -56,8 +56,8 @@
         "type": "GUN",
         "symbol": "(",
         "color": "red",
-        "name": "blood striker",
-        "description": "A modified and beautifully designed striker shotgun created by vampires. Unlike human's, it has a bigger revolving wheel, which occupies additional bullets and a 3-shot burst mode for barraging shots with its improved accuracy.",
+        "name": "Кроводробитель",
+        "description": "Изящно сконструированный и модифицированный дробовик, созданный вампирами. Если сравнивать с человеческими моделями, то у этого имеется барабан как у револьвера, который вмещает немало патрон, а также имеет режим стрельбы в 3 патрона, для увеличения покрытия.",
         "price_postapoc": 1318500,
         "price": 0,
         "material": [
@@ -125,8 +125,8 @@
         "type": "GUN",
         "symbol": "(",
         "color": "red",
-        "name": "blood slinger",
-        "description": "A lightweight vampiric gun with special mounted blood-fed container. It uses thickened blood as the primary ammunition, and shoots at high velocity, regardless of its small size.",
+        "name": "кровавый револьвер",
+        "description": "Лёгкий вампирский пистолет, который оборудован контейнером для заправки в него крови. Он использует спрессованную кровь для стрельбы, и стреляет на большие расстояния, несмотря на свой размер.",
         "price_postapoc": 22500,
         "price": 0,
         "material": [
@@ -186,8 +186,8 @@
         "type": "GUN",
         "symbol": "(",
         "color": "red",
-        "name": "blood stinger",
-        "description": "A unique vampiric gun with specially designed barrel and a built-in blood-feed container input method. It uses thickened blood as the primary ammunition, and shoots at extremely high velocity, dealing damage nearly the same to high caliber firearms.",
+        "name": "кровавое жало",
+        "description": "Уникальное вампирское оружие, которое совмещает ствол и контейнер для крови. Оно использует вампирскую кровь как амуницию, и стреляет на чрезвычайно большой скорости, нанося урон, будто вы стреляете их крупнокалиберной винтовки.",
         "price_postapoc": 730500,
         "price": 0,
         "material": [
@@ -259,8 +259,8 @@
         "type": "GUN",
         "symbol": "(",
         "color": "red",
-        "name": "blood stream shooter",
-        "description": "A heavy vampiric gun with very large, built-in blood-feed container input method and a trio-rotational barrel chambers. It uses thickened blood as the primary ammunition, and shoots at maximum firing rate without generating disrupting sounds.",
+        "name": "ПП кровавого потока",
+        "description": "Довольно тяжёлое вампирское оружие, с очень большим контейнером для крови, и с тройными вращающимися камерами для крови. Использует сгущённую кровь как амуницию, и стреляет сплошным потоком. Делает это практически беззвучно.",
         "price_postapoc": 1182900,
         "price": 0,
         "material": [
@@ -337,8 +337,8 @@
         "type": "GUN",
         "symbol": "(",
         "color": "red",
-        "name": "blood sprayer",
-        "description": "A lightweight vampiric gun with large, built-in blood-feed container input method. It uses thickened blood as the primary ammunition, and shoots at high firing rate without generating disrupting sounds.",
+        "name": "распылитель крови",
+        "description": "распылитель крови",
         "price_postapoc": 423500,
         "price": 0,
         "material": [

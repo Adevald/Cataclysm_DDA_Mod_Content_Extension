@@ -2,7 +2,7 @@
         "type": "effect_type",
         "id": "leechpoison",
         "name": [
-            "abominable leech poison"
+            "отвратительный яд пиявки"
         ],
         "int_add_val": 1,
         "max_intensity": 10,
@@ -25,7 +25,7 @@
         "type": "effect_type",
         "id": "leechvenom",
         "name": [
-            "venomous leech poison"
+            "сильный яд пиявки"
         ],
         "int_add_val": 1,
         "max_intensity": 15,
@@ -47,10 +47,10 @@
     }, {
         "type": "effect_type",
         "id": "profane_curse",
-        "name": ["Profane Curse"],
-        "desc": ["A curse lingers through your body, amplifying elemental damage you take."],
-        "apply_message": "You've been cursed.",
-        "remove_message": "You feel your body thaw from the curse.",
+        "name": ["Нечестивое Проклятие"],
+        "desc": ["Проклятие остаётся в вашем теле, усиливая элементальный урон, который вы получаете."],
+        "apply_message": "Вас прокляли!",
+        "remove_message": "Вы чувствуете, как ваше тело расслабляется, избавляясь от проклятия.",
         "rating": "bad",
         "show_in_info": true,
         "base_mods": {
@@ -59,10 +59,10 @@
     }, {
         "type": "effect_type",
         "id": "vamp_conceal",
-        "name": ["Conceal"],
-        "desc": ["Your body is invisible to the naked eye."],
-        "apply_message": "You've turned invisible!",
-        "remove_message": "You reveal yourself.",
+        "name": ["Сокрытие"],
+        "desc": ["Ваше тело невидимо для невооружённого глаза."],
+        "apply_message": "Вы становитесь невидимым!",
+        "remove_message": "Ваше тело начинает проявляться.",
         "rating": "bad",
         "show_in_info": true,
         "flags": ["EFFECT_INVISIBLE"],

@@ -16,10 +16,10 @@
                 "duration": 3
             }
         ],
-        "hit_dmg_u": "The %1$s pressed you with its body!",
-        "hit_dmg_npc": "The %1$s body slammed <npcname>!",
-        "no_dmg_msg_u": "The %1$s tries to body slam you, but fails to penetrate your armor!",
-        "no_dmg_msg_npc": "The %1$s tries to body slam <npcname>, but fails to penetrate their armor!"
+        "hit_dmg_u": "%1$s придавил тебя своим телом!"",
+        "hit_dmg_npc": "%1$s придавил своим телом <npcname>!",
+        "no_dmg_msg_u": "%1$s пытается раздавить тебя, но твоя броня спасает тебя.",
+        "no_dmg_msg_npc": "%1$s пытается раздавить <npcname>, но броня спасает от этого."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -37,10 +37,10 @@
             }
         ],
         "body_parts": [["FOOT_L", 2], ["FOOT_R", 2], ["LEG_L", 3], ["LEG_R", 3], ["HAND_L", 2], ["HAND_R", 2], ["HEAD", 3], ["EYES", 2], ["MOUTH", 1], ["ARM_L", 3], ["ARM_R", 3], ["TORSO", 4]],
-        "hit_dmg_u": "The %1$s latches its mouth and crunches at you!",
-        "hit_dmg_npc": "The %1$s latches its mouth and crunches <npcname>!",
-        "no_dmg_msg_u": "The %1$s crunches at you, but fails to penetrate your armor.",
-        "no_dmg_msg_npc": "The %1$s crunches <npcname>, but fails to penetrate their armor."
+        "hit_dmg_u": "%1$s с хрустом вцепляется в тебя!",
+        "hit_dmg_npc": "%1$s с хрустом вцепляется в <npcname>!",
+        "no_dmg_msg_u": "%1$s пытается зацепиться своими зубами, но броня защищает тебя.",
+        "no_dmg_msg_npc": "%1$s пытается вцепиться в <npcname>, но броня спасает от этого."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -60,10 +60,10 @@
                 "duration": 5
             }
         ],
-        "hit_dmg_u": "The %1$s devoured you and eventually spat out!",
-        "hit_dmg_npc": "The %1$s devoured <npcname>!",
-        "no_dmg_msg_u": "The %1$s tries to devour you, but fails to do it!",
-        "no_dmg_msg_npc": "The %1$s tries to devour <npcname>, but fails to do it!"
+        "hit_dmg_u": "%1$s проглотил тебя, а потом выблевал тебя обратно!",
+        "hit_dmg_npc": "%1$s проглатывает <npcname>!",
+        "no_dmg_msg_u": "%1$s пытается проглотить тебя, но не может.",
+        "no_dmg_msg_npc": "%1$s пытается проглотить <npcname>, но не может."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -87,10 +87,10 @@
                 "duration": 10
             }
         ],
-        "hit_dmg_u": "The %1$s hugs you to the floor!",
-        "hit_dmg_npc": "The %1$s is hugging <npcname>!",
-        "no_dmg_msg_u": "The %1$s tries to hug you, but fails to do it!",
-        "no_dmg_msg_npc": "The %1$s tries to hug <npcname>, but fails to do it!"
+        "hit_dmg_u": "%1$s прижимает тебя к полу!",
+        "hit_dmg_npc": "%1$s прижимает к полу <npcname>!",
+        "no_dmg_msg_u": "%1$s пытается прижать тебя к полу, но не может.",
+        "no_dmg_msg_npc": "%1$s пытается прижать к полу <npcname>, но не может."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -111,10 +111,10 @@
                 "bp": "TORSO"
             }
         ],
-        "hit_dmg_u": "The %1$s bit your torso with hemorrhage!",
-        "hit_dmg_npc": "The %1$s bit <npcname>'s torso with hemorrhage!",
-        "no_dmg_msg_u": "The %1$s tries to bite your torso, but fails to penetrate your armor!",
-        "no_dmg_msg_npc": "The %1$s tries to bite <npcname>'s torso, but fails to penetrate their armor!"
+        "hit_dmg_u": "%1$s нанёс тебе кровоточащие укусы в туловище!",
+        "hit_dmg_npc": "%1$s нанёс <npcname>'s кровоточащие укусы в туловище!",
+        "no_dmg_msg_u": "%1$s пытается укусить тебя за туловище, но не может пробить броню.",
+        "no_dmg_msg_npc": "%1$s пытается укусить <npcname> за туловище, но не может пробить броню."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -136,10 +136,10 @@
                 "duration": 1350
             }
         ],
-        "hit_dmg_u": "The %1$s weakens you!",
-        "hit_dmg_npc": "The %1$s weakens <npcname>!",
-        "no_dmg_msg_u": "The %1$s tries to inject you, but fails to pierce your armor.",
-        "no_dmg_msg_npc": "The %1$s tries to inject <npcname>, but fails."
+        "hit_dmg_u": "%1$s ослабляет тебя!",
+        "hit_dmg_npc": "%1$s ослабляет <npcname>!",
+        "no_dmg_msg_u": "%1$s пытается впрыснуть в тебя что-то, но не может пробить броню.",
+        "no_dmg_msg_npc": "%1$s пытается впрыснуть в <npcname> что-то, но не может пробить броню."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -161,10 +161,10 @@
                 "duration": 2650
             }
         ],
-        "hit_dmg_u": "The %1$s badly weakens you!",
-        "hit_dmg_npc": "The %1$s weakens <npcname> badly!",
-        "no_dmg_msg_u": "The %1$s tries to inject you, but fails to pierce your armor.",
-        "no_dmg_msg_npc": "The %1$s tries to inject <npcname>, but fails."
+        "hit_dmg_u": "%1$s сильно ослабляет тебя!",
+        "hit_dmg_npc": "%1$s сильно ослабляет <npcname>!",
+        "no_dmg_msg_u": "%1$s пытается впрыснуть в тебя что-то, но не может пробить броню.",
+        "no_dmg_msg_npc": "%1$s пытается впрыснуть в <npcname> что-то, но не может пробить броню."
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -191,10 +191,10 @@
                 "duration": 2
             }
         ],
-        "hit_dmg_u": "The %1$s rolls through you!",
-        "hit_dmg_npc": "The %1$s rolls through <npcname>!",
-        "no_dmg_msg_u": "The %1$s rolled through you, but fails to penetrate your armor!",
-        "no_dmg_msg_npc": "The %1$s rolls through <npcname>, but fails to penetrate their armor!"
+        "hit_dmg_u": "%1$s перекатывается на вас!",
+        "hit_dmg_npc": "%1$s перекатывается на <npcname>!",
+        "no_dmg_msg_u": "%1$s перекатывается на вас, но не может пробить броню!",
+        "no_dmg_msg_npc": "%1$s перекатывается на <npcname>, но не может пробить броню!"
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -208,10 +208,10 @@
                 "armor_multiplier": 0.8
             }
         ],
-        "hit_dmg_u": "The %1$s drills your flesh!",
-        "hit_dmg_npc": "The %1$s drilled <npcname>'s flesh!",
-        "no_dmg_msg_u": "The %1$s drilled you, but fails to penetrate your armor!",
-        "no_dmg_msg_npc": "The %1$s drilled <npcname>, but fails to penetrate their armor!"
+        "hit_dmg_u": "%1$s пробуривает вашу плоть!",
+        "hit_dmg_npc": "%1$s пробуривает плоть <npcname>!",
+		"no_dmg_msg_u": "%1$s пытается пробурить вас, но не может пробить броню!",
+		"no_dmg_msg_npc": "%1$s пытается пробурить  <npcname>, но не может пробить броню!"
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -239,10 +239,10 @@
                 "duration": 5
             }
         ],
-        "hit_dmg_u": "The %1$s is sucking your torso!",
-        "hit_dmg_npc": "The %1$s is sucking <npcname>'s torso!",
-        "no_dmg_msg_u": "The %1$s tries to suck your torso, but fails to penetrate your armor!",
-        "no_dmg_msg_npc": "The %1$s tries to suck <npcname>'s torso, but fails to penetrate their armor!"
+		  "hit_dmg_u": "%1$s высасывает кровь из вашего туловища!",
+		  "hit_dmg_npc": "%1$s высасывает кровь из туловища <npcname>!",
+		  "no_dmg_msg_u": "%1$s пытается высосать вашу кровь, но не может пробить броню!",
+		  "no_dmg_msg_npc": "%1$s пытается высосать кровь <npcname>, но не может пробить броню!"
     }, {
         "type": "monster_attack",
         "attack_type": "melee",
@@ -260,9 +260,9 @@
             }
         ],
         "body_parts": [["FOOT_L", 2], ["FOOT_R", 2], ["LEG_L", 3], ["LEG_R", 3], ["HAND_L", 2], ["HAND_R", 2], ["HEAD", 3], ["EYES", 2], ["MOUTH", 1], ["ARM_L", 3], ["ARM_R", 3], ["TORSO", 4]],
-        "hit_dmg_u": "The %1$s tentacle bones stabs you!",
-        "hit_dmg_npc": "The %1$s tentacle bones stabs <npcname>!",
-        "no_dmg_msg_u": "The %1$s stabs you with tentacle bones, but fails to penetrate your armor.",
-        "no_dmg_msg_npc": "The %1$s stabs <npcname> with tentacle bones, but fails to penetrate their armor."
+		  "hit_dmg_u": "%1$s костяное щупальце протыкает тебя!",
+		  "hit_dmg_npc": "%1$s костяное щупальце протыкает <npcname>!",
+		  "no_dmg_msg_u": "%1$s костяное щупальце пытается проткнуть вас, но не может пробить броню.",
+		  "no_dmg_msg_npc": "%1$s костяное щупальце пытается проткнуть <npcname>, но не может пробить броню."
     }
 ]

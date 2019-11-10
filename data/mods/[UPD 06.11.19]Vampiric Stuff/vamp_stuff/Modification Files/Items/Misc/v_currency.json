@@ -1,8 +1,8 @@
 {
     "type": "GENERIC",
     "id": "bloodcoin",
-    "name": "VelvetyToken",
-    "description": "A well-made, seemingly handcrafted crimson coin produced merely of blood from unknown creature. Its one side is adorned in astounding etched decorations, and the other shows an image of a man, with undecipherable text below it.",
+    "name": "ВельвеТокен",
+    "description": "Искусно вручную изготовленная монета багрового цвета, по-видимому состоящая из крови неизвестного существа. Одна из ее сторон украшена изумительной гравировкой, а другая изображает неизвестного мужчину с неразборчивой надписью под ним.",
     "price": 50,
     "price_postapoc": 10,
     "weight": "12 g",

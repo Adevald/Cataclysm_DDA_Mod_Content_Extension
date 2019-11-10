@@ -2,8 +2,8 @@
 {
         "id": "v_sacrifice_spell",
         "type": "SPELL",
-        "name": "Sacrifice",
-        "description": "Instant death damage is dealt.",
+        "name": "Жертвоприношение",
+        "description": "Моментально уничтожает вашу жизнь.",
         "flags": ["SILENT"],
         "valid_targets": ["ally", "hostile", "ground", "self"],
         "effect": "target_attack",
@@ -15,8 +15,8 @@
     }, {
         "id": "v_sink_tp",
         "type": "SPELL",
-        "name": "Teleport",
-        "description": "Combined with blind strike spell.",
+        "name": "Телепорт",
+        "description": "Соединено с заклинанием ослепляющий удар.",
         "flags": ["SILENT"],
         "valid_targets": ["ground", "ally"],
         "min_aoe": 8,
@@ -25,8 +25,8 @@
     }, {
         "id": "v_sink_conceal",
         "type": "SPELL",
-        "name": "Concealment",
-        "description": "Combined with blind strike spell.",
+        "name": "Маскировка",
+        "description": "Соединено с заклинанием ослепляющий удар.",
         "valid_targets": ["ground", "ally"],
         "flags": ["SILENT"],
         "effect": "target_attack",
@@ -37,8 +37,8 @@
     }, {
         "id": "v_sink_bstrike",
         "type": "SPELL",
-        "name": "Blind Strike",
-        "description": "Caster teleports and quickly strikes the target, dealing moderate cutting damage, then turns invisible while retreating to a random spot.",
+        "name": "Ослепляющий удар",
+        "description": "Заклинатель моментально телепортируется к цели, нанося ей урон, а потом исчезает с глаз.",
         "valid_targets": ["ground", "hostile"],
         "extra_effects": [{
                 "id": "v_sink_conceal",
@@ -58,8 +58,8 @@
     }, {
         "id": "v_warlock_innate_strike",
         "type": "SPELL",
-        "name": "Innate Strike",
-        "description": "A quick surge of mana blast strikes the target, dealing bash damage.",
+        "name": "Врождённый удар",
+        "description": "Быстрый выброс маны в определённой точке, который производит кинетический взрыв.",
         "valid_targets": ["ground", "hostile"],
         "effect": "target_attack",
         "flags": ["SILENT"],
@@ -71,8 +71,8 @@
     }, {
         "id": "v_warlock_stun",
         "type": "SPELL",
-        "name": "Stun",
-        "description": "Caster channels its mind to its target, eventually renders them unconscious for a few turns.",
+        "name": "Ошеломление",
+        "description": "Заклитантель с силой концентрируется на цели, ошеломляя сознаниец цели.",
         "valid_targets": ["ground", "hostile"],
         "effect": "target_attack",
         "flags": ["SILENT"],
@@ -85,8 +85,8 @@
     }, {
         "id": "v_profane_fire",
         "type": "SPELL",
-        "name": "Dark Fireblast",
-        "description": "Fire infused with black magic engulfs the target, inflicting them with profane curse.",
+        "name": "Тёмный Огненный Взрыв",
+        "description": "Огонь, усиленный чёрным огнём. Он поглощает цель, накладывая на неё нечистивое проклятие.",
         "valid_targets": ["ground", "hostile"],
         "effect": "target_attack",
         "flags": ["SILENT"],
@@ -101,8 +101,8 @@
     }, {
         "id": "v_profane_hellfire",
         "type": "SPELL",
-        "name": "Desecrate",
-        "description": "Caster channels the underworld for a very long time to desecrate the targets with pillars of hellish flames.",
+        "name": "Осквернение",
+        "description": "Заклинатель создаёт разрыв с подземным миром, оскверняя цель столпами адского пламени.",
         "flags": ["SILENT"],
         "valid_targets": ["ground", "hostile"],
         "effect": "target_attack",
@@ -120,8 +120,8 @@
     }, {
         "id": "v_hemo_heal",
         "type": "SPELL",
-        "name": "Heal",
-        "description": "Combined with transfusion spell.",
+        "name": "Лечение",
+        "description": "Соединено с заклинанием трансфигурация.",
         "valid_targets": ["ground", "ally"],
         "//": "3x healing for the damage.",
         "flags": ["SILENT"],
@@ -131,8 +131,8 @@
     }, {
         "id": "v_hemo_transfusion",
         "type": "SPELL",
-        "name": "Transfusion",
-        "description": "Drains life force from the target, may be it an ally or a foe.",
+        "name": "Трансфигурация",
+        "description": "Высасывает жизненные силы из цели, может быть применено как к противнику, так и к союзнику.",
         "valid_targets": ["ground", "hostile", "ally"],
         "flags": ["SILENT"],
         "effect": "target_attack",
@@ -156,8 +156,8 @@
     }, {
         "id": "v_hemo_bloodrip",
         "type": "SPELL",
-        "name": "Blood Ripple",
-        "description": "Combined with blood surge spell.",
+        "name": "Кровавая Рябь",
+        "description": "Соединено с кровавой волной.",
         "valid_targets": ["ground", "hostile"],
         "effect": "target_attack",
         "flags": ["SILENT"],
@@ -169,8 +169,8 @@
     }, {
         "id": "v_hemo_surge",
         "type": "SPELL",
-        "name": "Blood Surge",
-        "description": "A wave of blood is drawn out from the caster, dealing bio damage to the main target and bash to the surrounding targets.",
+        "name": "Кровавый прилив",
+        "description": "Волна крови вздымается из заклинателя, нанося урон цели, и создавая кровавую рябь, нанося урон рядостоящим врагам.",
         "valid_targets": ["hostile", "ground", "self"],
         "effect": "target_attack",
         "extra_effects": [{
@@ -188,8 +188,8 @@
     }, {
         "id": "v_hemo_share",
         "type": "SPELL",
-        "name": "Share",
-        "description": "Caster sends out blood tentacles that attaches to nearby allies, regaining large portion of health while damaging the caster.",
+        "name": "Разделение",
+        "description": "Заклинатель выпускает кровавые щупальца, которые применяются ко всем рядостоящим союзникам, излечивая из засчёт жизни заклинателя.",
         "extra_effects": [{
                 "id": "v_hemo_shareblood",
                 "hit_self": true
@@ -204,8 +204,8 @@
         "id": "v_hemo_shareblood",
         "type": "SPELL",
         "flags": ["SILENT"],
-        "name": "Share Blood",
-        "description": "Combined with share spell.",
+        "name": "Раздленеие крови",
+        "description": "Соединено с разделением.",
         "valid_targets": ["ground", "self", "ally"],
         "effect": "target_attack",
         "min_damage": -30,

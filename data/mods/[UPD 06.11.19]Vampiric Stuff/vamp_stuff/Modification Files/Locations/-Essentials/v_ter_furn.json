@@ -1,8 +1,8 @@
 [{
         "type": "terrain",
         "id": "t_blood_sh",
-        "description": "A shallow blood residue. It's light, crimson hue denotes intense desaturation from aging.",
-        "name": "shallow blood",
+        "description": "Неглубокий осадок крови. Светло-малиновый оттенок обозначает интенсивное осушение из-за старения.",
+        "name": "лужа крови",
         "symbol": "~",
         "color": "light_red",
         "move_cost": 5,
@@ -11,8 +11,8 @@
     }, {
         "type": "terrain",
         "id": "t_blood_dp",
-        "description": "A deep blood residue. It's light, crimson hue denotes intense desaturation from aging.",
-        "name": "deep blood",
+        "description": "Глубокий овраг, наполненный кровью. Светло-малиновый оттенок обозначает интенсивное осушение из-за старения.",
+        "name": "озерце крови",
         "symbol": "~",
         "color": "red",
         "move_cost": 8,
@@ -21,8 +21,8 @@
     }, {
         "type": "terrain",
         "id": "t_vamp_seal",
-        "name": "seal",
-        "description": "An invincible force field. A spell could let you go through it, even if its active.",
+        "name": "печать",
+        "description": "Это неразрушимое силовое поле. Возможно, определённое заклинание позволит вам пройти через него, даже если оно активно.",
         "looks_like": "t_slope_down",
         "symbol": "0",
         "color": "white",
@@ -31,8 +31,8 @@
     }, {
         "type": "furniture",
         "id": "f_slope_down_vamp",
-        "name": "downward slope",
-        "description": "A downward facing slope.",
+        "name": "нисходящий уклон",
+        "description": "Склон, по которому можно спуститься вниз.",
         "symbol": ">",
         "looks_like": "t_slope_down",
         "color": "brown",

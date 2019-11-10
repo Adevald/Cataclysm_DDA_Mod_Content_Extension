@@ -2,8 +2,8 @@
         "id": "crypt_map",
         "type": "GENERIC",
         "category": "books",
-        "name": "crypt map",
-        "description": "This odd, hand drawn map points the crypts in its range. There's no actual road going there, but it's an enough information for you.",
+        "name": "карта склепов",
+        "description": "Эта странная, нарисованная от руки карта, изображает ближайшие районы, и отмечает все крипты, которые имеются неподалёку. Конечно тут не указаны дороги и тропинки которые ведут к ним, но информации достаточно, чтобы их найти.",
         "weight": 30,
         "volume": 1,
         "price": 0,
@@ -15,14 +15,14 @@
             "type": "reveal_map",
             "radius": 180,
             "terrain": ["crypt1", "crypt2"],
-            "message": "You add the Crypt(s) to your map."
+            "message": "Ты отмечаешь все ближайшие склепы на своей карте."
         }
     }, {
         "id": "vampcave_map",
         "type": "GENERIC",
         "category": "books",
-        "name": "cove map",
-        "description": "This odd, hand drawn map only points the vampire cove. There's no actual road going there, but it's an enough information for you.",
+        "name": "карта местонахождения бухты",
+        "description": "Эта странная, нарисованная от руки карта, изображает ближайшие районы, и отмечает вампирскую бухту неподалёку. Конечно тут не указаны дороги и тропинки которые ведут к ним, но информации достаточно, чтобы их найти.",
         "weight": 50,
         "volume": 1,
         "price": 0,
